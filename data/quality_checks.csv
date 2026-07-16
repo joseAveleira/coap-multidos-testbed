@@ -1,0 +1,22 @@
+check,status,observed,expected
+rows,PASS,3797,3797
+sessions,PASS,15,15
+attack_episodes,PASS,105,105
+block2_episodes,PASS,75,75
+request_flood_episodes,PASS,30,30
+benign_windows,PASS,3436,3436
+block2_windows,PASS,253,253
+request_flood_windows,PASS,108,108
+excluded_boundary_windows,PASS,190,190
+missing_values_complete,PASS,0,0
+missing_values_clean,PASS,0,0
+infinite_values_clean,PASS,0,0
+retained_predictors,PASS,23,23
+exact_duplicate_retained_predictors,PASS,0,0
+all_classes_in_every_session,PASS,15,15
+event_labels_match_endpoint_pairs,PASS,True,True
+attack_events_do_not_overlap,PASS,True,True
+block2_wire_amplification,PASS,22.088,at least 10
+attack_window_fraction,PASS,0.0951,between 0.05 and 0.30
+single_feature_best_block2_hard_score,PASS,0.8752,below 0.95
+single_feature_best_request_hard_score,PASS,0.6655,below 0.95

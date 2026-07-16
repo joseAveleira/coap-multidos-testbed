@@ -1,0 +1,4 @@
+target,label_attack,description
+0,benign,Benign CoAP traffic
+1,coap_block2_amplification_flood,Block2 amplification flood
+2,coap_request_flood,CoAP request flood

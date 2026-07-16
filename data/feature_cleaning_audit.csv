@@ -1,0 +1,61 @@
+column,dtype,missing_n,missing_pct,unique_n,dominant_value,dominant_pct,zero_pct,decision,used_in_multidos_model,used_in_block2_binary_model,reason
+meta_dataset_source,object,0,0,1,generated_coap_multidos_loopback_v6.1,1,,remove_constant,False,False,No aporta variación discriminativa en estas capturas.
+meta_session,object,0,0,15,strong_07,0.0676850145,,keep_control_not_predictor,False,False,Se conserva solo para Leave-One-Session-Out; nunca se usa como feature.
+meta_capture,object,0,0,15,strong_07,0.0676850145,,remove_metadata_or_identifier,False,False,Trazabilidad/tiempo/endpoints; puede introducir fuga o identidad de sesión.
+meta_win_idx,int64,0,0,68,3,0.0197524361,0.0118514617,remove_metadata_or_identifier,False,False,Trazabilidad/tiempo/endpoints; puede introducir fuga o identidad de sesión.
+meta_endpoint_a,object,0,0,15,127.20.107.1,0.0676850145,,remove_metadata_or_identifier,False,False,Trazabilidad/tiempo/endpoints; puede introducir fuga o identidad de sesión.
+meta_endpoint_b,object,0,0,75,127.20.101.10,0.0179088754,,remove_metadata_or_identifier,False,False,Trazabilidad/tiempo/endpoints; puede introducir fuga o identidad de sesión.
+meta_n_frames,int64,0,0,368,4,0.470634712,0,remove_metadata_or_identifier,False,False,Trazabilidad/tiempo/endpoints; puede introducir fuga o identidad de sesión.
+meta_win_start,int64,0,0,68,3,0.0197524361,0.0118514617,remove_metadata_or_identifier,False,False,Trazabilidad/tiempo/endpoints; puede introducir fuga o identidad de sesión.
+meta_win_end,int64,0,0,68,4,0.0197524361,0,remove_metadata_or_identifier,False,False,Trazabilidad/tiempo/endpoints; puede introducir fuga o identidad de sesión.
+meta_window_seconds,int64,0,0,1,1,1,0,remove_constant,False,False,No aporta variación discriminativa en estas capturas.
+meta_time_block_60s,int64,0,0,2,0,0.887279431,0.887279431,remove_metadata_or_identifier,False,False,Trazabilidad/tiempo/endpoints; puede introducir fuga o identidad de sesión.
+core_pkts_per_s,int64,0,0,368,4,0.470634712,0,remove_exact_sum,False,False,Es exactamente coap_req_per_s + coap_resp_per_s.
+core_bytes_per_s,int64,0,0,649,212,0.465367395,0,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+core_mean_len,float64,0,0,414,53.0,0.767447985,0,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+core_std_len,float64,0,0,247,6.0,0.767447985,0.000263365815,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+core_mean_iat,float64,0,0,3151,8.2e-05,0.00368712141,0,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+core_std_iat,float64,0,0,2928,0.0,0.225704504,0.225704504,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+core_active_span_frac,float64,0,0,3114,8.1e-05,0.00368712141,0.000263365815,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+coap_req_per_s,int64,0,0,350,2,0.472741638,0,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+coap_resp_per_s,int64,0,0,351,2,0.478008954,0.000263365815,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+coap_empty_per_s,int64,0,0,1,0,1,1,remove_constant,False,False,No aporta variación discriminativa en estas capturas.
+coap_con_per_s,int64,0,0,341,2,0.472741638,0.00921780353,remove_exact_derived,False,False,En estas capturas es coap_req_per_s - 0.5*coap_non_per_s.
+coap_non_per_s,int64,0,0,29,0,0.990782196,0.990782196,keep_model_feature,True,False,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+coap_ack_per_s,int64,0,0,341,2,0.478008954,0.00948116934,remove_exact_derived,False,False,Se obtiene de req + resp - con - non.
+coap_rst_per_s,int64,0,0,1,0,1,1,remove_constant,False,False,No aporta variación discriminativa en estas capturas.
+coap_observe_per_s,int64,0,0,1,0,1,1,remove_constant,False,False,No aporta variación discriminativa en estas capturas.
+coap_notification_per_s,int64,0,0,1,0,1,1,remove_constant,False,False,No aporta variación discriminativa en estas capturas.
+coap_request_frac,float64,0,0,46,0.5,0.978140637,0,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+coap_response_frac,float64,0,0,46,0.5,0.978140637,0.000263365815,remove_exact_complement,False,False,Es exactamente 1 - coap_request_frac.
+coap_empty_ack_frac,int64,0,0,1,0,1,1,remove_constant,False,False,No aporta variación discriminativa en estas capturas.
+coap_con_frac,float64,0,0,47,0.5,0.968922834,0.00921780353,keep_model_feature,True,False,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+coap_ack_frac,float64,0,0,46,0.5,0.968922834,0.00948116934,remove_exact_derived,False,False,Se obtiene de los contadores retenidos y el total de mensajes.
+coap_observe_frac,int64,0,0,1,0,1,1,remove_constant,False,False,No aporta variación discriminativa en estas capturas.
+coap_notification_frac,int64,0,0,1,0,1,1,remove_constant,False,False,No aporta variación discriminativa en estas capturas.
+coap_success_resp_frac,int64,0,0,2,1,0.999736634,0.000263365815,remove_near_constant,False,False,Vale 1 en 3796/3797 ventanas; la única excepción es benigna.
+coap_resp_balance,float64,0,0,46,0.5,0.978140637,0.000263365815,remove_exact_duplicate,False,False,Es exactamente igual a coap_response_frac.
+coap_log_resp_req,float64,0,0,45,0.0,0.978140637,0.978140637,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+coap_payload_bytes_per_s,int64,0,0,470,32,0.47326837,0.000263365815,remove_exact_derived,False,False,En estas capturas es 16*resp + 1008*block2_resp.
+coap_mean_payload_len,float64,0,0,193,8.0,0.767447985,0.000263365815,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+coap_method_entropy,int64,0,0,1,0,1,1,remove_constant,False,False,No aporta variación discriminativa en estas capturas.
+coap_distinct_methods,int64,0,0,1,1,1,0,remove_constant,False,False,No aporta variación discriminativa en estas capturas.
+coap_block2_per_s,int64,0,0,278,0,0.779826179,0.779826179,remove_exact_sum,False,False,Es exactamente block2_req_per_s + block2_resp_per_s.
+coap_block2_req_per_s,int64,0,0,258,0,0.780616276,0.780616276,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+coap_block2_resp_per_s,int64,0,0,261,0,0.780879642,0.780879642,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+coap_block2_frac,float64,0,0,165,0.0,0.779826179,0.779826179,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+coap_block2_more_resp_frac,float64,0,0,235,0.0,0.780879642,0.780879642,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+coap_block2_mean_number,float64,0,0,462,0.0,0.807216223,0.807216223,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+coap_block2_unique_numbers,int64,0,0,15,0,0.780616276,0.780616276,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+coap_block2_sequential_req_frac,float64,0,0,162,0.0,0.826178562,0.826178562,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+coap_block2_repeated_req_frac,float64,0,0,324,0.0,0.798261786,0.798261786,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+coap_block2_req_unique_token_frac,float64,0,0,180,0.0,0.780616276,0.780616276,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+coap_block2_payload_bytes_per_s,int64,0,0,261,0,0.780879642,0.780879642,remove_exact_scalar,False,False,Es exactamente 1024 * coap_block2_resp_per_s.
+coap_block2_log_resp_req_bytes,float64,0,0,451,0.0,0.779826179,0.779826179,keep_model_feature,True,True,"Rasgo numérico conductual, no constante y no redundante en la tabla final."
+label_binary,int64,0,0,2,0,0.904924941,0.904924941,keep_target_in_separate_file,False,False,Objetivo; las etiquetas binarias y multiclase se publican separadas.
+label_attack,object,0,0,3,benign,0.904924941,,keep_target_in_separate_file,False,False,Objetivo; las etiquetas binarias y multiclase se publican separadas.
+label_episode,object,0,0,106,none,0.904924941,,remove_auxiliary_ground_truth,False,False,Información de verdad-terreno no disponible en inferencia.
+label_overlap_fraction,int64,0,0,2,0,0.904924941,0.904924941,remove_auxiliary_ground_truth,False,False,Información de verdad-terreno no disponible en inferencia.
+label_confidence,object,0,0,1,high,1,,remove_constant,False,False,No aporta variación discriminativa en estas capturas.
+label_source,object,0,0,2,externally_scheduled_benign_workload,0.904924941,,remove_auxiliary_ground_truth,False,False,Información de verdad-terreno no disponible en inferencia.
+label_attack_strategy,object,0,0,8,none,0.904924941,,remove_auxiliary_ground_truth,False,False,Información de verdad-terreno no disponible en inferencia.

@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "session_id": "smoke_01",
+  "profile": "smoke",
+  "seed": 6001,
+  "session_start_epoch": 1784133092.289,
+  "session_end_epoch": 1784133100.809,
+  "duration_seconds": 8.519999980926514,
+  "addresses": {
+    "server": "127.20.201.1",
+    "client_a": "127.20.201.10",
+    "client_b": "127.20.201.11",
+    "noisy_client": "127.20.201.12",
+    "probe": "127.20.201.20",
+    "actor": "127.20.201.99"
+  },
+  "port": 5683,
+  "resource": {
+    "path": "/large",
+    "bytes": 32768,
+    "block_size": 1024,
+    "blocks": 32
+  },
+  "attack_name": "coap_block2_amplification_flood",
+  "spoofing": false,
+  "stats": {
+    "requests_sent": 263,
+    "responses_received": 263,
+    "request_bytes": 4250,
+    "response_bytes": 235106,
+    "server_requests": 263,
+    "server_responses": 263,
+    "server_request_bytes": 4250,
+    "server_response_bytes": 235106,
+    "by_workload": {
+      "background_sensor": 23,
+      "probe": 15,
+      "legitimate_block2_download": 165,
+      "block2_amplification_flood": 60
+    }
+  },
+  "episode_count": 1,
+  "probe_samples": 15
+}

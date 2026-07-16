@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+.staging/
+
+testbed/captures/
+testbed/events/
+testbed/logs/
+testbed/metrics/
+testbed/generated/
+testbed/session_manifest_*.csv
+testbed/generation_manifest_*.json
+
+data/rebuilt/
+*.log

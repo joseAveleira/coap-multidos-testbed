@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this testbed or dataset, please cite the associated paper and this software release."
+title: "Reproducible CoAP multi-DoS testbed and dataset"
+type: software
+version: 1.0.0
+date-released: 2026-07-17
+repository-code: "https://github.com/joseAveleira/coap-multidos-testbed"
+authors:
+  - family-names: Michelena
+    given-names: Álvaro
+  - family-names: Aveleira-Mata
+    given-names: José
+  - family-names: García-Fischer
+    given-names: Agustín
+  - family-names: Narciandi-Rodríguez
+    given-names: Diego
+  - family-names: Casteleiro-Roca
+    given-names: José-Luis
+keywords:
+  - CoAP
+  - denial of service
+  - intrusion detection
+  - IoT
+  - network dataset
+license: MIT
