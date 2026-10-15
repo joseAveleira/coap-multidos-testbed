@@ -1,6 +1,6 @@
 # Dataset notes
 
-The definitions below describe the original `v1.0.0` collection, retained unchanged. For the physical `v1.1.0` extension, see [physical dataset documentation](physical/README.md). Its 23 predictors and target codes are shared with the original; capture provenance and class counts are documented separately.
+The definitions below describe the original `v1.0.0` collection, retained unchanged. For the physical `v1.2.0` extension, see [physical dataset documentation](physical/README.md). Its 23 predictors and target codes are shared with the original; capture provenance and class counts are documented separately.
 
 ## Observation unit
 

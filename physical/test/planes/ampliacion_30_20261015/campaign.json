@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "actor_version": "1.0.0",
+  "sessions": [
+    {
+      "session": "fisica_001",
+      "file": "fisica_001.json",
+      "seed": 2026101405,
+      "duration_s": 565,
+      "lanes": 4,
+      "scheduled_request_budget": 60114,
+      "episodes_by_kind": {
+        "baseline": 25,
+        "guard": 49,
+        "block2_amplification": 6,
+        "benign_sensor_burst": 6,
+        "benign_block2_reads": 3,
+        "benign_block2_download": 3,
+        "request_flood": 6
+      },
+      "scheduled_seconds_by_label": {
+        "benign": 274.5686615469749,
+        "excluded": 196,
+        "block2_amplification": 42.33431913223467,
+        "request_flood": 52.09701932079042
+      },
+      "plan_sha256": "931fb61285b52424b1d4dcefdd84e13b0168e31b7f5602fb470dbd0827eb84d5"
+    }
+  ],
+  "note": "Propuesta editable: el número de sesiones no garantiza por sí solo suficiencia científica."
+}

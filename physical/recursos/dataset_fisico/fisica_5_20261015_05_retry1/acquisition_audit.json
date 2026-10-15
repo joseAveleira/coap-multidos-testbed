@@ -1,0 +1,1486 @@
+{
+  "session": "fisica_5_20261015_05_retry1",
+  "status": "completed_acquisition_audited",
+  "capture_manifest_sha256": "d9df8edac2f03534db840d5080d0de2ca06565c95353f4d1bf4e0f73cdb25291",
+  "build_manifest_sha256": "bcc1c8f43509d43559a7b59b1cb604339265c95eee5fde326c147be61d4264d2",
+  "pcap_sha256": "a5939cc5c9d3b97ef75621ed2511bc9794469b19d2a7fa72cf72cc90197d6c18",
+  "timestamp_ordering": {
+    "method": "reordercap; timestamp sort only, no timestamp adjustment",
+    "command": [
+      "reordercap",
+      "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_ampliacion_30_20261015\\fisica_5_20261015_05_retry1\\traffic.pcapng",
+      "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_ampliacion_30_20261015\\fisica_5_20261015_05_retry1\\traffic_chronological.pcapng"
+    ],
+    "diagnostic": "195063 frames, 205 out of order\n",
+    "original_file": "traffic.pcapng",
+    "original_sha256": "841308598e6b21663e83a1b6b87bf37c26c0c8730a1ef4eb0e6201a5260ad01f",
+    "ordered_sha256": "a5939cc5c9d3b97ef75621ed2511bc9794469b19d2a7fa72cf72cc90197d6c18",
+    "before": {
+      "packets": 195063,
+      "timestamp_tick_seconds": 1e-09,
+      "adjacent_timestamp_backsteps": 205,
+      "maximum_backstep_seconds": 0.0030365,
+      "packet_timestamp_multiset_sha256": "a6558194cdb61c200b7b32f5eea05669da91dc7829ef568366b6bca7c8cc93bb"
+    },
+    "after": {
+      "packets": 195063,
+      "timestamp_tick_seconds": 1e-09,
+      "adjacent_timestamp_backsteps": 0,
+      "maximum_backstep_seconds": 0,
+      "packet_timestamp_multiset_sha256": "a6558194cdb61c200b7b32f5eea05669da91dc7829ef568366b6bca7c8cc93bb"
+    }
+  },
+  "observed_clients": [
+    {
+      "device_id": 1,
+      "profile_id": 1,
+      "model": "ESP32-S3",
+      "mac": "d0:cf:13:08:43:4c",
+      "observed_ipv4": "10.37.225.73"
+    },
+    {
+      "device_id": 2,
+      "profile_id": 2,
+      "model": "ESP32-S3",
+      "mac": "d0:cf:13:08:41:48",
+      "observed_ipv4": "10.37.225.67"
+    },
+    {
+      "device_id": 3,
+      "profile_id": 3,
+      "model": "ESP32-S3",
+      "mac": "d0:cf:13:08:36:4c",
+      "observed_ipv4": "10.37.225.60"
+    },
+    {
+      "device_id": 4,
+      "profile_id": 4,
+      "model": "ESP32-S3",
+      "mac": "d0:cf:13:08:42:08",
+      "observed_ipv4": "10.37.225.4"
+    },
+    {
+      "device_id": 5,
+      "profile_id": 5,
+      "model": "ESP32-C6",
+      "mac": "58:8c:81:32:21:5c",
+      "observed_ipv4": "10.37.225.20"
+    }
+  ],
+  "actor": "10.37.225.230",
+  "actor_status": "completed",
+  "actor_dropped_records": 0,
+  "actor_clock_disagreement_ms": 0.6885528564453125,
+  "clock_correction": {
+    "actor_minus_capture_seconds": -0.44375061988830566,
+    "uncertainty_seconds": 0.1553663272857666,
+    "method": "SSH timestamp brackets before/after; minimum RTT samples; endpoint drift included",
+    "evidence": {
+      "before": {
+        "best": {
+          "capture_before": 1792082859.0853305,
+          "actor_time": 1792082858.6755857,
+          "capture_after": 1792082859.1849077,
+          "round_trip_seconds": 0.09957718849182129,
+          "actor_minus_capture_seconds": -0.4595332145690918
+        },
+        "samples": [
+          {
+            "capture_before": 1792082858.5572598,
+            "actor_time": 1792082858.2064815,
+            "capture_after": 1792082858.7272315,
+            "round_trip_seconds": 0.16997170448303223,
+            "actor_minus_capture_seconds": -0.4357643127441406
+          },
+          {
+            "capture_before": 1792082858.727251,
+            "actor_time": 1792082858.408413,
+            "capture_after": 1792082858.9273102,
+            "round_trip_seconds": 0.200059175491333,
+            "actor_minus_capture_seconds": -0.4188675880432129
+          },
+          {
+            "capture_before": 1792082858.9273317,
+            "actor_time": 1792082858.5757248,
+            "capture_after": 1792082859.0853057,
+            "round_trip_seconds": 0.1579740047454834,
+            "actor_minus_capture_seconds": -0.43059372901916504
+          },
+          {
+            "capture_before": 1792082859.0853305,
+            "actor_time": 1792082858.6755857,
+            "capture_after": 1792082859.1849077,
+            "round_trip_seconds": 0.09957718849182129,
+            "actor_minus_capture_seconds": -0.4595332145690918
+          },
+          {
+            "capture_before": 1792082859.1849334,
+            "actor_time": 1792082858.8367763,
+            "capture_after": 1792082859.3490365,
+            "round_trip_seconds": 0.16410303115844727,
+            "actor_minus_capture_seconds": -0.430208683013916
+          },
+          {
+            "capture_before": 1792082859.3490634,
+            "actor_time": 1792082858.9914393,
+            "capture_after": 1792082859.5053103,
+            "round_trip_seconds": 0.15624690055847168,
+            "actor_minus_capture_seconds": -0.4357476234436035
+          },
+          {
+            "capture_before": 1792082859.5053303,
+            "actor_time": 1792082859.195215,
+            "capture_after": 1792082859.7129273,
+            "round_trip_seconds": 0.207597017288208,
+            "actor_minus_capture_seconds": -0.4139139652252197
+          }
+        ]
+      },
+      "after": {
+        "best": {
+          "capture_before": 1792083440.6671011,
+          "actor_time": 1792083440.3767169,
+          "capture_after": 1792083440.9422686,
+          "round_trip_seconds": 0.27516746520996094,
+          "actor_minus_capture_seconds": -0.42796802520751953
+        },
+        "samples": [
+          {
+            "capture_before": 1792083440.6671011,
+            "actor_time": 1792083440.3767169,
+            "capture_after": 1792083440.9422686,
+            "round_trip_seconds": 0.27516746520996094,
+            "actor_minus_capture_seconds": -0.42796802520751953
+          },
+          {
+            "capture_before": 1792083440.9422925,
+            "actor_time": 1792083440.6982827,
+            "capture_after": 1792083441.2453885,
+            "round_trip_seconds": 0.30309605598449707,
+            "actor_minus_capture_seconds": -0.39555788040161133
+          },
+          {
+            "capture_before": 1792083441.2454135,
+            "actor_time": 1792083440.998953,
+            "capture_after": 1792083441.5417316,
+            "round_trip_seconds": 0.29631805419921875,
+            "actor_minus_capture_seconds": -0.3946194648742676
+          },
+          {
+            "capture_before": 1792083441.5417466,
+            "actor_time": 1792083441.4144,
+            "capture_after": 1792083441.9902859,
+            "round_trip_seconds": 0.44853925704956055,
+            "actor_minus_capture_seconds": -0.35161614418029785
+          },
+          {
+            "capture_before": 1792083441.9903128,
+            "actor_time": 1792083441.765583,
+            "capture_after": 1792083442.294774,
+            "round_trip_seconds": 0.3044612407684326,
+            "actor_minus_capture_seconds": -0.37696027755737305
+          },
+          {
+            "capture_before": 1792083442.294798,
+            "actor_time": 1792083442.1501782,
+            "capture_after": 1792083442.74756,
+            "round_trip_seconds": 0.4527621269226074,
+            "actor_minus_capture_seconds": -0.3710007667541504
+          },
+          {
+            "capture_before": 1792083442.747586,
+            "actor_time": 1792083442.64448,
+            "capture_after": 1792083443.1691594,
+            "round_trip_seconds": 0.4215734004974365,
+            "actor_minus_capture_seconds": -0.3138926029205322
+          }
+        ]
+      }
+    },
+    "assumption": "Clock offset remains inside the measured endpoint envelope during the run; reject clock steps."
+  },
+  "first_packet_epoch": 1792082860.8315463,
+  "last_packet_epoch": 1792083460.8563805,
+  "observed_packet_span_seconds": 600.0248341560364,
+  "packets_by_peer": {
+    "10.37.225.60": {
+      "requests": 9642,
+      "responses": 9642
+    },
+    "10.37.225.20": {
+      "requests": 7831,
+      "responses": 7830
+    },
+    "10.37.225.73": {
+      "requests": 654,
+      "responses": 654
+    },
+    "10.37.225.67": {
+      "requests": 16641,
+      "responses": 16641
+    },
+    "10.37.225.4": {
+      "requests": 8516,
+      "responses": 8516
+    },
+    "10.37.225.230": {
+      "requests": 54248,
+      "responses": 54248
+    }
+  },
+  "packets_by_correlated_phase": {
+    "physical_benign": {
+      "requests": 43284,
+      "responses": 43283
+    },
+    "preflight": {
+      "requests": 33,
+      "responses": 33
+    },
+    "phase_001": {
+      "requests": 59,
+      "responses": 59
+    },
+    "phase_003": {
+      "requests": 1592,
+      "responses": 1592
+    },
+    "phase_005": {
+      "requests": 24,
+      "responses": 24
+    },
+    "phase_007": {
+      "requests": 3334,
+      "responses": 3334
+    },
+    "phase_009": {
+      "requests": 35,
+      "responses": 35
+    },
+    "phase_011": {
+      "requests": 1254,
+      "responses": 1254
+    },
+    "phase_013": {
+      "requests": 26,
+      "responses": 26
+    },
+    "phase_015": {
+      "requests": 514,
+      "responses": 514
+    },
+    "phase_017": {
+      "requests": 4,
+      "responses": 4
+    },
+    "phase_019": {
+      "requests": 4218,
+      "responses": 4218
+    },
+    "phase_021": {
+      "requests": 7,
+      "responses": 7
+    },
+    "phase_023": {
+      "requests": 482,
+      "responses": 482
+    },
+    "phase_025": {
+      "requests": 28,
+      "responses": 28
+    },
+    "phase_027": {
+      "requests": 1572,
+      "responses": 1572
+    },
+    "phase_029": {
+      "requests": 16,
+      "responses": 16
+    },
+    "phase_031": {
+      "requests": 5495,
+      "responses": 5495
+    },
+    "phase_033": {
+      "requests": 21,
+      "responses": 21
+    },
+    "phase_035": {
+      "requests": 206,
+      "responses": 206
+    },
+    "phase_037": {
+      "requests": 3,
+      "responses": 3
+    },
+    "phase_039": {
+      "requests": 4821,
+      "responses": 4821
+    },
+    "phase_041": {
+      "requests": 19,
+      "responses": 19
+    },
+    "phase_043": {
+      "requests": 1959,
+      "responses": 1959
+    },
+    "phase_045": {
+      "requests": 23,
+      "responses": 23
+    },
+    "phase_047": {
+      "requests": 293,
+      "responses": 293
+    },
+    "phase_049": {
+      "requests": 44,
+      "responses": 44
+    },
+    "phase_051": {
+      "requests": 3671,
+      "responses": 3671
+    },
+    "phase_053": {
+      "requests": 20,
+      "responses": 20
+    },
+    "phase_055": {
+      "requests": 5187,
+      "responses": 5187
+    },
+    "phase_057": {
+      "requests": 9,
+      "responses": 9
+    },
+    "phase_059": {
+      "requests": 1286,
+      "responses": 1286
+    },
+    "phase_061": {
+      "requests": 15,
+      "responses": 15
+    },
+    "phase_063": {
+      "requests": 3667,
+      "responses": 3667
+    },
+    "phase_065": {
+      "requests": 45,
+      "responses": 45
+    },
+    "phase_067": {
+      "requests": 5100,
+      "responses": 5100
+    },
+    "phase_069": {
+      "requests": 15,
+      "responses": 15
+    },
+    "phase_071": {
+      "requests": 1287,
+      "responses": 1287
+    },
+    "phase_073": {
+      "requests": 9,
+      "responses": 9
+    },
+    "phase_075": {
+      "requests": 2119,
+      "responses": 2119
+    },
+    "phase_077": {
+      "requests": 31,
+      "responses": 31
+    },
+    "phase_079": {
+      "requests": 1235,
+      "responses": 1235
+    },
+    "phase_081": {
+      "requests": 5,
+      "responses": 5
+    },
+    "phase_083": {
+      "requests": 2751,
+      "responses": 2751
+    },
+    "phase_085": {
+      "requests": 3,
+      "responses": 3
+    },
+    "phase_087": {
+      "requests": 212,
+      "responses": 212
+    },
+    "phase_089": {
+      "requests": 59,
+      "responses": 59
+    },
+    "phase_091": {
+      "requests": 705,
+      "responses": 705
+    },
+    "phase_093": {
+      "requests": 5,
+      "responses": 5
+    },
+    "phase_095": {
+      "requests": 680,
+      "responses": 680
+    },
+    "phase_097": {
+      "requests": 50,
+      "responses": 50
+    }
+  },
+  "windows": {
+    "0_5s": {
+      "kept": 3991,
+      "excluded": 124,
+      "classes": {
+        "benign": 3824,
+        "coap_block2_amplification_flood": 73,
+        "coap_request_flood": 94
+      },
+      "reasons": {
+        "phase_boundary_or_clock_uncertainty": 116,
+        "preflight_guard_or_unknown_packet_origin": 7,
+        "outside_complete_observation_interval": 1
+      }
+    },
+    "1_0s": {
+      "kept": 2695,
+      "excluded": 112,
+      "classes": {
+        "benign": 2618,
+        "coap_block2_amplification_flood": 32,
+        "coap_request_flood": 45
+      },
+      "reasons": {
+        "phase_boundary_or_clock_uncertainty": 107,
+        "preflight_guard_or_unknown_packet_origin": 4,
+        "outside_complete_observation_interval": 1
+      }
+    },
+    "2_0s": {
+      "kept": 1524,
+      "excluded": 104,
+      "classes": {
+        "benign": 1494,
+        "coap_block2_amplification_flood": 12,
+        "coap_request_flood": 18
+      },
+      "reasons": {
+        "phase_boundary_or_clock_uncertainty": 100,
+        "preflight_guard_or_unknown_packet_origin": 3,
+        "outside_complete_observation_interval": 1
+      }
+    }
+  },
+  "executed_attack_episodes": {
+    "block2_amplification": 6,
+    "request_flood": 6
+  },
+  "phase_summary": [
+    {
+      "phase_id": "phase_001",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 19.528422930757774,
+      "capture_start_epoch": 1792082875.228039,
+      "capture_end_epoch": 1792082894.7562308,
+      "target_rate_rps": 3,
+      "achieved_send_rate_rps": 3.021416712754565,
+      "accepted_by_udp": 59,
+      "valid_responses": 59,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 59,
+      "responses_seen_at_server": 59,
+      "valid_response_elapsed_ms_median": 101.11169099999825,
+      "valid_response_elapsed_ms_p95": 398.17868260000046
+    },
+    {
+      "phase_id": "phase_003",
+      "kind": "block2_amplification",
+      "label": "block2_amplification",
+      "message_type": "CON",
+      "scheduled_duration_s": 7.964126331004081,
+      "capture_start_epoch": 1792082898.7582278,
+      "capture_end_epoch": 1792082906.7203157,
+      "target_rate_rps": 200,
+      "achieved_send_rate_rps": 199.96982986519075,
+      "accepted_by_udp": 1592,
+      "valid_responses": 1592,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 1,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 1592,
+      "responses_seen_at_server": 1592,
+      "valid_response_elapsed_ms_median": 43.14746000000014,
+      "valid_response_elapsed_ms_p95": 157.55487835000346
+    },
+    {
+      "phase_id": "phase_005",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 4.691759714674262,
+      "capture_start_epoch": 1792082910.7196908,
+      "capture_end_epoch": 1792082915.411596,
+      "target_rate_rps": 5,
+      "achieved_send_rate_rps": 5.115637314308217,
+      "accepted_by_udp": 24,
+      "valid_responses": 24,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 24,
+      "responses_seen_at_server": 24,
+      "valid_response_elapsed_ms_median": 103.50690100000065,
+      "valid_response_elapsed_ms_p95": 480.92679439999625
+    },
+    {
+      "phase_id": "phase_007",
+      "kind": "benign_sensor_burst",
+      "label": "benign",
+      "message_type": "NON",
+      "scheduled_duration_s": 6.784441780328052,
+      "capture_start_epoch": 1792082919.4124935,
+      "capture_end_epoch": 1792082926.196372,
+      "target_rate_rps": 500,
+      "achieved_send_rate_rps": 491.51300885768836,
+      "accepted_by_udp": 3334,
+      "valid_responses": 3334,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 58,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 3334,
+      "responses_seen_at_server": 3334,
+      "valid_response_elapsed_ms_median": 50.96953000000212,
+      "valid_response_elapsed_ms_p95": 261.0283921499962
+    },
+    {
+      "phase_id": "phase_009",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 6.870863837791731,
+      "capture_start_epoch": 1792082930.1988976,
+      "capture_end_epoch": 1792082937.06956,
+      "target_rate_rps": 5,
+      "achieved_send_rate_rps": 5.096397345344022,
+      "accepted_by_udp": 35,
+      "valid_responses": 35,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 35,
+      "responses_seen_at_server": 35,
+      "valid_response_elapsed_ms_median": 241.52912899998773,
+      "valid_response_elapsed_ms_p95": 752.6128509000074
+    },
+    {
+      "phase_id": "phase_011",
+      "kind": "benign_block2_reads",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 6.269839455228066,
+      "capture_start_epoch": 1792082941.069712,
+      "capture_end_epoch": 1792082947.3367527,
+      "target_rate_rps": 200,
+      "achieved_send_rate_rps": 200.1078223821566,
+      "accepted_by_udp": 1254,
+      "valid_responses": 1253,
+      "timeouts": 1,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 1254,
+      "responses_seen_at_server": 1254,
+      "valid_response_elapsed_ms_median": 103.93541299999924,
+      "valid_response_elapsed_ms_p95": 263.24849499999834
+    },
+    {
+      "phase_id": "phase_013",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 8.403779315222792,
+      "capture_start_epoch": 1792082951.3387918,
+      "capture_end_epoch": 1792082959.744705,
+      "target_rate_rps": 3,
+      "achieved_send_rate_rps": 3.094751432939965,
+      "accepted_by_udp": 26,
+      "valid_responses": 26,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 26,
+      "responses_seen_at_server": 26,
+      "valid_response_elapsed_ms_median": 94.11972499999683,
+      "valid_response_elapsed_ms_p95": 438.31067299999995
+    },
+    {
+      "phase_id": "phase_015",
+      "kind": "benign_block2_download",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 9.26744256488746,
+      "capture_start_epoch": 1792082963.7421858,
+      "capture_end_epoch": 1792082973.0101836,
+      "target_rate_rps": 200,
+      "achieved_send_rate_rps": 55.47539053605294,
+      "accepted_by_udp": 514,
+      "valid_responses": 514,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 1340,
+      "requests_seen_at_server": 514,
+      "responses_seen_at_server": 514,
+      "valid_response_elapsed_ms_median": 19.167285000003176,
+      "valid_response_elapsed_ms_p95": 295.48531265000196
+    },
+    {
+      "phase_id": "phase_017",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 3.7484770657527946,
+      "capture_start_epoch": 1792082977.0090225,
+      "capture_end_epoch": 1792082980.759423,
+      "target_rate_rps": 1,
+      "achieved_send_rate_rps": 1.0675178363282134,
+      "accepted_by_udp": 4,
+      "valid_responses": 4,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 4,
+      "responses_seen_at_server": 4,
+      "valid_response_elapsed_ms_median": 61.919806500009145,
+      "valid_response_elapsed_ms_p95": 128.00756104999525
+    },
+    {
+      "phase_id": "phase_019",
+      "kind": "request_flood",
+      "label": "request_flood",
+      "message_type": "NON",
+      "scheduled_duration_s": 8.58021572578582,
+      "capture_start_epoch": 1792082984.7574518,
+      "capture_end_epoch": 1792082993.3367546,
+      "target_rate_rps": 500,
+      "achieved_send_rate_rps": 491.67736473266694,
+      "accepted_by_udp": 4218,
+      "valid_responses": 4218,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 72,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 4218,
+      "responses_seen_at_server": 4218,
+      "valid_response_elapsed_ms_median": 88.17038350000075,
+      "valid_response_elapsed_ms_p95": 259.9181862999976
+    },
+    {
+      "phase_id": "phase_021",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 6.581444664951832,
+      "capture_start_epoch": 1792082997.3378901,
+      "capture_end_epoch": 1792083003.9195757,
+      "target_rate_rps": 1,
+      "achieved_send_rate_rps": 1.0638616785830612,
+      "accepted_by_udp": 7,
+      "valid_responses": 7,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 7,
+      "responses_seen_at_server": 7,
+      "valid_response_elapsed_ms_median": 63.35749399999622,
+      "valid_response_elapsed_ms_p95": 154.22602060000062
+    },
+    {
+      "phase_id": "phase_023",
+      "kind": "benign_sensor_burst",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 6.0132406844059005,
+      "capture_start_epoch": 1792083007.9194064,
+      "capture_end_epoch": 1792083013.9355304,
+      "target_rate_rps": 80,
+      "achieved_send_rate_rps": 80.17929472361813,
+      "accepted_by_udp": 482,
+      "valid_responses": 482,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 482,
+      "responses_seen_at_server": 482,
+      "valid_response_elapsed_ms_median": 32.78856749998522,
+      "valid_response_elapsed_ms_p95": 263.6083655999972
+    },
+    {
+      "phase_id": "phase_025",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 5.595092525354403,
+      "capture_start_epoch": 1792083017.9322305,
+      "capture_end_epoch": 1792083023.530175,
+      "target_rate_rps": 5,
+      "achieved_send_rate_rps": 5.005545842719224,
+      "accepted_by_udp": 28,
+      "valid_responses": 28,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 28,
+      "responses_seen_at_server": 28,
+      "valid_response_elapsed_ms_median": 142.2760204999795,
+      "valid_response_elapsed_ms_p95": 286.18984480000506
+    },
+    {
+      "phase_id": "phase_027",
+      "kind": "request_flood",
+      "label": "request_flood",
+      "message_type": "CON",
+      "scheduled_duration_s": 8.730874839384342,
+      "capture_start_epoch": 1792083027.528944,
+      "capture_end_epoch": 1792083036.258321,
+      "target_rate_rps": 180,
+      "achieved_send_rate_rps": 180.1108828895688,
+      "accepted_by_udp": 1572,
+      "valid_responses": 1572,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 1572,
+      "responses_seen_at_server": 1572,
+      "valid_response_elapsed_ms_median": 46.43830499998876,
+      "valid_response_elapsed_ms_p95": 139.6735124499915
+    },
+    {
+      "phase_id": "phase_029",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 5.25531471392847,
+      "capture_start_epoch": 1792083040.2581909,
+      "capture_end_epoch": 1792083045.512873,
+      "target_rate_rps": 3,
+      "achieved_send_rate_rps": 3.0452844779935107,
+      "accepted_by_udp": 16,
+      "valid_responses": 16,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 16,
+      "responses_seen_at_server": 16,
+      "valid_response_elapsed_ms_median": 76.63394150001113,
+      "valid_response_elapsed_ms_p95": 233.67998125000304
+    },
+    {
+      "phase_id": "phase_031",
+      "kind": "request_flood",
+      "label": "request_flood",
+      "message_type": "NON",
+      "scheduled_duration_s": 9.082759071839973,
+      "capture_start_epoch": 1792083049.5122874,
+      "capture_end_epoch": 1792083058.5949762,
+      "target_rate_rps": 650,
+      "achieved_send_rate_rps": 604.9971524234641,
+      "accepted_by_udp": 5495,
+      "valid_responses": 5482,
+      "timeouts": 13,
+      "scheduler_skipped_slots": 408,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 5495,
+      "responses_seen_at_server": 5495,
+      "valid_response_elapsed_ms_median": 54.94009799999185,
+      "valid_response_elapsed_ms_p95": 142.99482369999896
+    },
+    {
+      "phase_id": "phase_033",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 10.412440205978925,
+      "capture_start_epoch": 1792083062.5999355,
+      "capture_end_epoch": 1792083073.0088758,
+      "target_rate_rps": 2,
+      "achieved_send_rate_rps": 2.0177796585055687,
+      "accepted_by_udp": 21,
+      "valid_responses": 21,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 21,
+      "responses_seen_at_server": 21,
+      "valid_response_elapsed_ms_median": 151.97477800000343,
+      "valid_response_elapsed_ms_p95": 605.1461580000177
+    },
+    {
+      "phase_id": "phase_035",
+      "kind": "benign_block2_download",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 6.228918248642003,
+      "capture_start_epoch": 1792083077.0083237,
+      "capture_end_epoch": 1792083083.2366598,
+      "target_rate_rps": 100,
+      "achieved_send_rate_rps": 33.076378776414586,
+      "accepted_by_udp": 206,
+      "valid_responses": 206,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 417,
+      "requests_seen_at_server": 206,
+      "responses_seen_at_server": 206,
+      "valid_response_elapsed_ms_median": 114.39059150000685,
+      "valid_response_elapsed_ms_p95": 294.4990604999912
+    },
+    {
+      "phase_id": "phase_037",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 1.437802461853721,
+      "capture_start_epoch": 1792083087.239075,
+      "capture_end_epoch": 1792083088.6749017,
+      "target_rate_rps": 2,
+      "achieved_send_rate_rps": 2.090503849341785,
+      "accepted_by_udp": 3,
+      "valid_responses": 3,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 3,
+      "responses_seen_at_server": 3,
+      "valid_response_elapsed_ms_median": 290.34977200001595,
+      "valid_response_elapsed_ms_p95": 482.9958294999902
+    },
+    {
+      "phase_id": "phase_039",
+      "kind": "request_flood",
+      "label": "request_flood",
+      "message_type": "CON",
+      "scheduled_duration_s": 9.742023309168871,
+      "capture_start_epoch": 1792083092.6792893,
+      "capture_end_epoch": 1792083102.4170902,
+      "target_rate_rps": 500,
+      "achieved_send_rate_rps": 495.128332937188,
+      "accepted_by_udp": 4821,
+      "valid_responses": 4821,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 50,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 4821,
+      "responses_seen_at_server": 4821,
+      "valid_response_elapsed_ms_median": 50.03312700000242,
+      "valid_response_elapsed_ms_p95": 164.82883900002344
+    },
+    {
+      "phase_id": "phase_041",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 6.276027508377496,
+      "capture_start_epoch": 1792083106.418768,
+      "capture_end_epoch": 1792083112.6964653,
+      "target_rate_rps": 3,
+      "achieved_send_rate_rps": 3.028651798467534,
+      "accepted_by_udp": 19,
+      "valid_responses": 19,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 19,
+      "responses_seen_at_server": 19,
+      "valid_response_elapsed_ms_median": 58.04123199998867,
+      "valid_response_elapsed_ms_p95": 342.7050984000088
+    },
+    {
+      "phase_id": "phase_043",
+      "kind": "benign_block2_reads",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 9.796336599683855,
+      "capture_start_epoch": 1792083116.6961944,
+      "capture_end_epoch": 1792083126.4891918,
+      "target_rate_rps": 200,
+      "achieved_send_rate_rps": 200.0545611569029,
+      "accepted_by_udp": 1959,
+      "valid_responses": 1959,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 1959,
+      "responses_seen_at_server": 1959,
+      "valid_response_elapsed_ms_median": 71.9602329999907,
+      "valid_response_elapsed_ms_p95": 257.4974042000045
+    },
+    {
+      "phase_id": "phase_045",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 4.569857776715395,
+      "capture_start_epoch": 1792083130.4917216,
+      "capture_end_epoch": 1792083135.0630302,
+      "target_rate_rps": 5,
+      "achieved_send_rate_rps": 5.036504571875148,
+      "accepted_by_udp": 23,
+      "valid_responses": 23,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 23,
+      "responses_seen_at_server": 23,
+      "valid_response_elapsed_ms_median": 94.4401609999477,
+      "valid_response_elapsed_ms_p95": 285.81697069999643
+    },
+    {
+      "phase_id": "phase_047",
+      "kind": "block2_amplification",
+      "label": "block2_amplification",
+      "message_type": "NON",
+      "scheduled_duration_s": 7.31288986915024,
+      "capture_start_epoch": 1792083139.0599418,
+      "capture_end_epoch": 1792083146.3749137,
+      "target_rate_rps": 40,
+      "achieved_send_rate_rps": 40.07479412987753,
+      "accepted_by_udp": 293,
+      "valid_responses": 293,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 293,
+      "responses_seen_at_server": 293,
+      "valid_response_elapsed_ms_median": 59.35918299999321,
+      "valid_response_elapsed_ms_p95": 136.32837960000614
+    },
+    {
+      "phase_id": "phase_049",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 8.694149918913809,
+      "capture_start_epoch": 1792083150.3737214,
+      "capture_end_epoch": 1792083159.0659099,
+      "target_rate_rps": 5,
+      "achieved_send_rate_rps": 5.062301242971285,
+      "accepted_by_udp": 44,
+      "valid_responses": 44,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 44,
+      "responses_seen_at_server": 44,
+      "valid_response_elapsed_ms_median": 123.04586149999523,
+      "valid_response_elapsed_ms_p95": 370.2453171500472
+    },
+    {
+      "phase_id": "phase_051",
+      "kind": "block2_amplification",
+      "label": "block2_amplification",
+      "message_type": "CON",
+      "scheduled_duration_s": 7.456571567628998,
+      "capture_start_epoch": 1792083163.0674214,
+      "capture_end_epoch": 1792083170.5221086,
+      "target_rate_rps": 500,
+      "achieved_send_rate_rps": 492.4495471481257,
+      "accepted_by_udp": 3671,
+      "valid_responses": 3671,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 57,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 3671,
+      "responses_seen_at_server": 3671,
+      "valid_response_elapsed_ms_median": 60.62111000000732,
+      "valid_response_elapsed_ms_p95": 246.79266950002057
+    },
+    {
+      "phase_id": "phase_053",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 3.8753660026094394,
+      "capture_start_epoch": 1792083174.5249047,
+      "capture_end_epoch": 1792083178.4015193,
+      "target_rate_rps": 5,
+      "achieved_send_rate_rps": 5.164684418356647,
+      "accepted_by_udp": 20,
+      "valid_responses": 20,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 20,
+      "responses_seen_at_server": 20,
+      "valid_response_elapsed_ms_median": 59.06867649999913,
+      "valid_response_elapsed_ms_p95": 121.3587644000073
+    },
+    {
+      "phase_id": "phase_055",
+      "kind": "request_flood",
+      "label": "request_flood",
+      "message_type": "CON",
+      "scheduled_duration_s": 8.579929555533454,
+      "capture_start_epoch": 1792083182.399721,
+      "capture_end_epoch": 1792083190.9772897,
+      "target_rate_rps": 650,
+      "achieved_send_rate_rps": 604.7169416906498,
+      "accepted_by_udp": 5187,
+      "valid_responses": 5187,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 389,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 5187,
+      "responses_seen_at_server": 5187,
+      "valid_response_elapsed_ms_median": 65.95756799995434,
+      "valid_response_elapsed_ms_p95": 201.99440130001165
+    },
+    {
+      "phase_id": "phase_057",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 4.416053068510735,
+      "capture_start_epoch": 1792083194.9820776,
+      "capture_end_epoch": 1792083199.397181,
+      "target_rate_rps": 2,
+      "achieved_send_rate_rps": 2.040231909982062,
+      "accepted_by_udp": 9,
+      "valid_responses": 9,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 9,
+      "responses_seen_at_server": 9,
+      "valid_response_elapsed_ms_median": 94.46501899999566,
+      "valid_response_elapsed_ms_p95": 334.9727365999831
+    },
+    {
+      "phase_id": "phase_059",
+      "kind": "benign_sensor_burst",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 7.143853722693166,
+      "capture_start_epoch": 1792083203.3978436,
+      "capture_end_epoch": 1792083210.5373797,
+      "target_rate_rps": 180,
+      "achieved_send_rate_rps": 180.12842058243007,
+      "accepted_by_udp": 1286,
+      "valid_responses": 1286,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 1286,
+      "responses_seen_at_server": 1286,
+      "valid_response_elapsed_ms_median": 56.552006000012625,
+      "valid_response_elapsed_ms_p95": 208.01444774999982
+    },
+    {
+      "phase_id": "phase_061",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 7.095644556733532,
+      "capture_start_epoch": 1792083214.541214,
+      "capture_end_epoch": 1792083221.6372797,
+      "target_rate_rps": 2,
+      "achieved_send_rate_rps": 2.115171071855434,
+      "accepted_by_udp": 15,
+      "valid_responses": 15,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 15,
+      "responses_seen_at_server": 15,
+      "valid_response_elapsed_ms_median": 113.9356099999859,
+      "valid_response_elapsed_ms_p95": 582.085392699961
+    },
+    {
+      "phase_id": "phase_063",
+      "kind": "request_flood",
+      "label": "request_flood",
+      "message_type": "CON",
+      "scheduled_duration_s": 7.381216819077963,
+      "capture_start_epoch": 1792083225.6341228,
+      "capture_end_epoch": 1792083233.0155408,
+      "target_rate_rps": 500,
+      "achieved_send_rate_rps": 496.88797187720763,
+      "accepted_by_udp": 3667,
+      "valid_responses": 3667,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 24,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 3667,
+      "responses_seen_at_server": 3667,
+      "valid_response_elapsed_ms_median": 60.85558300005505,
+      "valid_response_elapsed_ms_p95": 247.96902259999757
+    },
+    {
+      "phase_id": "phase_065",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 8.97409742362845,
+      "capture_start_epoch": 1792083237.017348,
+      "capture_end_epoch": 1792083245.9881833,
+      "target_rate_rps": 5,
+      "achieved_send_rate_rps": 5.016272135722996,
+      "accepted_by_udp": 45,
+      "valid_responses": 45,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 45,
+      "responses_seen_at_server": 45,
+      "valid_response_elapsed_ms_median": 78.56797299999744,
+      "valid_response_elapsed_ms_p95": 223.4665809999802
+    },
+    {
+      "phase_id": "phase_067",
+      "kind": "benign_sensor_burst",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 8.427373393496964,
+      "capture_start_epoch": 1792083249.9905782,
+      "capture_end_epoch": 1792083258.417334,
+      "target_rate_rps": 650,
+      "achieved_send_rate_rps": 605.3449499310846,
+      "accepted_by_udp": 5100,
+      "valid_responses": 5085,
+      "timeouts": 15,
+      "scheduler_skipped_slots": 378,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 5100,
+      "responses_seen_at_server": 5100,
+      "valid_response_elapsed_ms_median": 72.69125600002008,
+      "valid_response_elapsed_ms_p95": 239.547058199998
+    },
+    {
+      "phase_id": "phase_069",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 7.258162589178369,
+      "capture_start_epoch": 1792083262.4171388,
+      "capture_end_epoch": 1792083269.6741204,
+      "target_rate_rps": 2,
+      "achieved_send_rate_rps": 2.0670978443121917,
+      "accepted_by_udp": 15,
+      "valid_responses": 15,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 15,
+      "responses_seen_at_server": 15,
+      "valid_response_elapsed_ms_median": 168.12441899999976,
+      "valid_response_elapsed_ms_p95": 1010.3945462000265
+    },
+    {
+      "phase_id": "phase_071",
+      "kind": "block2_amplification",
+      "label": "block2_amplification",
+      "message_type": "CON",
+      "scheduled_duration_s": 6.433164975664113,
+      "capture_start_epoch": 1792083273.6781852,
+      "capture_end_epoch": 1792083280.1087313,
+      "target_rate_rps": 200,
+      "achieved_send_rate_rps": 200.1969622076895,
+      "accepted_by_udp": 1287,
+      "valid_responses": 1287,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 1287,
+      "responses_seen_at_server": 1287,
+      "valid_response_elapsed_ms_median": 93.07794200000353,
+      "valid_response_elapsed_ms_p95": 242.59411119999135
+    },
+    {
+      "phase_id": "phase_073",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 4.490140386015014,
+      "capture_start_epoch": 1792083284.1090555,
+      "capture_end_epoch": 1792083288.5987248,
+      "target_rate_rps": 2,
+      "achieved_send_rate_rps": 2.00537479691248,
+      "accepted_by_udp": 9,
+      "valid_responses": 9,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 9,
+      "responses_seen_at_server": 9,
+      "valid_response_elapsed_ms_median": 104.52824200002942,
+      "valid_response_elapsed_ms_p95": 352.531405199971
+    },
+    {
+      "phase_id": "phase_075",
+      "kind": "benign_sensor_burst",
+      "label": "benign",
+      "message_type": "NON",
+      "scheduled_duration_s": 6.070141317235539,
+      "capture_start_epoch": 1792083292.600698,
+      "capture_end_epoch": 1792083298.6687727,
+      "target_rate_rps": 350,
+      "achieved_send_rate_rps": 349.29888248868076,
+      "accepted_by_udp": 2119,
+      "valid_responses": 2119,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 6,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 2119,
+      "responses_seen_at_server": 2119,
+      "valid_response_elapsed_ms_median": 73.75207300001057,
+      "valid_response_elapsed_ms_p95": 158.14510829999344
+    },
+    {
+      "phase_id": "phase_077",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 10.263767398337563,
+      "capture_start_epoch": 1792083302.6718955,
+      "capture_end_epoch": 1792083312.9335823,
+      "target_rate_rps": 3,
+      "achieved_send_rate_rps": 3.0217346754421244,
+      "accepted_by_udp": 31,
+      "valid_responses": 31,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 31,
+      "responses_seen_at_server": 31,
+      "valid_response_elapsed_ms_median": 80.76548899995396,
+      "valid_response_elapsed_ms_p95": 158.61566549996496
+    },
+    {
+      "phase_id": "phase_079",
+      "kind": "benign_block2_reads",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 6.175225876795594,
+      "capture_start_epoch": 1792083316.930911,
+      "capture_end_epoch": 1792083323.106303,
+      "target_rate_rps": 200,
+      "achieved_send_rate_rps": 199.99293610970682,
+      "accepted_by_udp": 1235,
+      "valid_responses": 1228,
+      "timeouts": 7,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 1235,
+      "responses_seen_at_server": 1235,
+      "valid_response_elapsed_ms_median": 116.27219099999638,
+      "valid_response_elapsed_ms_p95": 270.5866050500306
+    },
+    {
+      "phase_id": "phase_081",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 6.126036060896922,
+      "capture_start_epoch": 1792083327.110284,
+      "capture_end_epoch": 1792083333.2361648,
+      "target_rate_rps": 1,
+      "achieved_send_rate_rps": 1.143439364153901,
+      "accepted_by_udp": 7,
+      "valid_responses": 3,
+      "timeouts": 4,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 5,
+      "responses_seen_at_server": 5,
+      "valid_response_elapsed_ms_median": 166.87305300001753,
+      "valid_response_elapsed_ms_p95": 960.8613411000114
+    },
+    {
+      "phase_id": "phase_083",
+      "kind": "benign_sensor_burst",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 9.050484288512962,
+      "capture_start_epoch": 1792083337.2329907,
+      "capture_end_epoch": 1792083346.2836542,
+      "target_rate_rps": 350,
+      "achieved_send_rate_rps": 348.74243088630243,
+      "accepted_by_udp": 3156,
+      "valid_responses": 2708,
+      "timeouts": 448,
+      "scheduler_skipped_slots": 12,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 2751,
+      "responses_seen_at_server": 2751,
+      "valid_response_elapsed_ms_median": 498.20121649999055,
+      "valid_response_elapsed_ms_p95": 2626.8847957500084
+    },
+    {
+      "phase_id": "phase_085",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 1.3923496455544182,
+      "capture_start_epoch": 1792083350.2833686,
+      "capture_end_epoch": 1792083351.677343,
+      "target_rate_rps": 2,
+      "achieved_send_rate_rps": 2.155744414607562,
+      "accepted_by_udp": 3,
+      "valid_responses": 3,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 3,
+      "responses_seen_at_server": 3,
+      "valid_response_elapsed_ms_median": 382.8899789999705,
+      "valid_response_elapsed_ms_p95": 554.1823764000379
+    },
+    {
+      "phase_id": "phase_087",
+      "kind": "block2_amplification",
+      "label": "block2_amplification",
+      "message_type": "NON",
+      "scheduled_duration_s": 6.120635688130278,
+      "capture_start_epoch": 1792083355.680181,
+      "capture_end_epoch": 1792083361.7982235,
+      "target_rate_rps": 40,
+      "achieved_send_rate_rps": 40.06243880865368,
+      "accepted_by_udp": 245,
+      "valid_responses": 200,
+      "timeouts": 45,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 212,
+      "responses_seen_at_server": 212,
+      "valid_response_elapsed_ms_median": 137.04699149998487,
+      "valid_response_elapsed_ms_p95": 1264.936290650014
+    },
+    {
+      "phase_id": "phase_089",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 11.987691508875741,
+      "capture_start_epoch": 1792083365.7957382,
+      "capture_end_epoch": 1792083377.783767,
+      "target_rate_rps": 5,
+      "achieved_send_rate_rps": 5.00517695162544,
+      "accepted_by_udp": 60,
+      "valid_responses": 59,
+      "timeouts": 1,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 59,
+      "responses_seen_at_server": 59,
+      "valid_response_elapsed_ms_median": 85.16146700002719,
+      "valid_response_elapsed_ms_p95": 265.1104385999613
+    },
+    {
+      "phase_id": "phase_091",
+      "kind": "block2_amplification",
+      "label": "block2_amplification",
+      "message_type": "CON",
+      "scheduled_duration_s": 7.046930700656958,
+      "capture_start_epoch": 1792083381.7865314,
+      "capture_end_epoch": 1792083388.8335545,
+      "target_rate_rps": 100,
+      "achieved_send_rate_rps": 100.0890760267046,
+      "accepted_by_udp": 705,
+      "valid_responses": 705,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 705,
+      "responses_seen_at_server": 705,
+      "valid_response_elapsed_ms_median": 73.5514559999574,
+      "valid_response_elapsed_ms_p95": 202.90574119997908
+    },
+    {
+      "phase_id": "phase_093",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 1.526961141916786,
+      "capture_start_epoch": 1792083392.8305202,
+      "capture_end_epoch": 1792083394.3587005,
+      "target_rate_rps": 3,
+      "achieved_send_rate_rps": 3.2750417119808803,
+      "accepted_by_udp": 5,
+      "valid_responses": 5,
+      "timeouts": 0,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 5,
+      "responses_seen_at_server": 5,
+      "valid_response_elapsed_ms_median": 121.68160400004126,
+      "valid_response_elapsed_ms_p95": 279.7742572000483
+    },
+    {
+      "phase_id": "phase_095",
+      "kind": "benign_block2_download",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 8.329220001323847,
+      "capture_start_epoch": 1792083398.3624403,
+      "capture_end_epoch": 1792083406.686834,
+      "target_rate_rps": 350,
+      "achieved_send_rate_rps": 81.69151435303682,
+      "accepted_by_udp": 680,
+      "valid_responses": 676,
+      "timeouts": 4,
+      "scheduler_skipped_slots": 1,
+      "capacity_skipped_slots": 2234,
+      "requests_seen_at_server": 680,
+      "responses_seen_at_server": 680,
+      "valid_response_elapsed_ms_median": 10.69212449999759,
+      "valid_response_elapsed_ms_p95": 134.14168399997288
+    },
+    {
+      "phase_id": "phase_097",
+      "kind": "baseline",
+      "label": "benign",
+      "message_type": "CON",
+      "scheduled_duration_s": 25.54044119121113,
+      "capture_start_epoch": 1792083410.6915858,
+      "capture_end_epoch": 1792083436.2301683,
+      "target_rate_rps": 2,
+      "achieved_send_rate_rps": 2.0363971864634256,
+      "accepted_by_udp": 52,
+      "valid_responses": 50,
+      "timeouts": 2,
+      "scheduler_skipped_slots": 0,
+      "capacity_skipped_slots": 0,
+      "requests_seen_at_server": 50,
+      "responses_seen_at_server": 50,
+      "valid_response_elapsed_ms_median": 134.66654149995884,
+      "valid_response_elapsed_ms_p95": 739.3900062000608
+    }
+  ],
+  "server_summary": {
+    "kind": "counters",
+    "epoch": 1792083464.276,
+    "rx": 103224,
+    "tx": 103224,
+    "rx_bytes": 1602153,
+    "tx_bytes": 41387175,
+    "malformed": 0,
+    "duplicates": 2,
+    "mid_collisions": 0,
+    "cache_evictions": 41421,
+    "send_errors": 0,
+    "sensor": 65320,
+    "large": 37902,
+    "errors": 0,
+    "dropped_log_entries": 0
+  },
+  "capture_drops": "consult tshark.stderr.txt; not assumed zero when unavailable",
+  "interpretation": "Scheduled workload classes; elapsed response times describe acquisition and do not establish a DoS effect or classifier performance."
+}

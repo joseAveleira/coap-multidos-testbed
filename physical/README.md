@@ -1,58 +1,42 @@
 # Physical CoAP dataset
 
-This extension contains seven verified acquisitions with **769,063 CoAP packets**. Four main captures last 600 seconds each (40 minutes), with five physical clients and a separate server and attack actor. The earlier three pilots remain identified separately. No new classifier results are claimed in this release.
+The main campaign contains **five ten-minute captures (50 minutes), 909,093 CoAP packets, 30 Block2 episodes and 30 request-flood episodes**. Four ESP32-S3 clients and one ESP32-C6 client generate legitimate traffic; the Windows server/capture host and Arch Linux actor are separate machines on the physical Wi-Fi network.
 
-## Download the data
+## Download the main campaign
 
-Clone this repository or download the archive for tag `v1.1.0`. Paths below are relative to `physical/`.
+[Download the three clean CSVs with instructions and SHA-256 hashes](recursos/dataset_fisico/coap_fisico_30_csv.zip). These files contain exactly the five main captures; the pilots are excluded from this package.
 
 | Window | Clean CSV | Rows | Benign | Block2 | Request flood |
 |---|---|---:|---:|---:|---:|
-| 0.5 s | [CSV](recursos/dataset_fisico/dataset_v2/0_5s/dataset_clean_multiclass.csv) | 18,249 | 17,495 | 389 | 365 |
-| 1 s | [CSV](recursos/dataset_fisico/dataset_v2/1_0s/dataset_clean_multiclass.csv) | 12,684 | 12,332 | 184 | 168 |
-| 2 s | [CSV](recursos/dataset_fisico/dataset_v2/2_0s/dataset_clean_multiclass.csv) | 7,228 | 7,076 | 79 | 73 |
+| 0_5s | [CSV](recursos/dataset_fisico/campana_30_csv/0_5s/dataset_clean_multiclass.csv) | 20,032 | 19,173 | 420 | 439 |
+| 1_0s | [CSV](recursos/dataset_fisico/campana_30_csv/1_0s/dataset_clean_multiclass.csv) | 13,628 | 13,229 | 195 | 204 |
+| 2_0s | [CSV](recursos/dataset_fisico/campana_30_csv/2_0s/dataset_clean_multiclass.csv) | 7,685 | 7,517 | 81 | 87 |
 
-Each clean CSV contains 23 numeric predictors, `meta_session` and `target`. Target codes are 0 (benign), 1 (Block2 amplification), and 2 (request flood). Use `meta_session` for grouping; it is not a predictor. The accompanying 60-column tables preserve audit metadata. Windows at different resolutions are alternative aggregations of the same packets, not independent observations.
+Each CSV has 23 numeric predictors, `meta_session` and `target` (0 benign, 1 Block2, 2 request flood). Session identifies the complete capture and is not a predictor. The three resolutions aggregate the same packets. Episode counts, packet counts and CSV row counts describe different units.
 
-The four five-board sessions contain **24 episodes of each attack**, six per type per session. Their one-second tables contain 10,611 benign, 163 Block2 and 159 request-flood windows. The older attack pilot adds one episode of each type; it accounts for the different combined class totals above.
+## Complete archive and previous versions
 
-## Acquisition and labels
+The [combined export](recursos/dataset_fisico/dataset_v3/) also retains the three earlier pilots: **eight acquisitions, 964,126 packets**. The attack pilot contributes one episode per type, so this complete archive has 31 per type; use the main-campaign package above for 30 per type. Earlier `dataset_v1/` and `dataset_v2/` exports and every original capture remain unchanged. The earlier combined CSV bytes are an exact prefix of `dataset_v3`.
 
-Four ESP32-S3 boards run Arduino clients; one ESP32-C6 runs MicroPython 1.29.0. All five generate legitimate requests. A Windows PC runs the CoAP server and TShark on its physical Wi-Fi interface; a separate Arch Linux PC generates scheduled attacks and benign workloads. The server provides `/sensor` and a 32-KiB `/large` resource in 1-KiB Block2 responses. All devices communicate through a 2.4-GHz Wi-Fi access point.
+Tag `v1.0.0` preserves the simulated dataset; `v1.1.0` preserves the first physical release; `v1.2.0` adds one main capture and the explicit five-capture exports. No new classifier results are claimed.
 
-Raw captures are restricted to CoAP traffic at the server. Logged requests and responses identify actor phases, with measured clock uncertainty applied before labelling complete windows. Preflight, guard, mixed-boundary, unmatched and incomplete windows are excluded with reasons. Traffic from the five boards remains benign during attack phases.
+## Evidence and reconstruction
 
-## Files and provenance
+- [Main-campaign manifest](recursos/dataset_fisico/campana_30_manifest.json): five captures.
+- [Complete manifest](recursos/dataset_fisico/sesiones_v3_manifest.json): eight acquisitions.
+- [Session parameters](recursos/dataset_fisico/resumen_configuracion_30.csv) and [episode records](recursos/dataset_fisico/episodios_campana_30.csv).
+- [Verified summary](recursos/dataset_fisico/resumen_verificado_v3.json) and [client coverage](recursos/dataset_fisico/cobertura_clientes_50min.json).
+- [Acquisition documentation](recursos/dataset_fisico/README.md), [raw captures and logs](test/capturas/), and [reproduction code](scripts_esp32/).
+- [FILES.json](FILES.json): file sizes and SHA-256 hashes. Run `python verify_release.py` from this directory to verify the download.
 
-- [Seven-session manifest](recursos/dataset_fisico/sesiones_v2_manifest.json): capture paths and observed endpoints.
-- [Main-campaign manifest](recursos/dataset_fisico/campana_5_manifest.json): only the four five-board sessions.
-- [Raw captures](test/capturas/): original PCAPNGs, chronological copies, actor/server logs and clock records.
-- [Dataset tables](recursos/dataset_fisico/dataset_v2/): complete and clean CSVs, exclusions, packet fields and build hashes.
-- [Session parameters](recursos/dataset_fisico/resumen_configuracion_5.csv): seeds, attack rates, duration ranges, message types, block orders and token policies.
-- [Episode records](recursos/dataset_fisico/episodios_campana_5.csv): actual timing, achieved rates, requests/responses and timeouts.
-- [Coverage audit](recursos/dataset_fisico/cobertura_clientes_40min.json): client presence in each complete 10-second interval.
-- [Verified summary](recursos/dataset_fisico/resumen_verificado_v2.json): acquisition, class and ordering counts.
-- [Extractor](scripts_esp32/dataset/), [actor](scripts_esp32/actor/), [server](scripts_esp32/servidor/) and [client sources](scripts_esp32/firmware/).
-- [Recorded plans](test/planes/) and [C6 installation evidence](test/c6_micropython_20261015/).
-- [FILES.json](FILES.json): SHA-256 and size of every copied evidence/source file.
+The server exposes `/sensor` and `/large` (32 KiB in 1-KiB Block2 responses). The four S3 clients use Arduino and the C6 uses MicroPython 1.29.0. Actor logs and packet correlation determine phase labels, with measured clock uncertainty. Board traffic stays benign; guard, preflight, mixed-boundary, unmatched and incomplete windows are excluded and recorded. Original packets and timestamps are preserved in chronological copies.
 
-The attempted fourth main acquisition that failed during preflight is preserved for provenance and excluded from every CSV; `04_retry1` is the valid replacement. Original bytes are retained, including recorded local paths and lab network identifiers. These document the acquisition host; the reconstruction manifests use relative paths.
+The attempted fourth capture that failed during preflight and the initial fifth attempt stopped by the clock precheck remain recorded and excluded. Their valid replacements are `04_retry1` and `05_retry1`. The fifth attempt was repeated using the original Python 3.13.5 runtime without changing the clock guards.
 
-## Verify the download
-
-From `physical/`, run `python verify_release.py`. This checks all published evidence hashes, seven capture paths, and class counts and finite predictors at every resolution.
-
-## Reconstruct the CSVs
-
-Use Python 3.13 and TShark 4.6.4 (or verify compatibility before changing versions). From `physical/`:
+With Python 3.13, the dependencies in `scripts_esp32/dataset/requirements.txt`, and TShark 4.6.4, run from `physical/`:
 
 ```powershell
-python -m pip install -r scripts_esp32/dataset/requirements.txt
-python scripts_esp32/dataset/extract.py --manifest recursos/dataset_fisico/sesiones_v2_manifest.json --output rebuilt
+python scripts_esp32/dataset/extract.py --manifest recursos/dataset_fisico/campana_30_manifest.json --output rebuilt_main
 ```
 
-The output directory must not already exist. Use `campana_5_manifest.json` to rebuild only the main campaign. The original aggregation and feature-selection functions are vendored from `v1.0.0`; the adapter supplies physical capture fields and external phase labels. The published `.sqlite` and packet-field files are intermediate audit products, not extra training observations.
-
-## Versions and citation
-
-`v1.0.0` identifies the unchanged simulated collection. `v1.1.0` adds this physical supplement; the folder name `dataset_v2` refers to the internal export that combines three pilots and four main sessions. They are different version namespaces. Use the repository tag and [CITATION.cff](../CITATION.cff) when citing this release. Data/documentation use CC BY 4.0 and code uses MIT, as in the original release.
+Use `sesiones_v3_manifest.json` for the complete collection and a new output directory. The 23 feature definitions and target codes are unchanged from the simulated dataset. See [CITATION.cff](../CITATION.cff) for citation; data/documentation use CC BY 4.0 and code uses MIT.

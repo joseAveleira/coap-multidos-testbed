@@ -1,13 +1,13 @@
 # Campaña física: captura Windows y actor Arch por SSH
 
-Estado del 15-10-2026: campaña de cinco placas completada, con cuatro PCAP
-principales de 600 s y 714030 paquetes CoAP. Las cuatro
-sesiones incluyen seis episodios de cada ataque, con actor Arch separado y
-las cinco identidades verificadas. Exportaciones a 0,5/1/2 s y auditorías en
-`recursos/dataset_fisico/`. La C6 ejecuta MicroPython 1.29.0; las S3, Arduino.
-El despliegue usa Node.js 26.10.0 ya instalado en Arch. Las pruebas previas
-siguen conservadas en `test/arch_preparacion_20261014/` y el piloto anterior en
-`test/capturas/fisica_4_actor_piloto_20261014_03/`.
+Estado del 15-10-2026: ampliación completada a cinco capturas principales
+de 600 s, 909093 paquetes CoAP y 30 episodios de cada ataque.
+Las cuatro capturas anteriores se conservan; se añadió una quinta con el mismo
+protocolo y semilla 2026101405. Las exportaciones específicas de la campaña están
+en `recursos/dataset_fisico/campana_30_csv/`; `dataset_v3/` incluye los tres pilotos.
+La C6 utiliza MicroPython 1.29.0, las S3 Arduino y Arch Node.js 26.10.0.
+Usar Python 3.13 para el controlador: la precisión del reloj es parte de las
+guardas de adquisición. El intento con Python 3.12 se detuvo antes de los ataques.
 
 El banco tiene cuatro ESP32-S3, un ESP32-C6, el PC servidor/capturador
 y un PC Arch actor. El actor dirige los dos tipos de carga del artículo al

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "sessions": [
+    {
+      "session": "fisica_5_20261015_05_retry1",
+      "pcap": "traffic_chronological.pcapng",
+      "server_ip": "10.37.225.138",
+      "benign_ips": [
+        "10.37.225.73",
+        "10.37.225.67",
+        "10.37.225.60",
+        "10.37.225.4",
+        "10.37.225.20"
+      ],
+      "actor": {
+        "ip": "10.37.225.230",
+        "directory": "actor",
+        "clock_file": "clock.json"
+      },
+      "purpose": "physical_network_campaign",
+      "timestamp_ordering": {
+        "method": "reordercap; timestamp sort only, no timestamp adjustment",
+        "command": [
+          "reordercap",
+          "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_ampliacion_30_20261015\\fisica_5_20261015_05_retry1\\traffic.pcapng",
+          "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_ampliacion_30_20261015\\fisica_5_20261015_05_retry1\\traffic_chronological.pcapng"
+        ],
+        "diagnostic": "195063 frames, 205 out of order\n",
+        "original_file": "traffic.pcapng",
+        "original_sha256": "841308598e6b21663e83a1b6b87bf37c26c0c8730a1ef4eb0e6201a5260ad01f",
+        "ordered_sha256": "a5939cc5c9d3b97ef75621ed2511bc9794469b19d2a7fa72cf72cc90197d6c18",
+        "before": {
+          "packets": 195063,
+          "timestamp_tick_seconds": 1e-09,
+          "adjacent_timestamp_backsteps": 205,
+          "maximum_backstep_seconds": 0.0030365,
+          "packet_timestamp_multiset_sha256": "a6558194cdb61c200b7b32f5eea05669da91dc7829ef568366b6bca7c8cc93bb"
+        },
+        "after": {
+          "packets": 195063,
+          "timestamp_tick_seconds": 1e-09,
+          "adjacent_timestamp_backsteps": 0,
+          "maximum_backstep_seconds": 0,
+          "packet_timestamp_multiset_sha256": "a6558194cdb61c200b7b32f5eea05669da91dc7829ef568366b6bca7c8cc93bb"
+        }
+      }
+    }
+  ]
+}

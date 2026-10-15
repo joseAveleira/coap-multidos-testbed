@@ -1,0 +1,13 @@
+{
+  "recursos/dataset_fisico/sesiones_v2_manifest.json": "f7ed50a188a47a0e7d09d8e12d4868124c3d76cd2a73ca872e55d80b9480a8cd",
+  "recursos/dataset_fisico/campana_5_manifest.json": "59944d4ec1ed9e951b4fe9c909d0ead6c16b406f6546ca17e81ee67b8778c093",
+  "recursos/dataset_fisico/dataset_v2/0_5s/dataset_clean_multiclass.csv": "0b62da0787ee4c3625048f966576e483381707a2d690753c2514bb23d4d96c97",
+  "recursos/dataset_fisico/dataset_v2/0_5s/dataset_complete_tracking.csv": "7e045cd827d78d15814240f6829fae4cc2f32bae90aac7208ab9a7fcb26e5b90",
+  "recursos/dataset_fisico/dataset_v2/0_5s/excluded_windows.csv": "8c32433e69df30cffa01bf169dc0105a7f2f0220faafab0e1118a5601e9710f0",
+  "recursos/dataset_fisico/dataset_v2/1_0s/dataset_clean_multiclass.csv": "701efbe1627e24da8c99914e0622a0fafb3e1be88955edcd883267415f630a5d",
+  "recursos/dataset_fisico/dataset_v2/1_0s/dataset_complete_tracking.csv": "4471dfa9a2f34df17e69499a58d7a91d9bb15421ad3012af8603fb97cb80b26a",
+  "recursos/dataset_fisico/dataset_v2/1_0s/excluded_windows.csv": "3ef2a6f7ee368b603932e29f096b9819873adfa898adcc52b1f53822a80482b8",
+  "recursos/dataset_fisico/dataset_v2/2_0s/dataset_clean_multiclass.csv": "9ef99e79ca917c4738202300787647eded368aa1973f89358e99fc489b6d5271",
+  "recursos/dataset_fisico/dataset_v2/2_0s/dataset_complete_tracking.csv": "a4242cea3c5178b52ea35422eeeb5d6f1cfc48ca95ed8a8b0d8875dcd5694243",
+  "recursos/dataset_fisico/dataset_v2/2_0s/excluded_windows.csv": "b96aae32341c25816c212b687a6b8ea86d3515ce4bbe6a08919b446a7fc3f049"
+}

@@ -1,0 +1,63 @@
+{
+  "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+  "measurement": {
+    "best": {
+      "capture_before": 1792082769.461188,
+      "actor_time": 1792082769.023318,
+      "capture_after": 1792082769.5324578,
+      "round_trip_seconds": 0.07126975059509277,
+      "actor_minus_capture_seconds": -0.47350478172302246
+    },
+    "samples": [
+      {
+        "capture_before": 1792082768.4479787,
+        "actor_time": 1792082768.0102396,
+        "capture_after": 1792082768.5975933,
+        "round_trip_seconds": 0.14961457252502441,
+        "actor_minus_capture_seconds": -0.5125465393066406
+      },
+      {
+        "capture_before": 1792082768.5976076,
+        "actor_time": 1792082768.1979575,
+        "capture_after": 1792082768.7484682,
+        "round_trip_seconds": 0.15086054801940918,
+        "actor_minus_capture_seconds": -0.4750804901123047
+      },
+      {
+        "capture_before": 1792082768.7484918,
+        "actor_time": 1792082768.460989,
+        "capture_after": 1792082768.972748,
+        "round_trip_seconds": 0.22425627708435059,
+        "actor_minus_capture_seconds": -0.3996310234069824
+      },
+      {
+        "capture_before": 1792082768.9727578,
+        "actor_time": 1792082768.6314075,
+        "capture_after": 1792082769.1455572,
+        "round_trip_seconds": 0.17279934883117676,
+        "actor_minus_capture_seconds": -0.4277498722076416
+      },
+      {
+        "capture_before": 1792082769.1455712,
+        "actor_time": 1792082768.7941284,
+        "capture_after": 1792082769.3043385,
+        "round_trip_seconds": 0.1587672233581543,
+        "actor_minus_capture_seconds": -0.43082642555236816
+      },
+      {
+        "capture_before": 1792082769.3043494,
+        "actor_time": 1792082768.947911,
+        "capture_after": 1792082769.4611795,
+        "round_trip_seconds": 0.1568300724029541,
+        "actor_minus_capture_seconds": -0.43485331535339355
+      },
+      {
+        "capture_before": 1792082769.461188,
+        "actor_time": 1792082769.023318,
+        "capture_after": 1792082769.5324578,
+        "round_trip_seconds": 0.07126975059509277,
+        "actor_minus_capture_seconds": -0.47350478172302246
+      }
+    ]
+  }
+}

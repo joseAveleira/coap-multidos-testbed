@@ -1,154 +1,95 @@
-# Dataset físico CoAP: siete adquisiciones verificadas
+# Dataset físico CoAP: 30 episodios de cada ataque
 
-`dataset_v2/` reúne **769063 paquetes CoAP** de siete
-adquisiciones, con los mismos 23 predictores del dataset simulado. La campaña
-del 15-10-2026 aporta cuatro capturas principales de 600 s (**40 minutos**),
-714030 paquetes, cuatro ESP32-S3, una ESP32-C6 y el actor Arch.
-Se ejecutaron **24 episodios Block2 y 24 request flood** en esta nueva campaña;
-el piloto previo aporta además un episodio de cada tipo. Las cinco placas son
-clientes legítimos durante toda la campaña.
+La campaña principal reúne **cinco capturas de diez minutos (50 minutos)**,
+**30 episodios Block2 y 30 request flood**, con cuatro ESP32-S3 y una ESP32-C6
+generando tráfico legítimo. Servidor y captura Windows, actor Arch y clientes
+se comunican por Wi-Fi física. Se mantienen los 23 predictores y las etiquetas.
 
-El servidor y TShark están en Windows (`10.37.225.138`); el actor está en un PC
-Arch separado (`10.37.225.230`). Todos se comunican por Aveleira, 2,4 GHz.
-Las S3 utilizan Arduino y la C6 utiliza MicroPython 1.29.0 con el cliente CoAP
-05. La ficha de cada captura contiene las MAC/IP observadas y los hashes del
-cliente C6; su instalación y consola están en `test/c6_micropython_20261015/`.
+## CSV para trabajar con los 30 episodios por tipo
 
-| Sesión | Placas | Paquetes CoAP | Ventanas 0,5 s | Ventanas 1 s | Ventanas 2 s |
-|---|---:|---:|---:|---:|---:|
-| piloto_esp32_20261013_01 | 1 | 380 | 189 | 164 | 82 |
-| piloto_banco4_20261014_01 | 4 | 2520 | 904 | 803 | 525 |
-| fisica_4_actor_piloto_20261014_03 | 4 | 52133 | 1115 | 784 | 460 |
-| fisica_5_20261015_01 | 5 | 199675 | 3967 | 2712 | 1528 |
-| fisica_5_20261015_02 | 5 | 182403 | 4027 | 2747 | 1539 |
-| fisica_5_20261015_03 | 5 | 166427 | 3967 | 2707 | 1541 |
-| fisica_5_20261015_04_retry1 | 5 | 165525 | 4080 | 2767 | 1553 |
-| Total | | **769063** | **18249** | **12684** | **7228** |
+- [ZIP de CSV limpios](coap_fisico_30_csv.zip): tres resoluciones, LEEME y hashes.
+- [Tablas de la campaña](campana_30_csv/): cinco capturas, sin los pilotos.
+- [Manifiesto de las cinco capturas](campana_30_manifest.json).
 
-| Resolución | Benigno (0) | Block2 (1) | Request flood (2) |
-|---|---:|---:|---:|
-| 0,5 s | 17495 | 389 | 365 |
-| 1 s | 12332 | 184 | 168 |
-| 2 s | 7076 | 79 | 73 |
+| Resolución | Filas | Benigno | Block2 | Request flood |
+|---|---:|---:|---:|---:|
+| 0_5s | 20032 | 19173 | 420 | 439 |
+| 1_0s | 13628 | 13229 | 195 | 204 |
+| 2_0s | 7685 | 7517 | 81 | 87 |
 
-Las filas son ventanas activas por par IPv4 bidireccional. Los 60 s de inventario
-anteriores a cada captura principal están conservados por separado y no forman
-parte del CSV. Cada plan del actor dura 565 s; los 600 s de captura incluyen
-precomprobación y márgenes. Las mediciones de reloj y las transferencias de los
-registros también prolongan el tiempo de operación, sin añadir sesiones al corpus.
+Cada tabla limpia tiene 25 columnas: `meta_session`, 23 predictores y `target`.
+El identificador representa la captura completa; cada captura incluye seis
+episodios de cada ataque. Un episodio no equivale a una fila del CSV. Las tres
+resoluciones agregan los mismos paquetes. Se conservan también las tablas de
+auditoría de 60 columnas y las ventanas excluidas con su motivo.
 
-## Evidencia y reproducción de la versión ampliada
+## Ampliación y conservación de los datos anteriores
 
-- `sesiones_v2_manifest.json`: las siete fuentes del conjunto ampliado.
-- `campana_5_manifest.json`: solo las cuatro sesiones con cinco placas.
-- `dataset_v2/`: CSV limpios de 25 columnas (23 predictores, sesión y clase),
-  tablas de auditoría de 60 columnas, exclusiones, campos por paquete y hashes.
-- `fisica_5_20261015_01/`, `02/`, `03/` y `04_retry1/` (mismo prefijo): exportaciones individuales,
-  `acquisition_audit.json` y `phase_summary.csv` por sesión.
-- `resumen_configuracion_5.csv`: semillas, tasas, duraciones reales, tipos de
-  mensaje, orden de bloques y políticas de token por sesión.
-- `episodios_campana_5.csv`: tiempos de inicio/fin, tasas objetivo/efectivas,
-  envíos, paquetes observados, respuestas y timeouts por episodio.
-- `resumen_sesiones_v2.csv` y `resumen_verificado_v2.json`: recuentos comprobados.
-- `cobertura_clientes_40min.csv` y `.json`: presencia de cada placa durante
-  cada sesión, tiempos extremos y mayor intervalo entre peticiones.
-- `test/capturas/fisica_5_40min_20261015/`: PCAP originales, copias cronológicas,
-  inventarios, planes, actor, servidor y mediciones de reloj.
+Se añadió `fisica_5_20261015_05_retry1` con 195063 paquetes
+CoAP y seis episodios de cada ataque. Las cuatro capturas anteriores permanecen
+intactas. El total principal es **909093 paquetes**.
 
-```powershell
-python scripts_esp32/dataset/extract.py --manifest recursos/dataset_fisico/sesiones_v2_manifest.json --output .local/dataset_v2_reconstruido
-```
+`dataset_v3/` combina las cinco capturas principales y los tres pilotos:
+**ocho adquisiciones, 964126 paquetes**. El piloto con actor
+añade un episodio de cada tipo; por eso esta colección completa contiene 31
+por tipo, mientras `campana_30_csv/` contiene exactamente la campaña de 30.
+Los CSV de `dataset_v2/` son un prefijo idéntico byte a byte de los de `dataset_v3/`.
+`dataset_v1/`, `dataset_v2/`, sus manifiestos y sus capturas se conservan.
 
-El destino debe ser nuevo. Para reconstruir solo la campaña de cinco placas,
-usar `campana_5_manifest.json` con otro destino. La ordenación preservó los bytes
-y timestamps originales mediante comprobación del multiconjunto de paquetes.
-Los actores terminaron sin pérdidas de registros. El etiquetado correlaciona
-peticiones y respuestas con sus fases y aplica el margen de incertidumbre de
-reloj; no clasifica como ataque el tráfico legítimo de las placas.
+| Captura | Paquetes CoAP | Filas 0,5 s | Filas 1 s | Filas 2 s |
+|---|---:|---:|---:|---:|
+| piloto_esp32_20261013_01 | 380 | 189 | 164 | 82 |
+| piloto_banco4_20261014_01 | 2520 | 904 | 803 | 525 |
+| fisica_4_actor_piloto_20261014_03 | 52133 | 1115 | 784 | 460 |
+| fisica_5_20261015_01 | 199675 | 3967 | 2712 | 1528 |
+| fisica_5_20261015_02 | 182403 | 4027 | 2747 | 1539 |
+| fisica_5_20261015_03 | 166427 | 3967 | 2707 | 1541 |
+| fisica_5_20261015_04_retry1 | 165525 | 4080 | 2767 | 1553 |
+| fisica_5_20261015_05_retry1 | 195063 | 3991 | 2695 | 1524 |
 
-La ejecución conjunta está en `campaign_completed.json`. Conserva las tres
-primeras sesiones y la repetición de la cuarta. El intento `fisica_5_20261015_04`
-falló por timeout en la comprobación previa, antes de empezar ataques; queda
-guardado como fallido y fuera de todos los CSV. `campaign_execution.json`
-conserva el estado original de esa interrupción.
+## Evidencia
 
-Las tres resoluciones permiten comparar la agregación del mismo tráfico.
-No se entrenaron modelos ni se modificaron los experimentos del artículo.
+- `test/capturas/fisica_5_40min_20261015/`: cuatro capturas previas.
+- `test/capturas/fisica_5_ampliacion_30_20261015/`: captura adicional e intento previo.
+- `sesiones_v3_manifest.json`: ocho adquisiciones y rutas relativas.
+- `resumen_verificado_v3.json` y `verificacion_v3.json`: conteos e integridad.
+- `resumen_configuracion_30.csv` y `episodios_campana_30.csv`: parámetros y episodios.
+- `cobertura_clientes_50min.json` y `.csv`: presencia de las cinco placas.
+- `campana_30_csv/build_manifest.json`: selección exacta por identificador de captura.
+- `test/ampliacion_30_20261015/`: red, reloj y conservación de la versión anterior.
 
-Las cinco placas aparecen en todos los intervalos completos de 10 s de cada
-sesión. El mayor intervalo entre peticiones de una misma placa es 5,07 s.
-Estos intervalos solo comprueban cobertura, no sustituyen las ventanas de
-variables. El informe también conserva el último intervalo parcial: en una
-sesión dura solo unos 17 ms y no contiene tráfico de todas las placas.
+Presencia de todos los clientes en cada intervalo completo de 10 s:
+**True**; mayor intervalo
+observado entre peticiones de una placa: **9.92 s**.
+Estas medidas describen cobertura, no rendimiento de clasificadores.
 
-```powershell
-python scripts_esp32/dataset/client_coverage.py --campaign test/capturas/fisica_5_40min_20261015/campaign_completed.json --exports recursos/dataset_fisico --output .local/cobertura_reconstruida
-```
+El intento inicial de la quinta captura se detuvo en la comprobación del reloj,
+antes de iniciar ataques. Usaba Python 3.12 con una resolución temporal más
+gruesa que el umbral del controlador. La repetición con Python 3.13.5, igual que
+en la campaña anterior, superó las comprobaciones sin desactivar ninguna guarda.
+Ambos intentos quedan conservados; solo la repetición válida entra en los CSV.
 
-## Versión anterior conservada: tres pilotos
+Los registros de los cinco actores finalizaron sin pérdidas. Las etiquetas se
+obtienen de los eventos externos y su correlación con paquetes, descontando
+la incertidumbre medida entre relojes. El tráfico de las placas sigue siendo
+benigno durante los ataques. Se conservan PCAP originales y copias cronológicas,
+verificando los bytes y timestamps de cada paquete.
 
-`dataset_v1/` contiene tres adquisiciones físicas, **55033 paquetes CoAP** y los
-mismos 23 predictores del dataset simulado. La tercera captura incluye los dos
-ataques ejecutados desde Arch y tráfico legítimo de cuatro ESP32-S3. Los PCAP
-se tomaron en la interfaz Wi-Fi física del servidor Windows, en Aveleira.
+## Reproducción
 
-| Sesión | Clientes físicos | Captura asignada | Paquetes CoAP | Ventanas 0,5 s | Ventanas 1 s | Ventanas 2 s |
-|---|---:|---:|---:|---:|---:|---:|
-| piloto_esp32_20261013_01 | 1 S3 | 180 s | 380 | 189 | 164 | 82 |
-| piloto_banco4_20261014_01 | 4 S3 | 300 s | 2520 | 904 | 803 | 525 |
-| fisica_4_actor_piloto_20261014_03 | 4 S3 + actor Arch | 215 s | 52133 | 1115 | 784 | 460 |
-| Total | | 695 s | **55033** | **2208** | **1751** | **1067** |
-
-Las duraciones son las asignadas al capturador. El plan del actor dura 180 s;
-su precomprobación, espera inicial y cierre caben dentro de los 215 s de captura.
-Las dos primeras adquisiciones tienen límites START/STOP adicionales registrados
-en el manifiesto. Las filas son ventanas activas por par IPv4 bidireccional,
-por lo que varios clientes pueden aportar una observación en el mismo intervalo.
-
-| Resolución | Benigno (0) | Block2 (1) | Request flood (2) |
-|---|---:|---:|---:|
-| 0,5 s | 2146 | 42 | 20 |
-| 1 s | 1721 | 21 | 9 |
-| 2 s | 1053 | 10 | 4 |
-
-## Ataques ejecutados y trazabilidad
-
-El actor está desplegado en `jose@10.37.225.230`, con Node.js 26.10.0. Los ataques
-se dirigen al servidor `10.37.225.138:5683`; las placas siguen siendo benignas.
-El episodio Block2 duró 22,21 s y el request flood 10,73 s. Sus objetivos fueron
-100/500 peticiones por segundo y sus tasas efectivas de envío 100,03/496,99.
-El servidor capturó 2221/5334 peticiones, respectivamente. También se ejecutaron
-ráfagas benignas y descargas completas desde el mismo actor.
-
-`fisica_4_actor_piloto_20261014_03/acquisition_audit.json` y `phase_summary.csv`
-contienen contadores, tiempos, tasas, respuestas y timeouts por fase. El actor
-terminó sin pérdidas de registros. La corrección de reloj medida fue -72,85 ms
-(actor menos capturador), con una incertidumbre de 155,41 ms. Las etiquetas se
-obtienen de sus registros y de la correlación de solicitudes, no de umbrales de
-tráfico. Los CSV excluyen fronteras, guardas, precomprobaciones y orígenes desconocidos.
-
-El PCAP original del actor tiene 36 inversiones de orden temporal de hasta
-2,35 ms. Se conserva íntegro junto a una copia ordenada por `reordercap`.
-La comprobación del multiconjunto verifica que todos los bytes y timestamps de
-los 52133 paquetes se mantienen. La ordenación no ajusta los tiempos medidos.
-
-## Archivos y reproducción
-
-- `sesiones_manifest.json`: las tres adquisiciones y sus fuentes.
-- `dataset_v1/`: exportación conjunta, CSV limpios de 25 columnas, tablas de
-  auditoría de 60 columnas, exclusiones, campos por paquete y hashes.
-- `pilotos/` y `pilotos_manifest.json`: los dos pilotos benignos previos.
-- `fisica_4_actor_piloto_20261014_03/`: exportación y auditoría individual del
-  piloto con ataques físicos.
-- `test/capturas/`: PCAP, inventarios, registros originales y ejecuciones.
-  Los intentos marcados `failed` no forman parte del dataset.
+Desde la raíz del repositorio, con Python 3.13, las dependencias del extractor
+y TShark 4.6.4:
 
 ```powershell
-python scripts_esp32/dataset/extract.py --manifest recursos/dataset_fisico/sesiones_manifest.json --output .local/dataset_fisico_reconstruido
+python scripts_esp32/dataset/extract.py --manifest recursos/dataset_fisico/campana_30_manifest.json --output .local/campana_30_reconstruida
 ```
 
-El destino debe ser nuevo. Definiciones y controles:
-[extractor](../../scripts_esp32/dataset/README.md),
-[campaña](../../scripts_esp32/campaign/README.md) y
-[guía de la IA del actor](../../scripts_esp32/actor/LEEME_IA.md).
+Para reconstruir la colección con pilotos, usar `sesiones_v3_manifest.json`.
+El destino debe ser nuevo. [Definiciones y etiquetado](../../scripts_esp32/dataset/README.md).
 
+La nueva versión de distribución pública es `v1.2.0` en
+[coap-multidos-testbed](https://github.com/joseAveleira/coap-multidos-testbed).
+`v1.0.0` conserva el dataset simulado y `v1.1.0` la primera ampliación física.
+Los nombres `dataset_v1/v2/v3` son versiones de exportación internas, distintas
+de las etiquetas del repositorio público. No se han entrenado modelos ni
+modificado sus apartados de experimentos, resultados o conclusiones.

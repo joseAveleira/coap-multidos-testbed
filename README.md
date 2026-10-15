@@ -1,15 +1,16 @@
 # CoAP multi-DoS datasets and testbeds
 
-This repository distributes the original simulated CoAP campaign and a physical Wi-Fi extension. The original data and code remain unchanged under tag `v1.0.0`; tag `v1.1.0` adds seven physical acquisitions and exports at 0.5, 1 and 2 seconds.
+This repository distributes the original simulated CoAP campaign and a physical Wi-Fi extension. Tag `v1.0.0` preserves the original data and code; `v1.1.0` preserves the first physical release. Tag `v1.2.0` expands the main physical campaign to **30 episodes of each attack**.
 
 | Collection | Location | Captures | CoAP packets | One-second rows |
 |---|---|---:|---:|---:|
-| Original simulated campaign | [`data/`](data/) | 15 | 624,058 | 3,797 |
-| Physical extension | [`physical/`](physical/) | 7 | 769,063 | 12,684 |
+| Original simulated campaign | [data/](data/) | 15 | 624,058 | 3,797 |
+| Main physical campaign | [CSV package](physical/recursos/dataset_fisico/coap_fisico_30_csv.zip) | 5 | 909,093 | 13,628 |
+| Physical archive including pilots | [physical/](physical/) | 8 | 964,126 | 15,379 |
 
-The physical extension includes three pilots and four ten-minute sessions with four ESP32-S3 clients, one ESP32-C6 client, a Windows server/capture host and a separate Arch Linux actor. The four main sessions contain 24 Block2 and 24 request-flood episodes, with legitimate traffic from every board.
+Five ESP32 clients, a Windows server/capture host and a separate Arch Linux actor communicate over physical Wi-Fi. The five main captures contain 30 Block2 and 30 request-flood episodes. The archive also preserves three identified pilots.
 
-**Physical data downloads and reproduction:** see [`physical/README.md`](physical/README.md). It links the raw PCAPs, three CSV resolutions, labels, schedules, configuration and checksums. The sections below describe the original loopback collection.
+See [physical/README.md](physical/README.md) for the raw PCAPs, CSV resolutions, labels, schedules and checksums. The sections below describe the original simulated collection.
 
 ## Contents
 

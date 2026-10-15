@@ -1,0 +1,7 @@
+{
+  "network": "lo               UNKNOWN        127.0.0.1/8 \nmlan0            UP             10.37.225.230/24 \n10.37.225.138 dev mlan0 src 10.37.225.230 uid 1000 \n    cache",
+  "runtime": "v26.10.0",
+  "active_actor": "",
+  "bundle_hash": "ca67b2731d3f9a04a20d80342f367c57cc3fb5699ddccbf69b855c441868f263  /home/jose/coap-dataset/bundles/29bcf06650cc5994/actor_coap.js",
+  "local_actor_sha256": "ca67b2731d3f9a04a20d80342f367c57cc3fb5699ddccbf69b855c441868f263"
+}

@@ -1,0 +1,10 @@
+{
+  "failed_attempt": "fisica_5_20261015_05",
+  "failure_stage": "clock measurement after inventory and before actor launch",
+  "attacks_started": false,
+  "retained_evidence": "test/capturas/fisica_5_ampliacion_30_20261015/fisica_5_20261015_05/execution.json",
+  "execution_sha256": "a7d172f650e3c7916da1a88fe0decb6fed5c1024a5b991dbd8fdce72683e7181",
+  "diagnosis": "The initial controller used bundled Python 3.12.14 with 15.625 ms wall and monotonic clock resolution, coarser than the 10 ms clock-step check. Repeated measurement with the original Python 3.13.5 and 0.1 microsecond resolution passed; no clock guard was disabled.",
+  "retry": "fisica_5_20261015_05_retry1",
+  "same_plan_sha256": "945a75cb794dfba0a0c5fcd126905f12224d760ed3f68aaa0eeaaec281a37877"
+}

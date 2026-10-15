@@ -23,9 +23,10 @@ legítimos. Lee este documento y [README.md](README.md) antes de ejecutar.
   cargas benignas comparables. Arch superó sus diez pruebas; la adquisición
   física y sus CSV están auditados. El resumen completo está en
   `recursos/dataset_fisico/README.md` del repositorio.
-- El 15-10-2026 se completaron cuatro capturas de 600 s con cinco placas:
-  714030 paquetes, 24 episodios de cada ataque y CSV auditados
+- El 15-10-2026 se completaron cinco capturas principales de 600 s con cinco placas:
+  909093 paquetes, 30 episodios de cada ataque y CSV auditados
   a 0,5/1/2 s. La C6 utiliza MicroPython 1.29.0; las cuatro S3, Arduino.
+  La quinta captura amplía las cuatro anteriores; sus datos se conservan.
 - Servidor y actor estuvieron en Aveleira durante esas capturas. Antes de una
   nueva campaña vuelve a verificar la red, las direcciones y las cinco placas.
 - La comparación de ventanas de 0,5, 1 y 2 s se hará sobre el mismo PCAP íntegro.

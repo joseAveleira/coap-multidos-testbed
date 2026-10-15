@@ -1,0 +1,39 @@
+{
+  "server_ip": "10.37.225.138",
+  "actor_ip": "10.37.225.230",
+  "actor_user": "jose",
+  "capture_interface": "\\Device\\NPF_{34CF96FE-697A-479B-A63B-430A4CBA7025}",
+  "network": "Aveleira, 2.4 GHz; server, actor and ESP32 clients on physical Wi-Fi",
+  "devices": [
+    {
+      "device_id": 1,
+      "profile_id": 1,
+      "model": "ESP32-S3",
+      "mac": "d0:cf:13:08:43:4c"
+    },
+    {
+      "device_id": 2,
+      "profile_id": 2,
+      "model": "ESP32-S3",
+      "mac": "d0:cf:13:08:41:48"
+    },
+    {
+      "device_id": 3,
+      "profile_id": 3,
+      "model": "ESP32-S3",
+      "mac": "d0:cf:13:08:36:4c"
+    },
+    {
+      "device_id": 4,
+      "profile_id": 4,
+      "model": "ESP32-S3",
+      "mac": "d0:cf:13:08:42:08"
+    },
+    {
+      "device_id": 5,
+      "profile_id": 5,
+      "model": "ESP32-C6",
+      "mac": "58:8c:81:32:21:5c"
+    }
+  ]
+}

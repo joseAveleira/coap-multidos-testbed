@@ -1,0 +1,1383 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-15T17:03:05.330229+00:00",
+  "source_manifest": "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\recursos\\dataset_fisico\\sesiones_v3_manifest.json",
+  "source_manifest_sha256": "cf696e8cef03778a72ccd3b2a1414efe84ec8ad543beb142b7f8b0ad497626c7",
+  "tshark": "TShark (Wireshark) 4.6.4 (v4.6.4-0-g93282876538d).",
+  "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+  "pandas": "3.0.3",
+  "numpy": "2.4.6",
+  "window_seconds": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "predictors": [
+    "core_bytes_per_s",
+    "core_mean_len",
+    "core_std_len",
+    "core_mean_iat",
+    "core_std_iat",
+    "core_active_span_frac",
+    "coap_req_per_s",
+    "coap_resp_per_s",
+    "coap_non_per_s",
+    "coap_request_frac",
+    "coap_con_frac",
+    "coap_log_resp_req",
+    "coap_mean_payload_len",
+    "coap_block2_req_per_s",
+    "coap_block2_resp_per_s",
+    "coap_block2_frac",
+    "coap_block2_more_resp_frac",
+    "coap_block2_mean_number",
+    "coap_block2_unique_numbers",
+    "coap_block2_sequential_req_frac",
+    "coap_block2_repeated_req_frac",
+    "coap_block2_req_unique_token_frac",
+    "coap_block2_log_resp_req_bytes"
+  ],
+  "grouping": "unordered IPv4 pair; capture-relative aligned nonoverlapping windows",
+  "final_window_policy": "exclude windows ending after the final observed CoAP frame",
+  "upstream": {
+    "repository": "https://github.com/joseAveleira/coap-multidos-testbed",
+    "tag": "v1.0.0",
+    "commit": "44e34a4376a64ec222cee2aaf9ba9adcb06968e5",
+    "files": {
+      "coap_features.py": {
+        "upstream_path": "pipeline/coap_features.py",
+        "sha256": "f736e81354be7f9a6c23b4bd3fd30d851c2f0ebf8a832c6f38ff1c15ff7dcffa"
+      },
+      "clean_table.py": {
+        "upstream_path": "preprocessing/build_clean_dataset.py",
+        "sha256": "4fd3bf0d46c14e5b805e06f9604825e539f731d06c794fdb2531558ece2ec557"
+      },
+      "LICENSE": {
+        "upstream_path": "LICENSE",
+        "sha256": "3ef8e2476577d25a86ad4b77a56196eb9cfb69c3ada51c73b1d43209e018ed5f"
+      },
+      "data_dictionary.csv": {
+        "upstream_path": "data/data_dictionary.csv",
+        "sha256": "36df1b52bc8998061cb6274f8b95fc27bf17182966715a986c3bdb21d73e42ec"
+      }
+    }
+  },
+  "extractor_sha256": "99db3cdf70885e3731c515c3f7d2bde142a73aed0a510061715731d1d438806e",
+  "sessions": [
+    {
+      "session": "piloto_esp32_20261013_01",
+      "pcap": "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\piloto_esp32_20261013_01\\trafico_coap.pcapng",
+      "pcap_sha256": "29cce28730db132260ca8cc3a85ca4679c0ff325c87503e529d2764674a8de74",
+      "coap_packets": 380,
+      "declared_benign_ips": [
+        "10.37.225.73"
+      ],
+      "actor_ip": null,
+      "inputs": {},
+      "windows": {
+        "0_5s": {
+          "kept": 189,
+          "excluded": 1,
+          "classes": {
+            "benign": 189
+          },
+          "reasons": {
+            "outside_complete_observation_interval": 1
+          }
+        },
+        "1_0s": {
+          "kept": 164,
+          "excluded": 1,
+          "classes": {
+            "benign": 164
+          },
+          "reasons": {
+            "outside_complete_observation_interval": 1
+          }
+        },
+        "2_0s": {
+          "kept": 82,
+          "excluded": 1,
+          "classes": {
+            "benign": 82
+          },
+          "reasons": {
+            "outside_complete_observation_interval": 1
+          }
+        }
+      },
+      "tshark_command": [
+        "tshark",
+        "-n",
+        "-r",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\piloto_esp32_20261013_01\\trafico_coap.pcapng",
+        "-d",
+        "udp.port==5683,coap",
+        "-Y",
+        "coap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=/t",
+        "-E",
+        "quote=d",
+        "-E",
+        "occurrence=f",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_relative",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "ip.ttl",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "coap.type",
+        "-e",
+        "coap.code",
+        "-e",
+        "coap.mid",
+        "-e",
+        "coap.token",
+        "-e",
+        "coap.opt.observe",
+        "-e",
+        "coap.opt.uri_path",
+        "-e",
+        "coap.payload_length",
+        "-e",
+        "coap.opt.block_number",
+        "-e",
+        "coap.opt.block_mflag",
+        "-e",
+        "coap.opt.block_size",
+        "-e",
+        "coap.block_length"
+      ],
+      "packet_ground_truth_counts": {
+        "physical_benign": 380
+      },
+      "observed_benign_clients": [
+        "10.37.225.73"
+      ]
+    },
+    {
+      "session": "piloto_banco4_20261014_01",
+      "pcap": "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\piloto_banco4_20261014_01\\trafico_coap.pcapng",
+      "pcap_sha256": "e9765f03cc141be3cd399ab14789ea7d3a53da6e4864587bf8d0cd8703c6e74d",
+      "coap_packets": 2520,
+      "declared_benign_ips": [
+        "10.37.225.73",
+        "10.37.225.67",
+        "10.37.225.60",
+        "10.37.225.4"
+      ],
+      "actor_ip": null,
+      "inputs": {},
+      "windows": {
+        "0_5s": {
+          "kept": 904,
+          "excluded": 2,
+          "classes": {
+            "benign": 904
+          },
+          "reasons": {
+            "outside_complete_observation_interval": 2
+          }
+        },
+        "1_0s": {
+          "kept": 803,
+          "excluded": 2,
+          "classes": {
+            "benign": 803
+          },
+          "reasons": {
+            "outside_complete_observation_interval": 2
+          }
+        },
+        "2_0s": {
+          "kept": 525,
+          "excluded": 2,
+          "classes": {
+            "benign": 525
+          },
+          "reasons": {
+            "outside_complete_observation_interval": 2
+          }
+        }
+      },
+      "tshark_command": [
+        "tshark",
+        "-n",
+        "-r",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\piloto_banco4_20261014_01\\trafico_coap.pcapng",
+        "-d",
+        "udp.port==5683,coap",
+        "-Y",
+        "coap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=/t",
+        "-E",
+        "quote=d",
+        "-E",
+        "occurrence=f",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_relative",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "ip.ttl",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "coap.type",
+        "-e",
+        "coap.code",
+        "-e",
+        "coap.mid",
+        "-e",
+        "coap.token",
+        "-e",
+        "coap.opt.observe",
+        "-e",
+        "coap.opt.uri_path",
+        "-e",
+        "coap.payload_length",
+        "-e",
+        "coap.opt.block_number",
+        "-e",
+        "coap.opt.block_mflag",
+        "-e",
+        "coap.opt.block_size",
+        "-e",
+        "coap.block_length"
+      ],
+      "packet_ground_truth_counts": {
+        "physical_benign": 2520
+      },
+      "observed_benign_clients": [
+        "10.37.225.4",
+        "10.37.225.60",
+        "10.37.225.67",
+        "10.37.225.73"
+      ]
+    },
+    {
+      "session": "fisica_4_actor_piloto_20261014_03",
+      "pcap": "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_4_actor_piloto_20261014_03\\traffic_chronological.pcapng",
+      "pcap_sha256": "a9edf01531efc499fb5feff2a370634394e2bcca1d835f9f2e52ab3b08329172",
+      "coap_packets": 52133,
+      "declared_benign_ips": [
+        "10.37.225.73",
+        "10.37.225.67",
+        "10.37.225.60",
+        "10.37.225.4"
+      ],
+      "actor_ip": "10.37.225.230",
+      "inputs": {
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_4_actor_piloto_20261014_03\\clock.json": "11e70fb14dc37935e5b5cad9ed95579177c872dde6b5482b0408b8e7fc3519d7",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_4_actor_piloto_20261014_03\\actor\\manifest.json": "fd1d6ad247e1d6f021924f0cd3920e29c92cb1bd0672c104a4581d6750e3ed33",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_4_actor_piloto_20261014_03\\actor\\summary.json": "9c771685973a2c6b45effe9b91c52e397324260b65fab233994ad38e8a79d6b5",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_4_actor_piloto_20261014_03\\actor\\plan.json": "22c5681cc87b151d8c68ae24d5685c3165a801fa990f61e3185bbc3bd83a5fe7",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_4_actor_piloto_20261014_03\\actor\\events.jsonl": "2f507e3cb7a380187cd952dd41ce8bcee77d4b8bfe4b4f5bf14c75731792847c",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_4_actor_piloto_20261014_03\\actor\\traffic.jsonl": "abb6a99565f478a0c940a32886250f5742c3f01bbfdeeac998802bfbeff5a709",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_4_actor_piloto_20261014_03\\actor\\sha256.json": "4344a345879ac4ff7ebca63f28fa94da91dd22ba6ebfb6a3be97337e366c9cce"
+      },
+      "windows": {
+        "0_5s": {
+          "kept": 1115,
+          "excluded": 30,
+          "classes": {
+            "benign": 1053,
+            "coap_block2_amplification_flood": 42,
+            "coap_request_flood": 20
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 24,
+            "preflight_guard_or_unknown_packet_origin": 5,
+            "outside_complete_observation_interval": 1
+          }
+        },
+        "1_0s": {
+          "kept": 784,
+          "excluded": 24,
+          "classes": {
+            "benign": 754,
+            "coap_block2_amplification_flood": 21,
+            "coap_request_flood": 9
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 19,
+            "preflight_guard_or_unknown_packet_origin": 3,
+            "outside_complete_observation_interval": 2
+          }
+        },
+        "2_0s": {
+          "kept": 460,
+          "excluded": 23,
+          "classes": {
+            "benign": 446,
+            "coap_block2_amplification_flood": 10,
+            "coap_request_flood": 4
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 19,
+            "preflight_guard_or_unknown_packet_origin": 2,
+            "outside_complete_observation_interval": 2
+          }
+        }
+      },
+      "tshark_command": [
+        "tshark",
+        "-n",
+        "-r",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_4_actor_piloto_20261014_03\\traffic_chronological.pcapng",
+        "-d",
+        "udp.port==5683,coap",
+        "-Y",
+        "coap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=/t",
+        "-E",
+        "quote=d",
+        "-E",
+        "occurrence=f",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_relative",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "ip.ttl",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "coap.type",
+        "-e",
+        "coap.code",
+        "-e",
+        "coap.mid",
+        "-e",
+        "coap.token",
+        "-e",
+        "coap.opt.observe",
+        "-e",
+        "coap.opt.uri_path",
+        "-e",
+        "coap.payload_length",
+        "-e",
+        "coap.opt.block_number",
+        "-e",
+        "coap.opt.block_mflag",
+        "-e",
+        "coap.opt.block_size",
+        "-e",
+        "coap.block_length"
+      ],
+      "packet_ground_truth_counts": {
+        "physical_benign": 26077,
+        "preflight": 66,
+        "phase_001": 210,
+        "phase_003": 9268,
+        "phase_005": 174,
+        "phase_007": 4442,
+        "phase_009": 20,
+        "phase_011": 10668,
+        "phase_013": 226,
+        "phase_015": 880,
+        "phase_017": 102
+      },
+      "observed_benign_clients": [
+        "10.37.225.4",
+        "10.37.225.60",
+        "10.37.225.67",
+        "10.37.225.73"
+      ]
+    },
+    {
+      "session": "fisica_5_20261015_01",
+      "pcap": "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_01\\traffic_chronological.pcapng",
+      "pcap_sha256": "e7e53e0957e8048d1a2030319469118629f69ffd4de277b54b2ca9b6be51b0b2",
+      "coap_packets": 199675,
+      "declared_benign_ips": [
+        "10.37.225.73",
+        "10.37.225.67",
+        "10.37.225.60",
+        "10.37.225.4",
+        "10.37.225.20"
+      ],
+      "actor_ip": "10.37.225.230",
+      "inputs": {
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_01\\clock.json": "f0c5effb485e7a16335ec570793f4875e2fc551db659fb530298d0cca3f217ae",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_01\\actor\\manifest.json": "97e0db4571e6e1457e4926c4803a79ede4b4fd8ab1989bfff874d8a38d380ba5",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_01\\actor\\summary.json": "4129a22479b4bb2ad19f5ee3d259c3fe3ba3133efa93ca26fe1d69d6b1bf15cb",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_01\\actor\\plan.json": "1dcf5e0294b1b8eea81f19e9e21dc8fd80b78b8a1a3a31b33dcf029f4949443a",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_01\\actor\\events.jsonl": "21ed8a59e0ff6694a06eae378ed0664438d89f11f633ee9a14b87a36a4c25605",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_01\\actor\\traffic.jsonl": "3e009db9e72c64740477503ac9866c2d16cc943a52be2dcd63807449ad379107",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_01\\actor\\sha256.json": "d87ee285b7bbe59e85051ea255c8210fc61c89e0d4993ab743c5856b0c8e22fd"
+      },
+      "windows": {
+        "0_5s": {
+          "kept": 3967,
+          "excluded": 140,
+          "classes": {
+            "benign": 3795,
+            "coap_block2_amplification_flood": 89,
+            "coap_request_flood": 83
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 129,
+            "preflight_guard_or_unknown_packet_origin": 9,
+            "outside_complete_observation_interval": 2
+          }
+        },
+        "1_0s": {
+          "kept": 2712,
+          "excluded": 127,
+          "classes": {
+            "benign": 2632,
+            "coap_block2_amplification_flood": 42,
+            "coap_request_flood": 38
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 117,
+            "preflight_guard_or_unknown_packet_origin": 7,
+            "outside_complete_observation_interval": 3
+          }
+        },
+        "2_0s": {
+          "kept": 1528,
+          "excluded": 115,
+          "classes": {
+            "benign": 1492,
+            "coap_block2_amplification_flood": 19,
+            "coap_request_flood": 17
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 106,
+            "preflight_guard_or_unknown_packet_origin": 4,
+            "outside_complete_observation_interval": 5
+          }
+        }
+      },
+      "tshark_command": [
+        "tshark",
+        "-n",
+        "-r",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_01\\traffic_chronological.pcapng",
+        "-d",
+        "udp.port==5683,coap",
+        "-Y",
+        "coap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=/t",
+        "-E",
+        "quote=d",
+        "-E",
+        "occurrence=f",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_relative",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "ip.ttl",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "coap.type",
+        "-e",
+        "coap.code",
+        "-e",
+        "coap.mid",
+        "-e",
+        "coap.token",
+        "-e",
+        "coap.opt.observe",
+        "-e",
+        "coap.opt.uri_path",
+        "-e",
+        "coap.payload_length",
+        "-e",
+        "coap.opt.block_number",
+        "-e",
+        "coap.opt.block_mflag",
+        "-e",
+        "coap.opt.block_size",
+        "-e",
+        "coap.block_length"
+      ],
+      "packet_ground_truth_counts": {
+        "physical_benign": 74621,
+        "preflight": 66,
+        "phase_001": 40,
+        "phase_003": 1066,
+        "phase_005": 16,
+        "phase_007": 2974,
+        "phase_009": 32,
+        "phase_011": 7770,
+        "phase_013": 14,
+        "phase_015": 6550,
+        "phase_017": 94,
+        "phase_019": 1078,
+        "phase_021": 22,
+        "phase_023": 7194,
+        "phase_025": 102,
+        "phase_027": 11042,
+        "phase_029": 20,
+        "phase_031": 2166,
+        "phase_033": 20,
+        "phase_035": 7604,
+        "phase_037": 14,
+        "phase_039": 890,
+        "phase_041": 20,
+        "phase_043": 1904,
+        "phase_045": 12,
+        "phase_047": 1660,
+        "phase_049": 34,
+        "phase_051": 994,
+        "phase_053": 86,
+        "phase_055": 6910,
+        "phase_057": 14,
+        "phase_059": 9822,
+        "phase_061": 24,
+        "phase_063": 6084,
+        "phase_065": 28,
+        "phase_067": 3294,
+        "phase_069": 20,
+        "phase_071": 1662,
+        "phase_073": 40,
+        "phase_075": 6700,
+        "phase_077": 78,
+        "phase_079": 9028,
+        "phase_081": 10,
+        "phase_083": 1576,
+        "phase_085": 10,
+        "phase_087": 6766,
+        "phase_089": 82,
+        "phase_091": 8490,
+        "phase_093": 14,
+        "phase_095": 10686,
+        "phase_097": 232
+      },
+      "observed_benign_clients": [
+        "10.37.225.20",
+        "10.37.225.4",
+        "10.37.225.60",
+        "10.37.225.67",
+        "10.37.225.73"
+      ]
+    },
+    {
+      "session": "fisica_5_20261015_02",
+      "pcap": "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_02\\traffic_chronological.pcapng",
+      "pcap_sha256": "b66bd8d488797c867847da187e9dd21755fb6a3baba1567f21686369a9f823de",
+      "coap_packets": 182403,
+      "declared_benign_ips": [
+        "10.37.225.73",
+        "10.37.225.67",
+        "10.37.225.60",
+        "10.37.225.4",
+        "10.37.225.20"
+      ],
+      "actor_ip": "10.37.225.230",
+      "inputs": {
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_02\\clock.json": "b1dda1ca2d7c06abe3d38eb08fb8dbab70e81782c865715b704095274bdee87b",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_02\\actor\\manifest.json": "a1ab13b9f606f39e61b999d3bf886a609aa33179a323a0e93737a757501d1f28",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_02\\actor\\summary.json": "11e6f062a89a66399c0b370508c569e5370ff65f2b9be91ccb3595bb17107c5b",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_02\\actor\\plan.json": "2ab71a15d1aa41a8a9f7b005e02ec562ad370b9c16ff407c9fa114555b4b21c4",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_02\\actor\\events.jsonl": "af4985377a61769b3a76dae9bd46f3f5baa5f43015a3a49beb79584067095b5f",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_02\\actor\\traffic.jsonl": "7e674673897fb413e8b436353a0011ed146083e293780e243b9317ef3001ed1b",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_02\\actor\\sha256.json": "62c7d77c8200c87ba4606d1ee4c57eac616379e36861e4389e91a757ee6563ca"
+      },
+      "windows": {
+        "0_5s": {
+          "kept": 4027,
+          "excluded": 124,
+          "classes": {
+            "benign": 3854,
+            "coap_request_flood": 89,
+            "coap_block2_amplification_flood": 84
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 120,
+            "preflight_guard_or_unknown_packet_origin": 3,
+            "outside_complete_observation_interval": 1
+          }
+        },
+        "1_0s": {
+          "kept": 2747,
+          "excluded": 111,
+          "classes": {
+            "benign": 2668,
+            "coap_request_flood": 41,
+            "coap_block2_amplification_flood": 38
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 108,
+            "preflight_guard_or_unknown_packet_origin": 2,
+            "outside_complete_observation_interval": 1
+          }
+        },
+        "2_0s": {
+          "kept": 1539,
+          "excluded": 111,
+          "classes": {
+            "benign": 1507,
+            "coap_request_flood": 17,
+            "coap_block2_amplification_flood": 15
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 108,
+            "preflight_guard_or_unknown_packet_origin": 2,
+            "outside_complete_observation_interval": 1
+          }
+        }
+      },
+      "tshark_command": [
+        "tshark",
+        "-n",
+        "-r",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_02\\traffic_chronological.pcapng",
+        "-d",
+        "udp.port==5683,coap",
+        "-Y",
+        "coap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=/t",
+        "-E",
+        "quote=d",
+        "-E",
+        "occurrence=f",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_relative",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "ip.ttl",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "coap.type",
+        "-e",
+        "coap.code",
+        "-e",
+        "coap.mid",
+        "-e",
+        "coap.token",
+        "-e",
+        "coap.opt.observe",
+        "-e",
+        "coap.opt.uri_path",
+        "-e",
+        "coap.payload_length",
+        "-e",
+        "coap.opt.block_number",
+        "-e",
+        "coap.opt.block_mflag",
+        "-e",
+        "coap.opt.block_size",
+        "-e",
+        "coap.block_length"
+      ],
+      "packet_ground_truth_counts": {
+        "physical_benign": 81573,
+        "preflight": 66,
+        "phase_001": 102,
+        "phase_003": 1368,
+        "phase_005": 32,
+        "phase_007": 5898,
+        "phase_009": 52,
+        "phase_011": 568,
+        "phase_013": 16,
+        "phase_015": 566,
+        "phase_017": 14,
+        "phase_019": 7624,
+        "phase_021": 20,
+        "phase_023": 6430,
+        "phase_025": 10,
+        "phase_027": 5782,
+        "phase_029": 14,
+        "phase_031": 1068,
+        "phase_033": 16,
+        "phase_035": 10158,
+        "phase_037": 20,
+        "phase_039": 9980,
+        "phase_041": 28,
+        "phase_043": 6134,
+        "phase_045": 24,
+        "phase_047": 458,
+        "phase_049": 50,
+        "phase_051": 2490,
+        "phase_053": 22,
+        "phase_055": 1610,
+        "phase_057": 14,
+        "phase_059": 3504,
+        "phase_061": 44,
+        "phase_063": 800,
+        "phase_065": 10,
+        "phase_067": 5368,
+        "phase_069": 54,
+        "phase_071": 9878,
+        "phase_073": 14,
+        "phase_075": 8704,
+        "phase_077": 64,
+        "phase_079": 1622,
+        "phase_081": 44,
+        "phase_083": 3504,
+        "phase_085": 14,
+        "phase_087": 586,
+        "phase_089": 26,
+        "phase_091": 562,
+        "phase_093": 46,
+        "phase_095": 5142,
+        "phase_097": 210
+      },
+      "observed_benign_clients": [
+        "10.37.225.20",
+        "10.37.225.4",
+        "10.37.225.60",
+        "10.37.225.67",
+        "10.37.225.73"
+      ]
+    },
+    {
+      "session": "fisica_5_20261015_03",
+      "pcap": "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_03\\traffic_chronological.pcapng",
+      "pcap_sha256": "422adfc7e62537dce579683d3c286c35b74a7ce5dffe2a6aafefaf73888419a8",
+      "coap_packets": 166427,
+      "declared_benign_ips": [
+        "10.37.225.73",
+        "10.37.225.67",
+        "10.37.225.60",
+        "10.37.225.4",
+        "10.37.225.20"
+      ],
+      "actor_ip": "10.37.225.230",
+      "inputs": {
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_03\\clock.json": "f1866a3ccae415abfaa25e8d5ea0cad1d12b88efe870cb425c854b6c077f1873",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_03\\actor\\manifest.json": "cc5920688ef84f32722fbec6119826a932b4bfe47bab1feb9a33f4a03c7ea496",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_03\\actor\\summary.json": "c999df6abdad001051d79b3cd2f64642391006c282f40d17234b2e2759bc19d4",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_03\\actor\\plan.json": "8ec336ab4df2a930ab3d07944c94b3db110d24a38e29a44bb205fb8182e02901",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_03\\actor\\events.jsonl": "eb584d2750ad6c96eedb4c77ca53bb84a84982e0609acc0fa37150b4613c5c8c",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_03\\actor\\traffic.jsonl": "b39baa81d67a67c768c29798144bfd3b9c5b066cce17700a21a61e892225f93d",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_03\\actor\\sha256.json": "45912eb3bd1ef27f6fed95bf0201cbc21e6575801174dce546d37cc63a128341"
+      },
+      "windows": {
+        "0_5s": {
+          "kept": 3967,
+          "excluded": 119,
+          "classes": {
+            "benign": 3807,
+            "coap_block2_amplification_flood": 79,
+            "coap_request_flood": 81
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 107,
+            "preflight_guard_or_unknown_packet_origin": 7,
+            "outside_complete_observation_interval": 5
+          }
+        },
+        "1_0s": {
+          "kept": 2707,
+          "excluded": 113,
+          "classes": {
+            "benign": 2632,
+            "coap_block2_amplification_flood": 38,
+            "coap_request_flood": 37
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 104,
+            "preflight_guard_or_unknown_packet_origin": 4,
+            "outside_complete_observation_interval": 5
+          }
+        },
+        "2_0s": {
+          "kept": 1541,
+          "excluded": 109,
+          "classes": {
+            "benign": 1509,
+            "coap_block2_amplification_flood": 16,
+            "coap_request_flood": 16
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 102,
+            "preflight_guard_or_unknown_packet_origin": 2,
+            "outside_complete_observation_interval": 5
+          }
+        }
+      },
+      "tshark_command": [
+        "tshark",
+        "-n",
+        "-r",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_03\\traffic_chronological.pcapng",
+        "-d",
+        "udp.port==5683,coap",
+        "-Y",
+        "coap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=/t",
+        "-E",
+        "quote=d",
+        "-E",
+        "occurrence=f",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_relative",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "ip.ttl",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "coap.type",
+        "-e",
+        "coap.code",
+        "-e",
+        "coap.mid",
+        "-e",
+        "coap.token",
+        "-e",
+        "coap.opt.observe",
+        "-e",
+        "coap.opt.uri_path",
+        "-e",
+        "coap.payload_length",
+        "-e",
+        "coap.opt.block_number",
+        "-e",
+        "coap.opt.block_mflag",
+        "-e",
+        "coap.opt.block_size",
+        "-e",
+        "coap.block_length"
+      ],
+      "packet_ground_truth_counts": {
+        "physical_benign": 77267,
+        "preflight": 66,
+        "phase_001": 186,
+        "phase_003": 744,
+        "phase_005": 16,
+        "phase_007": 1588,
+        "phase_009": 74,
+        "phase_011": 296,
+        "phase_013": 12,
+        "phase_015": 11206,
+        "phase_017": 40,
+        "phase_019": 2932,
+        "phase_021": 92,
+        "phase_023": 4520,
+        "phase_025": 36,
+        "phase_027": 7554,
+        "phase_029": 30,
+        "phase_031": 2904,
+        "phase_033": 44,
+        "phase_035": 122,
+        "phase_037": 14,
+        "phase_039": 1324,
+        "phase_041": 64,
+        "phase_043": 5630,
+        "phase_045": 14,
+        "phase_047": 3638,
+        "phase_049": 8,
+        "phase_051": 1574,
+        "phase_053": 6,
+        "phase_055": 2236,
+        "phase_057": 46,
+        "phase_059": 6364,
+        "phase_061": 52,
+        "phase_063": 544,
+        "phase_065": 22,
+        "phase_067": 4698,
+        "phase_069": 62,
+        "phase_071": 490,
+        "phase_073": 16,
+        "phase_075": 1178,
+        "phase_077": 18,
+        "phase_079": 626,
+        "phase_081": 10,
+        "phase_083": 6362,
+        "phase_085": 72,
+        "phase_087": 4340,
+        "phase_089": 50,
+        "phase_091": 9258,
+        "phase_093": 110,
+        "phase_095": 7830,
+        "phase_097": 42
+      },
+      "observed_benign_clients": [
+        "10.37.225.20",
+        "10.37.225.4",
+        "10.37.225.60",
+        "10.37.225.67",
+        "10.37.225.73"
+      ]
+    },
+    {
+      "session": "fisica_5_20261015_04_retry1",
+      "pcap": "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_04_retry1\\traffic_chronological.pcapng",
+      "pcap_sha256": "7407486d446d741c5022523e34478c6f5acc0f3a9772bdac8721b387b3bfcc62",
+      "coap_packets": 165525,
+      "declared_benign_ips": [
+        "10.37.225.73",
+        "10.37.225.67",
+        "10.37.225.60",
+        "10.37.225.4",
+        "10.37.225.20"
+      ],
+      "actor_ip": "10.37.225.230",
+      "inputs": {
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_04_retry1\\clock.json": "67bfdd916d7c929fa4ae7be9701609cf065bb828dc8fcbea7ca20120f75262d7",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_04_retry1\\actor\\manifest.json": "6840e53b266d0d7e2163c843a1af6094606b6f9afc12c322f3bfb7178b4066ed",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_04_retry1\\actor\\summary.json": "2c72d40aff34aa89c09d10dce9e400b020d9e69de70918bfb69a9cbe9af9f4bb",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_04_retry1\\actor\\plan.json": "1dfa5cf9474348794995ef7f674cec222ed353a4301255392855565a94475ff2",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_04_retry1\\actor\\events.jsonl": "dd449e214faa7829303aa71dbb9cfad796aeebe1f406b44b38ecbcde0b45ecb8",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_04_retry1\\actor\\traffic.jsonl": "9360ce45dc6dc33b8c2b06c2c04e22501149e5780d7346ec04c7385831b4ae33",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_04_retry1\\actor\\sha256.json": "f7c321d76eb99882e3fd3b0f0f292a3fb6295e947f30693d01a3a484a0c95da0"
+      },
+      "windows": {
+        "0_5s": {
+          "kept": 4080,
+          "excluded": 101,
+          "classes": {
+            "benign": 3893,
+            "coap_block2_amplification_flood": 95,
+            "coap_request_flood": 92
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 92,
+            "preflight_guard_or_unknown_packet_origin": 6,
+            "outside_complete_observation_interval": 3
+          }
+        },
+        "1_0s": {
+          "kept": 2767,
+          "excluded": 100,
+          "classes": {
+            "benign": 2679,
+            "coap_block2_amplification_flood": 45,
+            "coap_request_flood": 43
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 93,
+            "preflight_guard_or_unknown_packet_origin": 3,
+            "outside_complete_observation_interval": 4
+          }
+        },
+        "2_0s": {
+          "kept": 1553,
+          "excluded": 107,
+          "classes": {
+            "benign": 1515,
+            "coap_block2_amplification_flood": 19,
+            "coap_request_flood": 19
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 100,
+            "preflight_guard_or_unknown_packet_origin": 2,
+            "outside_complete_observation_interval": 5
+          }
+        }
+      },
+      "tshark_command": [
+        "tshark",
+        "-n",
+        "-r",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_04_retry1\\traffic_chronological.pcapng",
+        "-d",
+        "udp.port==5683,coap",
+        "-Y",
+        "coap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=/t",
+        "-E",
+        "quote=d",
+        "-E",
+        "occurrence=f",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_relative",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "ip.ttl",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "coap.type",
+        "-e",
+        "coap.code",
+        "-e",
+        "coap.mid",
+        "-e",
+        "coap.token",
+        "-e",
+        "coap.opt.observe",
+        "-e",
+        "coap.opt.uri_path",
+        "-e",
+        "coap.payload_length",
+        "-e",
+        "coap.opt.block_number",
+        "-e",
+        "coap.opt.block_mflag",
+        "-e",
+        "coap.opt.block_size",
+        "-e",
+        "coap.block_length"
+      ],
+      "packet_ground_truth_counts": {
+        "physical_benign": 85449,
+        "preflight": 66,
+        "phase_001": 86,
+        "phase_003": 1430,
+        "phase_005": 26,
+        "phase_007": 752,
+        "phase_009": 10,
+        "phase_011": 1022,
+        "phase_013": 66,
+        "phase_015": 1776,
+        "phase_017": 12,
+        "phase_019": 6416,
+        "phase_021": 26,
+        "phase_023": 1152,
+        "phase_025": 24,
+        "phase_027": 1086,
+        "phase_029": 10,
+        "phase_031": 1666,
+        "phase_033": 4,
+        "phase_035": 1210,
+        "phase_037": 68,
+        "phase_039": 6706,
+        "phase_041": 12,
+        "phase_043": 656,
+        "phase_045": 28,
+        "phase_047": 10780,
+        "phase_049": 20,
+        "phase_051": 2628,
+        "phase_053": 18,
+        "phase_055": 678,
+        "phase_057": 16,
+        "phase_059": 3602,
+        "phase_061": 20,
+        "phase_063": 7514,
+        "phase_065": 26,
+        "phase_067": 2688,
+        "phase_069": 8,
+        "phase_071": 1786,
+        "phase_073": 54,
+        "phase_075": 5854,
+        "phase_077": 10,
+        "phase_079": 3330,
+        "phase_081": 42,
+        "phase_083": 6200,
+        "phase_085": 66,
+        "phase_087": 3026,
+        "phase_089": 28,
+        "phase_091": 5572,
+        "phase_093": 106,
+        "phase_095": 1608,
+        "phase_097": 86
+      },
+      "observed_benign_clients": [
+        "10.37.225.20",
+        "10.37.225.4",
+        "10.37.225.60",
+        "10.37.225.67",
+        "10.37.225.73"
+      ]
+    },
+    {
+      "session": "fisica_5_20261015_05_retry1",
+      "pcap": "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_ampliacion_30_20261015\\fisica_5_20261015_05_retry1\\traffic_chronological.pcapng",
+      "pcap_sha256": "a5939cc5c9d3b97ef75621ed2511bc9794469b19d2a7fa72cf72cc90197d6c18",
+      "coap_packets": 195063,
+      "declared_benign_ips": [
+        "10.37.225.73",
+        "10.37.225.67",
+        "10.37.225.60",
+        "10.37.225.4",
+        "10.37.225.20"
+      ],
+      "actor_ip": "10.37.225.230",
+      "inputs": {
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_ampliacion_30_20261015\\fisica_5_20261015_05_retry1\\clock.json": "8a6c3ffb97cf9d8c9197cc7b0369cefc3c757b0f1111a58d7ff4766d41b0a570",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_ampliacion_30_20261015\\fisica_5_20261015_05_retry1\\actor\\manifest.json": "62dc9b053ce830d7cf846b86c5366f2488ffb06ead724f1b131ed4a65747eaf8",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_ampliacion_30_20261015\\fisica_5_20261015_05_retry1\\actor\\summary.json": "167cd67921c9f18188ee08fdbf6aeb0782cd74be185dabe891b6830ab4a80942",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_ampliacion_30_20261015\\fisica_5_20261015_05_retry1\\actor\\plan.json": "945a75cb794dfba0a0c5fcd126905f12224d760ed3f68aaa0eeaaec281a37877",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_ampliacion_30_20261015\\fisica_5_20261015_05_retry1\\actor\\events.jsonl": "4e4777ae55bef2397c31ac832e862a9116a28c8161b4191920ecf8a4142d9886",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_ampliacion_30_20261015\\fisica_5_20261015_05_retry1\\actor\\traffic.jsonl": "ac4c1791679c49eab5bcd35da9b0d7a2b89d8e25848b12af8e86944e5b4287b1",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_ampliacion_30_20261015\\fisica_5_20261015_05_retry1\\actor\\sha256.json": "a6805c97aee80e46890e569fc271f7d4e78d3c113dfa21e9255710fc61a89249"
+      },
+      "windows": {
+        "0_5s": {
+          "kept": 3991,
+          "excluded": 124,
+          "classes": {
+            "benign": 3824,
+            "coap_block2_amplification_flood": 73,
+            "coap_request_flood": 94
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 116,
+            "preflight_guard_or_unknown_packet_origin": 7,
+            "outside_complete_observation_interval": 1
+          }
+        },
+        "1_0s": {
+          "kept": 2695,
+          "excluded": 112,
+          "classes": {
+            "benign": 2618,
+            "coap_block2_amplification_flood": 32,
+            "coap_request_flood": 45
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 107,
+            "preflight_guard_or_unknown_packet_origin": 4,
+            "outside_complete_observation_interval": 1
+          }
+        },
+        "2_0s": {
+          "kept": 1524,
+          "excluded": 104,
+          "classes": {
+            "benign": 1494,
+            "coap_block2_amplification_flood": 12,
+            "coap_request_flood": 18
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 100,
+            "preflight_guard_or_unknown_packet_origin": 3,
+            "outside_complete_observation_interval": 1
+          }
+        }
+      },
+      "tshark_command": [
+        "tshark",
+        "-n",
+        "-r",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_ampliacion_30_20261015\\fisica_5_20261015_05_retry1\\traffic_chronological.pcapng",
+        "-d",
+        "udp.port==5683,coap",
+        "-Y",
+        "coap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=/t",
+        "-E",
+        "quote=d",
+        "-E",
+        "occurrence=f",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_relative",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "ip.ttl",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "coap.type",
+        "-e",
+        "coap.code",
+        "-e",
+        "coap.mid",
+        "-e",
+        "coap.token",
+        "-e",
+        "coap.opt.observe",
+        "-e",
+        "coap.opt.uri_path",
+        "-e",
+        "coap.payload_length",
+        "-e",
+        "coap.opt.block_number",
+        "-e",
+        "coap.opt.block_mflag",
+        "-e",
+        "coap.opt.block_size",
+        "-e",
+        "coap.block_length"
+      ],
+      "packet_ground_truth_counts": {
+        "physical_benign": 86567,
+        "preflight": 66,
+        "phase_001": 118,
+        "phase_003": 3184,
+        "phase_005": 48,
+        "phase_007": 6668,
+        "phase_009": 70,
+        "phase_011": 2508,
+        "phase_013": 52,
+        "phase_015": 1028,
+        "phase_017": 8,
+        "phase_019": 8436,
+        "phase_021": 14,
+        "phase_023": 964,
+        "phase_025": 56,
+        "phase_027": 3144,
+        "phase_029": 32,
+        "phase_031": 10990,
+        "phase_033": 42,
+        "phase_035": 412,
+        "phase_037": 6,
+        "phase_039": 9642,
+        "phase_041": 38,
+        "phase_043": 3918,
+        "phase_045": 46,
+        "phase_047": 586,
+        "phase_049": 88,
+        "phase_051": 7342,
+        "phase_053": 40,
+        "phase_055": 10374,
+        "phase_057": 18,
+        "phase_059": 2572,
+        "phase_061": 30,
+        "phase_063": 7334,
+        "phase_065": 90,
+        "phase_067": 10200,
+        "phase_069": 30,
+        "phase_071": 2574,
+        "phase_073": 18,
+        "phase_075": 4238,
+        "phase_077": 62,
+        "phase_079": 2470,
+        "phase_081": 10,
+        "phase_083": 5502,
+        "phase_085": 6,
+        "phase_087": 424,
+        "phase_089": 118,
+        "phase_091": 1410,
+        "phase_093": 10,
+        "phase_095": 1360,
+        "phase_097": 100
+      },
+      "observed_benign_clients": [
+        "10.37.225.20",
+        "10.37.225.4",
+        "10.37.225.60",
+        "10.37.225.67",
+        "10.37.225.73"
+      ]
+    }
+  ],
+  "outputs": {
+    "0_5s\\dataset_clean_multiclass.csv": "cd1f3893058fc7d2ad8c12c3927ecea8aa04f8eb49a0c6711a7cd4515a7293d1",
+    "0_5s\\dataset_complete_tracking.csv": "e552991f6882c1e8f23f277e2f78f2fe37b9c522dfc1a6f28b51c78a7ed3ff1f",
+    "0_5s\\excluded_windows.csv": "0ca2b6471edbb9bd81a34866816173d562619c5ab123dc862c3c4f9e8aad5109",
+    "1_0s\\dataset_clean_multiclass.csv": "fdb1f27d8cf4abefa5d59c529f596d8d9af3962c0711d238369bb7997d60ff73",
+    "1_0s\\dataset_complete_tracking.csv": "9a4441a0ed747299dce24c12ec50301b31343a859a01131fc7ba85d57e6b1116",
+    "1_0s\\excluded_windows.csv": "4d77ca89fdb8615c134910902b9dcf6f715e727243b93ec4c47585814c3344ff",
+    "2_0s\\dataset_clean_multiclass.csv": "f2c4404506c8ee2ada168c99d8bbd86d405b4f79676182cc1a2b7ddc9c16865e",
+    "2_0s\\dataset_complete_tracking.csv": "d64a41fbcab34bf8209ed0f82fdad0e0c695f48c104e96121c1965090f487cb3",
+    "2_0s\\excluded_windows.csv": "c917df269b35ea61c032acee65a75efb43b7c896c5acd7113a65cf7c66c09e9d"
+  }
+}

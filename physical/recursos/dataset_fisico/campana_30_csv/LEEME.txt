@@ -1,0 +1,26 @@
+DATASET CoAP FISICO: 30 EPISODIOS DE CADA ATAQUE
+
+Cinco capturas de diez minutos con cuatro ESP32-S3 y una ESP32-C6.
+Servidor/capturador Windows y actor Arch separados; red Wi-Fi fisica.
+Total de episodios: 30 Block2 y 30 request flood. Los pilotos quedan fuera
+de estos CSV. El corpus con pilotos se conserva por separado en dataset_v3.
+
+Cada CSV tiene las mismas 25 columnas: meta_session, 23 predictores y target.
+target: 0 = benigno, 1 = Block2, 2 = request flood.
+meta_session identifica la captura; no debe utilizarse como predictor.
+Cada fila es una ventana activa por par IPv4 bidireccional.
+Las tres resoluciones agregan los mismos paquetes; no son muestras nuevas.
+
+Recuentos observados:
+0_5s: 20032 filas; benigno=19173, Block2=420, request flood=439.
+1_0s: 13628 filas; benigno=13229, Block2=195, request flood=204.
+2_0s: 7685 filas; benigno=7517, Block2=81, request flood=87.
+
+Se mantienen las cuatro capturas anteriores y se anade una quinta.
+Los valores de los CSV anteriores se conservan byte a byte en dataset_v3.
+build_manifest.json identifica las cinco capturas y los hashes de las tablas.
+episodios_campana_30.csv y resumen_configuracion_30.csv documentan los ataques
+y sus parametros. Son metadatos de adquisicion, no nuevos predictores.
+SHA256.json verifica los archivos incluidos en este ZIP.
+Las tablas completas de auditoria y los PCAP estan en el repositorio.
+https://github.com/joseAveleira/coap-multidos-testbed/tree/v1.2.0/physical

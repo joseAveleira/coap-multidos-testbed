@@ -1,0 +1,24 @@
+{
+  "status": "published_and_verified",
+  "date": "2026-10-15",
+  "repository": "https://github.com/joseAveleira/coap-multidos-testbed",
+  "tag": "v1.1.0",
+  "commit": "fe6a053b4655c7ef010cf66620fd95ae5670904d",
+  "tag_object": "c041d1aa3667cdb442a976214fc66909abd8ffed",
+  "physical_download_page": "https://github.com/joseAveleira/coap-multidos-testbed/tree/v1.1.0/physical",
+  "original_tag_preserved": "v1.0.0",
+  "original_commit": "44e34a4376a64ec222cee2aaf9ba9adcb06968e5",
+  "original_data_and_code_unchanged": true,
+  "physical_evidence_and_source_files": 444,
+  "physical_evidence_and_source_bytes": 1019291830,
+  "inventory": "physical/FILES.json",
+  "integrity_command": "cd physical && python verify_release.py",
+  "checks": [
+    "All copied evidence/source files match original SHA-256 hashes and Git-index bytes",
+    "The seven capture and actor paths resolve from the published manifests",
+    "Clean CSV class totals match the verified summary at 0.5, 1 and 2 seconds",
+    "All 23 predictors are finite; all seven session IDs occur at each resolution",
+    "Remote main and peeled v1.1.0 tag match the published commit",
+    "Public download page returns HTTP 200; remote FILES.json reports the expected inventory"
+  ]
+}

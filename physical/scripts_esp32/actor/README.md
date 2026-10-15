@@ -6,8 +6,9 @@ el PC de captura, revisión del piloto y entrega de evidencias.
 
 Generador para el segundo ordenador, conectado a la red del servidor y los ESP32.
 Requiere **Node.js 22 o posterior**, en Windows, Linux o macOS. No requiere npm.
-Esta versión se ha probado en Windows con Node.js 22.19.0 y UDP en localhost;
-queda pendiente calibrar tasas y pérdidas desde el segundo equipo físico.
+Esta versión se ha probado en Windows con Node.js 22.19.0 y en el actor Arch
+con Node.js 26.10.0. Cinco capturas físicas auditadas documentan 30 episodios
+de cada ataque; los registros conservan tasas efectivas, respuestas y timeouts.
 
 El actor reproduce los dos comportamientos del manuscrito ampliado: peticiones
 Block2 repetidas a `/large` y un flujo de GET a `/sensor`. El mismo equipo también

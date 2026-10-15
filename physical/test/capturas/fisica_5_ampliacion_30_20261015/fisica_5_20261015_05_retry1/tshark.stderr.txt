@@ -1,0 +1,2 @@
+Capturing on 'Wi-Fi'
+195063 packets captured

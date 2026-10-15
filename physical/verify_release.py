@@ -17,9 +17,9 @@ for item in inventory['files']:
     assert digest == item['sha256'], item['path']
 
 data = ROOT / 'recursos/dataset_fisico'
-summary = json.loads((data / 'resumen_verificado_v2.json').read_text())
-manifest = json.loads((data / 'sesiones_v2_manifest.json').read_text())
-assert len(manifest['sessions']) == 7
+summary = json.loads((data / 'resumen_verificado_v3.json').read_text())
+manifest = json.loads((data / 'sesiones_v3_manifest.json').read_text())
+assert len(manifest['sessions']) == 8
 for session in manifest['sessions']:
     assert (data / session['pcap']).is_file(), session['session']
     if 'actor' in session:
@@ -27,7 +27,7 @@ for session in manifest['sessions']:
         assert (data / session['actor']['clock_file']).is_file()
 
 for window, expected in summary['physical_exports'].items():
-    path = data / 'dataset_v2' / window / 'dataset_clean_multiclass.csv'
+    path = data / 'dataset_v3' / window / 'dataset_clean_multiclass.csv'
     counts, sessions = Counter(), set()
     with path.open(encoding='utf-8', newline='') as stream:
         reader = csv.DictReader(stream)
@@ -43,3 +43,15 @@ for window, expected in summary['physical_exports'].items():
     assert sessions == {session['session'] for session in manifest['sessions']}
 print(json.dumps({'verified_files': len(inventory['files']), 'physical_sessions': len(manifest['sessions']),
                   'clean_csv_counts': summary['physical_exports'], 'finite_predictors': True}, indent=2))
+
+# Verify the separate five-capture package as well.
+main = json.loads((data / 'campana_30_manifest.json').read_text())
+assert len(main['sessions']) == 5
+assert summary['campaign_attack_episodes'] == {'block2_amplification': 30, 'request_flood': 30}
+for width, expected in summary['campaign_exports'].items():
+    with (data / 'campana_30_csv' / width / 'dataset_clean_multiclass.csv').open(encoding='utf-8', newline='') as stream:
+        rows = list(csv.DictReader(stream))
+    assert len(rows) == expected['rows']
+    assert dict(Counter(r['target'] for r in rows)) == expected['classes']
+    assert {r['meta_session'] for r in rows} == {s['session'] for s in main['sessions']}
+print('Five main captures and 30 episodes of each attack verified.')

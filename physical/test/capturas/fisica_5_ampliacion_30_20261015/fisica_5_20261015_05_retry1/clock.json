@@ -1,0 +1,128 @@
+{
+  "actor_minus_capture_seconds": -0.44375061988830566,
+  "uncertainty_seconds": 0.1553663272857666,
+  "method": "SSH timestamp brackets before/after; minimum RTT samples; endpoint drift included",
+  "evidence": {
+    "before": {
+      "best": {
+        "capture_before": 1792082859.0853305,
+        "actor_time": 1792082858.6755857,
+        "capture_after": 1792082859.1849077,
+        "round_trip_seconds": 0.09957718849182129,
+        "actor_minus_capture_seconds": -0.4595332145690918
+      },
+      "samples": [
+        {
+          "capture_before": 1792082858.5572598,
+          "actor_time": 1792082858.2064815,
+          "capture_after": 1792082858.7272315,
+          "round_trip_seconds": 0.16997170448303223,
+          "actor_minus_capture_seconds": -0.4357643127441406
+        },
+        {
+          "capture_before": 1792082858.727251,
+          "actor_time": 1792082858.408413,
+          "capture_after": 1792082858.9273102,
+          "round_trip_seconds": 0.200059175491333,
+          "actor_minus_capture_seconds": -0.4188675880432129
+        },
+        {
+          "capture_before": 1792082858.9273317,
+          "actor_time": 1792082858.5757248,
+          "capture_after": 1792082859.0853057,
+          "round_trip_seconds": 0.1579740047454834,
+          "actor_minus_capture_seconds": -0.43059372901916504
+        },
+        {
+          "capture_before": 1792082859.0853305,
+          "actor_time": 1792082858.6755857,
+          "capture_after": 1792082859.1849077,
+          "round_trip_seconds": 0.09957718849182129,
+          "actor_minus_capture_seconds": -0.4595332145690918
+        },
+        {
+          "capture_before": 1792082859.1849334,
+          "actor_time": 1792082858.8367763,
+          "capture_after": 1792082859.3490365,
+          "round_trip_seconds": 0.16410303115844727,
+          "actor_minus_capture_seconds": -0.430208683013916
+        },
+        {
+          "capture_before": 1792082859.3490634,
+          "actor_time": 1792082858.9914393,
+          "capture_after": 1792082859.5053103,
+          "round_trip_seconds": 0.15624690055847168,
+          "actor_minus_capture_seconds": -0.4357476234436035
+        },
+        {
+          "capture_before": 1792082859.5053303,
+          "actor_time": 1792082859.195215,
+          "capture_after": 1792082859.7129273,
+          "round_trip_seconds": 0.207597017288208,
+          "actor_minus_capture_seconds": -0.4139139652252197
+        }
+      ]
+    },
+    "after": {
+      "best": {
+        "capture_before": 1792083440.6671011,
+        "actor_time": 1792083440.3767169,
+        "capture_after": 1792083440.9422686,
+        "round_trip_seconds": 0.27516746520996094,
+        "actor_minus_capture_seconds": -0.42796802520751953
+      },
+      "samples": [
+        {
+          "capture_before": 1792083440.6671011,
+          "actor_time": 1792083440.3767169,
+          "capture_after": 1792083440.9422686,
+          "round_trip_seconds": 0.27516746520996094,
+          "actor_minus_capture_seconds": -0.42796802520751953
+        },
+        {
+          "capture_before": 1792083440.9422925,
+          "actor_time": 1792083440.6982827,
+          "capture_after": 1792083441.2453885,
+          "round_trip_seconds": 0.30309605598449707,
+          "actor_minus_capture_seconds": -0.39555788040161133
+        },
+        {
+          "capture_before": 1792083441.2454135,
+          "actor_time": 1792083440.998953,
+          "capture_after": 1792083441.5417316,
+          "round_trip_seconds": 0.29631805419921875,
+          "actor_minus_capture_seconds": -0.3946194648742676
+        },
+        {
+          "capture_before": 1792083441.5417466,
+          "actor_time": 1792083441.4144,
+          "capture_after": 1792083441.9902859,
+          "round_trip_seconds": 0.44853925704956055,
+          "actor_minus_capture_seconds": -0.35161614418029785
+        },
+        {
+          "capture_before": 1792083441.9903128,
+          "actor_time": 1792083441.765583,
+          "capture_after": 1792083442.294774,
+          "round_trip_seconds": 0.3044612407684326,
+          "actor_minus_capture_seconds": -0.37696027755737305
+        },
+        {
+          "capture_before": 1792083442.294798,
+          "actor_time": 1792083442.1501782,
+          "capture_after": 1792083442.74756,
+          "round_trip_seconds": 0.4527621269226074,
+          "actor_minus_capture_seconds": -0.3710007667541504
+        },
+        {
+          "capture_before": 1792083442.747586,
+          "actor_time": 1792083442.64448,
+          "capture_after": 1792083443.1691594,
+          "round_trip_seconds": 0.4215734004974365,
+          "actor_minus_capture_seconds": -0.3138926029205322
+        }
+      ]
+    }
+  },
+  "assumption": "Clock offset remains inside the measured endpoint envelope during the run; reject clock steps."
+}
