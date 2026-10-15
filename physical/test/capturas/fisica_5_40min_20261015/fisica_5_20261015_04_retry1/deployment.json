@@ -1,0 +1,10 @@
+{
+  "remote_root": "/home/jose/coap-dataset",
+  "bundle": "/home/jose/coap-dataset/bundles/29bcf06650cc5994",
+  "node": "/home/jose/coap-dataset/node",
+  "zip_sha256": "29bcf06650cc5994dd4b5d154f54af4f11a17a0f5085ab8f482e13632ac1013f",
+  "runtime": "v26.10.0\nNode executable: /home/jose/coap-dataset/node\nLinux surface-pro4 6.19.8-arch1-3-surface #1 SMP PREEMPT_DYNAMIC Sat, 09 May 2026 10:41:21 +0000 x86_64 GNU/Linux",
+  "offline_tests": "\u2714 plans reproduce seeds, balance both attacks and cover the full session (32.595631ms)\n\u2714 invalid labels, gaps, overloaded plans and ambiguous NON tokens are rejected (3.256916ms)\n\u2714 the actor accepts one explicit private endpoint and rejects ambiguous CLI options (1.795188ms)\n\u2714 MID wrap cannot reuse a value before 247 seconds (6.786617ms)\n\u2714 ACK matching checks peer, MID and token; timeout is distinct from a send error (3.632062ms)\n\u2714 NON responses use token correlation even with another MID (0.984783ms)\n\u2714 wrong Block2 metadata is recorded as an error, not a valid response (1.260808ms)\n\ufe63 real UDP: preflight, both attacks, complete downloads, logs and hashes (0.157129ms) # SKIP\n\ufe63 real UDP: interrupt closes sockets and persists an interrupted session (0.290764ms) # SKIP\n\ufe63 real UDP: failed resource verification prevents all campaign phases (0.52399ms) # SKIP\n\u2139 tests 10\n\u2139 suites 0\n\u2139 pass 7\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 3\n\u2139 todo 0\n\u2139 duration_ms 66.116926",
+  "host": "10.37.225.230",
+  "user": "jose"
+}

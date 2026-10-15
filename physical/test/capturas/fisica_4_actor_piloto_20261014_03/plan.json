@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "generator_version": "1.0.0",
+  "seed": 2026,
+  "duration_s": 180,
+  "lanes": 4,
+  "response_timeout_ms": 3000,
+  "design": {
+    "pairs": 1,
+    "scale": 1,
+    "resource_bytes": 32768,
+    "block_bytes": 1024,
+    "purpose": "physical_campaign",
+    "labels": "externally_scheduled_workloads_not_proven_service_failure"
+  },
+  "phases": [
+    {
+      "id": "phase_001",
+      "kind": "baseline",
+      "label": "benign",
+      "start_s": 0,
+      "duration_s": 20.84129957948841,
+      "rate_rps": 5,
+      "message_type": "CON",
+      "token_policy": "unique",
+      "block_size": 1024,
+      "block_order": "sequential",
+      "fixed_block": 0
+    },
+    {
+      "id": "phase_002",
+      "kind": "guard",
+      "label": "excluded",
+      "start_s": 20.84129957948841,
+      "duration_s": 4,
+      "rate_rps": 0
+    },
+    {
+      "id": "phase_003",
+      "kind": "benign_sensor_burst",
+      "label": "benign",
+      "start_s": 24.84129957948841,
+      "duration_s": 9.465089964214712,
+      "rate_rps": 500,
+      "message_type": "CON",
+      "token_policy": "unique",
+      "block_size": 1024,
+      "block_order": "sequential",
+      "fixed_block": 5
+    },
+    {
+      "id": "phase_004",
+      "kind": "guard",
+      "label": "excluded",
+      "start_s": 34.30638954370312,
+      "duration_s": 4,
+      "rate_rps": 0
+    },
+    {
+      "id": "phase_005",
+      "kind": "baseline",
+      "label": "benign",
+      "start_s": 38.30638954370312,
+      "duration_s": 17.208770790223724,
+      "rate_rps": 5,
+      "message_type": "CON",
+      "token_policy": "unique",
+      "block_size": 1024,
+      "block_order": "sequential",
+      "fixed_block": 0
+    },
+    {
+      "id": "phase_006",
+      "kind": "guard",
+      "label": "excluded",
+      "start_s": 55.51516033392684,
+      "duration_s": 4,
+      "rate_rps": 0
+    },
+    {
+      "id": "phase_007",
+      "kind": "block2_amplification",
+      "label": "block2_amplification",
+      "start_s": 59.51516033392684,
+      "duration_s": 22.20787231088616,
+      "rate_rps": 100,
+      "message_type": "CON",
+      "token_policy": "episode",
+      "block_size": 1024,
+      "block_order": "random",
+      "fixed_block": 4
+    },
+    {
+      "id": "phase_008",
+      "kind": "guard",
+      "label": "excluded",
+      "start_s": 81.723032644813,
+      "duration_s": 4,
+      "rate_rps": 0
+    },
+    {
+      "id": "phase_009",
+      "kind": "baseline",
+      "label": "benign",
+      "start_s": 85.723032644813,
+      "duration_s": 4.735296003516865,
+      "rate_rps": 2,
+      "message_type": "CON",
+      "token_policy": "unique",
+      "block_size": 1024,
+      "block_order": "sequential",
+      "fixed_block": 0
+    },
+    {
+      "id": "phase_010",
+      "kind": "guard",
+      "label": "excluded",
+      "start_s": 90.45832864832987,
+      "duration_s": 4,
+      "rate_rps": 0
+    },
+    {
+      "id": "phase_011",
+      "kind": "request_flood",
+      "label": "request_flood",
+      "start_s": 94.45832864832987,
+      "duration_s": 10.734412244753912,
+      "rate_rps": 500,
+      "message_type": "CON",
+      "token_policy": "episode",
+      "block_size": 1024,
+      "block_order": "reverse",
+      "fixed_block": 1
+    },
+    {
+      "id": "phase_012",
+      "kind": "guard",
+      "label": "excluded",
+      "start_s": 105.19274089308378,
+      "duration_s": 4,
+      "rate_rps": 0
+    },
+    {
+      "id": "phase_013",
+      "kind": "baseline",
+      "label": "benign",
+      "start_s": 109.19274089308378,
+      "duration_s": 22.511922811862703,
+      "rate_rps": 5,
+      "message_type": "CON",
+      "token_policy": "unique",
+      "block_size": 1024,
+      "block_order": "sequential",
+      "fixed_block": 0
+    },
+    {
+      "id": "phase_014",
+      "kind": "guard",
+      "label": "excluded",
+      "start_s": 131.70466370494648,
+      "duration_s": 4,
+      "rate_rps": 0
+    },
+    {
+      "id": "phase_015",
+      "kind": "benign_block2_download",
+      "label": "benign",
+      "start_s": 135.70466370494648,
+      "duration_s": 10.87315194774419,
+      "rate_rps": 100,
+      "message_type": "CON",
+      "token_policy": "transfer",
+      "block_size": 1024,
+      "block_order": "sequential",
+      "fixed_block": 13
+    },
+    {
+      "id": "phase_016",
+      "kind": "guard",
+      "label": "excluded",
+      "start_s": 146.57781565269067,
+      "duration_s": 4,
+      "rate_rps": 0
+    },
+    {
+      "id": "phase_017",
+      "kind": "baseline",
+      "label": "benign",
+      "start_s": 150.57781565269067,
+      "duration_s": 25.422184347309326,
+      "rate_rps": 2,
+      "message_type": "CON",
+      "token_policy": "unique",
+      "block_size": 1024,
+      "block_order": "sequential",
+      "fixed_block": 0
+    },
+    {
+      "id": "phase_018",
+      "kind": "guard",
+      "label": "excluded",
+      "start_s": 176,
+      "duration_s": 4,
+      "rate_rps": 0
+    }
+  ]
+}

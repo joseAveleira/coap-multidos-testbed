@@ -1,0 +1,4 @@
+meta_session,meta_win_idx,meta_endpoint_a,meta_endpoint_b,meta_window_seconds,meta_n_frames,exclusion_reason
+piloto_esp32_20261013_01,167,10.37.225.138,10.37.225.73,1,2,outside_complete_observation_interval
+piloto_banco4_20261014_01,288,10.37.225.138,10.37.225.4,1,2,outside_complete_observation_interval
+piloto_banco4_20261014_01,288,10.37.225.138,10.37.225.73,1,2,outside_complete_observation_interval

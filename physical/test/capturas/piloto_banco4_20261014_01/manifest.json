@@ -1,0 +1,308 @@
+{
+  "schema": 1,
+  "purpose": "physical_multi_board_pilot_not_training_dataset",
+  "created_utc": "2026-10-14T08:19:50.885195+00:00",
+  "capture_command": [
+    "tshark",
+    "-i",
+    "\\Device\\NPF_{34CF96FE-697A-479B-A63B-430A4CBA7025}",
+    "-f",
+    "udp port 5683",
+    "-s",
+    "0",
+    "-a",
+    "duration:300",
+    "-w",
+    "test\\capturas\\piloto_banco4_20261014_01\\trafico_coap.pcapng",
+    "-q"
+  ],
+  "requested_capture_seconds": 300,
+  "server_ip": "10.37.225.138",
+  "devices": [
+    {
+      "device_id": 1,
+      "serial_port": "COM4",
+      "serial_baud": 115200
+    },
+    {
+      "device_id": 2,
+      "serial_port": "COM14",
+      "serial_baud": 115200
+    },
+    {
+      "device_id": 3,
+      "serial_port": "COM15",
+      "serial_baud": 115200
+    },
+    {
+      "device_id": 4,
+      "serial_port": "COM16",
+      "serial_baud": 115200
+    }
+  ],
+  "planned_traffic": "benign firmware profiles 1-4 with PROFILE_ID == DEVICE_ID; no attacks scheduled",
+  "network": "Aveleira phone hotspot, 2.4 GHz; server PC and four ESP32-S3 on Wi-Fi; capture on the server's physical Wi-Fi interface",
+  "timestamp_note": "serial timestamps are PC observation times, not ESP clock synchronisation",
+  "server_records_source": "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\scripts_esp32\\servidor\\registros\\piloto_banco4_20261014_01",
+  "tshark_version": "TShark (Wireshark) 4.6.4 (v4.6.4-0-g93282876538d).",
+  "commands": [
+    {
+      "kind": "serial_command",
+      "device": 1,
+      "epoch": 1791965991.175384,
+      "utc": "2026-10-14T08:19:51.175396+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 2,
+      "epoch": 1791965991.1757877,
+      "utc": "2026-10-14T08:19:51.175789+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 3,
+      "epoch": 1791965991.1759517,
+      "utc": "2026-10-14T08:19:51.175952+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 4,
+      "epoch": 1791965991.1760569,
+      "utc": "2026-10-14T08:19:51.176057+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 1,
+      "epoch": 1791965992.276885,
+      "utc": "2026-10-14T08:19:52.276900+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 2,
+      "epoch": 1791965992.27736,
+      "utc": "2026-10-14T08:19:52.277362+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 3,
+      "epoch": 1791965992.2775168,
+      "utc": "2026-10-14T08:19:52.277518+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 4,
+      "epoch": 1791965992.277639,
+      "utc": "2026-10-14T08:19:52.277640+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 1,
+      "epoch": 1791965993.3656523,
+      "utc": "2026-10-14T08:19:53.365667+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 2,
+      "epoch": 1791965993.366258,
+      "utc": "2026-10-14T08:19:53.366261+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 3,
+      "epoch": 1791965993.3664534,
+      "utc": "2026-10-14T08:19:53.366458+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 4,
+      "epoch": 1791965993.366581,
+      "utc": "2026-10-14T08:19:53.366581+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 1,
+      "epoch": 1791965994.456238,
+      "utc": "2026-10-14T08:19:54.456257+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 2,
+      "epoch": 1791965994.456797,
+      "utc": "2026-10-14T08:19:54.456800+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 3,
+      "epoch": 1791965994.457018,
+      "utc": "2026-10-14T08:19:54.457020+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 4,
+      "epoch": 1791965994.4571848,
+      "utc": "2026-10-14T08:19:54.457186+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 1,
+      "epoch": 1791965995.5511606,
+      "utc": "2026-10-14T08:19:55.551182+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 2,
+      "epoch": 1791965995.5524392,
+      "utc": "2026-10-14T08:19:55.552442+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 3,
+      "epoch": 1791965995.5526638,
+      "utc": "2026-10-14T08:19:55.552665+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 4,
+      "epoch": 1791965995.5528371,
+      "utc": "2026-10-14T08:19:55.552838+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 1,
+      "epoch": 1791965996.6355832,
+      "utc": "2026-10-14T08:19:56.635597+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 2,
+      "epoch": 1791965996.6361353,
+      "utc": "2026-10-14T08:19:56.636138+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 3,
+      "epoch": 1791965996.6363037,
+      "utc": "2026-10-14T08:19:56.636304+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 4,
+      "epoch": 1791965996.6364229,
+      "utc": "2026-10-14T08:19:56.636423+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 1,
+      "epoch": 1791965998.2792284,
+      "utc": "2026-10-14T08:19:58.279247+00:00",
+      "command": "START"
+    },
+    {
+      "kind": "serial_command",
+      "device": 2,
+      "epoch": 1791965998.2798052,
+      "utc": "2026-10-14T08:19:58.279813+00:00",
+      "command": "START"
+    },
+    {
+      "kind": "serial_command",
+      "device": 3,
+      "epoch": 1791965998.280041,
+      "utc": "2026-10-14T08:19:58.280043+00:00",
+      "command": "START"
+    },
+    {
+      "kind": "serial_command",
+      "device": 4,
+      "epoch": 1791965998.2802079,
+      "utc": "2026-10-14T08:19:58.280209+00:00",
+      "command": "START"
+    },
+    {
+      "kind": "serial_command",
+      "device": 1,
+      "epoch": 1791966287.2771077,
+      "utc": "2026-10-14T08:24:47.277118+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 2,
+      "epoch": 1791966287.2774372,
+      "utc": "2026-10-14T08:24:47.277443+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 3,
+      "epoch": 1791966287.2775779,
+      "utc": "2026-10-14T08:24:47.277578+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 4,
+      "epoch": 1791966287.2776592,
+      "utc": "2026-10-14T08:24:47.277659+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "device": 1,
+      "epoch": 1791966289.2756157,
+      "utc": "2026-10-14T08:24:49.275636+00:00",
+      "command": "STATUS"
+    },
+    {
+      "kind": "serial_command",
+      "device": 2,
+      "epoch": 1791966289.276292,
+      "utc": "2026-10-14T08:24:49.276295+00:00",
+      "command": "STATUS"
+    },
+    {
+      "kind": "serial_command",
+      "device": 3,
+      "epoch": 1791966289.276532,
+      "utc": "2026-10-14T08:24:49.276534+00:00",
+      "command": "STATUS"
+    },
+    {
+      "kind": "serial_command",
+      "device": 4,
+      "epoch": 1791966289.2767386,
+      "utc": "2026-10-14T08:24:49.276740+00:00",
+      "command": "STATUS"
+    }
+  ],
+  "serial_errors": [],
+  "capture_process_started_epoch": 1791965991.160544,
+  "tshark_exit_code": 0,
+  "finished_utc": "2026-10-14T08:24:52.367933+00:00",
+  "capture_bytes": 483124,
+  "capture_sha256": "e9765f03cc141be3cd399ab14789ea7d3a53da6e4864587bf8d0cd8703c6e74d"
+}

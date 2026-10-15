@@ -1,0 +1,11 @@
+Comprobación correcta. Inicio UTC: 2026-10-14T11:44:11.539Z
+phase_001: baseline, 5 req/s objetivo, 20.8 s
+phase_003: benign_sensor_burst, 500 req/s objetivo, 9.5 s
+phase_005: baseline, 5 req/s objetivo, 17.2 s
+phase_007: block2_amplification, 100 req/s objetivo, 22.2 s
+phase_009: baseline, 2 req/s objetivo, 4.7 s
+phase_011: request_flood, 500 req/s objetivo, 10.7 s
+phase_013: baseline, 5 req/s objetivo, 22.5 s
+phase_015: benign_block2_download, 100 req/s objetivo, 10.9 s
+phase_017: baseline, 2 req/s objetivo, 25.4 s
+Sesión completed: /home/jose/coap-dataset/records/fisica_4_actor_piloto_20261014_03

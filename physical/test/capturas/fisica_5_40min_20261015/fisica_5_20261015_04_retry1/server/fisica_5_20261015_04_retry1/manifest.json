@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "host": "0.0.0.0",
+  "port": 5683,
+  "seed": 2026101404,
+  "duration": 715,
+  "session": "fisica_5_20261015_04_retry1",
+  "output": "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_04_retry1\\server",
+  "requests": false,
+  "control-stdin": true,
+  "node_version": "v22.19.0",
+  "started_utc": "2026-10-15T10:02:54.402Z",
+  "resource_bytes": 32768,
+  "sensor_source": "synthetic process value",
+  "client_inventory": "recorded in the capture session manifest"
+}

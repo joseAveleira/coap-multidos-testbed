@@ -1,0 +1,690 @@
+{
+  "status": "audited",
+  "physical_acquisitions": 7,
+  "campaign_sessions": 4,
+  "capture_seconds_planned": 2400,
+  "physical_coap_packets": 769063,
+  "campaign_coap_packets": 714030,
+  "physical_exports": {
+    "0_5s": {
+      "rows": 18249,
+      "classes": {
+        "0": 17495,
+        "1": 389,
+        "2": 365
+      }
+    },
+    "1_0s": {
+      "rows": 12684,
+      "classes": {
+        "0": 12332,
+        "1": 184,
+        "2": 168
+      }
+    },
+    "2_0s": {
+      "rows": 7228,
+      "classes": {
+        "0": 7076,
+        "1": 79,
+        "2": 73
+      }
+    }
+  },
+  "campaign_exports": {
+    "0_5s": {
+      "rows": 16041,
+      "classes": {
+        "0": 15349,
+        "1": 347,
+        "2": 345
+      }
+    },
+    "1_0s": {
+      "rows": 10933,
+      "classes": {
+        "0": 10611,
+        "1": 163,
+        "2": 159
+      }
+    },
+    "2_0s": {
+      "rows": 6161,
+      "classes": {
+        "0": 6023,
+        "1": 69,
+        "2": 69
+      }
+    }
+  },
+  "campaign_attack_episodes": {
+    "block2_amplification": 24,
+    "request_flood": 24
+  },
+  "hashes_verified": true,
+  "predictors_finite": true,
+  "sessions": [
+    {
+      "session": "piloto_esp32_20261013_01",
+      "coap_packets": 380,
+      "windows": {
+        "0_5s": {
+          "kept": 189,
+          "excluded": 1,
+          "classes": {
+            "benign": 189
+          },
+          "reasons": {
+            "outside_complete_observation_interval": 1
+          }
+        },
+        "1_0s": {
+          "kept": 164,
+          "excluded": 1,
+          "classes": {
+            "benign": 164
+          },
+          "reasons": {
+            "outside_complete_observation_interval": 1
+          }
+        },
+        "2_0s": {
+          "kept": 82,
+          "excluded": 1,
+          "classes": {
+            "benign": 82
+          },
+          "reasons": {
+            "outside_complete_observation_interval": 1
+          }
+        }
+      }
+    },
+    {
+      "session": "piloto_banco4_20261014_01",
+      "coap_packets": 2520,
+      "windows": {
+        "0_5s": {
+          "kept": 904,
+          "excluded": 2,
+          "classes": {
+            "benign": 904
+          },
+          "reasons": {
+            "outside_complete_observation_interval": 2
+          }
+        },
+        "1_0s": {
+          "kept": 803,
+          "excluded": 2,
+          "classes": {
+            "benign": 803
+          },
+          "reasons": {
+            "outside_complete_observation_interval": 2
+          }
+        },
+        "2_0s": {
+          "kept": 525,
+          "excluded": 2,
+          "classes": {
+            "benign": 525
+          },
+          "reasons": {
+            "outside_complete_observation_interval": 2
+          }
+        }
+      }
+    },
+    {
+      "session": "fisica_4_actor_piloto_20261014_03",
+      "coap_packets": 52133,
+      "windows": {
+        "0_5s": {
+          "kept": 1115,
+          "excluded": 30,
+          "classes": {
+            "benign": 1053,
+            "coap_block2_amplification_flood": 42,
+            "coap_request_flood": 20
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 24,
+            "preflight_guard_or_unknown_packet_origin": 5,
+            "outside_complete_observation_interval": 1
+          }
+        },
+        "1_0s": {
+          "kept": 784,
+          "excluded": 24,
+          "classes": {
+            "benign": 754,
+            "coap_block2_amplification_flood": 21,
+            "coap_request_flood": 9
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 19,
+            "preflight_guard_or_unknown_packet_origin": 3,
+            "outside_complete_observation_interval": 2
+          }
+        },
+        "2_0s": {
+          "kept": 460,
+          "excluded": 23,
+          "classes": {
+            "benign": 446,
+            "coap_block2_amplification_flood": 10,
+            "coap_request_flood": 4
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 19,
+            "preflight_guard_or_unknown_packet_origin": 2,
+            "outside_complete_observation_interval": 2
+          }
+        }
+      }
+    },
+    {
+      "session": "fisica_5_20261015_01",
+      "coap_packets": 199675,
+      "windows": {
+        "0_5s": {
+          "kept": 3967,
+          "excluded": 140,
+          "classes": {
+            "benign": 3795,
+            "coap_block2_amplification_flood": 89,
+            "coap_request_flood": 83
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 129,
+            "preflight_guard_or_unknown_packet_origin": 9,
+            "outside_complete_observation_interval": 2
+          }
+        },
+        "1_0s": {
+          "kept": 2712,
+          "excluded": 127,
+          "classes": {
+            "benign": 2632,
+            "coap_block2_amplification_flood": 42,
+            "coap_request_flood": 38
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 117,
+            "preflight_guard_or_unknown_packet_origin": 7,
+            "outside_complete_observation_interval": 3
+          }
+        },
+        "2_0s": {
+          "kept": 1528,
+          "excluded": 115,
+          "classes": {
+            "benign": 1492,
+            "coap_block2_amplification_flood": 19,
+            "coap_request_flood": 17
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 106,
+            "preflight_guard_or_unknown_packet_origin": 4,
+            "outside_complete_observation_interval": 5
+          }
+        }
+      }
+    },
+    {
+      "session": "fisica_5_20261015_02",
+      "coap_packets": 182403,
+      "windows": {
+        "0_5s": {
+          "kept": 4027,
+          "excluded": 124,
+          "classes": {
+            "benign": 3854,
+            "coap_request_flood": 89,
+            "coap_block2_amplification_flood": 84
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 120,
+            "preflight_guard_or_unknown_packet_origin": 3,
+            "outside_complete_observation_interval": 1
+          }
+        },
+        "1_0s": {
+          "kept": 2747,
+          "excluded": 111,
+          "classes": {
+            "benign": 2668,
+            "coap_request_flood": 41,
+            "coap_block2_amplification_flood": 38
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 108,
+            "preflight_guard_or_unknown_packet_origin": 2,
+            "outside_complete_observation_interval": 1
+          }
+        },
+        "2_0s": {
+          "kept": 1539,
+          "excluded": 111,
+          "classes": {
+            "benign": 1507,
+            "coap_request_flood": 17,
+            "coap_block2_amplification_flood": 15
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 108,
+            "preflight_guard_or_unknown_packet_origin": 2,
+            "outside_complete_observation_interval": 1
+          }
+        }
+      }
+    },
+    {
+      "session": "fisica_5_20261015_03",
+      "coap_packets": 166427,
+      "windows": {
+        "0_5s": {
+          "kept": 3967,
+          "excluded": 119,
+          "classes": {
+            "benign": 3807,
+            "coap_block2_amplification_flood": 79,
+            "coap_request_flood": 81
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 107,
+            "preflight_guard_or_unknown_packet_origin": 7,
+            "outside_complete_observation_interval": 5
+          }
+        },
+        "1_0s": {
+          "kept": 2707,
+          "excluded": 113,
+          "classes": {
+            "benign": 2632,
+            "coap_block2_amplification_flood": 38,
+            "coap_request_flood": 37
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 104,
+            "preflight_guard_or_unknown_packet_origin": 4,
+            "outside_complete_observation_interval": 5
+          }
+        },
+        "2_0s": {
+          "kept": 1541,
+          "excluded": 109,
+          "classes": {
+            "benign": 1509,
+            "coap_block2_amplification_flood": 16,
+            "coap_request_flood": 16
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 102,
+            "preflight_guard_or_unknown_packet_origin": 2,
+            "outside_complete_observation_interval": 5
+          }
+        }
+      }
+    },
+    {
+      "session": "fisica_5_20261015_04_retry1",
+      "coap_packets": 165525,
+      "windows": {
+        "0_5s": {
+          "kept": 4080,
+          "excluded": 101,
+          "classes": {
+            "benign": 3893,
+            "coap_block2_amplification_flood": 95,
+            "coap_request_flood": 92
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 92,
+            "preflight_guard_or_unknown_packet_origin": 6,
+            "outside_complete_observation_interval": 3
+          }
+        },
+        "1_0s": {
+          "kept": 2767,
+          "excluded": 100,
+          "classes": {
+            "benign": 2679,
+            "coap_block2_amplification_flood": 45,
+            "coap_request_flood": 43
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 93,
+            "preflight_guard_or_unknown_packet_origin": 3,
+            "outside_complete_observation_interval": 4
+          }
+        },
+        "2_0s": {
+          "kept": 1553,
+          "excluded": 107,
+          "classes": {
+            "benign": 1515,
+            "coap_block2_amplification_flood": 19,
+            "coap_request_flood": 19
+          },
+          "reasons": {
+            "phase_boundary_or_clock_uncertainty": 100,
+            "preflight_guard_or_unknown_packet_origin": 2,
+            "outside_complete_observation_interval": 5
+          }
+        }
+      }
+    }
+  ],
+  "campaign_attack_summary": {
+    "block2_amplification": {
+      "episodes": 24,
+      "actual_duration_min_s": 6.573172330856323,
+      "actual_duration_max_s": 9.848741054534912,
+      "actual_duration_total_s": 195.30728840827942,
+      "target_rates_rps": [
+        40,
+        100,
+        200,
+        350,
+        500
+      ],
+      "achieved_send_rate_min_rps": 40.040629336965814,
+      "achieved_send_rate_max_rps": 499.02799269503186,
+      "accepted_by_udp": 40752,
+      "requests_seen_at_server": 39305,
+      "responses_seen_at_server": 39115,
+      "valid_responses": 33018,
+      "timeouts": 7734,
+      "message_types": [
+        "CON",
+        "NON"
+      ],
+      "block_orders": [
+        "fixed",
+        "random",
+        "reverse",
+        "sequential"
+      ],
+      "token_policies": [
+        "episode",
+        "unique"
+      ]
+    },
+    "request_flood": {
+      "episodes": 24,
+      "actual_duration_min_s": 6.2008161544799805,
+      "actual_duration_max_s": 9.736257076263428,
+      "actual_duration_total_s": 191.09771370887756,
+      "target_rates_rps": [
+        80,
+        180,
+        350,
+        500,
+        650
+      ],
+      "achieved_send_rate_min_rps": 80.09889839770979,
+      "achieved_send_rate_max_rps": 618.8098112696312,
+      "accepted_by_udp": 67838,
+      "requests_seen_at_server": 66793,
+      "responses_seen_at_server": 66793,
+      "valid_responses": 65367,
+      "timeouts": 2471,
+      "message_types": [
+        "CON",
+        "NON"
+      ],
+      "block_orders": [
+        "fixed",
+        "random",
+        "reverse",
+        "sequential"
+      ],
+      "token_policies": [
+        "episode",
+        "unique"
+      ]
+    }
+  },
+  "campaign_configuration": [
+    {
+      "session": "fisica_5_20261015_01",
+      "seed": 2026101401,
+      "physical_clients": 5,
+      "capture_allocation_s": 600,
+      "actor_plan_s": 565,
+      "block2_amplification_episodes": 6,
+      "block2_amplification_rates_rps": "100;200;350;500",
+      "block2_amplification_duration_min_s": 7.333372592926025,
+      "block2_amplification_duration_max_s": 9.848741054534912,
+      "block2_amplification_types": "CON;NON",
+      "request_flood_episodes": 6,
+      "request_flood_rates_rps": "80;350;650",
+      "request_flood_duration_min_s": 6.2008161544799805,
+      "request_flood_duration_max_s": 9.188968181610107,
+      "request_flood_types": "CON;NON",
+      "attack_block_orders": "fixed;random;reverse;sequential",
+      "attack_token_policies": "unique"
+    },
+    {
+      "session": "fisica_5_20261015_02",
+      "seed": 2026101402,
+      "physical_clients": 5,
+      "capture_allocation_s": 600,
+      "actor_plan_s": 565,
+      "block2_amplification_episodes": 6,
+      "block2_amplification_rates_rps": "40;100;350;500",
+      "block2_amplification_duration_min_s": 7.01032280921936,
+      "block2_amplification_duration_max_s": 8.737356662750244,
+      "block2_amplification_types": "CON;NON",
+      "request_flood_episodes": 6,
+      "request_flood_rates_rps": "80;180;350;650",
+      "request_flood_duration_min_s": 6.739619970321655,
+      "request_flood_duration_max_s": 9.736257076263428,
+      "request_flood_types": "CON;NON",
+      "attack_block_orders": "fixed;random;reverse;sequential",
+      "attack_token_policies": "episode;unique"
+    },
+    {
+      "session": "fisica_5_20261015_03",
+      "seed": 2026101403,
+      "physical_clients": 5,
+      "capture_allocation_s": 600,
+      "actor_plan_s": 565,
+      "block2_amplification_episodes": 6,
+      "block2_amplification_rates_rps": "40;100;350;500",
+      "block2_amplification_duration_min_s": 6.573172330856323,
+      "block2_amplification_duration_max_s": 9.01877737045288,
+      "block2_amplification_types": "CON;NON",
+      "request_flood_episodes": 6,
+      "request_flood_rates_rps": "180;350;500;650",
+      "request_flood_duration_min_s": 6.434648513793945,
+      "request_flood_duration_max_s": 9.329580783843994,
+      "request_flood_types": "CON;NON",
+      "attack_block_orders": "fixed;random;reverse;sequential",
+      "attack_token_policies": "episode;unique"
+    },
+    {
+      "session": "fisica_5_20261015_04_retry1",
+      "seed": 2026101404,
+      "physical_clients": 5,
+      "capture_allocation_s": 600,
+      "actor_plan_s": 565,
+      "block2_amplification_episodes": 6,
+      "block2_amplification_rates_rps": "40;100;200;500",
+      "block2_amplification_duration_min_s": 7.53624153137207,
+      "block2_amplification_duration_max_s": 9.378491401672363,
+      "block2_amplification_types": "CON;NON",
+      "request_flood_episodes": 6,
+      "request_flood_rates_rps": "80;180;350",
+      "request_flood_duration_min_s": 6.781060457229614,
+      "request_flood_duration_max_s": 9.621483564376831,
+      "request_flood_types": "CON;NON",
+      "attack_block_orders": "fixed;reverse;sequential",
+      "attack_token_policies": "episode;unique"
+    }
+  ],
+  "clocks": [
+    {
+      "session": "fisica_5_20261015_01",
+      "offset_s": -0.11710989475250244,
+      "uncertainty_s": 0.2167282361984253
+    },
+    {
+      "session": "fisica_5_20261015_02",
+      "offset_s": -0.1750633716583252,
+      "uncertainty_s": 0.19970026206970215
+    },
+    {
+      "session": "fisica_5_20261015_03",
+      "offset_s": -0.18388009071350098,
+      "uncertainty_s": 0.10413625431060791
+    },
+    {
+      "session": "fisica_5_20261015_04_retry1",
+      "offset_s": -0.23136591911315918,
+      "uncertainty_s": 0.050187971115112306
+    }
+  ],
+  "timestamp_ordering": [
+    {
+      "session": "fisica_5_20261015_01",
+      "packets": 199675,
+      "timestamp_tick_seconds": 1e-09,
+      "adjacent_timestamp_backsteps": 363,
+      "maximum_backstep_seconds": 0.0014341,
+      "packet_timestamp_multiset_sha256": "eef3f0ab8935a62ef287b29cffdb3cd9db292ab95a5fc43c3d3a986357ef6493"
+    },
+    {
+      "session": "fisica_5_20261015_02",
+      "packets": 182403,
+      "timestamp_tick_seconds": 1e-09,
+      "adjacent_timestamp_backsteps": 297,
+      "maximum_backstep_seconds": 0.004310700000000001,
+      "packet_timestamp_multiset_sha256": "3a9224e1290afd71699efd9abbf8432be6b80f243bc524562afa03a2eaa59dcf"
+    },
+    {
+      "session": "fisica_5_20261015_03",
+      "packets": 166427,
+      "timestamp_tick_seconds": 1e-09,
+      "adjacent_timestamp_backsteps": 333,
+      "maximum_backstep_seconds": 0.0019323,
+      "packet_timestamp_multiset_sha256": "46075234b17a2fdca44aa77f9cbd6b76b42bb4ca1b06fcb044b4502d751b880a"
+    },
+    {
+      "session": "fisica_5_20261015_04_retry1",
+      "packets": 165525,
+      "timestamp_tick_seconds": 1e-09,
+      "adjacent_timestamp_backsteps": 170,
+      "maximum_backstep_seconds": 0.0014095000000000002,
+      "packet_timestamp_multiset_sha256": "a04e9a91b563a037947ac2036fa572d8e7fedc963be86caf9f85c88c1c465da0"
+    }
+  ],
+  "campaign_packets_by_peer": {
+    "fisica_5_20261015_01": {
+      "10.37.225.4": {
+        "requests": 9319,
+        "responses": 9319
+      },
+      "10.37.225.20": {
+        "requests": 5413,
+        "responses": 5412
+      },
+      "10.37.225.67": {
+        "requests": 12002,
+        "responses": 12002
+      },
+      "10.37.225.73": {
+        "requests": 674,
+        "responses": 674
+      },
+      "10.37.225.230": {
+        "requests": 62527,
+        "responses": 62527
+      },
+      "10.37.225.60": {
+        "requests": 9903,
+        "responses": 9903
+      }
+    },
+    "fisica_5_20261015_02": {
+      "10.37.225.20": {
+        "requests": 5428,
+        "responses": 5427
+      },
+      "10.37.225.73": {
+        "requests": 680,
+        "responses": 680
+      },
+      "10.37.225.4": {
+        "requests": 10427,
+        "responses": 10427
+      },
+      "10.37.225.67": {
+        "requests": 14588,
+        "responses": 14588
+      },
+      "10.37.225.60": {
+        "requests": 9664,
+        "responses": 9664
+      },
+      "10.37.225.230": {
+        "requests": 50510,
+        "responses": 50320
+      }
+    },
+    "fisica_5_20261015_03": {
+      "10.37.225.73": {
+        "requests": 672,
+        "responses": 672
+      },
+      "10.37.225.67": {
+        "requests": 14721,
+        "responses": 14708
+      },
+      "10.37.225.20": {
+        "requests": 5349,
+        "responses": 5349
+      },
+      "10.37.225.60": {
+        "requests": 9468,
+        "responses": 9468
+      },
+      "10.37.225.4": {
+        "requests": 8430,
+        "responses": 8430
+      },
+      "10.37.225.230": {
+        "requests": 44580,
+        "responses": 44580
+      }
+    },
+    "fisica_5_20261015_04_retry1": {
+      "10.37.225.4": {
+        "requests": 10878,
+        "responses": 10878
+      },
+      "10.37.225.73": {
+        "requests": 682,
+        "responses": 682
+      },
+      "10.37.225.20": {
+        "requests": 6023,
+        "responses": 6023
+      },
+      "10.37.225.230": {
+        "requests": 40038,
+        "responses": 40038
+      },
+      "10.37.225.60": {
+        "requests": 9668,
+        "responses": 9667
+      },
+      "10.37.225.67": {
+        "requests": 15474,
+        "responses": 15474
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "counters",
+  "epoch": 1792056813.594,
+  "rx": 107294,
+  "tx": 107294,
+  "rx_bytes": 1684304,
+  "tx_bytes": 51301706,
+  "malformed": 0,
+  "duplicates": 3,
+  "mid_collisions": 0,
+  "cache_evictions": 5057,
+  "send_errors": 0,
+  "sensor": 59770,
+  "large": 47521,
+  "errors": 0,
+  "dropped_log_entries": 0
+}

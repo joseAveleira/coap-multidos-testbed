@@ -1,0 +1,138 @@
+VALIDACIÓN DEL PILOTO FÍSICO CoAP CON CUATRO PLACAS — 14 de octubre de 2026
+
+Resultado: las cuatro placas, sus cuatro perfiles legítimos, el servidor y la
+captura funcionan juntos sobre la red física. Este piloto es tráfico benigno;
+todavía no constituye una campaña de detección DoS ni demuestra
+generalización del modelo.
+
+PRUEBA REALIZADA
+
+Captura programada de 300 segundos, de 10:19:50 a 10:24:52 (Europe/Madrid).
+La sesión controlada entre START y STOP dura 289,00 s (10:19:58–10:24:47);
+el intervalo entre el primer y último paquete es 288,34 s.
+
+Cuatro ESP32-S3 (QFN56) revisión 0.2, flash integrada de 4 MB, PSRAM de 2 MB
+no utilizada por el firmware. Firmware compilado con PlatformIO
+espressif32@7.0.1 y flasheado el mismo día; los logs de carga indican
+"Hash of data verified". El binario esp32_01 tiene el mismo SHA-256 que el
+del piloto del 13 de octubre (compilación reproducible).
+
+  Placa  Perfil                  Puerto  MAC                IP
+  01     control_periodico       COM4    d0:cf:13:08:43:4c  10.37.225.73
+  02     lectura_eventos         COM14   d0:cf:13:08:41:48  10.37.225.67
+  03     sincronizacion_config   COM15   d0:cf:13:08:36:4c  10.37.225.60
+  04     supervision_cache       COM16   d0:cf:13:08:42:08  10.37.225.4
+
+Servidor 10.37.225.138:5683 (Node v22.19.0, semilla 2026, --requests).
+Red Aveleira: punto de acceso del teléfono, 2,4 GHz. El PC servidor y las
+cuatro placas usan Wi-Fi. Captura en la interfaz física del servidor con
+filtro udp port 5683. El contenido de los recursos es sintético; las
+comunicaciones y tiempos son reales. No se programaron ataques.
+
+Comprobación previa (servidor/comprobar.js desde el propio servidor): /sensor
+y descarga completa de /large correctas. Por ejecutarse en local, solo
+verifica el servicio, no la conectividad física.
+
+RESULTADOS OBSERVADOS
+
+- 2520 paquetes (TShark: 2520 capturados): 1260 peticiones y 1260 respuestas.
+  Ningún paquete malformado, truncado ni con direcciones ajenas al banco.
+- Las 1260 transacciones coinciden entre PCAP, registro del servidor y
+  consola de cada ESP32. Clave: MID+token para CON; token para NON, porque la
+  respuesta NON lleva un MID nuevo.
+- Servidor durante el intervalo: 0 duplicados, 0 colisiones de MID, 0 errores,
+  0 expulsiones de caché y 0 entradas de registro descartadas.
+
+  Placa  Peticiones  Tipos              Tasa (pet/s)  RTT ESP sin reintento (ms)    Retx  RSSI
+  01     325         325 CON            1,12          sensor 50 / p95 146 / máx 294   2   -56
+  02     337         125 CON, 212 NON   1,17          sensor 63 / 146 / 426           0   -44
+                                                      ráfaga 51 / 154 / 355
+  03     264         264 CON            0,91          sensor 43 / 237 / 295           1   -53
+                                                      Block2 110 / 141 / 294
+  04     334         334 CON            1,16          sensor 44 / 143 / 403           0   -51
+                                                      bloque 30 / 159 / 210
+  (RTT: mediana / percentil 95 / máximo, medido por el ESP desde el primer envío.)
+
+- Block2, placa 03: 5 descargas completas de 32 bloques, en orden, con un
+  token por transferencia y un único ETag (10ba4770). Las 5 terminan en
+  download_verified: el ESP comprueba todos los bytes. Separación mínima
+  entre bloques en el servidor: 28,3 ms (objetivo en el ESP: al menos 20 ms).
+- Lecturas repetidas, placa 04: 12 episodios de 6 lecturas del mismo bloque
+  (72 peticiones). Separación mínima dentro de un episodio: 108,7 ms.
+- Ráfagas NON, placa 02: 8 ráfagas de 24 a 30 GET NON, de unos 3 s cada una,
+  212 peticiones en total y todas respondidas.
+- Retransmisiones: 3 de 1260 transacciones (2 en la placa 01, 1 en la 03).
+  En las tres, la primera copia no aparece ni en el PCAP ni en el registro
+  del servidor, y el servidor no contó duplicados. La pérdida se produjo entre
+  el ESP y la interfaz de captura del servidor. Es una observación de pérdida
+  física en esta sesión, no una tasa representativa de la red.
+- La temporización en el servidor no es la del ESP. En la placa 02, el ESP
+  envía las peticiones de ráfaga con 97–100 ms o más de separación (resolución
+  de millis), pero en 50 de 204 pares consecutivos llegan al servidor con
+  menos de 50 ms entre sí. En 43 de esos 50 pares, el RTT de la petición
+  anterior es de al menos la separación de envío menos 10 ms: su retraso en la
+  Wi-Fi comprime las llegadas. Del mismo modo, en la placa 01 hay dos
+  intervalos de 10,6 y 11,1 ms entre consultas, cada uno justo después de una
+  de sus dos retransmisiones (MID 17888 y 17977): la siguiente consulta
+  periódica ya estaba vencida. Los tiempos entre llegadas medidos en el servidor incluyen
+  el jitter de la red; el "al menos 100 ms" del README se refiere al envío.
+- TShark no informa de un recuento de paquetes descartados por la captura:
+  queda como dato no disponible, no como cero.
+
+INCIDENCIA EN EL REGISTRO SERIE
+
+En capturar_banco.py, readline() con timeout de 0,2 s partió 6 líneas en dos
+fragmentos (2, 1, 2 y 1 en las placas 01–04). serial.jsonl se conserva sin
+modificar; analizar_banco.py une los fragmentos consecutivos de cada placa
+(campo serial_lines_rejoined). Con esa unión, las respuestas registradas
+coinciden con el resumen interno de cada ESP (325, 337, 264 y 334).
+El lector se corrigió en capturar_banco.py DESPUÉS de este piloto;
+entorno.json registra el hash del script tal como se usó en esta captura.
+capturar_piloto.py tiene el mismo comportamiento latente. En el piloto del
+13 de octubre no partió ninguna línea (190/190 coincidencias).
+
+VALIDEZ Y LÍMITES
+
+- Queda verificado el punto 1 pendiente del piloto anterior: las cuatro placas
+  y sus perfiles, Block2 completo con download_verified desde un ESP, ráfagas
+  NON y lecturas repetidas de bloques.
+- Es una única sesión benigna. Las cuatro placas son del mismo modelo: aportan
+  cuatro clientes físicos, no diversidad de hardware.
+- La intensidad benigna es baja. En ventanas de 1 s, con las cuatro placas
+  juntas, la media es de 4,4 peticiones/s y el máximo de 22. Los ataques del
+  artículo programan de 50 a 660 peticiones/s, así que con este tráfico una
+  simple regla de tasa los separaría. El tráfico legítimo de alta tasa (ráfagas
+  y Block2) debe venir del actor, como estaba previsto.
+- ventanas_*s.json son recuentos de auditoría alineados al START, con ventanas
+  vacías incluidas. No son los 23 predictores del artículo.
+- La IP del servidor coincidió con la compilada (10.37.225.138), pero el
+  punto de acceso asigna direcciones por DHCP: hay que comprobarla antes de
+  cada sesión.
+
+PRÓXIMOS PASOS
+
+1. Validar el actor desde el segundo ordenador (check y piloto de 180 s) con
+   las cuatro placas activas y captura central en el servidor.
+2. Ampliar SESSION_MS del firmware (ahora 10 min) antes de sesiones de
+   15 a 20 minutos, dejando margen para la preparación.
+3. Implementar una definición común PCAP → ventanas → 23 predictores y
+   aplicarla a 0,5, 1 y 2 s sobre los mismos PCAP.
+
+ARCHIVOS
+
+trafico_coap.pcapng: evidencia original (SHA-256 en manifest.json).
+manifest.json: tiempos, órdenes serie por placa, comandos y hash del PCAP.
+serial.jsonl: consola de las cuatro placas con tiempos de observación del PC.
+dispositivos.json y flash_esp32_0X.log: placa, puerto, MAC, chip y hash del
+  firmware cargado. No se registra la clave Wi-Fi.
+server_manifest.json y server_snapshot.jsonl: copia de los registros del
+  servidor. Incluye la comprobación previa y el tráfico de las placas antes
+  del START; analisis.json se limita al intervalo START/STOP.
+paquetes.json, analisis.json y ventanas_*s.json: extracción y auditoría.
+capinfos.txt y tshark.*.log: información de la captura.
+entorno.json: versiones y hashes de las fuentes, scripts y firmware.
+sha256.json: hashes de todos los archivos de esta carpeta.
+
+Estado final: las cuatro placas se detuvieron con STOP y el servidor sigue
+activo en UDP 5683 (sesión piloto_banco4_20261014_01). No se modificaron el
+artículo ni los CSV del dataset anterior.

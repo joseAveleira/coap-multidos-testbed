@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "host": "0.0.0.0",
+  "port": 5683,
+  "seed": 2026,
+  "duration": 0,
+  "session": "piloto_banco4_20261014_01",
+  "output": "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\scripts_esp32\\servidor\\registros",
+  "requests": true,
+  "node_version": "v22.19.0",
+  "started_utc": "2026-10-14T08:18:56.557Z",
+  "resource_bytes": 32768,
+  "sensor_source": "synthetic process value",
+  "firmware_profiles": 4
+}

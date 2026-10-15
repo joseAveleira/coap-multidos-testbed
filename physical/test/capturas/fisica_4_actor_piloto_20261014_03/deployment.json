@@ -1,0 +1,75 @@
+{
+  "host": "10.37.225.230",
+  "user": "jose",
+  "system": "Linux surface-pro4 6.19.8-arch1-3-surface #1 SMP PREEMPT_DYNAMIC Sat, 09 May 2026 10:41:21 +0000 x86_64 GNU/Linux\nNAME=\"Arch Linux\"\nPRETTY_NAME=\"Arch Linux\"\nID=arch\nBUILD_ID=rolling\nANSI_COLOR=\"38;2;23;147;209\"\nHOME_URL=\"https://archlinux.org/\"\nDOCUMENTATION_URL=\"https://wiki.archlinux.org/\"\nSUPPORT_URL=\"https://bbs.archlinux.org/\"\nBUG_REPORT_URL=\"https://gitlab.archlinux.org/groups/archlinux/-/issues\"\nPRIVACY_POLICY_URL=\"https://terms.archlinux.org/docs/privacy-policy/\"\nLOGO=archlinux-logo\n/usr/bin/node\n/usr/bin/python3\n               total       usado       libre  compartido   b\u00faf/cach\u00e9  disponible\nMem:            3835        1576        1335         291        1479        2259\nInter:         12026           0       12026",
+  "clock_probe": {
+    "best": {
+      "capture_before": 1791977816.891354,
+      "actor_time": 1791977816.796943,
+      "capture_after": 1791977816.9722512,
+      "round_trip_seconds": 0.08089709281921387,
+      "actor_minus_capture_seconds": -0.13485980033874512
+    },
+    "samples": [
+      {
+        "capture_before": 1791977815.9552944,
+        "actor_time": 1791977816.0955656,
+        "capture_after": 1791977816.2704992,
+        "round_trip_seconds": 0.3152048587799072,
+        "actor_minus_capture_seconds": -0.017331361770629883
+      },
+      {
+        "capture_before": 1791977816.2705154,
+        "actor_time": 1791977816.2841868,
+        "capture_after": 1791977816.4608774,
+        "round_trip_seconds": 0.19036197662353516,
+        "actor_minus_capture_seconds": -0.08150959014892578
+      },
+      {
+        "capture_before": 1791977816.4608898,
+        "actor_time": 1791977816.3726218,
+        "capture_after": 1791977816.5648668,
+        "round_trip_seconds": 0.10397696495056152,
+        "actor_minus_capture_seconds": -0.14025664329528809
+      },
+      {
+        "capture_before": 1791977816.5648763,
+        "actor_time": 1791977816.5334175,
+        "capture_after": 1791977816.7087793,
+        "round_trip_seconds": 0.14390301704406738,
+        "actor_minus_capture_seconds": -0.10341048240661621
+      },
+      {
+        "capture_before": 1791977816.7087898,
+        "actor_time": 1791977816.7165995,
+        "capture_after": 1791977816.8913455,
+        "round_trip_seconds": 0.1825556755065918,
+        "actor_minus_capture_seconds": -0.08346819877624512
+      },
+      {
+        "capture_before": 1791977816.891354,
+        "actor_time": 1791977816.796943,
+        "capture_after": 1791977816.9722512,
+        "round_trip_seconds": 0.08089709281921387,
+        "actor_minus_capture_seconds": -0.13485980033874512
+      },
+      {
+        "capture_before": 1791977816.972262,
+        "actor_time": 1791977816.9749112,
+        "capture_after": 1791977817.1525023,
+        "round_trip_seconds": 0.18024039268493652,
+        "actor_minus_capture_seconds": -0.08747100830078125
+      }
+    ]
+  },
+  "base_dependencies": {
+    "installed_packages": [],
+    "status": "dependencies_present"
+  },
+  "remote_root": "/home/jose/coap-dataset",
+  "bundle": "/home/jose/coap-dataset/bundles/42e9913f0eb2ae1d",
+  "node": "/home/jose/coap-dataset/node",
+  "zip_sha256": "42e9913f0eb2ae1d7844fe52374976ed1f3af891d30fc4608e90190f007bc41e",
+  "runtime": "v26.10.0\nNode executable: /home/jose/coap-dataset/node\nLinux surface-pro4 6.19.8-arch1-3-surface #1 SMP PREEMPT_DYNAMIC Sat, 09 May 2026 10:41:21 +0000 x86_64 GNU/Linux",
+  "offline_tests": "\u2714 plans reproduce seeds, balance both attacks and cover the full session (34.401667ms)\n\u2714 invalid labels, gaps, overloaded plans and ambiguous NON tokens are rejected (3.918948ms)\n\u2714 the actor accepts one explicit private endpoint and rejects ambiguous CLI options (1.951626ms)\n\u2714 MID wrap cannot reuse a value before 247 seconds (5.733831ms)\n\u2714 ACK matching checks peer, MID and token; timeout is distinct from a send error (4.403481ms)\n\u2714 NON responses use token correlation even with another MID (1.045551ms)\n\u2714 wrong Block2 metadata is recorded as an error, not a valid response (1.560896ms)\n\ufe63 real UDP: preflight, both attacks, complete downloads, logs and hashes (0.168716ms) # SKIP\n\ufe63 real UDP: interrupt closes sockets and persists an interrupted session (0.274759ms) # SKIP\n\ufe63 real UDP: failed resource verification prevents all campaign phases (0.358453ms) # SKIP\n\u2139 tests 10\n\u2139 suites 0\n\u2139 pass 7\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 3\n\u2139 todo 0\n\u2139 duration_ms 65.411015"
+}

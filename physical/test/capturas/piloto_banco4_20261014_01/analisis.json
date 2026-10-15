@@ -1,0 +1,666 @@
+{
+  "capture_sha256": "e9765f03cc141be3cd399ab14789ea7d3a53da6e4864587bf8d0cd8703c6e74d",
+  "capture_frames": 2520,
+  "tshark_reported_captured": 2520,
+  "tshark_reported_dropped": null,
+  "capture_drop_note": "None means TShark did not print a drop count; do not read it as zero loss.",
+  "pilot_start_epoch": 1791965998.2792284,
+  "pilot_end_epoch": 1791966287.2771077,
+  "pilot_duration_s": 288.9978792667389,
+  "pilot_frames": 2520,
+  "devices_expected": 4,
+  "devices_with_session": 4,
+  "device_ips": {
+    "1": "10.37.225.73",
+    "2": "10.37.225.67",
+    "3": "10.37.225.60",
+    "4": "10.37.225.4"
+  },
+  "distinct_device_ips": true,
+  "malformed_capture_frames": 0,
+  "truncated_capture_frames": 0,
+  "unexpected_endpoint_frames": 0,
+  "undecoded_coap_frames": 0,
+  "server_logged_requests_in_interval": 1260,
+  "server_counter_delta": {
+    "rx": 1260,
+    "tx": 1260,
+    "rx_bytes": 19248,
+    "tx_bytes": 270312,
+    "malformed": 0,
+    "duplicates": 0,
+    "mid_collisions": 0,
+    "cache_evictions": 0,
+    "send_errors": 0,
+    "sensor": 1028,
+    "large": 232,
+    "errors": 0,
+    "dropped_log_entries": 0
+  },
+  "devices": {
+    "1": {
+      "ip": "10.37.225.73",
+      "profile": "control_periodico",
+      "frames": 650,
+      "requests": 325,
+      "responses": 325,
+      "unique_transactions": 325,
+      "answered_transactions": 325,
+      "unanswered_transactions": 0,
+      "responses_without_request": 0,
+      "repeated_request_frames": 0,
+      "repeated_response_frames": 0,
+      "empty_ack_or_rst_frames": 0,
+      "request_types": {
+        "CON": 325
+      },
+      "request_paths": {
+        "sensor": 325
+      },
+      "response_codes": {
+        "69": 325
+      },
+      "request_rate_per_s": 1.1245757263845937,
+      "sensor_con_interval_ms": {
+        "n": 324,
+        "min": 10.625600814819336,
+        "mean": 888.9811958795713,
+        "median": 893.6691284179688,
+        "p95": 1046.1895942687988,
+        "max": 3774.2927074432373
+      },
+      "pcap_unique_requests_equal_server_log": true,
+      "server_log_only": 0,
+      "pcap_only_vs_server_log": 0,
+      "esp_responses_seen_in_pcap": 325,
+      "esp_responses_missing_in_pcap": 0,
+      "pcap_answered_not_received_by_esp": 0,
+      "block2": {
+        "large_unique_requests": 0,
+        "transfers": [],
+        "complete_in_order_transfers": 0,
+        "single_block_requests": 0,
+        "repeated_block_read_runs": [],
+        "response_etags": {}
+      },
+      "non": {
+        "non_requests": 0,
+        "non_answered": 0,
+        "bursts": []
+      },
+      "esp_event_counts": {
+        "session_start": 1,
+        "response": 325,
+        "summary": 59,
+        "manual_stop": 1
+      },
+      "esp_elapsed_ms_without_retries": {
+        "sensor": {
+          "n": 323,
+          "min": 8,
+          "mean": 62.01238390092879,
+          "median": 50,
+          "p95": 145.69999999999993,
+          "max": 294
+        }
+      },
+      "esp_responses_with_retries": [
+        {
+          "event": "response",
+          "device": 1,
+          "ms": 242738,
+          "job": "sensor",
+          "mid": 17888,
+          "token": "8d83b788",
+          "elapsed_ms": 2800,
+          "retries": 1,
+          "payload_bytes": 16,
+          "block": 0
+        },
+        {
+          "event": "response",
+          "device": 1,
+          "ms": 322310,
+          "job": "sensor",
+          "mid": 17977,
+          "token": "8d83b7e1",
+          "elapsed_ms": 2931,
+          "retries": 1,
+          "payload_bytes": 16,
+          "block": 0
+        }
+      ],
+      "esp_timeouts": [],
+      "esp_final_summary": {
+        "event": "summary",
+        "device": 1,
+        "ms": 408009,
+        "sent": 325,
+        "received": 325,
+        "timeouts": 0,
+        "retransmits": 2,
+        "failures": 0,
+        "downloads": 0,
+        "rssi": -56
+      },
+      "serial_lines_rejoined": 2
+    },
+    "2": {
+      "ip": "10.37.225.67",
+      "profile": "lectura_eventos",
+      "frames": 674,
+      "requests": 337,
+      "responses": 337,
+      "unique_transactions": 337,
+      "answered_transactions": 337,
+      "unanswered_transactions": 0,
+      "responses_without_request": 0,
+      "repeated_request_frames": 0,
+      "repeated_response_frames": 0,
+      "empty_ack_or_rst_frames": 0,
+      "request_types": {
+        "CON": 125,
+        "NON": 212
+      },
+      "request_paths": {
+        "sensor": 337
+      },
+      "response_codes": {
+        "69": 337
+      },
+      "request_rate_per_s": 1.1660985224357172,
+      "sensor_con_interval_ms": {
+        "n": 124,
+        "min": 1880.0861835479736,
+        "mean": 2311.5277194207715,
+        "median": 2301.891088485718,
+        "p95": 2588.4449124336243,
+        "max": 2744.0285682678223
+      },
+      "pcap_unique_requests_equal_server_log": true,
+      "server_log_only": 0,
+      "pcap_only_vs_server_log": 0,
+      "esp_responses_seen_in_pcap": 337,
+      "esp_responses_missing_in_pcap": 0,
+      "pcap_answered_not_received_by_esp": 0,
+      "block2": {
+        "large_unique_requests": 0,
+        "transfers": [],
+        "complete_in_order_transfers": 0,
+        "single_block_requests": 0,
+        "repeated_block_read_runs": [],
+        "response_etags": {}
+      },
+      "non": {
+        "non_requests": 212,
+        "non_answered": 212,
+        "bursts": [
+          {
+            "start_epoch": 1791966031.48043,
+            "requests": 25,
+            "span_s": 2.9946377277374268,
+            "min_gap_ms": 8.92782211303711
+          },
+          {
+            "start_epoch": 1791966068.3164842,
+            "requests": 26,
+            "span_s": 2.9119179248809814,
+            "min_gap_ms": 8.185386657714844
+          },
+          {
+            "start_epoch": 1791966106.7652752,
+            "requests": 26,
+            "span_s": 3.0241470336914062,
+            "min_gap_ms": 9.027719497680664
+          },
+          {
+            "start_epoch": 1791966145.266636,
+            "requests": 30,
+            "span_s": 2.8245224952697754,
+            "min_gap_ms": 9.781122207641602
+          },
+          {
+            "start_epoch": 1791966175.4216523,
+            "requests": 25,
+            "span_s": 2.8555028438568115,
+            "min_gap_ms": 10.85042953491211
+          },
+          {
+            "start_epoch": 1791966211.2834518,
+            "requests": 24,
+            "span_s": 2.743245840072632,
+            "min_gap_ms": 9.535789489746094
+          },
+          {
+            "start_epoch": 1791966241.9789023,
+            "requests": 29,
+            "span_s": 2.9609503746032715,
+            "min_gap_ms": 10.09511947631836
+          },
+          {
+            "start_epoch": 1791966278.4440885,
+            "requests": 27,
+            "span_s": 2.8781089782714844,
+            "min_gap_ms": 8.03518295288086
+          }
+        ]
+      },
+      "esp_event_counts": {
+        "session_start": 1,
+        "response": 337,
+        "summary": 59,
+        "burst_start": 8,
+        "burst_end": 8,
+        "manual_stop": 1
+      },
+      "esp_elapsed_ms_without_retries": {
+        "sensor": {
+          "n": 125,
+          "min": 8,
+          "mean": 69.792,
+          "median": 63,
+          "p95": 145.6,
+          "max": 426
+        },
+        "sensor_burst": {
+          "n": 212,
+          "min": 8,
+          "mean": 63.39150943396226,
+          "median": 51.0,
+          "p95": 154.24999999999994,
+          "max": 355
+        }
+      },
+      "esp_responses_with_retries": [],
+      "esp_timeouts": [],
+      "esp_final_summary": {
+        "event": "summary",
+        "device": 2,
+        "ms": 393170,
+        "sent": 337,
+        "received": 337,
+        "timeouts": 0,
+        "retransmits": 0,
+        "failures": 0,
+        "downloads": 0,
+        "rssi": -44
+      },
+      "serial_lines_rejoined": 1
+    },
+    "3": {
+      "ip": "10.37.225.60",
+      "profile": "sincronizacion_config",
+      "frames": 528,
+      "requests": 264,
+      "responses": 264,
+      "unique_transactions": 264,
+      "answered_transactions": 264,
+      "unanswered_transactions": 0,
+      "responses_without_request": 0,
+      "repeated_request_frames": 0,
+      "repeated_response_frames": 0,
+      "empty_ack_or_rst_frames": 0,
+      "request_types": {
+        "CON": 264
+      },
+      "request_paths": {
+        "sensor": 104,
+        "large": 160
+      },
+      "response_codes": {
+        "69": 264
+      },
+      "request_rate_per_s": 0.9135015131247161,
+      "sensor_con_interval_ms": {
+        "n": 103,
+        "min": 2459.3915939331055,
+        "mean": 2792.0069532487,
+        "median": 2815.8926963806152,
+        "p95": 3026.1797666549683,
+        "max": 4005.1746368408203
+      },
+      "pcap_unique_requests_equal_server_log": true,
+      "server_log_only": 0,
+      "pcap_only_vs_server_log": 0,
+      "esp_responses_seen_in_pcap": 264,
+      "esp_responses_missing_in_pcap": 0,
+      "pcap_answered_not_received_by_esp": 0,
+      "block2": {
+        "large_unique_requests": 160,
+        "transfers": [
+          {
+            "token": "c0df8d76",
+            "start_epoch": 1791966003.8906062,
+            "requests": 32,
+            "complete_in_order": true,
+            "distinct_etags": 1,
+            "min_block_gap_ms": 29.152870178222656
+          },
+          {
+            "token": "c0df8d90",
+            "start_epoch": 1791966071.678856,
+            "requests": 32,
+            "complete_in_order": true,
+            "distinct_etags": 1,
+            "min_block_gap_ms": 29.607295989990234
+          },
+          {
+            "token": "c0df8daa",
+            "start_epoch": 1791966141.7350733,
+            "requests": 32,
+            "complete_in_order": true,
+            "distinct_etags": 1,
+            "min_block_gap_ms": 31.374454498291016
+          },
+          {
+            "token": "c0df8dc2",
+            "start_epoch": 1791966206.3265362,
+            "requests": 32,
+            "complete_in_order": true,
+            "distinct_etags": 1,
+            "min_block_gap_ms": 28.2595157623291
+          },
+          {
+            "token": "c0df8dda",
+            "start_epoch": 1791966270.6505198,
+            "requests": 32,
+            "complete_in_order": true,
+            "distinct_etags": 1,
+            "min_block_gap_ms": 29.049396514892578
+          }
+        ],
+        "complete_in_order_transfers": 5,
+        "single_block_requests": 0,
+        "repeated_block_read_runs": [],
+        "response_etags": {
+          "10ba4770": 160
+        }
+      },
+      "non": {
+        "non_requests": 0,
+        "non_answered": 0,
+        "bursts": []
+      },
+      "esp_event_counts": {
+        "session_start": 1,
+        "response": 264,
+        "summary": 59,
+        "download_start": 5,
+        "download_verified": 5,
+        "manual_stop": 1
+      },
+      "esp_elapsed_ms_without_retries": {
+        "block2_download": {
+          "n": 159,
+          "min": 8,
+          "mean": 81.94339622641509,
+          "median": 110,
+          "p95": 141.0,
+          "max": 294
+        },
+        "sensor": {
+          "n": 104,
+          "min": 8,
+          "mean": 70.26923076923077,
+          "median": 43.0,
+          "p95": 236.79999999999973,
+          "max": 295
+        }
+      },
+      "esp_responses_with_retries": [
+        {
+          "event": "response",
+          "device": 3,
+          "ms": 364395,
+          "job": "block2_download",
+          "mid": 42651,
+          "token": "c0df8dda",
+          "elapsed_ms": 2849,
+          "retries": 1,
+          "payload_bytes": 1024,
+          "block": 17
+        }
+      ],
+      "esp_timeouts": [],
+      "esp_final_summary": {
+        "event": "summary",
+        "device": 3,
+        "ms": 378704,
+        "sent": 264,
+        "received": 264,
+        "timeouts": 0,
+        "retransmits": 1,
+        "failures": 0,
+        "downloads": 5,
+        "rssi": -53
+      },
+      "serial_lines_rejoined": 2
+    },
+    "4": {
+      "ip": "10.37.225.4",
+      "profile": "supervision_cache",
+      "frames": 668,
+      "requests": 334,
+      "responses": 334,
+      "unique_transactions": 334,
+      "answered_transactions": 334,
+      "unanswered_transactions": 0,
+      "responses_without_request": 0,
+      "repeated_request_frames": 0,
+      "repeated_response_frames": 0,
+      "empty_ack_or_rst_frames": 0,
+      "request_types": {
+        "CON": 334
+      },
+      "request_paths": {
+        "sensor": 262,
+        "large": 72
+      },
+      "response_codes": {
+        "69": 334
+      },
+      "request_rate_per_s": 1.1557178234229364,
+      "sensor_con_interval_ms": {
+        "n": 261,
+        "min": 903.6641120910645,
+        "mean": 1103.6547107258061,
+        "median": 1085.6890678405762,
+        "p95": 1229.3415069580078,
+        "max": 1292.6697731018066
+      },
+      "pcap_unique_requests_equal_server_log": true,
+      "server_log_only": 0,
+      "pcap_only_vs_server_log": 0,
+      "esp_responses_seen_in_pcap": 334,
+      "esp_responses_missing_in_pcap": 0,
+      "pcap_answered_not_received_by_esp": 0,
+      "block2": {
+        "large_unique_requests": 72,
+        "transfers": [],
+        "complete_in_order_transfers": 0,
+        "single_block_requests": 72,
+        "repeated_block_read_runs": [
+          {
+            "block": "28",
+            "reads": 6,
+            "start_epoch": 1791966020.8826847,
+            "min_gap_ms": 108.65426063537598
+          },
+          {
+            "block": "7",
+            "reads": 6,
+            "start_epoch": 1791966041.77472,
+            "min_gap_ms": 142.46034622192383
+          },
+          {
+            "block": "0",
+            "reads": 6,
+            "start_epoch": 1791966066.0827692,
+            "min_gap_ms": 110.51535606384277
+          },
+          {
+            "block": "21",
+            "reads": 6,
+            "start_epoch": 1791966089.2339368,
+            "min_gap_ms": 148.3011245727539
+          },
+          {
+            "block": "21",
+            "reads": 6,
+            "start_epoch": 1791966109.9723861,
+            "min_gap_ms": 109.84611511230469
+          },
+          {
+            "block": "14",
+            "reads": 6,
+            "start_epoch": 1791966130.1265354,
+            "min_gap_ms": 114.49432373046875
+          },
+          {
+            "block": "27",
+            "reads": 6,
+            "start_epoch": 1791966151.6613848,
+            "min_gap_ms": 132.51543045043945
+          },
+          {
+            "block": "7",
+            "reads": 6,
+            "start_epoch": 1791966176.4102938,
+            "min_gap_ms": 136.90662384033203
+          },
+          {
+            "block": "8",
+            "reads": 6,
+            "start_epoch": 1791966200.406862,
+            "min_gap_ms": 109.19785499572754
+          },
+          {
+            "block": "16",
+            "reads": 6,
+            "start_epoch": 1791966220.738116,
+            "min_gap_ms": 147.3226547241211
+          },
+          {
+            "block": "17",
+            "reads": 6,
+            "start_epoch": 1791966245.1114967,
+            "min_gap_ms": 110.08548736572266
+          },
+          {
+            "block": "13",
+            "reads": 6,
+            "start_epoch": 1791966265.7029023,
+            "min_gap_ms": 148.33998680114746
+          }
+        ],
+        "response_etags": {
+          "10ba4770": 72
+        }
+      },
+      "non": {
+        "non_requests": 0,
+        "non_answered": 0,
+        "bursts": []
+      },
+      "esp_event_counts": {
+        "session_start": 1,
+        "response": 334,
+        "summary": 59,
+        "cache_reads_start": 12,
+        "manual_stop": 1
+      },
+      "esp_elapsed_ms_without_retries": {
+        "block2_cache": {
+          "n": 72,
+          "min": 9,
+          "mean": 41.90277777777778,
+          "median": 29.5,
+          "p95": 158.60000000000014,
+          "max": 210
+        },
+        "sensor": {
+          "n": 262,
+          "min": 8,
+          "mean": 60.79770992366412,
+          "median": 43.5,
+          "p95": 142.95,
+          "max": 403
+        }
+      },
+      "esp_responses_with_retries": [],
+      "esp_timeouts": [],
+      "esp_final_summary": {
+        "event": "summary",
+        "device": 4,
+        "ms": 364054,
+        "sent": 334,
+        "received": 334,
+        "timeouts": 0,
+        "retransmits": 0,
+        "failures": 0,
+        "downloads": 0,
+        "rssi": -51
+      },
+      "serial_lines_rejoined": 1
+    }
+  },
+  "window_origin": "earliest PC timestamp of START; audit only, differs from the article's capture-relative origin",
+  "empty_windows": "Included for audit; the article emits rows for active conversations only",
+  "window_audit": {
+    "0.5": {
+      "complete_windows": 577,
+      "active_windows": 500,
+      "request_rate": {
+        "n": 577,
+        "min": 0.0,
+        "mean": 4.360485268630849,
+        "median": 4.0,
+        "p95": 12.0,
+        "max": 26.0
+      },
+      "active_windows_by_device": {
+        "1": 322,
+        "2": 168,
+        "3": 135,
+        "4": 280
+      }
+    },
+    "1.0": {
+      "complete_windows": 288,
+      "active_windows": 288,
+      "request_rate": {
+        "n": 288,
+        "min": 1.0,
+        "mean": 4.364583333333333,
+        "median": 3.0,
+        "p95": 12.0,
+        "max": 22.0
+      },
+      "active_windows_by_device": {
+        "1": 282,
+        "2": 142,
+        "3": 117,
+        "4": 265
+      }
+    },
+    "2.0": {
+      "complete_windows": 144,
+      "active_windows": 144,
+      "request_rate": {
+        "n": 144,
+        "min": 2.0,
+        "mean": 4.364583333333333,
+        "median": 3.0,
+        "p95": 11.424999999999997,
+        "max": 14.0
+      },
+      "active_windows_by_device": {
+        "1": 142,
+        "2": 126,
+        "3": 105,
+        "4": 144
+      }
+    }
+  },
+  "scope": "Benign multi-board pilot, one session. Window JSON files are audit counts, not the validated 23-feature article dataset."
+}

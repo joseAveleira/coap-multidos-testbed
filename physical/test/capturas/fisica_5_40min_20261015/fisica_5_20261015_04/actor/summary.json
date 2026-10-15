@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "session": "fisica_5_20261015_04",
+  "status": "failed",
+  "reason": "error: Comprobación CoAP: timeout",
+  "finished_utc": "2026-10-15T10:00:30.033Z",
+  "started_epoch": null,
+  "clock_max_wall_disagreement_ms": 0.9448528289794922,
+  "log_dropped_records": 0,
+  "quality_flags": [
+    "cross_host_clock_offset_not_measured_by_actor"
+  ],
+  "lanes": [
+    {
+      "lane": 0,
+      "local": {
+        "address": "10.37.225.230",
+        "family": "IPv4",
+        "port": 49594
+      },
+      "queued": 2,
+      "sent": 2,
+      "send_errors": 0,
+      "responses": 1,
+      "valid_responses": 1,
+      "response_errors": 0,
+      "timeouts": 1,
+      "cancelled": 0,
+      "unmatched": 0,
+      "malformed": 0,
+      "rejected_peer": 0,
+      "mid_exhausted": 0,
+      "backpressure": 0,
+      "rx_bytes": 27,
+      "tx_bytes": 31,
+      "pending": 0
+    },
+    {
+      "lane": 1,
+      "local": {
+        "address": "10.37.225.230",
+        "family": "IPv4",
+        "port": 51591
+      },
+      "queued": 0,
+      "sent": 0,
+      "send_errors": 0,
+      "responses": 0,
+      "valid_responses": 0,
+      "response_errors": 0,
+      "timeouts": 0,
+      "cancelled": 0,
+      "unmatched": 0,
+      "malformed": 0,
+      "rejected_peer": 0,
+      "mid_exhausted": 0,
+      "backpressure": 0,
+      "rx_bytes": 0,
+      "tx_bytes": 0,
+      "pending": 0
+    },
+    {
+      "lane": 2,
+      "local": {
+        "address": "10.37.225.230",
+        "family": "IPv4",
+        "port": 43433
+      },
+      "queued": 0,
+      "sent": 0,
+      "send_errors": 0,
+      "responses": 0,
+      "valid_responses": 0,
+      "response_errors": 0,
+      "timeouts": 0,
+      "cancelled": 0,
+      "unmatched": 0,
+      "malformed": 0,
+      "rejected_peer": 0,
+      "mid_exhausted": 0,
+      "backpressure": 0,
+      "rx_bytes": 0,
+      "tx_bytes": 0,
+      "pending": 0
+    },
+    {
+      "lane": 3,
+      "local": {
+        "address": "10.37.225.230",
+        "family": "IPv4",
+        "port": 48337
+      },
+      "queued": 0,
+      "sent": 0,
+      "send_errors": 0,
+      "responses": 0,
+      "valid_responses": 0,
+      "response_errors": 0,
+      "timeouts": 0,
+      "cancelled": 0,
+      "unmatched": 0,
+      "malformed": 0,
+      "rejected_peer": 0,
+      "mid_exhausted": 0,
+      "backpressure": 0,
+      "rx_bytes": 0,
+      "tx_bytes": 0,
+      "pending": 0
+    }
+  ],
+  "phases": []
+}

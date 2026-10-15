@@ -1,0 +1,23 @@
+{
+  "repository": "https://github.com/joseAveleira/coap-multidos-testbed",
+  "tag": "v1.0.0",
+  "commit": "44e34a4376a64ec222cee2aaf9ba9adcb06968e5",
+  "files": {
+    "coap_features.py": {
+      "upstream_path": "pipeline/coap_features.py",
+      "sha256": "f736e81354be7f9a6c23b4bd3fd30d851c2f0ebf8a832c6f38ff1c15ff7dcffa"
+    },
+    "clean_table.py": {
+      "upstream_path": "preprocessing/build_clean_dataset.py",
+      "sha256": "4fd3bf0d46c14e5b805e06f9604825e539f731d06c794fdb2531558ece2ec557"
+    },
+    "LICENSE": {
+      "upstream_path": "LICENSE",
+      "sha256": "3ef8e2476577d25a86ad4b77a56196eb9cfb69c3ada51c73b1d43209e018ed5f"
+    },
+    "data_dictionary.csv": {
+      "upstream_path": "data/data_dictionary.csv",
+      "sha256": "36df1b52bc8998061cb6274f8b95fc27bf17182966715a986c3bdb21d73e42ec"
+    }
+  }
+}

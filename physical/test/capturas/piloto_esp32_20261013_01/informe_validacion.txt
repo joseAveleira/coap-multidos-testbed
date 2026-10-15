@@ -1,0 +1,100 @@
+VALIDACIÓN DEL PILOTO FÍSICO CoAP — 13 de octubre de 2026
+
+Resultado: el montaje funciona como base para ampliar el estudio con tráfico
+físico. Este piloto verifica una placa, el servidor y la captura; todavía no
+constituye una campaña de detección DoS ni demuestra generalización del modelo.
+
+PRUEBA REALIZADA
+
+Captura programada de 180 segundos, aproximadamente de 11:02:21 a 11:05:23
+(Europe/Madrid). La sesión controlada entre START y STOP dura 169,03 segundos;
+el intervalo entre el primer y último paquete es 167,64 segundos. Los márgenes
+permiten iniciar y finalizar el tráfico dentro de la captura.
+
+ESP32-S3, revisión 0.2, flash detectada de 4 MB, dispositivo 1/perfil 1,
+COM4 a 115200 baudios. Firmware compilado y flasheado correctamente mediante
+PlatformIO, con la IP del servidor corregida. Perfil: control_periodico,
+GET confirmables de /sensor; semilla 2026. PSRAM no utilizada.
+
+ESP32 10.37.225.73:56831 -> servidor 10.37.225.138:5683, red Aveleira.
+El PC también usa Wi-Fi en este piloto. Se captura en su interfaz física,
+con filtro udp port 5683; Npcap entrega tramas con encapsulación Ethernet.
+El contenido del recurso es sintético; las comunicaciones y tiempos son reales.
+No se programaron ataques durante esta prueba.
+
+RESULTADOS OBSERVADOS
+
+- 380 paquetes: 190 GET CON y 190 respuestas ACK 2.05 Content.
+- Las 190 transacciones coinciden por MID/token entre PCAP, servidor y ESP32.
+- Todas las peticiones observadas tienen respuesta. No hay paquetes CoAP
+  malformados, truncados ni direcciones ajenas al par esperado en la captura.
+- Consola ESP32: 190 enviadas, 190 recibidas, 1 retransmisión, 0 timeouts
+  definitivos, 0 fallos. RSSI final: -44 dBm.
+- La operación con reintento tardó 2756 ms (MID 42887). El PCAP del servidor
+  solo contiene una petición de esa transacción: el reintento se conoce por
+  la consola. No se puede localizar definitivamente la pérdida con esta
+  captura ni concluir que la red no perdió paquetes.
+- Sin reintentos, tiempo de respuesta de aplicación medido por el ESP32:
+  mediana 46 ms, percentil 95 de 143 ms y máximo 292 ms (189 operaciones).
+- Separación petición/respuesta en la captura del servidor: mediana 0,767 ms.
+  Este valor NO es el RTT de la red: ambas marcas se toman en el servidor.
+- Tasa observada: 1,124 peticiones/s. Todas acceden a /sensor.
+- No hay Block2 ni mensajes NON en esta sesión.
+- TShark finaliza correctamente. La salida TShark/capinfos conservada no
+  proporciona un recuento explícito de paquetes descartados; queda como dato
+  no disponible, no como cero. La captura del servidor tampoco mide todos
+  los reintentos de la capa Wi-Fi.
+
+VALIDEZ PARA LA AMPLIACIÓN DEL ARTÍCULO
+
+La prueba aporta evidencia de comunicación física y trazabilidad entre
+captura y registros, en la dirección del comentario 12 del revisor 1.
+Se pueden extraer los campos CoAP y construir ventanas temporales.
+
+Se incluyen recuentos de auditoría para ventanas de 0,5, 1 y 2 segundos.
+Para 1 segundo hay 169 ventanas completas, 167 con tráfico. Son recuentos
+de esta prueba, NO el dataset final de 23 predictores. Están alineados al
+comando START e incluyen ventanas vacías; el artículo alinea al inicio de
+captura y conserva conversaciones activas. Antes de generar el dataset final
+hay que implementar y verificar una definición común y documentada.
+
+Antes de la campaña científica falta:
+
+1. Probar las cuatro placas y sus perfiles: ráfagas NON, descarga Block2
+   completa con download_verified y lecturas repetidas de bloques. /large
+   se verificó desde el PC antes del piloto; no desde este ESP32 de perfil 1.
+2. Añadir sesiones independientes, más largas y con variaciones de clientes,
+   carga, perfiles, momentos y duración de episodios, como piden los puntos
+   8 y 13 del revisor. Cuatro placas iguales aportan clientes físicos, pero
+   no diversidad de modelos de hardware.
+3. Incluir los dos ataques del artículo y tráfico benigno de intensidad
+   comparable. Este perfil de ~1 petición/s, por sí solo, permitiría separar
+   ataques rápidos mediante una regla de tasa demasiado sencilla. El equipo
+   actor también debe producir ráfagas legítimas y actividad Block2 legítima.
+4. Guardar eventos externos de inicio/fin y flujo de cada episodio para
+   etiquetar sin deducir ataques de la IP o la tasa. Auditar ventanas de borde
+   y conservar PCAP, pérdidas de captura, configuración, semillas y versiones.
+   Las marcas de consola son tiempos de observación del PC; millis() del ESP
+   no está sincronizado con UTC.
+5. Reservar la IP del servidor o establecer una estrategia de descubrimiento:
+   el cambio de dirección DHCP fue la causa del fallo inicial de CoAP.
+6. Mantener identificada la procedencia física y la anterior de loopback.
+   Validar equivalencia de variables: cabeceras, carga útil, retransmisiones,
+   ETag y temporización pueden cambiar las distribuciones. Evaluar por sesiones
+   completas, con ajustes y selección de modelos solo dentro del entrenamiento.
+
+ARCHIVOS Y ESTADO FINAL
+
+trafico_coap.pcapng: evidencia original.
+manifest.json: tiempos, comandos, direcciones y SHA-256 del PCAP.
+serial.jsonl: consola con tiempos de observación del PC.
+server_manifest.json y server_snapshot.jsonl: copia de registros del servidor;
+  la copia también contiene comprobaciones anteriores, fuera del intervalo
+  de este piloto. analisis.json limita los resultados al START/STOP registrado.
+paquetes.json, analisis.json y ventanas_*s.json: extracción y auditoría.
+capinfos.txt y tshark.*.log: información de captura.
+entorno.json: versiones y hashes de las fuentes y del firmware compilado.
+
+La captura está cerrada y la sesión del ESP32 se detuvo mediante STOP para
+guardar el resumen final. El servidor continúa activo en UDP 5683.
+No se modificaron el artículo ni los CSV del dataset anterior.

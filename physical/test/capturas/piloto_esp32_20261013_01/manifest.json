@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "purpose": "physical_connectivity_pilot_not_training_dataset",
+  "created_utc": "2026-10-13T09:02:21.529992+00:00",
+  "capture_command": [
+    "tshark",
+    "-i",
+    "\\Device\\NPF_{34CF96FE-697A-479B-A63B-430A4CBA7025}",
+    "-f",
+    "udp port 5683",
+    "-s",
+    "0",
+    "-a",
+    "duration:180",
+    "-w",
+    "test\\capturas\\piloto_esp32_20261013_01\\trafico_coap.pcapng",
+    "-q"
+  ],
+  "requested_capture_seconds": 180,
+  "server_ip": "10.37.225.138",
+  "device_ip": "10.37.225.73",
+  "serial_port": "COM4",
+  "serial_baud": 115200,
+  "device_id": 1,
+  "profile_id": 1,
+  "seed": 2026,
+  "planned_traffic": "benign periodic CON GET /sensor; no attacks scheduled",
+  "network": "Aveleira, physical Wi-Fi interface at server",
+  "timestamp_note": "serial timestamps are PC observation times, not ESP clock synchronisation",
+  "server_records_source": "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\scripts_esp32\\servidor\\registros\\piloto_esp32_20261013T084711044Z",
+  "tshark_version": "TShark (Wireshark) 4.6.4 (v4.6.4-0-g93282876538d).",
+  "commands": [
+    {
+      "kind": "serial_command",
+      "epoch": 1791882141.7264655,
+      "utc": "2026-10-13T09:02:21.726479+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "epoch": 1791882142.746858,
+      "utc": "2026-10-13T09:02:22.746867+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "epoch": 1791882143.765493,
+      "utc": "2026-10-13T09:02:23.765500+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "epoch": 1791882144.7946703,
+      "utc": "2026-10-13T09:02:24.794680+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "epoch": 1791882145.8117948,
+      "utc": "2026-10-13T09:02:25.811802+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "epoch": 1791882146.8439205,
+      "utc": "2026-10-13T09:02:26.843927+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "epoch": 1791882148.88784,
+      "utc": "2026-10-13T09:02:28.887847+00:00",
+      "command": "START"
+    },
+    {
+      "kind": "serial_command",
+      "epoch": 1791882317.9132812,
+      "utc": "2026-10-13T09:05:17.913298+00:00",
+      "command": "STOP"
+    },
+    {
+      "kind": "serial_command",
+      "epoch": 1791882319.7714245,
+      "utc": "2026-10-13T09:05:19.771434+00:00",
+      "command": "STATUS"
+    }
+  ],
+  "capture_process_started_epoch": 1791882141.720773,
+  "tshark_exit_code": 0,
+  "finished_utc": "2026-10-13T09:05:23.035835+00:00",
+  "capture_bytes": 37692,
+  "capture_sha256": "29cce28730db132260ca8cc3a85ca4679c0ff325c87503e529d2764674a8de74"
+}

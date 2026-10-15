@@ -1,0 +1,152 @@
+{
+  "capture_sha256": "29cce28730db132260ca8cc3a85ca4679c0ff325c87503e529d2764674a8de74",
+  "capture_frames": 380,
+  "capture_traffic_span_s": 167.64283680915833,
+  "pilot_start_epoch": 1791882148.88784,
+  "pilot_end_epoch": 1791882317.9132812,
+  "pilot_duration_s": 169.02544116973877,
+  "pilot_frames": 380,
+  "requests": 190,
+  "responses": 190,
+  "request_rate_per_s": 1.1240911349504963,
+  "unique_transactions": 190,
+  "unanswered_request_keys": 0,
+  "responses_without_request_keys": 0,
+  "repeated_request_frames": 0,
+  "repeated_response_frames": 0,
+  "malformed_capture_frames": 0,
+  "truncated_capture_frames": 0,
+  "unexpected_endpoint_frames": 0,
+  "undecoded_coap_frames": 0,
+  "coap_codes": {
+    "1": 190,
+    "69": 190
+  },
+  "coap_types": {
+    "0": 190,
+    "2": 190
+  },
+  "request_paths": {
+    "sensor": 190
+  },
+  "block_frames": 0,
+  "request_frame_lengths": {
+    "57": 190
+  },
+  "response_frame_lengths": {
+    "69": 190
+  },
+  "inter_request_seconds": {
+    "n": 189,
+    "min": 0.018127918243408203,
+    "mean": 0.8869954580983157,
+    "median": 0.8949835300445557,
+    "p95": 1.056499195098877,
+    "max": 3.6119043827056885
+  },
+  "server_capture_request_response_gap_ms_not_network_rtt": {
+    "n": 190,
+    "min": 0.3361701965332031,
+    "mean": 0.9058676267925062,
+    "median": 0.766754150390625,
+    "p95": 1.6426920890808079,
+    "max": 6.873846054077148
+  },
+  "esp_application_elapsed_ms": {
+    "n": 190,
+    "min": 7,
+    "mean": 75.51052631578948,
+    "median": 46.5,
+    "p95": 143.54999999999998,
+    "max": 2756
+  },
+  "esp_application_elapsed_ms_without_retries": {
+    "n": 189,
+    "min": 7,
+    "mean": 61.32804232804233,
+    "median": 46,
+    "p95": 143.0,
+    "max": 292
+  },
+  "esp_responses_with_retries": [
+    {
+      "event": "response",
+      "device": 1,
+      "ms": 71303,
+      "job": "sensor",
+      "mid": 42887,
+      "token": "b40791a7",
+      "elapsed_ms": 2756,
+      "retries": 1,
+      "payload_bytes": 16,
+      "block": 0
+    }
+  ],
+  "serial_response_events": 190,
+  "serial_final_summary": {
+    "event": "summary",
+    "device": 1,
+    "ms": 228474,
+    "sent": 190,
+    "received": 190,
+    "timeouts": 0,
+    "retransmits": 1,
+    "failures": 0,
+    "downloads": 0,
+    "rssi": -44
+  },
+  "serial_event_counts": {
+    "session_start": 1,
+    "response": 190,
+    "summary": 35,
+    "manual_stop": 1
+  },
+  "server_logged_requests": 190,
+  "pcap_and_server_transaction_keys_match": true,
+  "pcap_and_esp_response_transaction_keys_match": true,
+  "pcap_and_server_unique_transaction_keys_match": true,
+  "pcap_and_esp_unique_transaction_keys_match": true,
+  "capture_dropped_packets": null,
+  "capture_drop_note": "The saved TShark/capinfos output does not give an explicit dropped-packet count. Do not interpret this as zero loss.",
+  "window_origin": "PC timestamp of START command; audit only, differs from the article's capture-relative origin",
+  "empty_windows": "Included for audit; the article emits rows for active conversations only",
+  "window_audit": {
+    "0.5": {
+      "complete_windows": 338,
+      "active_windows": 189,
+      "request_rate": {
+        "n": 338,
+        "min": 0.0,
+        "mean": 1.1242603550295858,
+        "median": 2.0,
+        "p95": 2.0,
+        "max": 4.0
+      }
+    },
+    "1.0": {
+      "complete_windows": 169,
+      "active_windows": 167,
+      "request_rate": {
+        "n": 169,
+        "min": 0.0,
+        "mean": 1.1242603550295858,
+        "median": 1.0,
+        "p95": 2.0,
+        "max": 2.0
+      }
+    },
+    "2.0": {
+      "complete_windows": 84,
+      "active_windows": 84,
+      "request_rate": {
+        "n": 84,
+        "min": 0.5,
+        "mean": 1.125,
+        "median": 1.0,
+        "p95": 1.5,
+        "max": 1.5
+      }
+    }
+  },
+  "scope": "One device, one benign profile, one session. Window JSON files are audit counts, not the validated 23-feature article dataset."
+}

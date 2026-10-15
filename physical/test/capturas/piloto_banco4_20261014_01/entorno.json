@@ -1,0 +1,25 @@
+{
+  "git_head": "15c1da12e6766e624c7823b38608329f04068390",
+  "git_status_sources": "?? test/capturas/analizar_banco.py\n?? test/capturas/capturar_banco.py\n?? test/capturas/piloto_banco4_20261014_01/",
+  "node": "v22.19.0",
+  "tshark": "TShark (Wireshark) 4.6.4 (v4.6.4-0-g93282876538d).",
+  "source_sha256": {
+    "scripts_esp32/platformio.ini": "50080f2b7863c09d99cfaba62b22fa3fc8ba9f668d2bd2595cd3ff3f16e04de0",
+    "scripts_esp32/firmware/base/main.cpp": "7070e58a236495db78fbe89933b3002fab2378d2f5a00909dd98827a6d202b16",
+    "scripts_esp32/firmware/base/config.h": "9e19cb950df537ade3f2f8ec5d755c1eff7be7ea554ed14116046b868f8a6141",
+    "scripts_esp32/firmware/base/client.h": "3c5bb865fbc5066579eeb9894e1d7b231caab66d5239d0ba76334a7f9267ed1b",
+    "scripts_esp32/firmware/base/coap_wire.h": "1c28d44fb9ed3a942f4003bc19ce4af34d9fbe9f34fac2f2329de2550e7ccf33",
+    "scripts_esp32/firmware/base/profiles.h": "c64f778adfce4a9db5e7cce55541fad00119b091dc18efada5caf61e84a9a1d0",
+    "scripts_esp32/servidor/server.js": "ebdc306b189f65690ec8b9421c88230ecea51632394e75a3fe12c691c0f00b89",
+    "scripts_esp32/servidor/coap.js": "fb2230bb576fa5c209f83a4eb4051441e1c38a113435eecf3c6a3626e4c5f10c",
+    "test/capturas/capturar_banco.py": "a714706d851cf8e40d0b45cc8cf95a0d7a4cb7b1b522c0ba9e5a6f2a305cdf33",
+    "test/capturas/analizar_banco.py": "647a649b3849dbd1125bb3d57443b4bdd0b63b5454b845ed968fc7affb3a8430"
+  },
+  "firmware_bin_sha256": {
+    "esp32_01": "0276d2aed94b31b98cb496f37c4b6387819132627c7bbcf7098add74d39776cd",
+    "esp32_02": "bb948eff7e056fdc91d6c177dee2e3f72a291a7a33deb97fd431f7bd6bff8759",
+    "esp32_03": "6e2410a07bf20211b2c4364ff804d057cba6df8277de4b38d443b6f16dfec3c0",
+    "esp32_04": "b35a919bbb147ca32cadaa78c0d76d737bc03809625a1673f32567adfb2cb3f6"
+  },
+  "note": "Firmware hashes are those present at analysis time; confirm they were not rebuilt after flashing."
+}

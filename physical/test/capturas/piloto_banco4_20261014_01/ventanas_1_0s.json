@@ -1,0 +1,4610 @@
+[
+  {
+    "window_index": 0,
+    "start_epoch": 1791965998.2792284,
+    "end_epoch": 1791965999.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 1,
+    "start_epoch": 1791965999.2792284,
+    "end_epoch": 1791966000.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 2,
+    "start_epoch": 1791966000.2792284,
+    "end_epoch": 1791966001.2792284,
+    "frames": 2,
+    "requests": 1,
+    "responses": 1,
+    "requests_per_s": 1.0,
+    "bytes_per_s": 126.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 3,
+    "start_epoch": 1791966001.2792284,
+    "end_epoch": 1791966002.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 4,
+    "start_epoch": 1791966002.2792284,
+    "end_epoch": 1791966003.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 5,
+    "start_epoch": 1791966003.2792284,
+    "end_epoch": 1791966004.2792284,
+    "frames": 18,
+    "requests": 9,
+    "responses": 9,
+    "requests_per_s": 9.0,
+    "bytes_per_s": 7248.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 6,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 6,
+    "start_epoch": 1791966004.2792284,
+    "end_epoch": 1791966005.2792284,
+    "frames": 36,
+    "requests": 18,
+    "responses": 18,
+    "requests_per_s": 18.0,
+    "bytes_per_s": 17563.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 16,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 7,
+    "start_epoch": 1791966005.2792284,
+    "end_epoch": 1791966006.2792284,
+    "frames": 18,
+    "requests": 9,
+    "responses": 9,
+    "requests_per_s": 9.0,
+    "bytes_per_s": 8281.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 7,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 8,
+    "start_epoch": 1791966006.2792284,
+    "end_epoch": 1791966007.2792284,
+    "frames": 14,
+    "requests": 7,
+    "responses": 7,
+    "requests_per_s": 7.0,
+    "bytes_per_s": 4966.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 4,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 9,
+    "start_epoch": 1791966007.2792284,
+    "end_epoch": 1791966008.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 10,
+    "start_epoch": 1791966008.2792284,
+    "end_epoch": 1791966009.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 11,
+    "start_epoch": 1791966009.2792284,
+    "end_epoch": 1791966010.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 12,
+    "start_epoch": 1791966010.2792284,
+    "end_epoch": 1791966011.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 13,
+    "start_epoch": 1791966011.2792284,
+    "end_epoch": 1791966012.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 14,
+    "start_epoch": 1791966012.2792284,
+    "end_epoch": 1791966013.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 15,
+    "start_epoch": 1791966013.2792284,
+    "end_epoch": 1791966014.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 16,
+    "start_epoch": 1791966014.2792284,
+    "end_epoch": 1791966015.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 17,
+    "start_epoch": 1791966015.2792284,
+    "end_epoch": 1791966016.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 18,
+    "start_epoch": 1791966016.2792284,
+    "end_epoch": 1791966017.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 19,
+    "start_epoch": 1791966017.2792284,
+    "end_epoch": 1791966018.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 20,
+    "start_epoch": 1791966018.2792284,
+    "end_epoch": 1791966019.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 21,
+    "start_epoch": 1791966019.2792284,
+    "end_epoch": 1791966020.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 22,
+    "start_epoch": 1791966020.2792284,
+    "end_epoch": 1791966021.2792284,
+    "frames": 14,
+    "requests": 7,
+    "responses": 7,
+    "requests_per_s": 7.0,
+    "bytes_per_s": 4966.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 5
+    }
+  },
+  {
+    "window_index": 23,
+    "start_epoch": 1791966021.2792284,
+    "end_epoch": 1791966022.2792284,
+    "frames": 10,
+    "requests": 5,
+    "responses": 5,
+    "requests_per_s": 5.0,
+    "bytes_per_s": 2672.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 3
+    }
+  },
+  {
+    "window_index": 24,
+    "start_epoch": 1791966022.2792284,
+    "end_epoch": 1791966023.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 25,
+    "start_epoch": 1791966023.2792284,
+    "end_epoch": 1791966024.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 26,
+    "start_epoch": 1791966024.2792284,
+    "end_epoch": 1791966025.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 27,
+    "start_epoch": 1791966025.2792284,
+    "end_epoch": 1791966026.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 28,
+    "start_epoch": 1791966026.2792284,
+    "end_epoch": 1791966027.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 29,
+    "start_epoch": 1791966027.2792284,
+    "end_epoch": 1791966028.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 30,
+    "start_epoch": 1791966028.2792284,
+    "end_epoch": 1791966029.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 31,
+    "start_epoch": 1791966029.2792284,
+    "end_epoch": 1791966030.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 32,
+    "start_epoch": 1791966030.2792284,
+    "end_epoch": 1791966031.2792284,
+    "frames": 2,
+    "requests": 1,
+    "responses": 1,
+    "requests_per_s": 1.0,
+    "bytes_per_s": 126.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 33,
+    "start_epoch": 1791966031.2792284,
+    "end_epoch": 1791966032.2792284,
+    "frames": 22,
+    "requests": 11,
+    "responses": 11,
+    "requests_per_s": 11.0,
+    "bytes_per_s": 1386.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 8,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 34,
+    "start_epoch": 1791966032.2792284,
+    "end_epoch": 1791966033.2792284,
+    "frames": 18,
+    "requests": 9,
+    "responses": 9,
+    "requests_per_s": 9.0,
+    "bytes_per_s": 1134.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 7,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 35,
+    "start_epoch": 1791966033.2792284,
+    "end_epoch": 1791966034.2792284,
+    "frames": 22,
+    "requests": 11,
+    "responses": 11,
+    "requests_per_s": 11.0,
+    "bytes_per_s": 1386.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 9,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 36,
+    "start_epoch": 1791966034.2792284,
+    "end_epoch": 1791966035.2792284,
+    "frames": 12,
+    "requests": 6,
+    "responses": 6,
+    "requests_per_s": 6.0,
+    "bytes_per_s": 756.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 3,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 37,
+    "start_epoch": 1791966035.2792284,
+    "end_epoch": 1791966036.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 38,
+    "start_epoch": 1791966036.2792284,
+    "end_epoch": 1791966037.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 39,
+    "start_epoch": 1791966037.2792284,
+    "end_epoch": 1791966038.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 40,
+    "start_epoch": 1791966038.2792284,
+    "end_epoch": 1791966039.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 41,
+    "start_epoch": 1791966039.2792284,
+    "end_epoch": 1791966040.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 42,
+    "start_epoch": 1791966040.2792284,
+    "end_epoch": 1791966041.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 43,
+    "start_epoch": 1791966041.2792284,
+    "end_epoch": 1791966042.2792284,
+    "frames": 10,
+    "requests": 5,
+    "responses": 5,
+    "requests_per_s": 5.0,
+    "bytes_per_s": 3687.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 4
+    }
+  },
+  {
+    "window_index": 44,
+    "start_epoch": 1791966042.2792284,
+    "end_epoch": 1791966043.2792284,
+    "frames": 14,
+    "requests": 7,
+    "responses": 7,
+    "requests_per_s": 7.0,
+    "bytes_per_s": 3939.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 4
+    }
+  },
+  {
+    "window_index": 45,
+    "start_epoch": 1791966043.2792284,
+    "end_epoch": 1791966044.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 46,
+    "start_epoch": 1791966044.2792284,
+    "end_epoch": 1791966045.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 47,
+    "start_epoch": 1791966045.2792284,
+    "end_epoch": 1791966046.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 48,
+    "start_epoch": 1791966046.2792284,
+    "end_epoch": 1791966047.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 49,
+    "start_epoch": 1791966047.2792284,
+    "end_epoch": 1791966048.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 50,
+    "start_epoch": 1791966048.2792284,
+    "end_epoch": 1791966049.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 51,
+    "start_epoch": 1791966049.2792284,
+    "end_epoch": 1791966050.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 52,
+    "start_epoch": 1791966050.2792284,
+    "end_epoch": 1791966051.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 53,
+    "start_epoch": 1791966051.2792284,
+    "end_epoch": 1791966052.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 54,
+    "start_epoch": 1791966052.2792284,
+    "end_epoch": 1791966053.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 55,
+    "start_epoch": 1791966053.2792284,
+    "end_epoch": 1791966054.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 56,
+    "start_epoch": 1791966054.2792284,
+    "end_epoch": 1791966055.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 57,
+    "start_epoch": 1791966055.2792284,
+    "end_epoch": 1791966056.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 58,
+    "start_epoch": 1791966056.2792284,
+    "end_epoch": 1791966057.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 59,
+    "start_epoch": 1791966057.2792284,
+    "end_epoch": 1791966058.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 60,
+    "start_epoch": 1791966058.2792284,
+    "end_epoch": 1791966059.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 61,
+    "start_epoch": 1791966059.2792284,
+    "end_epoch": 1791966060.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 62,
+    "start_epoch": 1791966060.2792284,
+    "end_epoch": 1791966061.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 63,
+    "start_epoch": 1791966061.2792284,
+    "end_epoch": 1791966062.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 64,
+    "start_epoch": 1791966062.2792284,
+    "end_epoch": 1791966063.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 65,
+    "start_epoch": 1791966063.2792284,
+    "end_epoch": 1791966064.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 66,
+    "start_epoch": 1791966064.2792284,
+    "end_epoch": 1791966065.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 67,
+    "start_epoch": 1791966065.2792284,
+    "end_epoch": 1791966066.2792284,
+    "frames": 10,
+    "requests": 5,
+    "responses": 5,
+    "requests_per_s": 5.0,
+    "bytes_per_s": 2668.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 3
+    }
+  },
+  {
+    "window_index": 68,
+    "start_epoch": 1791966066.2792284,
+    "end_epoch": 1791966067.2792284,
+    "frames": 14,
+    "requests": 7,
+    "responses": 7,
+    "requests_per_s": 7.0,
+    "bytes_per_s": 4958.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 5
+    }
+  },
+  {
+    "window_index": 69,
+    "start_epoch": 1791966067.2792284,
+    "end_epoch": 1791966068.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 70,
+    "start_epoch": 1791966068.2792284,
+    "end_epoch": 1791966069.2792284,
+    "frames": 20,
+    "requests": 10,
+    "responses": 10,
+    "requests_per_s": 10.0,
+    "bytes_per_s": 1260.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 8,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 71,
+    "start_epoch": 1791966069.2792284,
+    "end_epoch": 1791966070.2792284,
+    "frames": 26,
+    "requests": 13,
+    "responses": 13,
+    "requests_per_s": 13.0,
+    "bytes_per_s": 1638.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 9,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 72,
+    "start_epoch": 1791966070.2792284,
+    "end_epoch": 1791966071.2792284,
+    "frames": 24,
+    "requests": 12,
+    "responses": 12,
+    "requests_per_s": 12.0,
+    "bytes_per_s": 1512.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 10,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 73,
+    "start_epoch": 1791966071.2792284,
+    "end_epoch": 1791966072.2792284,
+    "frames": 14,
+    "requests": 7,
+    "responses": 7,
+    "requests_per_s": 7.0,
+    "bytes_per_s": 5977.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 5,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 74,
+    "start_epoch": 1791966072.2792284,
+    "end_epoch": 1791966073.2792284,
+    "frames": 18,
+    "requests": 9,
+    "responses": 9,
+    "requests_per_s": 9.0,
+    "bytes_per_s": 6229.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 6,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 75,
+    "start_epoch": 1791966073.2792284,
+    "end_epoch": 1791966074.2792284,
+    "frames": 22,
+    "requests": 11,
+    "responses": 11,
+    "requests_per_s": 11.0,
+    "bytes_per_s": 10563.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 9,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 76,
+    "start_epoch": 1791966074.2792284,
+    "end_epoch": 1791966075.2792284,
+    "frames": 30,
+    "requests": 15,
+    "responses": 15,
+    "requests_per_s": 15.0,
+    "bytes_per_s": 15163.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 13,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 77,
+    "start_epoch": 1791966075.2792284,
+    "end_epoch": 1791966076.2792284,
+    "frames": 10,
+    "requests": 5,
+    "responses": 5,
+    "requests_per_s": 5.0,
+    "bytes_per_s": 630.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 78,
+    "start_epoch": 1791966076.2792284,
+    "end_epoch": 1791966077.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 79,
+    "start_epoch": 1791966077.2792284,
+    "end_epoch": 1791966078.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 80,
+    "start_epoch": 1791966078.2792284,
+    "end_epoch": 1791966079.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 81,
+    "start_epoch": 1791966079.2792284,
+    "end_epoch": 1791966080.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 82,
+    "start_epoch": 1791966080.2792284,
+    "end_epoch": 1791966081.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 83,
+    "start_epoch": 1791966081.2792284,
+    "end_epoch": 1791966082.2792284,
+    "frames": 10,
+    "requests": 5,
+    "responses": 5,
+    "requests_per_s": 5.0,
+    "bytes_per_s": 630.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 84,
+    "start_epoch": 1791966082.2792284,
+    "end_epoch": 1791966083.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 85,
+    "start_epoch": 1791966083.2792284,
+    "end_epoch": 1791966084.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 86,
+    "start_epoch": 1791966084.2792284,
+    "end_epoch": 1791966085.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 87,
+    "start_epoch": 1791966085.2792284,
+    "end_epoch": 1791966086.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 88,
+    "start_epoch": 1791966086.2792284,
+    "end_epoch": 1791966087.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 89,
+    "start_epoch": 1791966087.2792284,
+    "end_epoch": 1791966088.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 90,
+    "start_epoch": 1791966088.2792284,
+    "end_epoch": 1791966089.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 1525.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 2
+    }
+  },
+  {
+    "window_index": 91,
+    "start_epoch": 1791966089.2792284,
+    "end_epoch": 1791966090.2792284,
+    "frames": 14,
+    "requests": 7,
+    "responses": 7,
+    "requests_per_s": 7.0,
+    "bytes_per_s": 5987.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 5
+    }
+  },
+  {
+    "window_index": 92,
+    "start_epoch": 1791966090.2792284,
+    "end_epoch": 1791966091.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 93,
+    "start_epoch": 1791966091.2792284,
+    "end_epoch": 1791966092.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 94,
+    "start_epoch": 1791966092.2792284,
+    "end_epoch": 1791966093.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 95,
+    "start_epoch": 1791966093.2792284,
+    "end_epoch": 1791966094.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 96,
+    "start_epoch": 1791966094.2792284,
+    "end_epoch": 1791966095.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 97,
+    "start_epoch": 1791966095.2792284,
+    "end_epoch": 1791966096.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 98,
+    "start_epoch": 1791966096.2792284,
+    "end_epoch": 1791966097.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 99,
+    "start_epoch": 1791966097.2792284,
+    "end_epoch": 1791966098.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 100,
+    "start_epoch": 1791966098.2792284,
+    "end_epoch": 1791966099.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 101,
+    "start_epoch": 1791966099.2792284,
+    "end_epoch": 1791966100.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 102,
+    "start_epoch": 1791966100.2792284,
+    "end_epoch": 1791966101.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 103,
+    "start_epoch": 1791966101.2792284,
+    "end_epoch": 1791966102.2792284,
+    "frames": 2,
+    "requests": 1,
+    "responses": 1,
+    "requests_per_s": 1.0,
+    "bytes_per_s": 126.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 104,
+    "start_epoch": 1791966102.2792284,
+    "end_epoch": 1791966103.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 105,
+    "start_epoch": 1791966103.2792284,
+    "end_epoch": 1791966104.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 106,
+    "start_epoch": 1791966104.2792284,
+    "end_epoch": 1791966105.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 107,
+    "start_epoch": 1791966105.2792284,
+    "end_epoch": 1791966106.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 108,
+    "start_epoch": 1791966106.2792284,
+    "end_epoch": 1791966107.2792284,
+    "frames": 14,
+    "requests": 7,
+    "responses": 7,
+    "requests_per_s": 7.0,
+    "bytes_per_s": 882.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 4,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 109,
+    "start_epoch": 1791966107.2792284,
+    "end_epoch": 1791966108.2792284,
+    "frames": 26,
+    "requests": 13,
+    "responses": 13,
+    "requests_per_s": 13.0,
+    "bytes_per_s": 1638.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 10,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 110,
+    "start_epoch": 1791966108.2792284,
+    "end_epoch": 1791966109.2792284,
+    "frames": 20,
+    "requests": 10,
+    "responses": 10,
+    "requests_per_s": 10.0,
+    "bytes_per_s": 1260.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 8,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 111,
+    "start_epoch": 1791966109.2792284,
+    "end_epoch": 1791966110.2792284,
+    "frames": 24,
+    "requests": 12,
+    "responses": 12,
+    "requests_per_s": 12.0,
+    "bytes_per_s": 4575.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 6,
+      "3": 1,
+      "4": 4
+    }
+  },
+  {
+    "window_index": 112,
+    "start_epoch": 1791966110.2792284,
+    "end_epoch": 1791966111.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 3567.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 3
+    }
+  },
+  {
+    "window_index": 113,
+    "start_epoch": 1791966111.2792284,
+    "end_epoch": 1791966112.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 114,
+    "start_epoch": 1791966112.2792284,
+    "end_epoch": 1791966113.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 115,
+    "start_epoch": 1791966113.2792284,
+    "end_epoch": 1791966114.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 116,
+    "start_epoch": 1791966114.2792284,
+    "end_epoch": 1791966115.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 117,
+    "start_epoch": 1791966115.2792284,
+    "end_epoch": 1791966116.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 118,
+    "start_epoch": 1791966116.2792284,
+    "end_epoch": 1791966117.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 119,
+    "start_epoch": 1791966117.2792284,
+    "end_epoch": 1791966118.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 120,
+    "start_epoch": 1791966118.2792284,
+    "end_epoch": 1791966119.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 121,
+    "start_epoch": 1791966119.2792284,
+    "end_epoch": 1791966120.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 122,
+    "start_epoch": 1791966120.2792284,
+    "end_epoch": 1791966121.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 123,
+    "start_epoch": 1791966121.2792284,
+    "end_epoch": 1791966122.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 0,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 124,
+    "start_epoch": 1791966122.2792284,
+    "end_epoch": 1791966123.2792284,
+    "frames": 2,
+    "requests": 1,
+    "responses": 1,
+    "requests_per_s": 1.0,
+    "bytes_per_s": 126.0,
+    "requests_by_device": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 125,
+    "start_epoch": 1791966123.2792284,
+    "end_epoch": 1791966124.2792284,
+    "frames": 10,
+    "requests": 5,
+    "responses": 5,
+    "requests_per_s": 5.0,
+    "bytes_per_s": 630.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 126,
+    "start_epoch": 1791966124.2792284,
+    "end_epoch": 1791966125.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 127,
+    "start_epoch": 1791966125.2792284,
+    "end_epoch": 1791966126.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 128,
+    "start_epoch": 1791966126.2792284,
+    "end_epoch": 1791966127.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 129,
+    "start_epoch": 1791966127.2792284,
+    "end_epoch": 1791966128.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 130,
+    "start_epoch": 1791966128.2792284,
+    "end_epoch": 1791966129.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 131,
+    "start_epoch": 1791966129.2792284,
+    "end_epoch": 1791966130.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 2542.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 3
+    }
+  },
+  {
+    "window_index": 132,
+    "start_epoch": 1791966130.2792284,
+    "end_epoch": 1791966131.2792284,
+    "frames": 16,
+    "requests": 8,
+    "responses": 8,
+    "requests_per_s": 8.0,
+    "bytes_per_s": 5084.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 1,
+      "3": 0,
+      "4": 5
+    }
+  },
+  {
+    "window_index": 133,
+    "start_epoch": 1791966131.2792284,
+    "end_epoch": 1791966132.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 134,
+    "start_epoch": 1791966132.2792284,
+    "end_epoch": 1791966133.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 135,
+    "start_epoch": 1791966133.2792284,
+    "end_epoch": 1791966134.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 136,
+    "start_epoch": 1791966134.2792284,
+    "end_epoch": 1791966135.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 137,
+    "start_epoch": 1791966135.2792284,
+    "end_epoch": 1791966136.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 138,
+    "start_epoch": 1791966136.2792284,
+    "end_epoch": 1791966137.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 139,
+    "start_epoch": 1791966137.2792284,
+    "end_epoch": 1791966138.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 140,
+    "start_epoch": 1791966138.2792284,
+    "end_epoch": 1791966139.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 141,
+    "start_epoch": 1791966139.2792284,
+    "end_epoch": 1791966140.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 142,
+    "start_epoch": 1791966140.2792284,
+    "end_epoch": 1791966141.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 143,
+    "start_epoch": 1791966141.2792284,
+    "end_epoch": 1791966142.2792284,
+    "frames": 16,
+    "requests": 8,
+    "responses": 8,
+    "requests_per_s": 8.0,
+    "bytes_per_s": 6103.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 5,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 144,
+    "start_epoch": 1791966142.2792284,
+    "end_epoch": 1791966143.2792284,
+    "frames": 22,
+    "requests": 11,
+    "responses": 11,
+    "requests_per_s": 11.0,
+    "bytes_per_s": 10557.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 9,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 145,
+    "start_epoch": 1791966143.2792284,
+    "end_epoch": 1791966144.2792284,
+    "frames": 20,
+    "requests": 10,
+    "responses": 10,
+    "requests_per_s": 10.0,
+    "bytes_per_s": 8403.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 8,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 146,
+    "start_epoch": 1791966144.2792284,
+    "end_epoch": 1791966145.2792284,
+    "frames": 24,
+    "requests": 12,
+    "responses": 12,
+    "requests_per_s": 12.0,
+    "bytes_per_s": 8659.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 3,
+      "3": 7,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 147,
+    "start_epoch": 1791966145.2792284,
+    "end_epoch": 1791966146.2792284,
+    "frames": 32,
+    "requests": 16,
+    "responses": 16,
+    "requests_per_s": 16.0,
+    "bytes_per_s": 6100.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 9,
+      "3": 5,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 148,
+    "start_epoch": 1791966146.2792284,
+    "end_epoch": 1791966147.2792284,
+    "frames": 26,
+    "requests": 13,
+    "responses": 13,
+    "requests_per_s": 13.0,
+    "bytes_per_s": 1638.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 11,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 149,
+    "start_epoch": 1791966147.2792284,
+    "end_epoch": 1791966148.2792284,
+    "frames": 24,
+    "requests": 12,
+    "responses": 12,
+    "requests_per_s": 12.0,
+    "bytes_per_s": 1512.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 9,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 150,
+    "start_epoch": 1791966148.2792284,
+    "end_epoch": 1791966149.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 151,
+    "start_epoch": 1791966149.2792284,
+    "end_epoch": 1791966150.2792284,
+    "frames": 2,
+    "requests": 1,
+    "responses": 1,
+    "requests_per_s": 1.0,
+    "bytes_per_s": 126.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 152,
+    "start_epoch": 1791966150.2792284,
+    "end_epoch": 1791966151.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 153,
+    "start_epoch": 1791966151.2792284,
+    "end_epoch": 1791966152.2792284,
+    "frames": 18,
+    "requests": 9,
+    "responses": 9,
+    "requests_per_s": 9.0,
+    "bytes_per_s": 6239.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 6
+    }
+  },
+  {
+    "window_index": 154,
+    "start_epoch": 1791966152.2792284,
+    "end_epoch": 1791966153.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 1399.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 2
+    }
+  },
+  {
+    "window_index": 155,
+    "start_epoch": 1791966153.2792284,
+    "end_epoch": 1791966154.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 156,
+    "start_epoch": 1791966154.2792284,
+    "end_epoch": 1791966155.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 157,
+    "start_epoch": 1791966155.2792284,
+    "end_epoch": 1791966156.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 158,
+    "start_epoch": 1791966156.2792284,
+    "end_epoch": 1791966157.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 159,
+    "start_epoch": 1791966157.2792284,
+    "end_epoch": 1791966158.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 160,
+    "start_epoch": 1791966158.2792284,
+    "end_epoch": 1791966159.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 161,
+    "start_epoch": 1791966159.2792284,
+    "end_epoch": 1791966160.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 162,
+    "start_epoch": 1791966160.2792284,
+    "end_epoch": 1791966161.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 163,
+    "start_epoch": 1791966161.2792284,
+    "end_epoch": 1791966162.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 164,
+    "start_epoch": 1791966162.2792284,
+    "end_epoch": 1791966163.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 165,
+    "start_epoch": 1791966163.2792284,
+    "end_epoch": 1791966164.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 166,
+    "start_epoch": 1791966164.2792284,
+    "end_epoch": 1791966165.2792284,
+    "frames": 10,
+    "requests": 5,
+    "responses": 5,
+    "requests_per_s": 5.0,
+    "bytes_per_s": 630.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 167,
+    "start_epoch": 1791966165.2792284,
+    "end_epoch": 1791966166.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 168,
+    "start_epoch": 1791966166.2792284,
+    "end_epoch": 1791966167.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 169,
+    "start_epoch": 1791966167.2792284,
+    "end_epoch": 1791966168.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 170,
+    "start_epoch": 1791966168.2792284,
+    "end_epoch": 1791966169.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 171,
+    "start_epoch": 1791966169.2792284,
+    "end_epoch": 1791966170.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 172,
+    "start_epoch": 1791966170.2792284,
+    "end_epoch": 1791966171.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 173,
+    "start_epoch": 1791966171.2792284,
+    "end_epoch": 1791966172.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 1,
+      "3": 0,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 174,
+    "start_epoch": 1791966172.2792284,
+    "end_epoch": 1791966173.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 175,
+    "start_epoch": 1791966173.2792284,
+    "end_epoch": 1791966174.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 176,
+    "start_epoch": 1791966174.2792284,
+    "end_epoch": 1791966175.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 177,
+    "start_epoch": 1791966175.2792284,
+    "end_epoch": 1791966176.2792284,
+    "frames": 22,
+    "requests": 11,
+    "responses": 11,
+    "requests_per_s": 11.0,
+    "bytes_per_s": 1386.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 9,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 178,
+    "start_epoch": 1791966176.2792284,
+    "end_epoch": 1791966177.2792284,
+    "frames": 32,
+    "requests": 16,
+    "responses": 16,
+    "requests_per_s": 16.0,
+    "bytes_per_s": 7111.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 8,
+      "3": 1,
+      "4": 6
+    }
+  },
+  {
+    "window_index": 179,
+    "start_epoch": 1791966177.2792284,
+    "end_epoch": 1791966178.2792284,
+    "frames": 24,
+    "requests": 12,
+    "responses": 12,
+    "requests_per_s": 12.0,
+    "bytes_per_s": 2531.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 9,
+      "3": 0,
+      "4": 2
+    }
+  },
+  {
+    "window_index": 180,
+    "start_epoch": 1791966178.2792284,
+    "end_epoch": 1791966179.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 181,
+    "start_epoch": 1791966179.2792284,
+    "end_epoch": 1791966180.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 182,
+    "start_epoch": 1791966180.2792284,
+    "end_epoch": 1791966181.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 183,
+    "start_epoch": 1791966181.2792284,
+    "end_epoch": 1791966182.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 184,
+    "start_epoch": 1791966182.2792284,
+    "end_epoch": 1791966183.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 185,
+    "start_epoch": 1791966183.2792284,
+    "end_epoch": 1791966184.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 186,
+    "start_epoch": 1791966184.2792284,
+    "end_epoch": 1791966185.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 187,
+    "start_epoch": 1791966185.2792284,
+    "end_epoch": 1791966186.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 188,
+    "start_epoch": 1791966186.2792284,
+    "end_epoch": 1791966187.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 189,
+    "start_epoch": 1791966187.2792284,
+    "end_epoch": 1791966188.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 190,
+    "start_epoch": 1791966188.2792284,
+    "end_epoch": 1791966189.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 191,
+    "start_epoch": 1791966189.2792284,
+    "end_epoch": 1791966190.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 192,
+    "start_epoch": 1791966190.2792284,
+    "end_epoch": 1791966191.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 193,
+    "start_epoch": 1791966191.2792284,
+    "end_epoch": 1791966192.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 194,
+    "start_epoch": 1791966192.2792284,
+    "end_epoch": 1791966193.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 195,
+    "start_epoch": 1791966193.2792284,
+    "end_epoch": 1791966194.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 196,
+    "start_epoch": 1791966194.2792284,
+    "end_epoch": 1791966195.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 197,
+    "start_epoch": 1791966195.2792284,
+    "end_epoch": 1791966196.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 198,
+    "start_epoch": 1791966196.2792284,
+    "end_epoch": 1791966197.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 199,
+    "start_epoch": 1791966197.2792284,
+    "end_epoch": 1791966198.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 200,
+    "start_epoch": 1791966198.2792284,
+    "end_epoch": 1791966199.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 201,
+    "start_epoch": 1791966199.2792284,
+    "end_epoch": 1791966200.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 202,
+    "start_epoch": 1791966200.2792284,
+    "end_epoch": 1791966201.2792284,
+    "frames": 12,
+    "requests": 6,
+    "responses": 6,
+    "requests_per_s": 6.0,
+    "bytes_per_s": 6870.0,
+    "requests_by_device": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 6
+    }
+  },
+  {
+    "window_index": 203,
+    "start_epoch": 1791966201.2792284,
+    "end_epoch": 1791966202.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 0,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 204,
+    "start_epoch": 1791966202.2792284,
+    "end_epoch": 1791966203.2792284,
+    "frames": 2,
+    "requests": 1,
+    "responses": 1,
+    "requests_per_s": 1.0,
+    "bytes_per_s": 126.0,
+    "requests_by_device": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 205,
+    "start_epoch": 1791966203.2792284,
+    "end_epoch": 1791966204.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 206,
+    "start_epoch": 1791966204.2792284,
+    "end_epoch": 1791966205.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 207,
+    "start_epoch": 1791966205.2792284,
+    "end_epoch": 1791966206.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 208,
+    "start_epoch": 1791966206.2792284,
+    "end_epoch": 1791966207.2792284,
+    "frames": 20,
+    "requests": 10,
+    "responses": 10,
+    "requests_per_s": 10.0,
+    "bytes_per_s": 7374.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 7,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 209,
+    "start_epoch": 1791966207.2792284,
+    "end_epoch": 1791966208.2792284,
+    "frames": 18,
+    "requests": 9,
+    "responses": 9,
+    "requests_per_s": 9.0,
+    "bytes_per_s": 8267.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 7,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 210,
+    "start_epoch": 1791966208.2792284,
+    "end_epoch": 1791966209.2792284,
+    "frames": 44,
+    "requests": 22,
+    "responses": 22,
+    "requests_per_s": 22.0,
+    "bytes_per_s": 22165.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 19,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 211,
+    "start_epoch": 1791966209.2792284,
+    "end_epoch": 1791966210.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 212,
+    "start_epoch": 1791966210.2792284,
+    "end_epoch": 1791966211.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 213,
+    "start_epoch": 1791966211.2792284,
+    "end_epoch": 1791966212.2792284,
+    "frames": 24,
+    "requests": 12,
+    "responses": 12,
+    "requests_per_s": 12.0,
+    "bytes_per_s": 1512.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 10,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 214,
+    "start_epoch": 1791966212.2792284,
+    "end_epoch": 1791966213.2792284,
+    "frames": 24,
+    "requests": 12,
+    "responses": 12,
+    "requests_per_s": 12.0,
+    "bytes_per_s": 1512.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 8,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 215,
+    "start_epoch": 1791966213.2792284,
+    "end_epoch": 1791966214.2792284,
+    "frames": 18,
+    "requests": 9,
+    "responses": 9,
+    "requests_per_s": 9.0,
+    "bytes_per_s": 1134.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 7,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 216,
+    "start_epoch": 1791966214.2792284,
+    "end_epoch": 1791966215.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 217,
+    "start_epoch": 1791966215.2792284,
+    "end_epoch": 1791966216.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 218,
+    "start_epoch": 1791966216.2792284,
+    "end_epoch": 1791966217.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 219,
+    "start_epoch": 1791966217.2792284,
+    "end_epoch": 1791966218.2792284,
+    "frames": 10,
+    "requests": 5,
+    "responses": 5,
+    "requests_per_s": 5.0,
+    "bytes_per_s": 630.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 220,
+    "start_epoch": 1791966218.2792284,
+    "end_epoch": 1791966219.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 221,
+    "start_epoch": 1791966219.2792284,
+    "end_epoch": 1791966220.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 222,
+    "start_epoch": 1791966220.2792284,
+    "end_epoch": 1791966221.2792284,
+    "frames": 12,
+    "requests": 6,
+    "responses": 6,
+    "requests_per_s": 6.0,
+    "bytes_per_s": 3819.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 4
+    }
+  },
+  {
+    "window_index": 223,
+    "start_epoch": 1791966221.2792284,
+    "end_epoch": 1791966222.2792284,
+    "frames": 10,
+    "requests": 5,
+    "responses": 5,
+    "requests_per_s": 5.0,
+    "bytes_per_s": 3693.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 4
+    }
+  },
+  {
+    "window_index": 224,
+    "start_epoch": 1791966222.2792284,
+    "end_epoch": 1791966223.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 225,
+    "start_epoch": 1791966223.2792284,
+    "end_epoch": 1791966224.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 226,
+    "start_epoch": 1791966224.2792284,
+    "end_epoch": 1791966225.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 227,
+    "start_epoch": 1791966225.2792284,
+    "end_epoch": 1791966226.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 228,
+    "start_epoch": 1791966226.2792284,
+    "end_epoch": 1791966227.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 229,
+    "start_epoch": 1791966227.2792284,
+    "end_epoch": 1791966228.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 230,
+    "start_epoch": 1791966228.2792284,
+    "end_epoch": 1791966229.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 231,
+    "start_epoch": 1791966229.2792284,
+    "end_epoch": 1791966230.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 232,
+    "start_epoch": 1791966230.2792284,
+    "end_epoch": 1791966231.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 233,
+    "start_epoch": 1791966231.2792284,
+    "end_epoch": 1791966232.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 234,
+    "start_epoch": 1791966232.2792284,
+    "end_epoch": 1791966233.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 235,
+    "start_epoch": 1791966233.2792284,
+    "end_epoch": 1791966234.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 236,
+    "start_epoch": 1791966234.2792284,
+    "end_epoch": 1791966235.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 237,
+    "start_epoch": 1791966235.2792284,
+    "end_epoch": 1791966236.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 238,
+    "start_epoch": 1791966236.2792284,
+    "end_epoch": 1791966237.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 239,
+    "start_epoch": 1791966237.2792284,
+    "end_epoch": 1791966238.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 240,
+    "start_epoch": 1791966238.2792284,
+    "end_epoch": 1791966239.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 241,
+    "start_epoch": 1791966239.2792284,
+    "end_epoch": 1791966240.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 242,
+    "start_epoch": 1791966240.2792284,
+    "end_epoch": 1791966241.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 243,
+    "start_epoch": 1791966241.2792284,
+    "end_epoch": 1791966242.2792284,
+    "frames": 10,
+    "requests": 5,
+    "responses": 5,
+    "requests_per_s": 5.0,
+    "bytes_per_s": 630.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 2,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 244,
+    "start_epoch": 1791966242.2792284,
+    "end_epoch": 1791966243.2792284,
+    "frames": 28,
+    "requests": 14,
+    "responses": 14,
+    "requests_per_s": 14.0,
+    "bytes_per_s": 1764.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 11,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 245,
+    "start_epoch": 1791966243.2792284,
+    "end_epoch": 1791966244.2792284,
+    "frames": 24,
+    "requests": 12,
+    "responses": 12,
+    "requests_per_s": 12.0,
+    "bytes_per_s": 1512.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 10,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 246,
+    "start_epoch": 1791966244.2792284,
+    "end_epoch": 1791966245.2792284,
+    "frames": 22,
+    "requests": 11,
+    "responses": 11,
+    "requests_per_s": 11.0,
+    "bytes_per_s": 3428.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 7,
+      "3": 0,
+      "4": 3
+    }
+  },
+  {
+    "window_index": 247,
+    "start_epoch": 1791966245.2792284,
+    "end_epoch": 1791966246.2792284,
+    "frames": 16,
+    "requests": 8,
+    "responses": 8,
+    "requests_per_s": 8.0,
+    "bytes_per_s": 5092.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 5
+    }
+  },
+  {
+    "window_index": 248,
+    "start_epoch": 1791966246.2792284,
+    "end_epoch": 1791966247.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 249,
+    "start_epoch": 1791966247.2792284,
+    "end_epoch": 1791966248.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 250,
+    "start_epoch": 1791966248.2792284,
+    "end_epoch": 1791966249.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 251,
+    "start_epoch": 1791966249.2792284,
+    "end_epoch": 1791966250.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 252,
+    "start_epoch": 1791966250.2792284,
+    "end_epoch": 1791966251.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 253,
+    "start_epoch": 1791966251.2792284,
+    "end_epoch": 1791966252.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 254,
+    "start_epoch": 1791966252.2792284,
+    "end_epoch": 1791966253.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 255,
+    "start_epoch": 1791966253.2792284,
+    "end_epoch": 1791966254.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 256,
+    "start_epoch": 1791966254.2792284,
+    "end_epoch": 1791966255.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 257,
+    "start_epoch": 1791966255.2792284,
+    "end_epoch": 1791966256.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 258,
+    "start_epoch": 1791966256.2792284,
+    "end_epoch": 1791966257.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 259,
+    "start_epoch": 1791966257.2792284,
+    "end_epoch": 1791966258.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 260,
+    "start_epoch": 1791966258.2792284,
+    "end_epoch": 1791966259.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 261,
+    "start_epoch": 1791966259.2792284,
+    "end_epoch": 1791966260.2792284,
+    "frames": 10,
+    "requests": 5,
+    "responses": 5,
+    "requests_per_s": 5.0,
+    "bytes_per_s": 630.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 262,
+    "start_epoch": 1791966260.2792284,
+    "end_epoch": 1791966261.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 263,
+    "start_epoch": 1791966261.2792284,
+    "end_epoch": 1791966262.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 264,
+    "start_epoch": 1791966262.2792284,
+    "end_epoch": 1791966263.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 265,
+    "start_epoch": 1791966263.2792284,
+    "end_epoch": 1791966264.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 266,
+    "start_epoch": 1791966264.2792284,
+    "end_epoch": 1791966265.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 267,
+    "start_epoch": 1791966265.2792284,
+    "end_epoch": 1791966266.2792284,
+    "frames": 10,
+    "requests": 5,
+    "responses": 5,
+    "requests_per_s": 5.0,
+    "bytes_per_s": 4706.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 4
+    }
+  },
+  {
+    "window_index": 268,
+    "start_epoch": 1791966266.2792284,
+    "end_epoch": 1791966267.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 2542.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 3
+    }
+  },
+  {
+    "window_index": 269,
+    "start_epoch": 1791966267.2792284,
+    "end_epoch": 1791966268.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 270,
+    "start_epoch": 1791966268.2792284,
+    "end_epoch": 1791966269.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 271,
+    "start_epoch": 1791966269.2792284,
+    "end_epoch": 1791966270.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 272,
+    "start_epoch": 1791966270.2792284,
+    "end_epoch": 1791966271.2792284,
+    "frames": 16,
+    "requests": 8,
+    "responses": 8,
+    "requests_per_s": 8.0,
+    "bytes_per_s": 6103.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 6,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 273,
+    "start_epoch": 1791966271.2792284,
+    "end_epoch": 1791966272.2792284,
+    "frames": 30,
+    "requests": 15,
+    "responses": 15,
+    "requests_per_s": 15.0,
+    "bytes_per_s": 14120.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 12,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 274,
+    "start_epoch": 1791966272.2792284,
+    "end_epoch": 1791966273.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 275,
+    "start_epoch": 1791966273.2792284,
+    "end_epoch": 1791966274.2792284,
+    "frames": 6,
+    "requests": 3,
+    "responses": 3,
+    "requests_per_s": 3.0,
+    "bytes_per_s": 378.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 276,
+    "start_epoch": 1791966274.2792284,
+    "end_epoch": 1791966275.2792284,
+    "frames": 12,
+    "requests": 6,
+    "responses": 6,
+    "requests_per_s": 6.0,
+    "bytes_per_s": 3819.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 4,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 277,
+    "start_epoch": 1791966275.2792284,
+    "end_epoch": 1791966276.2792284,
+    "frames": 22,
+    "requests": 11,
+    "responses": 11,
+    "requests_per_s": 11.0,
+    "bytes_per_s": 10575.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 9,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 278,
+    "start_epoch": 1791966276.2792284,
+    "end_epoch": 1791966277.2792284,
+    "frames": 12,
+    "requests": 6,
+    "responses": 6,
+    "requests_per_s": 6.0,
+    "bytes_per_s": 3819.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 3,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 279,
+    "start_epoch": 1791966277.2792284,
+    "end_epoch": 1791966278.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 0,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 280,
+    "start_epoch": 1791966278.2792284,
+    "end_epoch": 1791966279.2792284,
+    "frames": 18,
+    "requests": 9,
+    "responses": 9,
+    "requests_per_s": 9.0,
+    "bytes_per_s": 1134.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 8,
+      "3": 0,
+      "4": 0
+    }
+  },
+  {
+    "window_index": 281,
+    "start_epoch": 1791966279.2792284,
+    "end_epoch": 1791966280.2792284,
+    "frames": 22,
+    "requests": 11,
+    "responses": 11,
+    "requests_per_s": 11.0,
+    "bytes_per_s": 1386.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 9,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 282,
+    "start_epoch": 1791966280.2792284,
+    "end_epoch": 1791966281.2792284,
+    "frames": 26,
+    "requests": 13,
+    "responses": 13,
+    "requests_per_s": 13.0,
+    "bytes_per_s": 1638.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 10,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 283,
+    "start_epoch": 1791966281.2792284,
+    "end_epoch": 1791966282.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 2,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 284,
+    "start_epoch": 1791966282.2792284,
+    "end_epoch": 1791966283.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 285,
+    "start_epoch": 1791966283.2792284,
+    "end_epoch": 1791966284.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 286,
+    "start_epoch": 1791966284.2792284,
+    "end_epoch": 1791966285.2792284,
+    "frames": 4,
+    "requests": 2,
+    "responses": 2,
+    "requests_per_s": 2.0,
+    "bytes_per_s": 252.0,
+    "requests_by_device": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 1
+    }
+  },
+  {
+    "window_index": 287,
+    "start_epoch": 1791966285.2792284,
+    "end_epoch": 1791966286.2792284,
+    "frames": 8,
+    "requests": 4,
+    "responses": 4,
+    "requests_per_s": 4.0,
+    "bytes_per_s": 504.0,
+    "requests_by_device": {
+      "1": 2,
+      "2": 1,
+      "3": 0,
+      "4": 1
+    }
+  }
+]

@@ -1,0 +1,61 @@
+column,block,dtype,role,in_clean_dataset,description
+meta_dataset_source,meta,object,audit_metadata,False,Logical source of the observation.
+meta_session,meta,object,evaluation_group,True,Independent session used for grouped evaluation; never a predictor.
+meta_capture,meta,object,audit_metadata,False,Capture identifier retained for audit only.
+meta_win_idx,meta,int64,audit_metadata,False,Zero-based window index within the session.
+meta_endpoint_a,meta,object,audit_metadata,False,First endpoint of the unordered conversation pair.
+meta_endpoint_b,meta,object,audit_metadata,False,Second endpoint of the unordered conversation pair.
+meta_n_frames,meta,int64,audit_metadata,False,Number of CoAP frames in the window.
+meta_win_start,meta,int64,audit_metadata,False,Window start in seconds relative to the capture.
+meta_win_end,meta,int64,audit_metadata,False,Window end in seconds relative to the capture.
+meta_window_seconds,meta,int64,audit_metadata,False,Window duration in seconds.
+meta_time_block_60s,meta,int64,audit_metadata,False,Coarse time block retained for audit only.
+core_pkts_per_s,core,int64,derived_not_selected,False,CoAP frame rate in the window.
+core_bytes_per_s,core,int64,predictor,True,Total captured frame bytes per second.
+core_mean_len,core,float64,predictor,True,Mean captured frame length in bytes.
+core_std_len,core,float64,predictor,True,Population standard deviation of frame length.
+core_mean_iat,core,float64,predictor,True,Mean inter-arrival time between frames.
+core_std_iat,core,float64,predictor,True,Population standard deviation of inter-arrival time.
+core_active_span_frac,core,float64,predictor,True,Fraction of the window between its first and last frame.
+coap_req_per_s,coap,int64,predictor,True,CoAP request rate.
+coap_resp_per_s,coap,int64,predictor,True,CoAP response rate.
+coap_empty_per_s,coap,int64,derived_not_selected,False,Empty CoAP message rate.
+coap_con_per_s,coap,int64,derived_not_selected,False,Confirmable CoAP message rate.
+coap_non_per_s,coap,int64,predictor,True,Non-confirmable CoAP message rate.
+coap_ack_per_s,coap,int64,derived_not_selected,False,Acknowledgement message rate.
+coap_rst_per_s,coap,int64,derived_not_selected,False,Reset message rate.
+coap_observe_per_s,coap,int64,derived_not_selected,False,Rate of messages containing the Observe option.
+coap_notification_per_s,coap,int64,derived_not_selected,False,Observe notification rate.
+coap_request_frac,coap,float64,predictor,True,Fraction of frames that are CoAP requests.
+coap_response_frac,coap,float64,derived_not_selected,False,Fraction of frames that are CoAP responses.
+coap_empty_ack_frac,coap,int64,derived_not_selected,False,Fraction of frames that are empty acknowledgements.
+coap_con_frac,coap,float64,predictor,True,Fraction of frames that are confirmable messages.
+coap_ack_frac,coap,float64,derived_not_selected,False,Fraction of frames that are acknowledgements.
+coap_observe_frac,coap,int64,derived_not_selected,False,Fraction of frames containing the Observe option.
+coap_notification_frac,coap,int64,derived_not_selected,False,Fraction of frames that are Observe notifications.
+coap_success_resp_frac,coap,int64,derived_not_selected,False,Fraction of responses with a success code.
+coap_resp_balance,coap,float64,derived_not_selected,False,Responses divided by the sum of requests and responses.
+coap_log_resp_req,coap,float64,predictor,True,Difference between log1p response and request counts.
+coap_payload_bytes_per_s,coap,int64,derived_not_selected,False,CoAP payload bytes per second.
+coap_mean_payload_len,coap,float64,predictor,True,Mean CoAP payload length in bytes.
+coap_method_entropy,coap,int64,derived_not_selected,False,Shannon entropy of request methods.
+coap_distinct_methods,coap,int64,derived_not_selected,False,Number of distinct request methods.
+coap_block2_per_s,coap,int64,derived_not_selected,False,Rate of messages containing the Block2 option.
+coap_block2_req_per_s,coap,int64,predictor,True,Block2 request rate.
+coap_block2_resp_per_s,coap,int64,predictor,True,Block2 response rate.
+coap_block2_frac,coap,float64,predictor,True,Fraction of frames containing the Block2 option.
+coap_block2_more_resp_frac,coap,float64,predictor,True,Fraction of Block2 responses with the M bit set.
+coap_block2_mean_number,coap,float64,predictor,True,Mean requested Block2 number.
+coap_block2_unique_numbers,coap,int64,predictor,True,Number of distinct requested Block2 numbers.
+coap_block2_sequential_req_frac,coap,float64,predictor,True,"Fraction of sequential Block2 request transitions, including 31 to 0."
+coap_block2_repeated_req_frac,coap,float64,predictor,True,Fraction of repeated Block2 numbers among requests.
+coap_block2_req_unique_token_frac,coap,float64,predictor,True,Distinct-token fraction among Block2 requests.
+coap_block2_payload_bytes_per_s,coap,int64,derived_not_selected,False,Block2 response payload bytes per second.
+coap_block2_log_resp_req_bytes,coap,float64,predictor,True,Difference between log1p Block2 response and request wire bytes.
+label_binary,label,int64,ground_truth,False,Binary ground truth: zero for benign and one for either attack.
+label_attack,label,object,ground_truth,False,Text ground-truth class.
+label_episode,label,object,ground_truth,False,Externally recorded attack episode identifier.
+label_overlap_fraction,label,int64,ground_truth,False,Fraction of the window covered by its assigned event.
+label_confidence,label,object,ground_truth,False,Ground-truth confidence level.
+label_source,label,object,ground_truth,False,Source used to assign the label.
+label_attack_strategy,label,object,ground_truth,False,Scheduled workload variant within the attack class.

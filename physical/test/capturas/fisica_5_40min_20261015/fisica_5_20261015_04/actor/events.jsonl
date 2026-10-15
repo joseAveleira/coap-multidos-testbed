@@ -1,0 +1,7 @@
+{"epoch":1792058426.805793,"wall_epoch":1792058426.806,"utc":"2026-10-15T10:00:26.805Z","mono_ms":4.792825000000001,"kind":"preflight_start","label":"excluded"}
+{"epoch":1792058426.8096993,"wall_epoch":1792058426.81,"utc":"2026-10-15T10:00:26.809Z","mono_ms":8.699126,"kind":"flow","lane":0,"local":{"address":"10.37.225.230","family":"IPv4","port":49594},"remote":{"address":"10.37.225.138","port":5683}}
+{"epoch":1792058426.810418,"wall_epoch":1792058426.811,"utc":"2026-10-15T10:00:26.810Z","mono_ms":9.417827000000003,"kind":"flow","lane":1,"local":{"address":"10.37.225.230","family":"IPv4","port":51591},"remote":{"address":"10.37.225.138","port":5683}}
+{"epoch":1792058426.8112104,"wall_epoch":1792058426.812,"utc":"2026-10-15T10:00:26.811Z","mono_ms":10.210206999999997,"kind":"flow","lane":2,"local":{"address":"10.37.225.230","family":"IPv4","port":43433},"remote":{"address":"10.37.225.138","port":5683}}
+{"epoch":1792058426.8118148,"wall_epoch":1792058426.812,"utc":"2026-10-15T10:00:26.811Z","mono_ms":10.814767000000003,"kind":"flow","lane":3,"local":{"address":"10.37.225.230","family":"IPv4","port":48337},"remote":{"address":"10.37.225.138","port":5683}}
+{"epoch":1792058430.0306718,"wall_epoch":1792058430.031,"utc":"2026-10-15T10:00:30.030Z","mono_ms":3229.671831,"kind":"run_error","message":"Comprobación CoAP: timeout"}
+{"epoch":1792058430.0324845,"wall_epoch":1792058430.033,"utc":"2026-10-15T10:00:30.032Z","mono_ms":3231.48453,"kind":"session_end","status":"failed","reason":"error: Comprobación CoAP: timeout"}

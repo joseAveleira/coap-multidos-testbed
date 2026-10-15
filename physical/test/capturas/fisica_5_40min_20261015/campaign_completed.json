@@ -1,0 +1,454 @@
+{
+  "status": "captured_pending_extraction",
+  "original_campaign_execution": "campaign_execution.json",
+  "original_execution_sha256": "82715cffd45f146eeeadf6803bf54371bd7fda0d8425ef62a5fbab7e3da0149c",
+  "sessions": [
+    {
+      "session": "fisica_5_20261015_01",
+      "created_utc": "2026-10-15T09:21:38.423861+00:00",
+      "status": "captured_pending_extraction",
+      "devices_observed_before_run": [
+        {
+          "device_id": 1,
+          "profile_id": 1,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:43:4c",
+          "observed_ipv4": "10.37.225.73"
+        },
+        {
+          "device_id": 2,
+          "profile_id": 2,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:41:48",
+          "observed_ipv4": "10.37.225.67"
+        },
+        {
+          "device_id": 3,
+          "profile_id": 3,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:36:4c",
+          "observed_ipv4": "10.37.225.60"
+        },
+        {
+          "device_id": 4,
+          "profile_id": 4,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:42:08",
+          "observed_ipv4": "10.37.225.4"
+        },
+        {
+          "device_id": 5,
+          "profile_id": 5,
+          "model": "ESP32-C6",
+          "mac": "58:8c:81:32:21:5c",
+          "runtime": "MicroPython v1.29.0 on 2026-08-24",
+          "client_source_sha256": {
+            "main.py": "b4c1002715d300b3edb9e2223e080dd8dc0d1fa15a6aeeaf761be70e61444d98",
+            "coap_wire.py": "383cf2f0bc3d56a06df4641a3188265273bd8304faf14c56936f5b031a87f733"
+          },
+          "firmware_sha256": "3688ba4e2c3949e639f5772e99fdb0efa1258b162a496133f78c108434195c89",
+          "observed_ipv4": "10.37.225.20"
+        }
+      ],
+      "capture_command": [
+        "tshark",
+        "-i",
+        "\\Device\\NPF_{34CF96FE-697A-479B-A63B-430A4CBA7025}",
+        "-f",
+        "udp port 5683",
+        "-s",
+        "0",
+        "-a",
+        "duration:600",
+        "-w",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_01\\traffic.pcapng",
+        "-q"
+      ],
+      "remote_pid": 11684,
+      "actor_exit_code": 0,
+      "devices_observed_in_campaign": [
+        {
+          "device_id": 1,
+          "profile_id": 1,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:43:4c",
+          "observed_ipv4": "10.37.225.73"
+        },
+        {
+          "device_id": 2,
+          "profile_id": 2,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:41:48",
+          "observed_ipv4": "10.37.225.67"
+        },
+        {
+          "device_id": 3,
+          "profile_id": 3,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:36:4c",
+          "observed_ipv4": "10.37.225.60"
+        },
+        {
+          "device_id": 4,
+          "profile_id": 4,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:42:08",
+          "observed_ipv4": "10.37.225.4"
+        },
+        {
+          "device_id": 5,
+          "profile_id": 5,
+          "model": "ESP32-C6",
+          "mac": "58:8c:81:32:21:5c",
+          "runtime": "MicroPython v1.29.0 on 2026-08-24",
+          "client_source_sha256": {
+            "main.py": "b4c1002715d300b3edb9e2223e080dd8dc0d1fa15a6aeeaf761be70e61444d98",
+            "coap_wire.py": "383cf2f0bc3d56a06df4641a3188265273bd8304faf14c56936f5b031a87f733"
+          },
+          "firmware_sha256": "3688ba4e2c3949e639f5772e99fdb0efa1258b162a496133f78c108434195c89",
+          "observed_ipv4": "10.37.225.20"
+        }
+      ],
+      "finished_utc": "2026-10-15T09:34:12.295089+00:00"
+    },
+    {
+      "session": "fisica_5_20261015_02",
+      "created_utc": "2026-10-15T09:34:12.461692+00:00",
+      "status": "captured_pending_extraction",
+      "devices_observed_before_run": [
+        {
+          "device_id": 1,
+          "profile_id": 1,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:43:4c",
+          "observed_ipv4": "10.37.225.73"
+        },
+        {
+          "device_id": 2,
+          "profile_id": 2,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:41:48",
+          "observed_ipv4": "10.37.225.67"
+        },
+        {
+          "device_id": 3,
+          "profile_id": 3,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:36:4c",
+          "observed_ipv4": "10.37.225.60"
+        },
+        {
+          "device_id": 4,
+          "profile_id": 4,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:42:08",
+          "observed_ipv4": "10.37.225.4"
+        },
+        {
+          "device_id": 5,
+          "profile_id": 5,
+          "model": "ESP32-C6",
+          "mac": "58:8c:81:32:21:5c",
+          "runtime": "MicroPython v1.29.0 on 2026-08-24",
+          "client_source_sha256": {
+            "main.py": "b4c1002715d300b3edb9e2223e080dd8dc0d1fa15a6aeeaf761be70e61444d98",
+            "coap_wire.py": "383cf2f0bc3d56a06df4641a3188265273bd8304faf14c56936f5b031a87f733"
+          },
+          "firmware_sha256": "3688ba4e2c3949e639f5772e99fdb0efa1258b162a496133f78c108434195c89",
+          "observed_ipv4": "10.37.225.20"
+        }
+      ],
+      "capture_command": [
+        "tshark",
+        "-i",
+        "\\Device\\NPF_{34CF96FE-697A-479B-A63B-430A4CBA7025}",
+        "-f",
+        "udp port 5683",
+        "-s",
+        "0",
+        "-a",
+        "duration:600",
+        "-w",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_02\\traffic.pcapng",
+        "-q"
+      ],
+      "remote_pid": 13711,
+      "actor_exit_code": 0,
+      "devices_observed_in_campaign": [
+        {
+          "device_id": 1,
+          "profile_id": 1,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:43:4c",
+          "observed_ipv4": "10.37.225.73"
+        },
+        {
+          "device_id": 2,
+          "profile_id": 2,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:41:48",
+          "observed_ipv4": "10.37.225.67"
+        },
+        {
+          "device_id": 3,
+          "profile_id": 3,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:36:4c",
+          "observed_ipv4": "10.37.225.60"
+        },
+        {
+          "device_id": 4,
+          "profile_id": 4,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:42:08",
+          "observed_ipv4": "10.37.225.4"
+        },
+        {
+          "device_id": 5,
+          "profile_id": 5,
+          "model": "ESP32-C6",
+          "mac": "58:8c:81:32:21:5c",
+          "runtime": "MicroPython v1.29.0 on 2026-08-24",
+          "client_source_sha256": {
+            "main.py": "b4c1002715d300b3edb9e2223e080dd8dc0d1fa15a6aeeaf761be70e61444d98",
+            "coap_wire.py": "383cf2f0bc3d56a06df4641a3188265273bd8304faf14c56936f5b031a87f733"
+          },
+          "firmware_sha256": "3688ba4e2c3949e639f5772e99fdb0efa1258b162a496133f78c108434195c89",
+          "observed_ipv4": "10.37.225.20"
+        }
+      ],
+      "finished_utc": "2026-10-15T09:46:41.253644+00:00"
+    },
+    {
+      "session": "fisica_5_20261015_03",
+      "created_utc": "2026-10-15T09:46:41.394864+00:00",
+      "status": "captured_pending_extraction",
+      "devices_observed_before_run": [
+        {
+          "device_id": 1,
+          "profile_id": 1,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:43:4c",
+          "observed_ipv4": "10.37.225.73"
+        },
+        {
+          "device_id": 2,
+          "profile_id": 2,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:41:48",
+          "observed_ipv4": "10.37.225.67"
+        },
+        {
+          "device_id": 3,
+          "profile_id": 3,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:36:4c",
+          "observed_ipv4": "10.37.225.60"
+        },
+        {
+          "device_id": 4,
+          "profile_id": 4,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:42:08",
+          "observed_ipv4": "10.37.225.4"
+        },
+        {
+          "device_id": 5,
+          "profile_id": 5,
+          "model": "ESP32-C6",
+          "mac": "58:8c:81:32:21:5c",
+          "runtime": "MicroPython v1.29.0 on 2026-08-24",
+          "client_source_sha256": {
+            "main.py": "b4c1002715d300b3edb9e2223e080dd8dc0d1fa15a6aeeaf761be70e61444d98",
+            "coap_wire.py": "383cf2f0bc3d56a06df4641a3188265273bd8304faf14c56936f5b031a87f733"
+          },
+          "firmware_sha256": "3688ba4e2c3949e639f5772e99fdb0efa1258b162a496133f78c108434195c89",
+          "observed_ipv4": "10.37.225.20"
+        }
+      ],
+      "capture_command": [
+        "tshark",
+        "-i",
+        "\\Device\\NPF_{34CF96FE-697A-479B-A63B-430A4CBA7025}",
+        "-f",
+        "udp port 5683",
+        "-s",
+        "0",
+        "-a",
+        "duration:600",
+        "-w",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_03\\traffic.pcapng",
+        "-q"
+      ],
+      "remote_pid": 15726,
+      "actor_exit_code": 0,
+      "devices_observed_in_campaign": [
+        {
+          "device_id": 1,
+          "profile_id": 1,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:43:4c",
+          "observed_ipv4": "10.37.225.73"
+        },
+        {
+          "device_id": 2,
+          "profile_id": 2,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:41:48",
+          "observed_ipv4": "10.37.225.67"
+        },
+        {
+          "device_id": 3,
+          "profile_id": 3,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:36:4c",
+          "observed_ipv4": "10.37.225.60"
+        },
+        {
+          "device_id": 4,
+          "profile_id": 4,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:42:08",
+          "observed_ipv4": "10.37.225.4"
+        },
+        {
+          "device_id": 5,
+          "profile_id": 5,
+          "model": "ESP32-C6",
+          "mac": "58:8c:81:32:21:5c",
+          "runtime": "MicroPython v1.29.0 on 2026-08-24",
+          "client_source_sha256": {
+            "main.py": "b4c1002715d300b3edb9e2223e080dd8dc0d1fa15a6aeeaf761be70e61444d98",
+            "coap_wire.py": "383cf2f0bc3d56a06df4641a3188265273bd8304faf14c56936f5b031a87f733"
+          },
+          "firmware_sha256": "3688ba4e2c3949e639f5772e99fdb0efa1258b162a496133f78c108434195c89",
+          "observed_ipv4": "10.37.225.20"
+        }
+      ],
+      "finished_utc": "2026-10-15T09:59:10.700739+00:00"
+    },
+    {
+      "session": "fisica_5_20261015_04_retry1",
+      "created_utc": "2026-10-15T10:02:54.309468+00:00",
+      "status": "captured_pending_extraction",
+      "devices_observed_before_run": [
+        {
+          "device_id": 1,
+          "profile_id": 1,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:43:4c",
+          "observed_ipv4": "10.37.225.73"
+        },
+        {
+          "device_id": 2,
+          "profile_id": 2,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:41:48",
+          "observed_ipv4": "10.37.225.67"
+        },
+        {
+          "device_id": 3,
+          "profile_id": 3,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:36:4c",
+          "observed_ipv4": "10.37.225.60"
+        },
+        {
+          "device_id": 4,
+          "profile_id": 4,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:42:08",
+          "observed_ipv4": "10.37.225.4"
+        },
+        {
+          "device_id": 5,
+          "profile_id": 5,
+          "model": "ESP32-C6",
+          "mac": "58:8c:81:32:21:5c",
+          "runtime": "MicroPython v1.29.0 on 2026-08-24",
+          "client_source_sha256": {
+            "main.py": "b4c1002715d300b3edb9e2223e080dd8dc0d1fa15a6aeeaf761be70e61444d98",
+            "coap_wire.py": "383cf2f0bc3d56a06df4641a3188265273bd8304faf14c56936f5b031a87f733"
+          },
+          "firmware_sha256": "3688ba4e2c3949e639f5772e99fdb0efa1258b162a496133f78c108434195c89",
+          "observed_ipv4": "10.37.225.20"
+        }
+      ],
+      "capture_command": [
+        "tshark",
+        "-i",
+        "\\Device\\NPF_{34CF96FE-697A-479B-A63B-430A4CBA7025}",
+        "-f",
+        "udp port 5683",
+        "-s",
+        "0",
+        "-a",
+        "duration:600",
+        "-w",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_5_40min_20261015\\fisica_5_20261015_04_retry1\\traffic.pcapng",
+        "-q"
+      ],
+      "remote_pid": 18647,
+      "actor_exit_code": 0,
+      "devices_observed_in_campaign": [
+        {
+          "device_id": 1,
+          "profile_id": 1,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:43:4c",
+          "observed_ipv4": "10.37.225.73"
+        },
+        {
+          "device_id": 2,
+          "profile_id": 2,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:41:48",
+          "observed_ipv4": "10.37.225.67"
+        },
+        {
+          "device_id": 3,
+          "profile_id": 3,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:36:4c",
+          "observed_ipv4": "10.37.225.60"
+        },
+        {
+          "device_id": 4,
+          "profile_id": 4,
+          "model": "ESP32-S3",
+          "mac": "d0:cf:13:08:42:08",
+          "observed_ipv4": "10.37.225.4"
+        },
+        {
+          "device_id": 5,
+          "profile_id": 5,
+          "model": "ESP32-C6",
+          "mac": "58:8c:81:32:21:5c",
+          "runtime": "MicroPython v1.29.0 on 2026-08-24",
+          "client_source_sha256": {
+            "main.py": "b4c1002715d300b3edb9e2223e080dd8dc0d1fa15a6aeeaf761be70e61444d98",
+            "coap_wire.py": "383cf2f0bc3d56a06df4641a3188265273bd8304faf14c56936f5b031a87f733"
+          },
+          "firmware_sha256": "3688ba4e2c3949e639f5772e99fdb0efa1258b162a496133f78c108434195c89",
+          "observed_ipv4": "10.37.225.20"
+        }
+      ],
+      "finished_utc": "2026-10-15T10:14:24.211107+00:00"
+    }
+  ],
+  "excluded_attempts": [
+    {
+      "session": "fisica_5_20261015_04",
+      "reason": "error: Comprobaci\u00f3n CoAP: timeout",
+      "actor_started_epoch": null,
+      "reason_source": "fisica_5_20261015_04/actor/summary.json (UTF-8)"
+    }
+  ],
+  "capture_seconds_planned": 2400,
+  "inventory_seconds_per_session": 60,
+  "continuation_source_sha256": {
+    "scripts_esp32/campaign/capture_session.py": "5c9581c4f62bb0036aabb738b58ae427bf047c5ca79b8c76bab9b08c01974d50",
+    "scripts_esp32/campaign/remote.py": "eb20d5a9aac475d1c490453bf171d3764bd51aface773ca4bd53ef45a953af04"
+  },
+  "finished_utc": "2026-10-15T10:14:24.213172+00:00"
+}

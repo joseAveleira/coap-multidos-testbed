@@ -1,0 +1,22 @@
+{
+  "analisis.json": "a9b410ab53df8ba285baeef72be7bc04b8113f0f36a2935315b63847f3afbae9",
+  "capinfos.txt": "a2abed326529061bcd68524b0b587b8e2fe95c5b9cc51b6c6cb0403b2174fa84",
+  "dispositivos.json": "54a4a676d2f12301f81e35f5b24d24e6d261621f3c34e6bf0905eb30cf33125a",
+  "entorno.json": "88afa8e86b1a4bd2024a33f89f135900759a30d509139e81d35fb65cec881ff3",
+  "flash_esp32_01.log": "5734a1fa6c1c4cc17abdbfa09207b33203e6e42b942332dcc1082b98beeb38fa",
+  "flash_esp32_02.log": "212f31eb8fe5756d2feac59727d07d82522ca48fd0267ff4f684bc686ea845e0",
+  "flash_esp32_03.log": "f3a250c221815b1481f13fee5322262401e008cb2547ff99edd58f5ea3b935e2",
+  "flash_esp32_04.log": "3ecb9db798c827d849dfebfb6053fcc0319b79e8abe485ab7d86f04465e47a66",
+  "informe_validacion.txt": "1433e7944ab067eaabe31402bfa406382ca6f9b56ff817ae7a5c9138ca873bde",
+  "manifest.json": "c6b74537fe6bb8abe5b18b0e7c9772bdd6a5ee709e88ca6636fa1a086a76091a",
+  "paquetes.json": "bb8ef459c9ee8e488ffb3727a51fbe5caf720ebbc4249509c74db19f1ae66075",
+  "serial.jsonl": "d2d53280c212b9d0a7a23314708aae68798749a696bf6361094440eace1e1ab2",
+  "server_manifest.json": "357f6efa80bba8fb64e1f35a53eb9f8432622f08f626c7ae0d335f38ae07fa02",
+  "server_snapshot.jsonl": "4da6b89fb36a51636395245a9fa98597cc1e48280de73e4937259e42537b9fc0",
+  "trafico_coap.pcapng": "e9765f03cc141be3cd399ab14789ea7d3a53da6e4864587bf8d0cd8703c6e74d",
+  "tshark.stderr.log": "4ded187194be12e446c5aea9d6d020655a8a9f8932e4930c1acce0685f9dd140",
+  "tshark.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "ventanas_0_5s.json": "1af11b93e52eea2536cef6fb7b4daba6c4180458b256c2f4271f73f490a918c3",
+  "ventanas_1_0s.json": "7aab96d19826389d7f8692196d8c0a91dc4ad6f164c49fe0739c7a100c3dab2b",
+  "ventanas_2_0s.json": "93ce04e6bc4d6383abf7f872b365bfa81445c8443547469b4005c0f99999adfd"
+}

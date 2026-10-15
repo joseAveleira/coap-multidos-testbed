@@ -1,8 +1,15 @@
-# Reproducible CoAP multi-DoS testbed
+# CoAP multi-DoS datasets and testbeds
 
-This repository contains the local CoAP testbed, dataset and preprocessing code used to describe the experimental environment in Section 4.1 of the associated paper.
+This repository distributes the original simulated CoAP campaign and a physical Wi-Fi extension. The original data and code remain unchanged under tag `v1.0.0`; tag `v1.1.0` adds seven physical acquisitions and exports at 0.5, 1 and 2 seconds.
 
-The testbed runs on the IPv4 loopback network. It creates real UDP/CoAP packets without sending traffic to an external host.
+| Collection | Location | Captures | CoAP packets | One-second rows |
+|---|---|---:|---:|---:|
+| Original simulated campaign | [`data/`](data/) | 15 | 624,058 | 3,797 |
+| Physical extension | [`physical/`](physical/) | 7 | 769,063 | 12,684 |
+
+The physical extension includes three pilots and four ten-minute sessions with four ESP32-S3 clients, one ESP32-C6 client, a Windows server/capture host and a separate Arch Linux actor. The four main sessions contain 24 Block2 and 24 request-flood episodes, with legitimate traffic from every board.
+
+**Physical data downloads and reproduction:** see [`physical/README.md`](physical/README.md). It links the raw PCAPs, three CSV resolutions, labels, schedules, configuration and checksums. The sections below describe the original loopback collection.
 
 ## Contents
 
@@ -79,7 +86,7 @@ Use leave-one-session-out or another group-wise split based on `meta_session`. F
 
 ## Scope
 
-This is a controlled local testbed. It does not reproduce the latency, loss, hardware diversity or radio conditions of a physical IoT deployment. Results obtained from these data measure generalisation between sessions of this campaign.
+The original collection uses a controlled loopback testbed. The physical extension records CoAP on a Wi-Fi network with separate microcontrollers, server and actor. The collections remain separately identifiable; this release supplies acquisition data and makes no new classifier-performance claims.
 
 ## Citation
 

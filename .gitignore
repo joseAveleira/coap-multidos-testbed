@@ -13,3 +13,6 @@ testbed/generation_manifest_*.json
 
 data/rebuilt/
 *.log
+
+# Recorded physical logs are part of the published evidence.
+!physical/**/*.log

@@ -1,0 +1,14 @@
+File name:           test\capturas\piloto_banco4_20261014_01\trafico_coap.pcapng
+Number of interfaces in file: 1
+Interface #0 info:
+                     Name = \Device\NPF_{34CF96FE-697A-479B-A63B-430A4CBA7025}
+                     Description = Wi-Fi
+                     Encapsulation = Ethernet (1 - ether)
+                     Capture length = 262144
+                     Time precision = nanoseconds (9)
+                     Time ticks per second = 1000000000
+                     Time resolution = 0x09
+                     Filter string = udp port 5683
+                     Operating system = 64-bit Windows 11 (25H2), build 26200
+                     Number of stat entries = 1
+                     Number of packets = 2520

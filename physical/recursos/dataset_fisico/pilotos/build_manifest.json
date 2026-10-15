@@ -1,0 +1,303 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-14T11:02:49.790361+00:00",
+  "source_manifest": "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\recursos\\dataset_fisico\\pilotos_manifest.json",
+  "source_manifest_sha256": "dfaaf5daad8a20a7973d1815b7918e5b3e58a58d3a86269b6d513552ca697429",
+  "tshark": "TShark (Wireshark) 4.6.4 (v4.6.4-0-g93282876538d).",
+  "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+  "pandas": "3.0.3",
+  "numpy": "2.4.6",
+  "window_seconds": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "predictors": [
+    "core_bytes_per_s",
+    "core_mean_len",
+    "core_std_len",
+    "core_mean_iat",
+    "core_std_iat",
+    "core_active_span_frac",
+    "coap_req_per_s",
+    "coap_resp_per_s",
+    "coap_non_per_s",
+    "coap_request_frac",
+    "coap_con_frac",
+    "coap_log_resp_req",
+    "coap_mean_payload_len",
+    "coap_block2_req_per_s",
+    "coap_block2_resp_per_s",
+    "coap_block2_frac",
+    "coap_block2_more_resp_frac",
+    "coap_block2_mean_number",
+    "coap_block2_unique_numbers",
+    "coap_block2_sequential_req_frac",
+    "coap_block2_repeated_req_frac",
+    "coap_block2_req_unique_token_frac",
+    "coap_block2_log_resp_req_bytes"
+  ],
+  "grouping": "unordered IPv4 pair; capture-relative aligned nonoverlapping windows",
+  "final_window_policy": "exclude windows ending after the final observed CoAP frame",
+  "upstream": {
+    "repository": "https://github.com/joseAveleira/coap-multidos-testbed",
+    "tag": "v1.0.0",
+    "commit": "44e34a4376a64ec222cee2aaf9ba9adcb06968e5",
+    "files": {
+      "coap_features.py": {
+        "upstream_path": "pipeline/coap_features.py",
+        "sha256": "f736e81354be7f9a6c23b4bd3fd30d851c2f0ebf8a832c6f38ff1c15ff7dcffa"
+      },
+      "clean_table.py": {
+        "upstream_path": "preprocessing/build_clean_dataset.py",
+        "sha256": "4fd3bf0d46c14e5b805e06f9604825e539f731d06c794fdb2531558ece2ec557"
+      },
+      "LICENSE": {
+        "upstream_path": "LICENSE",
+        "sha256": "3ef8e2476577d25a86ad4b77a56196eb9cfb69c3ada51c73b1d43209e018ed5f"
+      },
+      "data_dictionary.csv": {
+        "upstream_path": "data/data_dictionary.csv",
+        "sha256": "36df1b52bc8998061cb6274f8b95fc27bf17182966715a986c3bdb21d73e42ec"
+      }
+    }
+  },
+  "extractor_sha256": "99db3cdf70885e3731c515c3f7d2bde142a73aed0a510061715731d1d438806e",
+  "sessions": [
+    {
+      "session": "piloto_esp32_20261013_01",
+      "pcap": "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\piloto_esp32_20261013_01\\trafico_coap.pcapng",
+      "pcap_sha256": "29cce28730db132260ca8cc3a85ca4679c0ff325c87503e529d2764674a8de74",
+      "coap_packets": 380,
+      "declared_benign_ips": [
+        "10.37.225.73"
+      ],
+      "actor_ip": null,
+      "inputs": {},
+      "windows": {
+        "0_5s": {
+          "kept": 189,
+          "excluded": 1,
+          "classes": {
+            "benign": 189
+          },
+          "reasons": {
+            "outside_complete_observation_interval": 1
+          }
+        },
+        "1_0s": {
+          "kept": 164,
+          "excluded": 1,
+          "classes": {
+            "benign": 164
+          },
+          "reasons": {
+            "outside_complete_observation_interval": 1
+          }
+        },
+        "2_0s": {
+          "kept": 82,
+          "excluded": 1,
+          "classes": {
+            "benign": 82
+          },
+          "reasons": {
+            "outside_complete_observation_interval": 1
+          }
+        }
+      },
+      "tshark_command": [
+        "tshark",
+        "-n",
+        "-r",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\piloto_esp32_20261013_01\\trafico_coap.pcapng",
+        "-d",
+        "udp.port==5683,coap",
+        "-Y",
+        "coap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=/t",
+        "-E",
+        "quote=d",
+        "-E",
+        "occurrence=f",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_relative",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "ip.ttl",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "coap.type",
+        "-e",
+        "coap.code",
+        "-e",
+        "coap.mid",
+        "-e",
+        "coap.token",
+        "-e",
+        "coap.opt.observe",
+        "-e",
+        "coap.opt.uri_path",
+        "-e",
+        "coap.payload_length",
+        "-e",
+        "coap.opt.block_number",
+        "-e",
+        "coap.opt.block_mflag",
+        "-e",
+        "coap.opt.block_size",
+        "-e",
+        "coap.block_length"
+      ],
+      "packet_ground_truth_counts": {
+        "physical_benign": 380
+      },
+      "observed_benign_clients": [
+        "10.37.225.73"
+      ]
+    },
+    {
+      "session": "piloto_banco4_20261014_01",
+      "pcap": "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\piloto_banco4_20261014_01\\trafico_coap.pcapng",
+      "pcap_sha256": "e9765f03cc141be3cd399ab14789ea7d3a53da6e4864587bf8d0cd8703c6e74d",
+      "coap_packets": 2520,
+      "declared_benign_ips": [
+        "10.37.225.73",
+        "10.37.225.67",
+        "10.37.225.60",
+        "10.37.225.4"
+      ],
+      "actor_ip": null,
+      "inputs": {},
+      "windows": {
+        "0_5s": {
+          "kept": 904,
+          "excluded": 2,
+          "classes": {
+            "benign": 904
+          },
+          "reasons": {
+            "outside_complete_observation_interval": 2
+          }
+        },
+        "1_0s": {
+          "kept": 803,
+          "excluded": 2,
+          "classes": {
+            "benign": 803
+          },
+          "reasons": {
+            "outside_complete_observation_interval": 2
+          }
+        },
+        "2_0s": {
+          "kept": 525,
+          "excluded": 2,
+          "classes": {
+            "benign": 525
+          },
+          "reasons": {
+            "outside_complete_observation_interval": 2
+          }
+        }
+      },
+      "tshark_command": [
+        "tshark",
+        "-n",
+        "-r",
+        "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\piloto_banco4_20261014_01\\trafico_coap.pcapng",
+        "-d",
+        "udp.port==5683,coap",
+        "-Y",
+        "coap",
+        "-T",
+        "fields",
+        "-E",
+        "header=y",
+        "-E",
+        "separator=/t",
+        "-E",
+        "quote=d",
+        "-E",
+        "occurrence=f",
+        "-e",
+        "frame.number",
+        "-e",
+        "frame.time_relative",
+        "-e",
+        "frame.time_epoch",
+        "-e",
+        "frame.len",
+        "-e",
+        "ip.src",
+        "-e",
+        "ip.dst",
+        "-e",
+        "ip.ttl",
+        "-e",
+        "udp.srcport",
+        "-e",
+        "udp.dstport",
+        "-e",
+        "coap.type",
+        "-e",
+        "coap.code",
+        "-e",
+        "coap.mid",
+        "-e",
+        "coap.token",
+        "-e",
+        "coap.opt.observe",
+        "-e",
+        "coap.opt.uri_path",
+        "-e",
+        "coap.payload_length",
+        "-e",
+        "coap.opt.block_number",
+        "-e",
+        "coap.opt.block_mflag",
+        "-e",
+        "coap.opt.block_size",
+        "-e",
+        "coap.block_length"
+      ],
+      "packet_ground_truth_counts": {
+        "physical_benign": 2520
+      },
+      "observed_benign_clients": [
+        "10.37.225.4",
+        "10.37.225.60",
+        "10.37.225.67",
+        "10.37.225.73"
+      ]
+    }
+  ],
+  "outputs": {
+    "0_5s\\dataset_clean_multiclass.csv": "e5c9c246c7905d665b1149833835915fc4fac6f98fffb1c0f220cbc3cdfd89e8",
+    "0_5s\\dataset_complete_tracking.csv": "625512895a55cb02da38b68a70d4da10b872f964c97dad76688a9d12d0fcd827",
+    "0_5s\\excluded_windows.csv": "a768dcb35e557c651c9ee14aef281b33ff20715bfda3468d2f2593f419ee7fb6",
+    "1_0s\\dataset_clean_multiclass.csv": "902dc5b9e42ab21dd018d625a544db20d58675f77c7b659747e414712290f03b",
+    "1_0s\\dataset_complete_tracking.csv": "d62c72586650c26d48010cbb0e7d7f8ef7fa6f85ac5c2e09e4296aa0dc174112",
+    "1_0s\\excluded_windows.csv": "6e0c3e727c3abb47e83619e61695d16889016eddd0b65f77b505192ba8df2150",
+    "2_0s\\dataset_clean_multiclass.csv": "6d819227d1e5d943611d393326950078297436e4330cb2975f8fc6adbbd8008b",
+    "2_0s\\dataset_complete_tracking.csv": "69ce8471f73d761d67db80d7b4d3084bc49a05c26b3ed7c82375a1d1f61dfda6",
+    "2_0s\\excluded_windows.csv": "1fe722bad455633ac46f338bd7c533919ca96a4e86704aed90c714e4f1b58d0e"
+  }
+}

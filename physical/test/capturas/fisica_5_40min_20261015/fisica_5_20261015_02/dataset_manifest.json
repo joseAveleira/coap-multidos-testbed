@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "sessions": [
+    {
+      "session": "fisica_5_20261015_02",
+      "pcap": "traffic.pcapng",
+      "server_ip": "10.37.225.138",
+      "benign_ips": [
+        "10.37.225.73",
+        "10.37.225.67",
+        "10.37.225.60",
+        "10.37.225.4",
+        "10.37.225.20"
+      ],
+      "actor": {
+        "ip": "10.37.225.230",
+        "directory": "actor",
+        "clock_file": "clock.json"
+      },
+      "purpose": "physical_network_campaign"
+    }
+  ]
+}

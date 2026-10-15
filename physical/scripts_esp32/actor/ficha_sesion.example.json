@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "session": null,
+  "purpose": "physical_campaign_pilot",
+  "prepared_utc": null,
+  "actor": {
+    "hostname": null,
+    "os": null,
+    "node_version": null,
+    "physical_ipv4": null,
+    "connection_wifi_or_ethernet": null,
+    "package_sha256": null,
+    "plan_file": "actor/ejemplos/piloto_180s.json",
+    "output_directory": null,
+    "check_output_file": null
+  },
+  "server": {
+    "ipv4": null,
+    "udp_port": 5683,
+    "hostname": null,
+    "software_version_or_sha256": null,
+    "session": null,
+    "records_directory": null
+  },
+  "capture": {
+    "host": null,
+    "interface": null,
+    "tshark_version": null,
+    "file": null,
+    "command": null,
+    "running_verified_utc": null,
+    "started_utc": null,
+    "finished_utc": null,
+    "sha256": null,
+    "dropped_packets": null,
+    "capture_diagnostics_file": null
+  },
+  "network": {
+    "ap_model": null,
+    "topology": null,
+    "other_known_traffic": null
+  },
+  "clock": {
+    "method": null,
+    "checked_utc": null,
+    "actor_minus_server_offset_ms": null,
+    "uncertainty_ms": null,
+    "evidence_file": null
+  },
+  "devices_observed": [],
+  "device_entry_example_do_not_count_as_observed": {
+    "device_id": null,
+    "hardware_model": null,
+    "profile_id": null,
+    "ipv4": null,
+    "firmware_version_or_sha256": null,
+    "firmware_session_ms": null,
+    "session_started_utc": null,
+    "serial_records_file": null,
+    "traffic_observed_in_pcap": null
+  },
+  "result": {
+    "actor_status": null,
+    "actor_exit_code": null,
+    "hashes_verified": null,
+    "limitations": [],
+    "notes": []
+  }
+}

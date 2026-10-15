@@ -1,0 +1,36 @@
+{
+  "installed_utc": "2026-10-15T09:21:37.636092+00:00",
+  "device_id": 5,
+  "chip": "ESP32-C6 rev 0.2",
+  "flash_bytes": 4194304,
+  "mac": "58:8c:81:32:21:5c",
+  "runtime": "MicroPython v1.29.0 on 2026-08-24",
+  "firmware_url": "https://micropython.org/resources/firmware/ESP32_GENERIC_C6-20260824-v1.29.0.bin",
+  "firmware_bytes": 1967664,
+  "firmware_sha256": "3688ba4e2c3949e639f5772e99fdb0efa1258b162a496133f78c108434195c89",
+  "client_sha256": {
+    "main.py": "b4c1002715d300b3edb9e2223e080dd8dc0d1fa15a6aeeaf761be70e61444d98",
+    "coap_wire.py": "383cf2f0bc3d56a06df4641a3188265273bd8304faf14c56936f5b031a87f733"
+  },
+  "transport": "Wi-Fi IPv4 UDP CoAP",
+  "server": "10.37.225.138:5683",
+  "local_port": 56835,
+  "backup": "Original 4 MB flash retained privately; credentials excluded from publication",
+  "mpremote_version": "1.29.0",
+  "esptool_version": "5.4.0",
+  "flash_hash_verification": "passed",
+  "observed_ipv4_initial": "10.37.225.20",
+  "post_capture_readback": {
+    "verified_utc": "2026-10-15T10:16:23.433201+00:00",
+    "source_sha256": {
+      "coap_wire.py": "383cf2f0bc3d56a06df4641a3188265273bd8304faf14c56936f5b031a87f733",
+      "main.py": "b4c1002715d300b3edb9e2223e080dd8dc0d1fa15a6aeeaf761be70e61444d98"
+    },
+    "match": true,
+    "note": "Read-only file retrieval after all captures; client restarted afterwards."
+  },
+  "serial_log_sha256": {
+    "serial.jsonl": "d0741290d961434f5033412e0a7f0530b334b6bfa78a2f4c3fb2a18cfeb6ba42",
+    "serial_continuation.jsonl": "438d31112709047d44e5d6533836fdb4b3f6e3664a39d31089e0262bd0194e16"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "actor_version": "1.0.0",
+  "session": "fisica_5_20261015_03",
+  "server": "10.37.225.138",
+  "port": 5683,
+  "created_utc": "2026-10-15T09:47:51.004Z",
+  "node_version": "v26.10.0",
+  "platform": {
+    "type": "Linux",
+    "release": "6.19.8-arch1-3-surface",
+    "architecture": "x64"
+  },
+  "clock_note": "SSH timestamp brackets before and after; see capture-side clock.json",
+  "timestamp_definition": "epoch anchored to monotonic clock; wall_epoch also retained; remote clock offset is not measured",
+  "capture_required_at_server": true,
+  "automatic_retransmissions": false,
+  "mid_reuse_minimum_seconds": 247,
+  "max_pending_per_lane": 512,
+  "preflight_packets": 33,
+  "scheduled_request_budget": 48652,
+  "requested_start_utc": null,
+  "plan_sha256": "9c7d49259d5a1aa9117b2ad4bba5889949163db43587f77e2600ddd24c45f92a",
+  "source_sha256": {
+    "../actor_coap.js": "ca67b2731d3f9a04a20d80342f367c57cc3fb5699ddccbf69b855c441868f263",
+    "plan.js": "1e18432cb381b6db8c7571361d1c380739619dcccbd9e8833bc14745a0d8c7b9",
+    "runner.js": "4f93beeebab017e02088a1dcf0d113a53e3c8fd32aa00196bec66294b75d906c",
+    "transport.js": "9a1325efe98906a0b30723ad9a642e24a3e9d7375c4f9cb5eba8418b141330ce",
+    "../servidor/coap.js": "fb2230bb576fa5c209f83a4eb4051441e1c38a113435eecf3c6a3626e4c5f10c"
+  }
+}

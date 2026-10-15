@@ -1,0 +1,4 @@
+session,observed_clients,coap_packets,pcap_sha256,windows_0_5s,0_5s_benign,0_5s_coap_block2_amplification_flood,0_5s_coap_request_flood,windows_1_0s,1_0s_benign,1_0s_coap_block2_amplification_flood,1_0s_coap_request_flood,windows_2_0s,2_0s_benign,2_0s_coap_block2_amplification_flood,2_0s_coap_request_flood
+piloto_esp32_20261013_01,1,380,29cce28730db132260ca8cc3a85ca4679c0ff325c87503e529d2764674a8de74,189,189,0,0,164,164,0,0,82,82,0,0
+piloto_banco4_20261014_01,4,2520,e9765f03cc141be3cd399ab14789ea7d3a53da6e4864587bf8d0cd8703c6e74d,904,904,0,0,803,803,0,0,525,525,0,0
+fisica_4_actor_piloto_20261014_03,4,52133,a9edf01531efc499fb5feff2a370634394e2bcca1d835f9f2e52ab3b08329172,1115,1053,42,20,784,754,21,9,460,446,10,4

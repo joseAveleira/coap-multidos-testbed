@@ -1,0 +1,45 @@
+{
+  "server_ip": "10.37.225.138",
+  "actor_ip": "10.37.225.230",
+  "actor_user": "jose",
+  "capture_interface": "\\Device\\NPF_{34CF96FE-697A-479B-A63B-430A4CBA7025}",
+  "network": "Aveleira, 2.4 GHz; server, actor and ESP32 clients on physical Wi-Fi",
+  "devices": [
+    {
+      "device_id": 1,
+      "profile_id": 1,
+      "model": "ESP32-S3",
+      "mac": "d0:cf:13:08:43:4c"
+    },
+    {
+      "device_id": 2,
+      "profile_id": 2,
+      "model": "ESP32-S3",
+      "mac": "d0:cf:13:08:41:48"
+    },
+    {
+      "device_id": 3,
+      "profile_id": 3,
+      "model": "ESP32-S3",
+      "mac": "d0:cf:13:08:36:4c"
+    },
+    {
+      "device_id": 4,
+      "profile_id": 4,
+      "model": "ESP32-S3",
+      "mac": "d0:cf:13:08:42:08"
+    },
+    {
+      "device_id": 5,
+      "profile_id": 5,
+      "model": "ESP32-C6",
+      "mac": "58:8c:81:32:21:5c",
+      "runtime": "MicroPython v1.29.0 on 2026-08-24",
+      "client_source_sha256": {
+        "main.py": "b4c1002715d300b3edb9e2223e080dd8dc0d1fa15a6aeeaf761be70e61444d98",
+        "coap_wire.py": "383cf2f0bc3d56a06df4641a3188265273bd8304faf14c56936f5b031a87f733"
+      },
+      "firmware_sha256": "3688ba4e2c3949e639f5772e99fdb0efa1258b162a496133f78c108434195c89"
+    }
+  ]
+}

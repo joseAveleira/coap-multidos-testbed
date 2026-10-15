@@ -1,0 +1,6 @@
+{
+  "scripts_esp32/campaign/capture_session.py": "aa3a95f674fd6e238ffc5a92334475d285673be0d534c69b2bef562909ed953b",
+  "scripts_esp32/campaign/remote.py": "eb20d5a9aac475d1c490453bf171d3764bd51aface773ca4bd53ef45a953af04",
+  "scripts_esp32/servidor/server.js": "795aef31c27634d30a994901ea86c2a3a8dfafef3f6d12a333c8a74220a08788",
+  "scripts_esp32/servidor/coap.js": "fb2230bb576fa5c209f83a4eb4051441e1c38a113435eecf3c6a3626e4c5f10c"
+}

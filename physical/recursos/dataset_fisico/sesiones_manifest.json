@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "sessions": [
+    {
+      "session": "piloto_esp32_20261013_01",
+      "pcap": "../../test/capturas/piloto_esp32_20261013_01/trafico_coap.pcapng",
+      "server_ip": "10.37.225.138",
+      "benign_ips": [
+        "10.37.225.73"
+      ],
+      "traffic_declaration": "benign_only",
+      "observation_start_epoch": 1791882148.88784,
+      "observation_end_epoch": 1791882317.9132812,
+      "purpose": "physical_benign_pilot",
+      "evidence_manifest": "../../test/capturas/piloto_esp32_20261013_01/manifest.json"
+    },
+    {
+      "session": "piloto_banco4_20261014_01",
+      "pcap": "../../test/capturas/piloto_banco4_20261014_01/trafico_coap.pcapng",
+      "server_ip": "10.37.225.138",
+      "benign_ips": [
+        "10.37.225.73",
+        "10.37.225.67",
+        "10.37.225.60",
+        "10.37.225.4"
+      ],
+      "traffic_declaration": "benign_only",
+      "observation_start_epoch": 1791965998.2802079,
+      "observation_end_epoch": 1791966287.2771077,
+      "purpose": "physical_benign_pilot",
+      "evidence_manifest": "../../test/capturas/piloto_banco4_20261014_01/manifest.json"
+    },
+    {
+      "session": "fisica_4_actor_piloto_20261014_03",
+      "pcap": "../../test/capturas/fisica_4_actor_piloto_20261014_03/traffic_chronological.pcapng",
+      "server_ip": "10.37.225.138",
+      "benign_ips": [
+        "10.37.225.73",
+        "10.37.225.67",
+        "10.37.225.60",
+        "10.37.225.4"
+      ],
+      "actor": {
+        "ip": "10.37.225.230",
+        "directory": "../../test/capturas/fisica_4_actor_piloto_20261014_03/actor",
+        "clock_file": "../../test/capturas/fisica_4_actor_piloto_20261014_03/clock.json"
+      },
+      "purpose": "physical_network_campaign",
+      "timestamp_ordering": {
+        "method": "reordercap; timestamp sort only, no timestamp adjustment",
+        "command": [
+          "reordercap",
+          "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_4_actor_piloto_20261014_03\\traffic.pcapng",
+          "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_4_actor_piloto_20261014_03\\traffic_chronological.pcapng"
+        ],
+        "diagnostic": "52133 frames, 36 out of order\n",
+        "original_file": "traffic.pcapng",
+        "original_sha256": "dcd6922fcb00d271c17a2329b9e52f6274b87ebef08da65bb485b822c31a75af",
+        "ordered_sha256": "a9edf01531efc499fb5feff2a370634394e2bcca1d835f9f2e52ab3b08329172",
+        "before": {
+          "packets": 52133,
+          "timestamp_tick_seconds": 1e-09,
+          "adjacent_timestamp_backsteps": 36,
+          "maximum_backstep_seconds": 0.0023534000000000003,
+          "packet_timestamp_multiset_sha256": "99887d11c7df606732b0d068617676503c4bc254ba0e2d07011c889ee8b409cb"
+        },
+        "after": {
+          "packets": 52133,
+          "timestamp_tick_seconds": 1e-09,
+          "adjacent_timestamp_backsteps": 0,
+          "maximum_backstep_seconds": 0,
+          "packet_timestamp_multiset_sha256": "99887d11c7df606732b0d068617676503c4bc254ba0e2d07011c889ee8b409cb"
+        }
+      }
+    }
+  ]
+}

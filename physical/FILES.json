@@ -1,0 +1,2234 @@
+{
+  "schema": 1,
+  "release": "v1.1.0",
+  "date": "2026-10-15",
+  "source_commit": "ff4b647d89516adae15b68e597f84df95bf27473",
+  "original_release": "v1.0.0",
+  "original_commit": "44e34a4376a64ec222cee2aaf9ba9adcb06968e5",
+  "scope": "Seven physical acquisitions, matched CSVs and reproduction code; original simulated dataset unchanged.",
+  "path_base": "physical/",
+  "file_count": 444,
+  "bytes": 1019291830,
+  "files": [
+    {
+      "path": "recursos/dataset_fisico/README.md",
+      "bytes": 8817,
+      "sha256": "c5446b8758c6e99377d56ec41fd9e5164d3ab794298db06bcb42f88f8c7bb6ee"
+    },
+    {
+      "path": "recursos/dataset_fisico/campana_5_manifest.json",
+      "bytes": 8532,
+      "sha256": "59944d4ec1ed9e951b4fe9c909d0ead6c16b406f6546ca17e81ee67b8778c093"
+    },
+    {
+      "path": "recursos/dataset_fisico/cobertura_clientes_40min.csv",
+      "bytes": 4080,
+      "sha256": "8a41cd67d691a760dbeb6aa50083cc72f28af33104bb30d2635692caca2b7eac"
+    },
+    {
+      "path": "recursos/dataset_fisico/cobertura_clientes_40min.json",
+      "bytes": 15344,
+      "sha256": "a946ca5b94acf0831eb8fa08b9ec893e0db3340861ee34617f80714f5f4d48fa"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v1/0_5s/dataset_clean_multiclass.csv",
+      "bytes": 253001,
+      "sha256": "f21c81768cafbc843d85f1f5082a55f1632b3727e6d868787b048e9dd625722d"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v1/0_5s/dataset_complete_tracking.csv",
+      "bytes": 691463,
+      "sha256": "f31afa8bf8663742b4a48b93657d719523d23bfaef64923931790434b19a2b92"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v1/0_5s/excluded_windows.csv",
+      "bytes": 3713,
+      "sha256": "53d6f6fb010b30027c0d008caa59bb1e1124a920ffc80e348612a3f05ffbedc9"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v1/1_0s/dataset_clean_multiclass.csv",
+      "bytes": 196622,
+      "sha256": "2320419fb7e6b843c2d687d3c36bfb2deda960cb4811b353dd33e69a346cb09b"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v1/1_0s/dataset_complete_tracking.csv",
+      "bytes": 532327,
+      "sha256": "3d78e82b2bccabeb1b5c8499700443c12ed5debfbb25124cfdf2445e660b7480"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v1/1_0s/excluded_windows.csv",
+      "bytes": 2999,
+      "sha256": "9f10ae93d2ff0350e80601128d38d31fede178e580bacd29bfed10d8d08a4e50"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v1/2_0s/dataset_clean_multiclass.csv",
+      "bytes": 127792,
+      "sha256": "1b25a4d78ef09cbf71004403db055cf459cd8be4a54d83d49bed35ad073e1c6a"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v1/2_0s/dataset_complete_tracking.csv",
+      "bytes": 333357,
+      "sha256": "0e68c84fcbe3d0cb2f305201173a71353ea9f16b30bf72a6ebba4a524f8e4310"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v1/2_0s/excluded_windows.csv",
+      "bytes": 2880,
+      "sha256": "8f321c3fe9dbb7c277bb7fccafd9f6fd4b6665d05a61540635208e130b2059c0"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v1/build_manifest.json",
+      "bytes": 14239,
+      "sha256": "4e4ff81e222f2674c146a4e314c2b7e7456721e0f71dd63896dcd8ee47d6ba66"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v1/packet_extract/fisica_4_actor_piloto_20261014_03.sqlite",
+      "bytes": 1667072,
+      "sha256": "93576c0de9ca7ae23e82ce390af1881f1b4fc29d9d0ac87b29ba2e07dcdd8ce3"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v1/packet_extract/fisica_4_actor_piloto_20261014_03.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v1/packet_extract/fisica_4_actor_piloto_20261014_03.tsv",
+      "bytes": 7754445,
+      "sha256": "3baa0886c09cc215f8fb10eb2d8ffcac7ef303191efdd9b53db25ee5522536b8"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v1/packet_extract/piloto_banco4_20261014_01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v1/packet_extract/piloto_banco4_20261014_01.tsv",
+      "bytes": 365176,
+      "sha256": "a3e95d90d3c60abfdb06aec7a5e03e0952ba948f7cc0153a1f234a77271ddd72"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v1/packet_extract/piloto_esp32_20261013_01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v1/packet_extract/piloto_esp32_20261013_01.tsv",
+      "bytes": 54268,
+      "sha256": "11a97b4bdb15172ad6cd5826f97fc49db9ca04b97e1d5c841206481c01873722"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/0_5s/dataset_clean_multiclass.csv",
+      "bytes": 2079860,
+      "sha256": "0b62da0787ee4c3625048f966576e483381707a2d690753c2514bb23d4d96c97"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/0_5s/dataset_complete_tracking.csv",
+      "bytes": 5635950,
+      "sha256": "7e045cd827d78d15814240f6829fae4cc2f32bae90aac7208ab9a7fcb26e5b90"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/0_5s/excluded_windows.csv",
+      "bytes": 51411,
+      "sha256": "8c32433e69df30cffa01bf169dc0105a7f2f0220faafab0e1118a5601e9710f0"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/1_0s/dataset_clean_multiclass.csv",
+      "bytes": 1441146,
+      "sha256": "701efbe1627e24da8c99914e0622a0fafb3e1be88955edcd883267415f630a5d"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/1_0s/dataset_complete_tracking.csv",
+      "bytes": 3834517,
+      "sha256": "4471dfa9a2f34df17e69499a58d7a91d9bb15421ad3012af8603fb97cb80b26a"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/1_0s/excluded_windows.csv",
+      "bytes": 46509,
+      "sha256": "3ef2a6f7ee368b603932e29f096b9819873adfa898adcc52b1f53822a80482b8"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/2_0s/dataset_clean_multiclass.csv",
+      "bytes": 876874,
+      "sha256": "9ef99e79ca917c4738202300787647eded368aa1973f89358e99fc489b6d5271"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/2_0s/dataset_complete_tracking.csv",
+      "bytes": 2245226,
+      "sha256": "a4242cea3c5178b52ea35422eeeb5d6f1cfc48ca95ed8a8b0d8875dcd5694243"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/2_0s/excluded_windows.csv",
+      "bytes": 45556,
+      "sha256": "b96aae32341c25816c212b687a6b8ea86d3515ce4bbe6a08919b446a7fc3f049"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/build_manifest.json",
+      "bytes": 40501,
+      "sha256": "7f403d412abf5f6a5207425ca3f55dc0b35875bf9df0f1baa38edcc8b04d64d5"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/packet_extract/fisica_4_actor_piloto_20261014_03.sqlite",
+      "bytes": 1667072,
+      "sha256": "93576c0de9ca7ae23e82ce390af1881f1b4fc29d9d0ac87b29ba2e07dcdd8ce3"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/packet_extract/fisica_4_actor_piloto_20261014_03.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/packet_extract/fisica_4_actor_piloto_20261014_03.tsv",
+      "bytes": 7754445,
+      "sha256": "3baa0886c09cc215f8fb10eb2d8ffcac7ef303191efdd9b53db25ee5522536b8"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/packet_extract/fisica_5_20261015_01.sqlite",
+      "bytes": 8159232,
+      "sha256": "29a85a67b840554a983a70c7c5fb33187a4aeeae006a82a16e3223dfc2ca525d"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/packet_extract/fisica_5_20261015_01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/packet_extract/fisica_5_20261015_01.tsv",
+      "bytes": 30068327,
+      "sha256": "4952bba2d32e7613178538660adc9466dbd9fb1a6990cea946c62c3414c2ebf5"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/packet_extract/fisica_5_20261015_02.sqlite",
+      "bytes": 6696960,
+      "sha256": "2114c4e2cc83ec248112e10f1012bfcda4b44e98540e22ef594e03613e08e691"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/packet_extract/fisica_5_20261015_02.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/packet_extract/fisica_5_20261015_02.tsv",
+      "bytes": 27371346,
+      "sha256": "52d8fa5d76491fc41d10e2d73dcc356668bb932bd53e88c967ca69126333a4e6"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/packet_extract/fisica_5_20261015_03.sqlite",
+      "bytes": 5947392,
+      "sha256": "4ffb65587e1df3e85d44d3623d2beb6ba8dcc615e36059e0d8a5c3d355fa1248"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/packet_extract/fisica_5_20261015_03.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/packet_extract/fisica_5_20261015_03.tsv",
+      "bytes": 24901501,
+      "sha256": "b28207e9c3ebf4aee107ce98ae24648dbfc3636894cd79bdf88c85d3ed18b6b6"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/packet_extract/fisica_5_20261015_04_retry1.sqlite",
+      "bytes": 5181440,
+      "sha256": "cd9810f4dd4e4a923e91acab7a647cbd2d29c74b5eced80a05de4c96a1a5e911"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/packet_extract/fisica_5_20261015_04_retry1.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/packet_extract/fisica_5_20261015_04_retry1.tsv",
+      "bytes": 24886065,
+      "sha256": "fb0820f353b1d9aeadc42157340843749d41effb6ecb3d9a999108bd40798355"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/packet_extract/piloto_banco4_20261014_01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/packet_extract/piloto_banco4_20261014_01.tsv",
+      "bytes": 365176,
+      "sha256": "a3e95d90d3c60abfdb06aec7a5e03e0952ba948f7cc0153a1f234a77271ddd72"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/packet_extract/piloto_esp32_20261013_01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recursos/dataset_fisico/dataset_v2/packet_extract/piloto_esp32_20261013_01.tsv",
+      "bytes": 54268,
+      "sha256": "11a97b4bdb15172ad6cd5826f97fc49db9ca04b97e1d5c841206481c01873722"
+    },
+    {
+      "path": "recursos/dataset_fisico/episodios_campana_5.csv",
+      "bytes": 44262,
+      "sha256": "e6e16161080c5f4b19587b3366bb53622ac7bd2b83def2b0477cbc2c2f2539f0"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_4_actor_piloto_20261014_03/0_5s/dataset_clean_multiclass.csv",
+      "bytes": 142690,
+      "sha256": "36fe380c9d0c7bba334712f9cad4a724089bf9e82bc40cc582047bc155eba63b"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_4_actor_piloto_20261014_03/0_5s/dataset_complete_tracking.csv",
+      "bytes": 375628,
+      "sha256": "60cd1f7345fbdffee605b366fc954bfcd254acc5b7fd5083f1edd72c5c43f264"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_4_actor_piloto_20261014_03/0_5s/excluded_windows.csv",
+      "bytes": 3409,
+      "sha256": "8de646a13680778431c34721da8a7f02a8c63cb37359b25b2728daf93deb03c0"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_4_actor_piloto_20261014_03/1_0s/dataset_clean_multiclass.csv",
+      "bytes": 98748,
+      "sha256": "8e76741701de88b37b7c1658bb4884de5c51460f59006f4984ad589ea6179129"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_4_actor_piloto_20261014_03/1_0s/dataset_complete_tracking.csv",
+      "bytes": 256807,
+      "sha256": "561e147c0ef5d51884c54477c03ca98201ce1204606b36d6a1df04e09668bae7"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_4_actor_piloto_20261014_03/1_0s/excluded_windows.csv",
+      "bytes": 2701,
+      "sha256": "6f84904038c541f792762823b10077e9f88cefd02a02f5adafa88ce0625d2757"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_4_actor_piloto_20261014_03/2_0s/dataset_clean_multiclass.csv",
+      "bytes": 61511,
+      "sha256": "88549fd56cb2d7d410328f51cd556dc7d1bd7fc39bfc75336022639b76c500cc"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_4_actor_piloto_20261014_03/2_0s/dataset_complete_tracking.csv",
+      "bytes": 154644,
+      "sha256": "7170445c9c9c855d417706a1887989064c9a8a0dd83a7038b7e69167fb22fbd4"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_4_actor_piloto_20261014_03/2_0s/excluded_windows.csv",
+      "bytes": 2583,
+      "sha256": "2a094fc986b0f8d116ef2b8dd353c761c1a574ad87816cde6cf838d82704668e"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_4_actor_piloto_20261014_03/acquisition_audit.json",
+      "bytes": 17664,
+      "sha256": "23cf01fb2fbe1d99beb5211788ddf7b9e666f6308da2979412346dd6a0f8a96f"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_4_actor_piloto_20261014_03/build_manifest.json",
+      "bytes": 8816,
+      "sha256": "5bb0d4d9abc823654c8c23be49cfc948175d83cb6a29de8c7c79d588c2e5dc45"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_4_actor_piloto_20261014_03/packet_extract/fisica_4_actor_piloto_20261014_03.sqlite",
+      "bytes": 1667072,
+      "sha256": "93576c0de9ca7ae23e82ce390af1881f1b4fc29d9d0ac87b29ba2e07dcdd8ce3"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_4_actor_piloto_20261014_03/packet_extract/fisica_4_actor_piloto_20261014_03.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_4_actor_piloto_20261014_03/packet_extract/fisica_4_actor_piloto_20261014_03.tsv",
+      "bytes": 7754445,
+      "sha256": "3baa0886c09cc215f8fb10eb2d8ffcac7ef303191efdd9b53db25ee5522536b8"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_4_actor_piloto_20261014_03/phase_summary.csv",
+      "bytes": 1903,
+      "sha256": "189309e5bd204c7165b2b4ff32e0356272ddd37e408e7055a180b3664fe14df9"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_01/0_5s/dataset_clean_multiclass.csv",
+      "bytes": 447959,
+      "sha256": "c6c160ea05d880112119e79b32201c14328118507a8b8bc220ae2f505a63b6c7"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_01/0_5s/dataset_complete_tracking.csv",
+      "bytes": 1212523,
+      "sha256": "c923ea699dc8563396e5d5ae5bed9447856f1379594be6976a9d08a5d101ba12"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_01/0_5s/excluded_windows.csv",
+      "bytes": 13715,
+      "sha256": "a24e5221bf9552cd7ab817a47198dcf2e1076f2b9384a3ccadf21735c4e5da0b"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_01/1_0s/dataset_clean_multiclass.csv",
+      "bytes": 305792,
+      "sha256": "f97c4587cf40e719afe1e06f4d5cbca9b6e3a08d07fe7dbfd98b3a7ab00ff829"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_01/1_0s/dataset_complete_tracking.csv",
+      "bytes": 812086,
+      "sha256": "840c6cf0388c05a6664c1f8be14e029c619ca034d445eb2a5f9791bb4de21248"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_01/1_0s/excluded_windows.csv",
+      "bytes": 12179,
+      "sha256": "743f43639c102434328f4f477066da482a4365c23bbfd00e4dad8e9a49eb8475"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_01/2_0s/dataset_clean_multiclass.csv",
+      "bytes": 184119,
+      "sha256": "40d33ec22b2aa0daea463e6fc9c1fd0622ed239a0dd78c5b60b9c0629ff666b1"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_01/2_0s/dataset_complete_tracking.csv",
+      "bytes": 470571,
+      "sha256": "b2f0e842bc6ec712e87ee2f8a6bf8a08ff41b12b3645b7ac7dcf4a6ae2493428"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_01/2_0s/excluded_windows.csv",
+      "bytes": 11032,
+      "sha256": "beaf3a10551ce6296948f43383e2db10d4d21e4edb0901376e43d675d4d1d49e"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_01/acquisition_audit.json",
+      "bytes": 50257,
+      "sha256": "07b5e8aebc1ca20b44cfcc6a386a7fc24ac1df45d87555511739c00b0b18100c"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_01/build_manifest.json",
+      "bytes": 10064,
+      "sha256": "d35f73803a443e03eddef525cc39137fe33a8349a84fea07c41a8d54fb6bb9ad"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_01/packet_extract/fisica_5_20261015_01.sqlite",
+      "bytes": 8159232,
+      "sha256": "29a85a67b840554a983a70c7c5fb33187a4aeeae006a82a16e3223dfc2ca525d"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_01/packet_extract/fisica_5_20261015_01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_01/packet_extract/fisica_5_20261015_01.tsv",
+      "bytes": 30068327,
+      "sha256": "4952bba2d32e7613178538660adc9466dbd9fb1a6990cea946c62c3414c2ebf5"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_01/phase_summary.csv",
+      "bytes": 8847,
+      "sha256": "be0ddbd37cff1fa7d0add47f49e58667ff5cae6333750ed31e60408ba0ce4d4b"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_02/0_5s/dataset_clean_multiclass.csv",
+      "bytes": 451946,
+      "sha256": "dacd70443f975c1e1ff8b4293a8618f8f8f0821b34d5ce3ee11a398976dc9d97"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_02/0_5s/dataset_complete_tracking.csv",
+      "bytes": 1227660,
+      "sha256": "ca2dbd8d1c8165e32fb4e74adf2d06751d696da688f0d8b93d37ef30c0d91be4"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_02/0_5s/excluded_windows.csv",
+      "bytes": 12136,
+      "sha256": "f0f8bc358a4e929bc5eb4a6946d48c2921c71072f3bd7315aaa281ce7f52ad83"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_02/1_0s/dataset_clean_multiclass.csv",
+      "bytes": 308340,
+      "sha256": "34f19f5589b0319319c88379aa7eae14a9e273623f658abc402d1f7482a1ab5c"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_02/1_0s/dataset_complete_tracking.csv",
+      "bytes": 820762,
+      "sha256": "aa6e0d1ca626691deafedc1ca0ba013316d86395b86cd08efed785a47c414832"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_02/1_0s/excluded_windows.csv",
+      "bytes": 10634,
+      "sha256": "726c566dd5571eb402e0501df50f27546958ad80fb626609bf620f984f0a911d"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_02/2_0s/dataset_clean_multiclass.csv",
+      "bytes": 185774,
+      "sha256": "734143a103813f12c065ebbdbac48b8bda96fea1aad8f4ebfe4f31dcc81b8b6b"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_02/2_0s/dataset_complete_tracking.csv",
+      "bytes": 474228,
+      "sha256": "629c123f91803590a0b3cca3592acd2013a2d1a7958fab72e583621dcdc7834a"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_02/2_0s/excluded_windows.csv",
+      "bytes": 10631,
+      "sha256": "7f7ad8909a6cd20b3f5f49cd848a64e1e1f167a39318e30c004dd12d8fe06452"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_02/acquisition_audit.json",
+      "bytes": 50228,
+      "sha256": "04891a043b21a0ab5bbd1307babe667ad22cbe3e2c33acaeb830ed1e78292ba1"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_02/build_manifest.json",
+      "bytes": 10059,
+      "sha256": "dcfcfa121de9286bef8866b83694662e1d89b0db6a5f95f5b72822143dbba986"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_02/packet_extract/fisica_5_20261015_02.sqlite",
+      "bytes": 6696960,
+      "sha256": "2114c4e2cc83ec248112e10f1012bfcda4b44e98540e22ef594e03613e08e691"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_02/packet_extract/fisica_5_20261015_02.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_02/packet_extract/fisica_5_20261015_02.tsv",
+      "bytes": 27371346,
+      "sha256": "52d8fa5d76491fc41d10e2d73dcc356668bb932bd53e88c967ca69126333a4e6"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_02/phase_summary.csv",
+      "bytes": 8824,
+      "sha256": "3ce354b24d300d0258982932474f0c2d9b65e025270ae0d1b82a3fcbdcabea99"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_03/0_5s/dataset_clean_multiclass.csv",
+      "bytes": 444751,
+      "sha256": "42d6368da25358d0d2f24a3a1fee7ed9ea8250d871433adbd34f0c64d54210fc"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_03/0_5s/dataset_complete_tracking.csv",
+      "bytes": 1208656,
+      "sha256": "07e124fc27975e3f73832422a2942a5d3fb7e89ab0d3729f1977d9087ad2e76a"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_03/0_5s/excluded_windows.csv",
+      "bytes": 11664,
+      "sha256": "3433aed6a8f18268cf33d94ffecfd5269573aac401e54c0584efdd93070943b4"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_03/1_0s/dataset_clean_multiclass.csv",
+      "bytes": 303613,
+      "sha256": "78d3004d9725f5bf5c236b8806ad7ccdff6101d1252614c3af41026bd53a5315"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_03/1_0s/dataset_complete_tracking.csv",
+      "bytes": 808835,
+      "sha256": "b7d778e77818173284447ffb9ee6f033031ddfb2d3b9d0fe1d0e6904be35fcf1"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_03/1_0s/excluded_windows.csv",
+      "bytes": 10833,
+      "sha256": "d9b783d8e75e3f1de9b7641425ff489142063029799d0ae9aa15807d21984e5d"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_03/2_0s/dataset_clean_multiclass.csv",
+      "bytes": 184252,
+      "sha256": "bb29069802a047968ff91dc3ee2067a13fb5f39890121477a46741c5d6b9c61f"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_03/2_0s/dataset_complete_tracking.csv",
+      "bytes": 472635,
+      "sha256": "24dbd0c3c48c93f79521e95910cf8abf4b9d762bf3832d2fb13c06cce2365429"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_03/2_0s/excluded_windows.csv",
+      "bytes": 10452,
+      "sha256": "2e8575dfeb418ba68a41c56bd166b0c295013ae33dd79120e6a68f131a63bc1c"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_03/acquisition_audit.json",
+      "bytes": 50205,
+      "sha256": "ec69d9b6c48445ce271024c0c6a802c98197fba5b52e5f535b5ffb52127a94f7"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_03/build_manifest.json",
+      "bytes": 10057,
+      "sha256": "932e85187cb5c66c9f42a9deaf504464d2cca679df74f096fa7f70d50a6eb742"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_03/packet_extract/fisica_5_20261015_03.sqlite",
+      "bytes": 5947392,
+      "sha256": "4ffb65587e1df3e85d44d3623d2beb6ba8dcc615e36059e0d8a5c3d355fa1248"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_03/packet_extract/fisica_5_20261015_03.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_03/packet_extract/fisica_5_20261015_03.tsv",
+      "bytes": 24901501,
+      "sha256": "b28207e9c3ebf4aee107ce98ae24648dbfc3636894cd79bdf88c85d3ed18b6b6"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_03/phase_summary.csv",
+      "bytes": 8821,
+      "sha256": "877cc4e491ce1b04850ac43dcb254a5c0fc70c5e1d04839cbe4dc214830f48ad"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_04_retry1/0_5s/dataset_clean_multiclass.csv",
+      "bytes": 484199,
+      "sha256": "f54b26b91b4857f66f3ed0b089a0b7786f5affe5e5067850c55e4fd167887f6f"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_04_retry1/0_5s/dataset_complete_tracking.csv",
+      "bytes": 1300208,
+      "sha256": "e3d1dceb5f35191d689be8cb8e36c574178630a9cf83c52fb81b3ff7426d9793"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_04_retry1/0_5s/excluded_windows.csv",
+      "bytes": 10623,
+      "sha256": "74c62fdbd3fca4da7d2256dd5fce4ddb8b2c7280e75053001707600f9ce60308"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_04_retry1/1_0s/dataset_clean_multiclass.csv",
+      "bytes": 328775,
+      "sha256": "45aae489f9206eee53f0a1684316a6487a5a8f18bde25111041f70ddd43cd744"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_04_retry1/1_0s/dataset_complete_tracking.csv",
+      "bytes": 865067,
+      "sha256": "3fa0bd90d38e1169a7e999f535ab4f7dcc75007f62cec668fe785d9e87c64434"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_04_retry1/1_0s/excluded_windows.csv",
+      "bytes": 10304,
+      "sha256": "dfcb1ce54d433f6b9afd953257c010e1acfe1a1e3a5284b1d4fcb9ceb407ce87"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_04_retry1/2_0s/dataset_clean_multiclass.csv",
+      "bytes": 196933,
+      "sha256": "9cd152b56c4829832760488fbf8ad4f2b18114cf07cd3187b48c97a5228d1b48"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_04_retry1/2_0s/dataset_complete_tracking.csv",
+      "bytes": 498995,
+      "sha256": "a4f203982b0660f2b110f772bf6c3ce866a4d2fe79db97649beee75e73c06171"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_04_retry1/2_0s/excluded_windows.csv",
+      "bytes": 11001,
+      "sha256": "f7446eefe12778354648c710e9d2027a4895a0752fd579898b7945ce7fd725b1"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_04_retry1/acquisition_audit.json",
+      "bytes": 50213,
+      "sha256": "731ca9ce7ec9cb9c07d4cf80df8f0a3d3d33c14aa1a3024c8df0618749445076"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_04_retry1/build_manifest.json",
+      "bytes": 10134,
+      "sha256": "b401773af4881f0c0791f4abd363ccea88000d65c1d2cbe1cf57533d40351a6e"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_04_retry1/packet_extract/fisica_5_20261015_04_retry1.sqlite",
+      "bytes": 5181440,
+      "sha256": "cd9810f4dd4e4a923e91acab7a647cbd2d29c74b5eced80a05de4c96a1a5e911"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_04_retry1/packet_extract/fisica_5_20261015_04_retry1.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_04_retry1/packet_extract/fisica_5_20261015_04_retry1.tsv",
+      "bytes": 24886065,
+      "sha256": "fb0820f353b1d9aeadc42157340843749d41effb6ecb3d9a999108bd40798355"
+    },
+    {
+      "path": "recursos/dataset_fisico/fisica_5_20261015_04_retry1/phase_summary.csv",
+      "bytes": 8793,
+      "sha256": "25d2d025327a10a16a68bf6d633a2702b215f41ee35c38ffce044934b9aae4d2"
+    },
+    {
+      "path": "recursos/dataset_fisico/pilotos/0_5s/dataset_clean_multiclass.csv",
+      "bytes": 110810,
+      "sha256": "e5c9c246c7905d665b1149833835915fc4fac6f98fffb1c0f220cbc3cdfd89e8"
+    },
+    {
+      "path": "recursos/dataset_fisico/pilotos/0_5s/dataset_complete_tracking.csv",
+      "bytes": 316975,
+      "sha256": "625512895a55cb02da38b68a70d4da10b872f964c97dad76688a9d12d0fcd827"
+    },
+    {
+      "path": "recursos/dataset_fisico/pilotos/0_5s/excluded_windows.csv",
+      "bytes": 414,
+      "sha256": "a768dcb35e557c651c9ee14aef281b33ff20715bfda3468d2f2593f419ee7fb6"
+    },
+    {
+      "path": "recursos/dataset_fisico/pilotos/1_0s/dataset_clean_multiclass.csv",
+      "bytes": 98373,
+      "sha256": "902dc5b9e42ab21dd018d625a544db20d58675f77c7b659747e414712290f03b"
+    },
+    {
+      "path": "recursos/dataset_fisico/pilotos/1_0s/dataset_complete_tracking.csv",
+      "bytes": 276660,
+      "sha256": "d62c72586650c26d48010cbb0e7d7f8ef7fa6f85ac5c2e09e4296aa0dc174112"
+    },
+    {
+      "path": "recursos/dataset_fisico/pilotos/1_0s/excluded_windows.csv",
+      "bytes": 408,
+      "sha256": "6e0c3e727c3abb47e83619e61695d16889016eddd0b65f77b505192ba8df2150"
+    },
+    {
+      "path": "recursos/dataset_fisico/pilotos/2_0s/dataset_clean_multiclass.csv",
+      "bytes": 66780,
+      "sha256": "6d819227d1e5d943611d393326950078297436e4330cb2975f8fc6adbbd8008b"
+    },
+    {
+      "path": "recursos/dataset_fisico/pilotos/2_0s/dataset_complete_tracking.csv",
+      "bytes": 179853,
+      "sha256": "69ce8471f73d761d67db80d7b4d3084bc49a05c26b3ed7c82375a1d1f61dfda6"
+    },
+    {
+      "path": "recursos/dataset_fisico/pilotos/2_0s/excluded_windows.csv",
+      "bytes": 407,
+      "sha256": "1fe722bad455633ac46f338bd7c533919ca96a4e86704aed90c714e4f1b58d0e"
+    },
+    {
+      "path": "recursos/dataset_fisico/pilotos/build_manifest.json",
+      "bytes": 8922,
+      "sha256": "8f59d1db5fa80db5d72928c965f8a6dfa0adc20653197aa7ff40b0366eaf1268"
+    },
+    {
+      "path": "recursos/dataset_fisico/pilotos/packet_extract/piloto_banco4_20261014_01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recursos/dataset_fisico/pilotos/packet_extract/piloto_banco4_20261014_01.tsv",
+      "bytes": 365176,
+      "sha256": "a3e95d90d3c60abfdb06aec7a5e03e0952ba948f7cc0153a1f234a77271ddd72"
+    },
+    {
+      "path": "recursos/dataset_fisico/pilotos/packet_extract/piloto_esp32_20261013_01.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recursos/dataset_fisico/pilotos/packet_extract/piloto_esp32_20261013_01.tsv",
+      "bytes": 54268,
+      "sha256": "11a97b4bdb15172ad6cd5826f97fc49db9ca04b97e1d5c841206481c01873722"
+    },
+    {
+      "path": "recursos/dataset_fisico/pilotos_manifest.json",
+      "bytes": 1160,
+      "sha256": "dfaaf5daad8a20a7973d1815b7918e5b3e58a58d3a86269b6d513552ca697429"
+    },
+    {
+      "path": "recursos/dataset_fisico/resumen_configuracion_5.csv",
+      "bytes": 1224,
+      "sha256": "b63d9e24b2aa0c70a158dea2b9986493478c9bc1bba2cdc78603c8fe03fb7dfa"
+    },
+    {
+      "path": "recursos/dataset_fisico/resumen_sesiones.csv",
+      "bytes": 725,
+      "sha256": "fc4be120691cbc48bcd66daef235f0a097e33aea4e858d7a9f8d2859a263052b"
+    },
+    {
+      "path": "recursos/dataset_fisico/resumen_sesiones_v2.csv",
+      "bytes": 1257,
+      "sha256": "924c573dbe9cb0f76d54c0e76f772a5901ef90d70199a25f9648a25661a29f73"
+    },
+    {
+      "path": "recursos/dataset_fisico/resumen_verificado_v2.json",
+      "bytes": 19580,
+      "sha256": "7a1410536012a0ec28aae76a3b3d1ce88b82798d82db505b8f6612582f84fd44"
+    },
+    {
+      "path": "recursos/dataset_fisico/sesiones_manifest.json",
+      "bytes": 3204,
+      "sha256": "c78911ea0007841cdadbad62b8c7f1cef4d475d73e715cc3c153289ffac5b6b7"
+    },
+    {
+      "path": "recursos/dataset_fisico/sesiones_v2_manifest.json",
+      "bytes": 11693,
+      "sha256": "f7ed50a188a47a0e7d09d8e12d4868124c3d76cd2a73ca872e55d80b9480a8cd"
+    },
+    {
+      "path": "recursos/dataset_fisico/verificacion_v2.json",
+      "bytes": 10234,
+      "sha256": "01b46c36ff404e3aa6e76b59789eaa1a7fac4e096c25bba24a28ba15bfd53161"
+    },
+    {
+      "path": "scripts_esp32/.gitignore",
+      "bytes": 32,
+      "sha256": "9141d2acc74b3b8e5ca9da3110c797b6c21f461f701026fca7bbe4bfccb7bdfc"
+    },
+    {
+      "path": "scripts_esp32/README.md",
+      "bytes": 19421,
+      "sha256": "d14a73590eaa1e9678ebf9ef28872263d971b3d616c4b367f3837e8826190eeb"
+    },
+    {
+      "path": "scripts_esp32/actor/LEEME_IA.md",
+      "bytes": 13888,
+      "sha256": "bacf932731eae582f74bb50981dd636c448b695245c04d20c5c2182c949393f3"
+    },
+    {
+      "path": "scripts_esp32/actor/README.md",
+      "bytes": 12966,
+      "sha256": "9ddcb138bf8bd45f46c8020a97b0a53318764058401faa3e6247d9561d76578c"
+    },
+    {
+      "path": "scripts_esp32/actor/ejemplos/piloto_180s.json",
+      "bytes": 4883,
+      "sha256": "22c5681cc87b151d8c68ae24d5685c3165a801fa990f61e3185bbc3bd83a5fe7"
+    },
+    {
+      "path": "scripts_esp32/actor/ejemplos/sesion_900s.json",
+      "bytes": 25104,
+      "sha256": "595b063b51402761b2f57b4d9b6d8b20f1518c7eb99290a9f3ed9235b55efdb6"
+    },
+    {
+      "path": "scripts_esp32/actor/empaquetar.py",
+      "bytes": 2032,
+      "sha256": "4a7f200a529b16c3e29049ea53563a08aa38e3f8a555e1fa07ca7f507ea5da39"
+    },
+    {
+      "path": "scripts_esp32/actor/ficha_sesion.example.json",
+      "bytes": 1612,
+      "sha256": "86467e2639d7cc02dfe223706051f99fbf44c74ec94e3aa6675a705ccb1c657f"
+    },
+    {
+      "path": "scripts_esp32/actor/plan.js",
+      "bytes": 8083,
+      "sha256": "1e18432cb381b6db8c7571361d1c380739619dcccbd9e8833bc14745a0d8c7b9"
+    },
+    {
+      "path": "scripts_esp32/actor/runner.js",
+      "bytes": 15493,
+      "sha256": "4f93beeebab017e02088a1dcf0d113a53e3c8fd32aa00196bec66294b75d906c"
+    },
+    {
+      "path": "scripts_esp32/actor/transport.js",
+      "bytes": 9470,
+      "sha256": "9a1325efe98906a0b30723ad9a642e24a3e9d7375c4f9cb5eba8418b141330ce"
+    },
+    {
+      "path": "scripts_esp32/actor_coap.js",
+      "bytes": 6670,
+      "sha256": "ca67b2731d3f9a04a20d80342f367c57cc3fb5699ddccbf69b855c441868f263"
+    },
+    {
+      "path": "scripts_esp32/campaign/README.md",
+      "bytes": 7154,
+      "sha256": "24d19c09caa88b5866e03f8002675719c59cc1c7a29c69a92f46288966b4f889"
+    },
+    {
+      "path": "scripts_esp32/campaign/capture_campaign.py",
+      "bytes": 2448,
+      "sha256": "201c5275128103a167e803b2548372c241bd28c114fb40c96b7d7bfdca2702b7"
+    },
+    {
+      "path": "scripts_esp32/campaign/capture_session.py",
+      "bytes": 11850,
+      "sha256": "5c9581c4f62bb0036aabb738b58ae427bf047c5ca79b8c76bab9b08c01974d50"
+    },
+    {
+      "path": "scripts_esp32/campaign/prepare_arch.sh",
+      "bytes": 1511,
+      "sha256": "9aacf70b6f07a96f26780ea63ef83ec360a88e968eca19efd7ddd2311949bf75"
+    },
+    {
+      "path": "scripts_esp32/campaign/remote.py",
+      "bytes": 7636,
+      "sha256": "eb20d5a9aac475d1c490453bf171d3764bd51aface773ca4bd53ef45a953af04"
+    },
+    {
+      "path": "scripts_esp32/campaign/testbed.example.json",
+      "bytes": 713,
+      "sha256": "6b50487c67462faf610cde8c2c6c049932bfed3179906cfa7e9f5e4f115c850c"
+    },
+    {
+      "path": "scripts_esp32/dataset/README.md",
+      "bytes": 6317,
+      "sha256": "2bcb944834b012a60c335d5c13657345cbfcffd8f8cc018eab90cbaf682ecefb"
+    },
+    {
+      "path": "scripts_esp32/dataset/audit_capture.py",
+      "bytes": 6733,
+      "sha256": "0752d2c5d7598ffa1c678ace7c21862059d7ba3909e8f35db9c30edbe5200ae9"
+    },
+    {
+      "path": "scripts_esp32/dataset/client_coverage.py",
+      "bytes": 4908,
+      "sha256": "da874b77c1e5ad2f30ab402f2bfa71f6108566edb1b2814ba2dc0647aca88d77"
+    },
+    {
+      "path": "scripts_esp32/dataset/complete_columns.json",
+      "bytes": 1504,
+      "sha256": "edcc4470ea29334895024155a13be711c2a430769fa9e7bf17e42ef6a56c1d1e"
+    },
+    {
+      "path": "scripts_esp32/dataset/extract.py",
+      "bytes": 17500,
+      "sha256": "99db3cdf70885e3731c515c3f7d2bde142a73aed0a510061715731d1d438806e"
+    },
+    {
+      "path": "scripts_esp32/dataset/order_capture.py",
+      "bytes": 5336,
+      "sha256": "d0ff10c93779b59373c316c0dcc678f00d4f594675342e10ad28f8a5eaea505d"
+    },
+    {
+      "path": "scripts_esp32/dataset/requirements.txt",
+      "bytes": 98,
+      "sha256": "8ddf050f6880c3612eaa96f7c0ce5251bac2c1319b71419361c17eb25151e96a"
+    },
+    {
+      "path": "scripts_esp32/dataset/vendor/LICENSE",
+      "bytes": 1089,
+      "sha256": "3ef8e2476577d25a86ad4b77a56196eb9cfb69c3ada51c73b1d43209e018ed5f"
+    },
+    {
+      "path": "scripts_esp32/dataset/vendor/UPSTREAM.json",
+      "bytes": 847,
+      "sha256": "4fac7e105d4792fb360a9af62f603ea9a173e5a1bb4ce4f038bb534b7871131e"
+    },
+    {
+      "path": "scripts_esp32/dataset/vendor/clean_table.py",
+      "bytes": 2650,
+      "sha256": "4fd3bf0d46c14e5b805e06f9604825e539f731d06c794fdb2531558ece2ec557"
+    },
+    {
+      "path": "scripts_esp32/dataset/vendor/coap_features.py",
+      "bytes": 16993,
+      "sha256": "f736e81354be7f9a6c23b4bd3fd30d851c2f0ebf8a832c6f38ff1c15ff7dcffa"
+    },
+    {
+      "path": "scripts_esp32/dataset/vendor/data_dictionary.csv",
+      "bytes": 5661,
+      "sha256": "36df1b52bc8998061cb6274f8b95fc27bf17182966715a986c3bdb21d73e42ec"
+    },
+    {
+      "path": "scripts_esp32/firmware/base/client.h",
+      "bytes": 23242,
+      "sha256": "6d79060576f30a2b4be6ea228af4b1ddf710f5b38ba019f4158ed0a0382c23e3"
+    },
+    {
+      "path": "scripts_esp32/firmware/base/coap_wire.h",
+      "bytes": 3205,
+      "sha256": "1c28d44fb9ed3a942f4003bc19ce4af34d9fbe9f34fac2f2329de2550e7ccf33"
+    },
+    {
+      "path": "scripts_esp32/firmware/base/config.h",
+      "bytes": 1374,
+      "sha256": "b77489aa0f885314c66fc58b2023c298ca23083b47ebd27ca8f0bd1b50a39b54"
+    },
+    {
+      "path": "scripts_esp32/firmware/base/link.h",
+      "bytes": 4425,
+      "sha256": "760cf7dce566126aea1a9654d909292df2aa2535af1df662392b382520cb7591"
+    },
+    {
+      "path": "scripts_esp32/firmware/base/main.cpp",
+      "bytes": 121,
+      "sha256": "7070e58a236495db78fbe89933b3002fab2378d2f5a00909dd98827a6d202b16"
+    },
+    {
+      "path": "scripts_esp32/firmware/base/profiles.h",
+      "bytes": 2708,
+      "sha256": "5b1df97f4c45c774d35ebf8b3cbf5f83194ce15b788a2ec5650c07b2c8d1de31"
+    },
+    {
+      "path": "scripts_esp32/firmware/c6_micropython/README.md",
+      "bytes": 3470,
+      "sha256": "b158769746bb273d9062878bb8905a262eca959642fb5c3bee1adb848dd82fdf"
+    },
+    {
+      "path": "scripts_esp32/firmware/c6_micropython/coap_wire.py",
+      "bytes": 3031,
+      "sha256": "383cf2f0bc3d56a06df4641a3188265273bd8304faf14c56936f5b031a87f733"
+    },
+    {
+      "path": "scripts_esp32/firmware/c6_micropython/config.example.py",
+      "bytes": 147,
+      "sha256": "45b5c99900ca737d5d9cf41d18c33b59651c3efab502fa637f6f908ceb5ff8f5"
+    },
+    {
+      "path": "scripts_esp32/firmware/c6_micropython/main.py",
+      "bytes": 8467,
+      "sha256": "b4c1002715d300b3edb9e2223e080dd8dc0d1fa15a6aeeaf761be70e61444d98"
+    },
+    {
+      "path": "scripts_esp32/firmware/config_local.example.h",
+      "bytes": 285,
+      "sha256": "430041fc060d3176c3862d292baf54356562111cd1628eb9b26d0759b70411cf"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_01/client.h",
+      "bytes": 22275,
+      "sha256": "964fa9eb35437bde68b363cc59adc5e1023080e7322272a1f9c1d03e857204e7"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_01/coap_wire.h",
+      "bytes": 3205,
+      "sha256": "1c28d44fb9ed3a942f4003bc19ce4af34d9fbe9f34fac2f2329de2550e7ccf33"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_01/config.h",
+      "bytes": 1374,
+      "sha256": "b77489aa0f885314c66fc58b2023c298ca23083b47ebd27ca8f0bd1b50a39b54"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_01/esp32_01.ino",
+      "bytes": 223,
+      "sha256": "786a416d649cd07e499aaec47c809d8b77bf1288cca42d41d2ffc6d8422ab959"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_01/link.h",
+      "bytes": 4425,
+      "sha256": "760cf7dce566126aea1a9654d909292df2aa2535af1df662392b382520cb7591"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_01/profiles.h",
+      "bytes": 2164,
+      "sha256": "2865588b03bb78e10e45bcdfcef92189c7b2df273d606890011319c998ce9b72"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_02/client.h",
+      "bytes": 22275,
+      "sha256": "964fa9eb35437bde68b363cc59adc5e1023080e7322272a1f9c1d03e857204e7"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_02/coap_wire.h",
+      "bytes": 3205,
+      "sha256": "1c28d44fb9ed3a942f4003bc19ce4af34d9fbe9f34fac2f2329de2550e7ccf33"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_02/config.h",
+      "bytes": 1374,
+      "sha256": "b77489aa0f885314c66fc58b2023c298ca23083b47ebd27ca8f0bd1b50a39b54"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_02/esp32_02.ino",
+      "bytes": 223,
+      "sha256": "7e85761b9144432db83d4414b894c8f3b600aef77d8c8c44fc210fd5f4c4f509"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_02/link.h",
+      "bytes": 4425,
+      "sha256": "760cf7dce566126aea1a9654d909292df2aa2535af1df662392b382520cb7591"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_02/profiles.h",
+      "bytes": 2164,
+      "sha256": "2865588b03bb78e10e45bcdfcef92189c7b2df273d606890011319c998ce9b72"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_03/client.h",
+      "bytes": 22275,
+      "sha256": "964fa9eb35437bde68b363cc59adc5e1023080e7322272a1f9c1d03e857204e7"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_03/coap_wire.h",
+      "bytes": 3205,
+      "sha256": "1c28d44fb9ed3a942f4003bc19ce4af34d9fbe9f34fac2f2329de2550e7ccf33"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_03/config.h",
+      "bytes": 1374,
+      "sha256": "b77489aa0f885314c66fc58b2023c298ca23083b47ebd27ca8f0bd1b50a39b54"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_03/esp32_03.ino",
+      "bytes": 223,
+      "sha256": "8baac3ad0df874a9f109ae0d62cabe39ab2ed6bda2f71e099020c13f2267df4a"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_03/link.h",
+      "bytes": 4425,
+      "sha256": "760cf7dce566126aea1a9654d909292df2aa2535af1df662392b382520cb7591"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_03/profiles.h",
+      "bytes": 2164,
+      "sha256": "2865588b03bb78e10e45bcdfcef92189c7b2df273d606890011319c998ce9b72"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_04/client.h",
+      "bytes": 22275,
+      "sha256": "964fa9eb35437bde68b363cc59adc5e1023080e7322272a1f9c1d03e857204e7"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_04/coap_wire.h",
+      "bytes": 3205,
+      "sha256": "1c28d44fb9ed3a942f4003bc19ce4af34d9fbe9f34fac2f2329de2550e7ccf33"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_04/config.h",
+      "bytes": 1374,
+      "sha256": "b77489aa0f885314c66fc58b2023c298ca23083b47ebd27ca8f0bd1b50a39b54"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_04/esp32_04.ino",
+      "bytes": 223,
+      "sha256": "fca74eedd2c4c7f9bc90e079e5494a33a08ce99dcbe0746782f8eb50b337ac67"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_04/link.h",
+      "bytes": 4425,
+      "sha256": "760cf7dce566126aea1a9654d909292df2aa2535af1df662392b382520cb7591"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_04/profiles.h",
+      "bytes": 2164,
+      "sha256": "2865588b03bb78e10e45bcdfcef92189c7b2df273d606890011319c998ce9b72"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_05/client.h",
+      "bytes": 23242,
+      "sha256": "6d79060576f30a2b4be6ea228af4b1ddf710f5b38ba019f4158ed0a0382c23e3"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_05/coap_wire.h",
+      "bytes": 3205,
+      "sha256": "1c28d44fb9ed3a942f4003bc19ce4af34d9fbe9f34fac2f2329de2550e7ccf33"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_05/config.h",
+      "bytes": 1374,
+      "sha256": "b77489aa0f885314c66fc58b2023c298ca23083b47ebd27ca8f0bd1b50a39b54"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_05/esp32_05.ino",
+      "bytes": 239,
+      "sha256": "e7ca2a70a148aa1fc0d3f0393eed0ce93b5e70d8965acd61b4106665503b7079"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_05/link.h",
+      "bytes": 4425,
+      "sha256": "760cf7dce566126aea1a9654d909292df2aa2535af1df662392b382520cb7591"
+    },
+    {
+      "path": "scripts_esp32/firmware/esp32_05/profiles.h",
+      "bytes": 2708,
+      "sha256": "5b1df97f4c45c774d35ebf8b3cbf5f83194ce15b788a2ec5650c07b2c8d1de31"
+    },
+    {
+      "path": "scripts_esp32/platformio.ini",
+      "bytes": 1338,
+      "sha256": "90890dd3fb74c682f61c6dc920bc5e9d54e659b46486aff5f931cd35f0db2741"
+    },
+    {
+      "path": "scripts_esp32/preparar_sketches.py",
+      "bytes": 1784,
+      "sha256": "d5851b6d1469128ad441f4931f4a74ca95115125aa4aea1fa5b327338e3e6640"
+    },
+    {
+      "path": "scripts_esp32/servidor/coap.js",
+      "bytes": 2992,
+      "sha256": "fb2230bb576fa5c209f83a4eb4051441e1c38a113435eecf3c6a3626e4c5f10c"
+    },
+    {
+      "path": "scripts_esp32/servidor/comprobar.js",
+      "bytes": 2941,
+      "sha256": "b0fc22feadd14fa6e20a6f2c13dc1a7c3e6cea3a707fae961573abd06af866a1"
+    },
+    {
+      "path": "scripts_esp32/servidor/server.js",
+      "bytes": 9570,
+      "sha256": "795aef31c27634d30a994901ea86c2a3a8dfafef3f6d12a333c8a74220a08788"
+    },
+    {
+      "path": "scripts_esp32/tests/actor.test.js",
+      "bytes": 11020,
+      "sha256": "9ad13009f7b162a8c3a016ac93443c02116eb0783d18ce3ea83f03978bc93228"
+    },
+    {
+      "path": "scripts_esp32/tests/c6_protocol_test.py",
+      "bytes": 3267,
+      "sha256": "5ef4585491008271524093b903c07a5adb9f5af40b8ce0af4cbbfa2ee4d7fe4f"
+    },
+    {
+      "path": "scripts_esp32/tests/dataset_test.py",
+      "bytes": 7333,
+      "sha256": "70563d9774cd843e4e217e69c1c6529afa5563d794ec25f790b252f2c027d64c"
+    },
+    {
+      "path": "scripts_esp32/tests/firmware_test.cpp",
+      "bytes": 4855,
+      "sha256": "d1436482a494feb6895b8d61e59e480f279d4c7c75048f235239f62a8ab69487"
+    },
+    {
+      "path": "scripts_esp32/tests/host/Arduino.h",
+      "bytes": 1514,
+      "sha256": "9dd69287685ebd9a58eb5a909619b9bee3936657860e14970b284614843f64c0"
+    },
+    {
+      "path": "scripts_esp32/tests/host/WiFi.h",
+      "bytes": 491,
+      "sha256": "dea7352fbe57c9606ec18ca768c3734c2599ae812d3e4b47a3cfd4cf4192551b"
+    },
+    {
+      "path": "scripts_esp32/tests/host/WiFiUdp.h",
+      "bytes": 1163,
+      "sha256": "da1ba4eb4891cc368a93591cd8a530e11e354f782ee3ce999a9ef1d6b5ebb4ec"
+    },
+    {
+      "path": "scripts_esp32/tests/host/esp_system.h",
+      "bytes": 108,
+      "sha256": "26bd93bfded3d37a9024aff593e0296c4a610945ccecf7549b7d88bd9e11429b"
+    },
+    {
+      "path": "scripts_esp32/tests/pipeline_integration.py",
+      "bytes": 5264,
+      "sha256": "f12a9f58bd753935362bd048727603a4a2f152267680082da84029228af38e41"
+    },
+    {
+      "path": "scripts_esp32/tests/server.test.js",
+      "bytes": 5989,
+      "sha256": "e2e3f674f53670eb532bf61e9a492f9f0e757a8fa1f3d8d08c47c6e7fa3d7f27"
+    },
+    {
+      "path": "scripts_esp32/tests/wire_test.cpp",
+      "bytes": 1430,
+      "sha256": "19a1bf94b1b1a4c571e13b74c706d9ae64f4432852ba1956a5081c1908b999cc"
+    },
+    {
+      "path": "scripts_esp32/verificar.py",
+      "bytes": 1945,
+      "sha256": "a75a9366b3eecbf7c14c3fa736ea19d2c2fbebedb3101ff6698998a3ff1194ae"
+    },
+    {
+      "path": "test/c6_micropython_20261015/flash.txt",
+      "bytes": 11807,
+      "sha256": "08c02db3643b60f0a01d09e86a0f5f3ab8e6b2591359124bbb7cca0f8454fdeb"
+    },
+    {
+      "path": "test/c6_micropython_20261015/installation.json",
+      "bytes": 1615,
+      "sha256": "76072070d39ce2d6042cd47445b094068a056ccf05d9c1ed1cd096424e067930"
+    },
+    {
+      "path": "test/c6_micropython_20261015/serial.jsonl",
+      "bytes": 307048,
+      "sha256": "d0741290d961434f5033412e0a7f0530b334b6bfa78a2f4c3fb2a18cfeb6ba42"
+    },
+    {
+      "path": "test/c6_micropython_20261015/serial_continuation.jsonl",
+      "bytes": 31715,
+      "sha256": "438d31112709047d44e5d6533836fdb4b3f6e3664a39d31089e0262bd0194e16"
+    },
+    {
+      "path": "test/c6_micropython_20261015/testbed.json",
+      "bytes": 1274,
+      "sha256": "a87ad0bd41e47732e66f63e681e19525d5e74a0bb20312a39b641bce0b999dbd"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/actor.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/actor.stdout.txt",
+      "bytes": 619,
+      "sha256": "304792630c8227ef3066b85f2fd8aea98c0d2c5aa2d32983f967aaf9d4bc7adf"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/actor/events.jsonl",
+      "bytes": 251735,
+      "sha256": "2f507e3cb7a380187cd952dd41ce8bcee77d4b8bfe4b4f5bf14c75731792847c"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/actor/manifest.json",
+      "bytes": 1330,
+      "sha256": "fd1d6ad247e1d6f021924f0cd3920e29c92cb1bd0672c104a4581d6750e3ed33"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/actor/plan.json",
+      "bytes": 4883,
+      "sha256": "22c5681cc87b151d8c68ae24d5685c3165a801fa990f61e3185bbc3bd83a5fe7"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/actor/sha256.json",
+      "bytes": 432,
+      "sha256": "4344a345879ac4ff7ebca63f28fa94da91dd22ba6ebfb6a3be97337e366c9cce"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/actor/summary.json",
+      "bytes": 20712,
+      "sha256": "9c771685973a2c6b45effe9b91c52e397324260b65fab233994ad38e8a79d6b5"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/actor/traffic.jsonl",
+      "bytes": 11345051,
+      "sha256": "abb6a99565f478a0c940a32886250f5742c3f01bbfdeeac998802bfbeff5a709"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/clock.json",
+      "bytes": 4928,
+      "sha256": "11e70fb14dc37935e5b5cad9ed95579177c872dde6b5482b0408b8e7fc3519d7"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/controller_source_sha256.json",
+      "bytes": 440,
+      "sha256": "df2db940b4d73c432503fac44e2c57ff2eea9b34d3cda863a02c03b742df88fe"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/dataset_chronological_manifest.json",
+      "bytes": 1925,
+      "sha256": "483bfe5c5f986f5e2ddd85dd626d8c46bb22bae639e508a24bc94c11ef0f259b"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/dataset_manifest.json",
+      "bytes": 487,
+      "sha256": "d52cdc030dc25558ab792de6289cbd615156361efdc5146d0f2ddbf1f588e608"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/deployment.json",
+      "bytes": 4648,
+      "sha256": "ec6ddea3608f3d0719adbf0f5b3c361c0572233da6dbed9a7446eae8a0df0382"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/execution.json",
+      "bytes": 2021,
+      "sha256": "1d80c45a011a2580aff8948f7aa1c0b08a9c2ccbdc37c407df249f9dc90c885b"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/inventory.pcapng",
+      "bytes": 3390080,
+      "sha256": "24184b8833efaa15d43c0eae78e3a8e3ea2fde67c597ba1f444224c7de348c25"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/inventory.stderr.txt",
+      "bytes": 45,
+      "sha256": "86664b881a753f4b2ec2a47029a1f7432659f1f752f97c30edeacbdc29bfdd4f"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/inventory.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/plan.json",
+      "bytes": 5090,
+      "sha256": "8e2ba75ddbaa0bbed6bbc096014d76f7d6101da740a4de155e71db4c789b0301"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/server.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/server.stdout.txt",
+      "bytes": 441,
+      "sha256": "e134e18644aa0a139bdabd665cd897612c19cef704ac14dcfa8fae228127bb85"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/server/fisica_4_actor_piloto_20261014_03/manifest.json",
+      "bytes": 545,
+      "sha256": "9f6dd1a77bd1121e684178a317f3468bb98bf44ce58718f9a7397331f7f86937"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/server/fisica_4_actor_piloto_20261014_03/server.jsonl",
+      "bytes": 69733,
+      "sha256": "4850976f812a1c1987701fbe3413d78e88c856a5789d4d54a856a093ca6b2c61"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/server/fisica_4_actor_piloto_20261014_03/summary.json",
+      "bytes": 315,
+      "sha256": "b2e6490d14f5f8367b2f984a1f9b908f886ead81b3b4096071974e1b5ad68293"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/testbed.json",
+      "bytes": 883,
+      "sha256": "25904a4c7b4f679206604018da72f2a378f12a3b08e5c7ffe3dc22fb74b3e863"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/traffic.pcapng",
+      "bytes": 14998208,
+      "sha256": "dcd6922fcb00d271c17a2329b9e52f6274b87ebef08da65bb485b822c31a75af"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/traffic_chronological.pcapng",
+      "bytes": 14998208,
+      "sha256": "a9edf01531efc499fb5feff2a370634394e2bcca1d835f9f2e52ab3b08329172"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/tshark.stderr.txt",
+      "bytes": 46,
+      "sha256": "49d3d654aaa013c136022107a3aa2703cb741c251ca89685fe6036c932664b7e"
+    },
+    {
+      "path": "test/capturas/fisica_4_actor_piloto_20261014_03/tshark.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/campaign_completed.json",
+      "bytes": 15001,
+      "sha256": "0ca7cc659b7e927631ff070e8070da0bcdc5fad661d43804b9a218befc334f70"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/campaign_execution.json",
+      "bytes": 15230,
+      "sha256": "82715cffd45f146eeeadf6803bf54371bd7fda0d8425ef62a5fbab7e3da0149c"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/actor.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/actor.stdout.txt",
+      "bytes": 2682,
+      "sha256": "f1d03da121945d4481c13bdcf8ef1cbab398a75a970b245bf4c9cecba0ca9462"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/actor/events.jsonl",
+      "bytes": 871405,
+      "sha256": "21ed8a59e0ff6694a06eae378ed0664438d89f11f633ee9a14b87a36a4c25605"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/actor/manifest.json",
+      "bytes": 1317,
+      "sha256": "97e0db4571e6e1457e4926c4803a79ede4b4fd8ab1989bfff874d8a38d380ba5"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/actor/plan.json",
+      "bytes": 25111,
+      "sha256": "1dcf5e0294b1b8eea81f19e9e21dc8fd80b78b8a1a3a31b33dcf029f4949443a"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/actor/sha256.json",
+      "bytes": 432,
+      "sha256": "d87ee285b7bbe59e85051ea255c8210fc61c89e0d4993ab743c5856b0c8e22fd"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/actor/summary.json",
+      "bytes": 101685,
+      "sha256": "4129a22479b4bb2ad19f5ee3d259c3fe3ba3133efa93ca26fe1d69d6b1bf15cb"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/actor/traffic.jsonl",
+      "bytes": 54973173,
+      "sha256": "3e009db9e72c64740477503ac9866c2d16cc943a52be2dcd63807449ad379107"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/clock.json",
+      "bytes": 4932,
+      "sha256": "f0c5effb485e7a16335ec570793f4875e2fc551db659fb530298d0cca3f217ae"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/dataset_chronological_manifest.json",
+      "bytes": 1954,
+      "sha256": "05573658ef325293abc1ed4a746670e2683fa7179b9fece754f2a4f288c831d0"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/dataset_manifest.json",
+      "bytes": 499,
+      "sha256": "02836aa92ceebf2d2e4c736ac05db793249babb370a3978b5f1eb0e5d2a00271"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/deployment.json",
+      "bytes": 1572,
+      "sha256": "78afc9c1e8af94793364ced3f278343fb1e8bb79cee5a69ec32d9604e143302e"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/execution.json",
+      "bytes": 3092,
+      "sha256": "6753055f254cf3a970903ace5e82702cc0c9f4df025a3f3a2964354933fb9b0c"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/inventory.pcapng",
+      "bytes": 3456224,
+      "sha256": "9fea23dffffd3710d1008e81e826c2b735e76b0e01f09e43a0741f765f638a86"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/inventory.stderr.txt",
+      "bytes": 45,
+      "sha256": "f0a563567a5bde1b8376191dc99167a6008e3eb1f89409f15fcdd86c81b6caf9"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/inventory.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/plan.json",
+      "bytes": 26158,
+      "sha256": "247c81b7f67adb6ac50e98f667b670cab21732617ddc2386cd8f727609c4dbc7"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/server.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/server.stdout.txt",
+      "bytes": 437,
+      "sha256": "87a7d88eba49513a72c914275c74e5fa0b613c31cae5c65a83dea7bb540b38cc"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/server/fisica_5_20261015_01/manifest.json",
+      "bytes": 550,
+      "sha256": "bcaf0ccd3fbb633c37cf0c3f38e99327679eb900744274d89e6bd6c5c5e69e93"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/server/fisica_5_20261015_01/server.jsonl",
+      "bytes": 177829,
+      "sha256": "574b52e3aecbb2862171b4b82fa9a6d990ec9e85eef6d9821355f8e3c440543c"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/server/fisica_5_20261015_01/summary.json",
+      "bytes": 318,
+      "sha256": "3c8838c09c74d57c8b1c5ecdf1d85fe67ef6eb6bcfbe9587a85bddac788c198b"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/testbed.json",
+      "bytes": 1274,
+      "sha256": "a87ad0bd41e47732e66f63e681e19525d5e74a0bb20312a39b641bce0b999dbd"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/traffic.pcapng",
+      "bytes": 62835972,
+      "sha256": "6d458be65df99f4b022b7195fee63d599776618da8b7d4d6b1f3606a5cdc8561"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/traffic_chronological.pcapng",
+      "bytes": 62835972,
+      "sha256": "e7e53e0957e8048d1a2030319469118629f69ffd4de277b54b2ca9b6be51b0b2"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/tshark.stderr.txt",
+      "bytes": 47,
+      "sha256": "ad9ae65ceedc96a311c656aa6b1ede7375abc2bd9bc96efa6aaac4d31a177048"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_01/tshark.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/actor.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/actor.stdout.txt",
+      "bytes": 2679,
+      "sha256": "af8958bd80132767ccd15281a7a5b307e3cc376254a953123bf6b2251f98fafc"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/actor/events.jsonl",
+      "bytes": 867566,
+      "sha256": "af4985377a61769b3a76dae9bd46f3f5baa5f43015a3a49beb79584067095b5f"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/actor/manifest.json",
+      "bytes": 1317,
+      "sha256": "a1ab13b9f606f39e61b999d3bf886a609aa33179a323a0e93737a757501d1f28"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/actor/plan.json",
+      "bytes": 25111,
+      "sha256": "2ab71a15d1aa41a8a9f7b005e02ec562ad370b9c16ff407c9fa114555b4b21c4"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/actor/sha256.json",
+      "bytes": 432,
+      "sha256": "62c7d77c8200c87ba4606d1ee4c57eac616379e36861e4389e91a757ee6563ca"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/actor/summary.json",
+      "bytes": 101657,
+      "sha256": "11e6f062a89a66399c0b370508c569e5370ff65f2b9be91ccb3595bb17107c5b"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/actor/traffic.jsonl",
+      "bytes": 44851405,
+      "sha256": "7e674673897fb413e8b436353a0011ed146083e293780e243b9317ef3001ed1b"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/clock.json",
+      "bytes": 4919,
+      "sha256": "b1dda1ca2d7c06abe3d38eb08fb8dbab70e81782c865715b704095274bdee87b"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/dataset_chronological_manifest.json",
+      "bytes": 1965,
+      "sha256": "bc3ef053975e5afb4a92b3d24b4af51b8f1c86639d38f77667ee62c52449def4"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/dataset_manifest.json",
+      "bytes": 499,
+      "sha256": "1858a92dbdf228c26ccb873ded48c9fac08ac1cd87eb8162a6bfbf5df94b05fd"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/deployment.json",
+      "bytes": 1572,
+      "sha256": "78afc9c1e8af94793364ced3f278343fb1e8bb79cee5a69ec32d9604e143302e"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/execution.json",
+      "bytes": 3092,
+      "sha256": "27bc9ff7093a54cbf62b5ab4a7ce5ab9a630a5e5fdf47affb21b4fffcfe655bf"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/inventory.pcapng",
+      "bytes": 3732592,
+      "sha256": "f712fb422c359fbf757d035ddd383bd8b56105084a4fd3d4d4b2e24237e687e7"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/inventory.stderr.txt",
+      "bytes": 46,
+      "sha256": "650f5c9d33bb1a66094b9305858b69f20f0037a6037f648a9c78bde24ffd8e89"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/inventory.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/plan.json",
+      "bytes": 26158,
+      "sha256": "69c7e88027eedeffe2747b74ef04f29270cf0f653c1a4e4951d2e62b5b6a0a1d"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/server.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/server.stdout.txt",
+      "bytes": 437,
+      "sha256": "8998a7cf6d4af53b90fcae22d76854d388abf69155cb79b7b5612b67e73c2335"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/server/fisica_5_20261015_02/manifest.json",
+      "bytes": 550,
+      "sha256": "502271411d9d49b49e6503873832d1cd70131d13b01594615ea091be222ffa4a"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/server/fisica_5_20261015_02/server.jsonl",
+      "bytes": 178220,
+      "sha256": "8686bfdefba6a510039110f116d1fa59e5febd8238f4a76bd9559194f4c3f850"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/server/fisica_5_20261015_02/summary.json",
+      "bytes": 318,
+      "sha256": "79c01bbd77a9d65bfe805225fbf92e1ea46312dbb59094bfcb1c3efd42d173e7"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/testbed.json",
+      "bytes": 1274,
+      "sha256": "a87ad0bd41e47732e66f63e681e19525d5e74a0bb20312a39b641bce0b999dbd"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/traffic.pcapng",
+      "bytes": 55446480,
+      "sha256": "db1baa038b4a1320f8efa4c026350368c1521cdacf0ded6645668b3cfec4b897"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/traffic_chronological.pcapng",
+      "bytes": 55446480,
+      "sha256": "b66bd8d488797c867847da187e9dd21755fb6a3baba1567f21686369a9f823de"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/tshark.stderr.txt",
+      "bytes": 47,
+      "sha256": "fccba825cffa1f5bd121420909f4d3d55ae7763ebbc01d255c48b4bead479b74"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_02/tshark.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/actor.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/actor.stdout.txt",
+      "bytes": 2678,
+      "sha256": "10b862cfe6c87c7bc3810d0a1491e6c08e75d537465bc6db4914c1b9b86ac5d4"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/actor/events.jsonl",
+      "bytes": 856716,
+      "sha256": "eb584d2750ad6c96eedb4c77ca53bb84a84982e0609acc0fa37150b4613c5c8c"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/actor/manifest.json",
+      "bytes": 1317,
+      "sha256": "cc5920688ef84f32722fbec6119826a932b4bfe47bab1feb9a33f4a03c7ea496"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/actor/plan.json",
+      "bytes": 25094,
+      "sha256": "8ec336ab4df2a930ab3d07944c94b3db110d24a38e29a44bb205fb8182e02901"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/actor/sha256.json",
+      "bytes": 432,
+      "sha256": "45912eb3bd1ef27f6fed95bf0201cbc21e6575801174dce546d37cc63a128341"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/actor/summary.json",
+      "bytes": 101639,
+      "sha256": "c999df6abdad001051d79b3cd2f64642391006c282f40d17234b2e2759bc19d4"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/actor/traffic.jsonl",
+      "bytes": 40090466,
+      "sha256": "b39baa81d67a67c768c29798144bfd3b9c5b066cce17700a21a61e892225f93d"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/clock.json",
+      "bytes": 4920,
+      "sha256": "f1866a3ccae415abfaa25e8d5ea0cad1d12b88efe870cb425c854b6c077f1873"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/dataset_chronological_manifest.json",
+      "bytes": 1954,
+      "sha256": "644c1f40b68ef241613bfd79ec113f28a581ca2dc04a45e27324f304145e870b"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/dataset_manifest.json",
+      "bytes": 499,
+      "sha256": "cc90a01ba5c0caa7b1a069a82a335ee770fccc9b9113cc855b0e3976a2dbc905"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/deployment.json",
+      "bytes": 1572,
+      "sha256": "78afc9c1e8af94793364ced3f278343fb1e8bb79cee5a69ec32d9604e143302e"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/execution.json",
+      "bytes": 3092,
+      "sha256": "4b9cc5b8bf31b9a4cd6e519a6e26b9c106a812cd01b6365a13dc1a6b75b8b73c"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/inventory.pcapng",
+      "bytes": 3964132,
+      "sha256": "5125f379bc61cc095381890afac9cfa079a5e7fde98b709eeb860a939af108e0"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/inventory.stderr.txt",
+      "bytes": 46,
+      "sha256": "906d3f19ae77bfda041cf1d7b2189d4caf220d8b76eac1522a45e610bc93d533"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/inventory.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/plan.json",
+      "bytes": 26141,
+      "sha256": "e1bb05171a85150b67dd564ee372d0fdbfea28bae4cb174aee5894f8b3292271"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/server.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/server.stdout.txt",
+      "bytes": 437,
+      "sha256": "84899e2dea57fd49de5d22ca23dd8f33a83ca6182c8dfb06711e224f66726452"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/server/fisica_5_20261015_03/manifest.json",
+      "bytes": 550,
+      "sha256": "828937162fcdcc5bfad19bfcb15ed80d4e32bdc8a7f57f8d302b8f461a887a29"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/server/fisica_5_20261015_03/server.jsonl",
+      "bytes": 178061,
+      "sha256": "a821be782bba3260339d4a4e904ede93180decc964d3c0640ab7944c19cc8145"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/server/fisica_5_20261015_03/summary.json",
+      "bytes": 317,
+      "sha256": "59c519ba33d1ad0c0cea5c1bc1fced8ac34640a2493ac1f70c41cefb155c7158"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/testbed.json",
+      "bytes": 1274,
+      "sha256": "a87ad0bd41e47732e66f63e681e19525d5e74a0bb20312a39b641bce0b999dbd"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/traffic.pcapng",
+      "bytes": 46970052,
+      "sha256": "6bf5a07a1907990a8df31bdc8b1c11f1b99e2ac4608edb140b13f5379ed434b0"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/traffic_chronological.pcapng",
+      "bytes": 46970052,
+      "sha256": "422adfc7e62537dce579683d3c286c35b74a7ce5dffe2a6aafefaf73888419a8"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/tshark.stderr.txt",
+      "bytes": 47,
+      "sha256": "20192410e6b753735c636e8842fffaca8e914f43b4e86a50c61dc29aa5c04526"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_03/tshark.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/actor.stderr.txt",
+      "bytes": 29,
+      "sha256": "5f695b3985356a38ce4a5d7888c733927edb2094c25cabaf5ef3ce3e556bebac"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/actor.stdout.txt",
+      "bytes": 70,
+      "sha256": "e4b08d26be545418832d42e30577c00ce335506c8298580c9cd587faad583b19"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/actor/events.jsonl",
+      "bytes": 1539,
+      "sha256": "72906d6bb8a61f963773e2e4e6eaa69ebf20223071cadf613b020158f87e06e4"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/actor/manifest.json",
+      "bytes": 1317,
+      "sha256": "cc9478666d81c14337ccd1393c678102546528313b7dd90ebdb7895f1e0d0b0f"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/actor/plan.json",
+      "bytes": 25121,
+      "sha256": "1dfa5cf9474348794995ef7f674cec222ed353a4301255392855565a94475ff2"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/actor/sha256.json",
+      "bytes": 432,
+      "sha256": "230bedb5588648ac6894cf8f76dc5ffe0775aed61772349318adc7d97b73c099"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/actor/summary.json",
+      "bytes": 2407,
+      "sha256": "e08ae33b6a4a2665ac4d992be864a54f11ed1f90e6067ed925254485c5fe4d6c"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/actor/traffic.jsonl",
+      "bytes": 1586,
+      "sha256": "5583f04f5b32512bc80f4dad1f039149a569064998c3d0dee6a5dd1314930216"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/clock.json",
+      "bytes": 4909,
+      "sha256": "449a431b700eba7097d5e758a61248936afe3d269cf442799045fd925a41da4d"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/deployment.json",
+      "bytes": 1572,
+      "sha256": "78afc9c1e8af94793364ced3f278343fb1e8bb79cee5a69ec32d9604e143302e"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/execution.json",
+      "bytes": 2242,
+      "sha256": "c6d54413b41b0070993beb8d1b8c8e4d06acc1436d19b20eb64d0b22762ba5c6"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/inventory.pcapng",
+      "bytes": 3144740,
+      "sha256": "e8241ffe017c629aa8fd9003a61f6f8e0eacdd6fb72f23d063c75798611e974f"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/inventory.stderr.txt",
+      "bytes": 45,
+      "sha256": "65aaae7f4a32464c02a6a5c81b5dd98017343f880ed5ed0cf8aa5d6deb692298"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/inventory.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/plan.json",
+      "bytes": 26168,
+      "sha256": "59ac659eedea86c3e577b9df2c387c2c6b430f9811091f6860f1f5b8ebb9e2c3"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/server.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/server.stdout.txt",
+      "bytes": 437,
+      "sha256": "133f65213ff4f1fd9ccd90fb04358e3ac0703c6ff6489fe301605fdab5447310"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/server/fisica_5_20261015_04/manifest.json",
+      "bytes": 550,
+      "sha256": "a1ef2a7f432dc6146e7f5fa884b0aec0c395222c2e844e48f50e9b5af2ebfc1c"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/server/fisica_5_20261015_04/server.jsonl",
+      "bytes": 34426,
+      "sha256": "ebfa78781c6794319b4b35fbcb98641e26b08edad5fe0e920c306133cb6611ef"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/server/fisica_5_20261015_04/summary.json",
+      "bytes": 307,
+      "sha256": "73d01f990f127cf509339d9f53b2f79ea4924453acc8972dc15cbf70ade14ffe"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/testbed.json",
+      "bytes": 1274,
+      "sha256": "a87ad0bd41e47732e66f63e681e19525d5e74a0bb20312a39b641bce0b999dbd"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/traffic.pcapng",
+      "bytes": 3574448,
+      "sha256": "8a33eedeac4f1ed8fa4ab0103117c1e7ca5f310b8e35245924fa23ebaaf475ea"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/tshark.stderr.txt",
+      "bytes": 22,
+      "sha256": "62a7b8eaddb6ff1aa8141d44e23f220f17e11e63e4bf96803281d934eefa12d3"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04/tshark.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/actor.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/actor.stdout.txt",
+      "bytes": 2689,
+      "sha256": "a803bef25b2a33336fe0d329f42085c39348afe0ca09094c5804de6e7e857748"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/actor/events.jsonl",
+      "bytes": 864324,
+      "sha256": "dd449e214faa7829303aa71dbb9cfad796aeebe1f406b44b38ecbcde0b45ecb8"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/actor/manifest.json",
+      "bytes": 1324,
+      "sha256": "6840e53b266d0d7e2163c843a1af6094606b6f9afc12c322f3bfb7178b4066ed"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/actor/plan.json",
+      "bytes": 25121,
+      "sha256": "1dfa5cf9474348794995ef7f674cec222ed353a4301255392855565a94475ff2"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/actor/sha256.json",
+      "bytes": 432,
+      "sha256": "f7c321d76eb99882e3fd3b0f0f292a3fb6295e947f30693d01a3a484a0c95da0"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/actor/summary.json",
+      "bytes": 101603,
+      "sha256": "2c72d40aff34aa89c09d10dce9e400b020d9e69de70918bfb69a9cbe9af9f4bb"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/actor/traffic.jsonl",
+      "bytes": 35258093,
+      "sha256": "9360ce45dc6dc33b8c2b06c2c04e22501149e5780d7346ec04c7385831b4ae33"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/clock.json",
+      "bytes": 4922,
+      "sha256": "67bfdd916d7c929fa4ae7be9701609cf065bb828dc8fcbea7ca20120f75262d7"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/dataset_chronological_manifest.json",
+      "bytes": 1987,
+      "sha256": "2ddb3f0309188f5285064e5814c2b73f5b5200bc167e7bb091c7a842e2099c24"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/dataset_manifest.json",
+      "bytes": 506,
+      "sha256": "5c1a8b74c19810436ce3c9bd30b43653d9421a7c0eacaf50d4c721fa7d0b6a33"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/deployment.json",
+      "bytes": 1572,
+      "sha256": "78afc9c1e8af94793364ced3f278343fb1e8bb79cee5a69ec32d9604e143302e"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/execution.json",
+      "bytes": 3106,
+      "sha256": "1d4599f0742748268c45cf221994318a2c7aaa5759c831c66cbdeebf2afba953"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/inventory.pcapng",
+      "bytes": 2156612,
+      "sha256": "eaf01542ec0599739eae7070e5a7d23d378916822d36f0600e691aa4282b8096"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/inventory.stderr.txt",
+      "bytes": 45,
+      "sha256": "b2f9619a23006bd42ea01db6e0b1344ede91a894f0ba3a67f6d3bdf26420bb03"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/inventory.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/plan.json",
+      "bytes": 26168,
+      "sha256": "59ac659eedea86c3e577b9df2c387c2c6b430f9811091f6860f1f5b8ebb9e2c3"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/server.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/server.stdout.txt",
+      "bytes": 465,
+      "sha256": "f721ae480bad0a2c151f4436557eef3a4197e5646b09e08384c73be90cb6692b"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/server/fisica_5_20261015_04_retry1/manifest.json",
+      "bytes": 564,
+      "sha256": "9acfa656f91106d9da9352f7974335000f4bc799da0e940637b5f80dd32f2a0e"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/server/fisica_5_20261015_04_retry1/server.jsonl",
+      "bytes": 172312,
+      "sha256": "850b9631dca64c99dd9c8d950c650a5c7602d60726c4af307113d1b01c24053a"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/server/fisica_5_20261015_04_retry1/summary.json",
+      "bytes": 317,
+      "sha256": "015cf91b092ae5bd0b12f037a828db0bcb98ad53d26e5d0b121394fd1919ef82"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/testbed.json",
+      "bytes": 1274,
+      "sha256": "a87ad0bd41e47732e66f63e681e19525d5e74a0bb20312a39b641bce0b999dbd"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/traffic.pcapng",
+      "bytes": 53470488,
+      "sha256": "a49952075b8a6eac2dc6f01d8b1b740050b881a8d716834348bf5d7eff65d16f"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/traffic_chronological.pcapng",
+      "bytes": 53470488,
+      "sha256": "7407486d446d741c5022523e34478c6f5acc0f3a9772bdac8721b387b3bfcc62"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/tshark.stderr.txt",
+      "bytes": 47,
+      "sha256": "6302d6d3d4359e261e8ff274db554320789e2a308ad520f621edfdc9624f0a39"
+    },
+    {
+      "path": "test/capturas/fisica_5_40min_20261015/fisica_5_20261015_04_retry1/tshark.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/analisis.json",
+      "bytes": 18526,
+      "sha256": "a9b410ab53df8ba285baeef72be7bc04b8113f0f36a2935315b63847f3afbae9"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/capinfos.txt",
+      "bytes": 746,
+      "sha256": "a2abed326529061bcd68524b0b587b8e2fe95c5b9cc51b6c6cb0403b2174fa84"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/dispositivos.json",
+      "bytes": 2109,
+      "sha256": "54a4a676d2f12301f81e35f5b24d24e6d261621f3c34e6bf0905eb30cf33125a"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/entorno.json",
+      "bytes": 1917,
+      "sha256": "88afa8e86b1a4bd2024a33f89f135900759a30d509139e81d35fb65cec881ff3"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/flash_esp32_01.log",
+      "bytes": 4502,
+      "sha256": "5734a1fa6c1c4cc17abdbfa09207b33203e6e42b942332dcc1082b98beeb38fa"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/flash_esp32_02.log",
+      "bytes": 4504,
+      "sha256": "212f31eb8fe5756d2feac59727d07d82522ca48fd0267ff4f684bc686ea845e0"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/flash_esp32_03.log",
+      "bytes": 4504,
+      "sha256": "f3a250c221815b1481f13fee5322262401e008cb2547ff99edd58f5ea3b935e2"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/flash_esp32_04.log",
+      "bytes": 4504,
+      "sha256": "3ecb9db798c827d849dfebfb6053fcc0319b79e8abe485ab7d86f04465e47a66"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/informe_validacion.txt",
+      "bytes": 8280,
+      "sha256": "1433e7944ab067eaabe31402bfa406382ca6f9b56ff817ae7a5c9138ca873bde"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/manifest.json",
+      "bytes": 8239,
+      "sha256": "c6b74537fe6bb8abe5b18b0e7c9772bdd6a5ee709e88ca6636fa1a086a76091a"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/paquetes.json",
+      "bytes": 1592604,
+      "sha256": "bb8ef459c9ee8e488ffb3727a51fbe5caf720ebbc4249509c74db19f1ae66075"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/serial.jsonl",
+      "bytes": 736291,
+      "sha256": "d2d53280c212b9d0a7a23314708aae68798749a696bf6361094440eace1e1ab2"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/server_manifest.json",
+      "bytes": 446,
+      "sha256": "357f6efa80bba8fb64e1f35a53eb9f8432622f08f626c7ae0d335f38ae07fa02"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/server_snapshot.jsonl",
+      "bytes": 399516,
+      "sha256": "4da6b89fb36a51636395245a9fa98597cc1e48280de73e4937259e42537b9fc0"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/sha256.json",
+      "bytes": 1839,
+      "sha256": "be0df8d5d3d6ebf46733e0bbfa64fb395351453d655f010e3b9d38bc317d837f"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/trafico_coap.pcapng",
+      "bytes": 483124,
+      "sha256": "e9765f03cc141be3cd399ab14789ea7d3a53da6e4864587bf8d0cd8703c6e74d"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/tshark.stderr.log",
+      "bytes": 45,
+      "sha256": "4ded187194be12e446c5aea9d6d020655a8a9f8932e4930c1acce0685f9dd140"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/tshark.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/ventanas_0_5s.json",
+      "bytes": 186978,
+      "sha256": "1af11b93e52eea2536cef6fb7b4daba6c4180458b256c2f4271f73f490a918c3"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/ventanas_1_0s.json",
+      "bytes": 93448,
+      "sha256": "7aab96d19826389d7f8692196d8c0a91dc4ad6f164c49fe0739c7a100c3dab2b"
+    },
+    {
+      "path": "test/capturas/piloto_banco4_20261014_01/ventanas_2_0s.json",
+      "bytes": 46839,
+      "sha256": "93ce04e6bc4d6383abf7f872b365bfa81445c8443547469b4005c0f99999adfd"
+    },
+    {
+      "path": "test/capturas/piloto_esp32_20261013_01/analisis.json",
+      "bytes": 4064,
+      "sha256": "762ab03f60b772972f23fdfb06ded0b29f4bcc1919a9cb633b93190626fcc14b"
+    },
+    {
+      "path": "test/capturas/piloto_esp32_20261013_01/capinfos.txt",
+      "bytes": 744,
+      "sha256": "da39baa69100ffef9e3f2c5a3530c8a41abd6f1d13fca1431517c98747009050"
+    },
+    {
+      "path": "test/capturas/piloto_esp32_20261013_01/entorno.json",
+      "bytes": 1983,
+      "sha256": "4ba42b9307efcdc4a4007a915df11dc79090de42fda9347ddcce18d273f93260"
+    },
+    {
+      "path": "test/capturas/piloto_esp32_20261013_01/informe_validacion.txt",
+      "bytes": 5867,
+      "sha256": "1db5f332f626f8b5c7832e1f83ef254aa95e765b51502dba2750c5b1f8b0ce24"
+    },
+    {
+      "path": "test/capturas/piloto_esp32_20261013_01/manifest.json",
+      "bytes": 2835,
+      "sha256": "2fc36e2297298870f614746784a8c00ad647b41bfab1de3f4eaba169389b911b"
+    },
+    {
+      "path": "test/capturas/piloto_esp32_20261013_01/paquetes.json",
+      "bytes": 216650,
+      "sha256": "b07118d01292ae6687fd95890d7907b09e9b0b7594650f7e2392f800a913c3a1"
+    },
+    {
+      "path": "test/capturas/piloto_esp32_20261013_01/serial.jsonl",
+      "bytes": 106333,
+      "sha256": "696f36bce15211d18417e44bc1f7014e8039ef264bc42e7acbdacc77250cfdd2"
+    },
+    {
+      "path": "test/capturas/piloto_esp32_20261013_01/server_manifest.json",
+      "bytes": 453,
+      "sha256": "0581280415b0a47fab38958d53b8b1a0745df4a4c9d612d6e2125d710700a5ab"
+    },
+    {
+      "path": "test/capturas/piloto_esp32_20261013_01/server_snapshot.jsonl",
+      "bytes": 335691,
+      "sha256": "f5d18157941ad08d5d73f85dfdabe5bc79379fd7ca9ff7f25abe0fa4665cba45"
+    },
+    {
+      "path": "test/capturas/piloto_esp32_20261013_01/trafico_coap.pcapng",
+      "bytes": 37692,
+      "sha256": "29cce28730db132260ca8cc3a85ca4679c0ff325c87503e529d2764674a8de74"
+    },
+    {
+      "path": "test/capturas/piloto_esp32_20261013_01/tshark.stderr.log",
+      "bytes": 44,
+      "sha256": "0da34bd413f8cbc00da417f8fb9a3f7b07aa50f2cd7fe4f86bcc6d05cad0f3e0"
+    },
+    {
+      "path": "test/capturas/piloto_esp32_20261013_01/tshark.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test/capturas/piloto_esp32_20261013_01/ventanas_0_5s.json",
+      "bytes": 85111,
+      "sha256": "6c88a9e02a331ef7ccab115bed507a64e76cd986f1dbd67b6a9a745e4a388a65"
+    },
+    {
+      "path": "test/capturas/piloto_esp32_20261013_01/ventanas_1_0s.json",
+      "bytes": 42648,
+      "sha256": "a7f1adcf8d433eba0dfb3dd2df247a0949c932c7cfe9403df41836a8d7721866"
+    },
+    {
+      "path": "test/capturas/piloto_esp32_20261013_01/ventanas_2_0s.json",
+      "bytes": 21162,
+      "sha256": "bc87fd4af414f3bcd44983992c35906a0bc6922a9f1f75f9fccf7483b63e016d"
+    },
+    {
+      "path": "test/planes/fisica_5_40min_20261014/campaign.json",
+      "bytes": 3083,
+      "sha256": "2828c7f5278acae35c447b179d95320c199c3304d3ff7b3e28a7cf5f9ca795b3"
+    },
+    {
+      "path": "test/planes/fisica_5_40min_20261014/fisica_001.json",
+      "bytes": 25111,
+      "sha256": "1dcf5e0294b1b8eea81f19e9e21dc8fd80b78b8a1a3a31b33dcf029f4949443a"
+    },
+    {
+      "path": "test/planes/fisica_5_40min_20261014/fisica_002.json",
+      "bytes": 25111,
+      "sha256": "2ab71a15d1aa41a8a9f7b005e02ec562ad370b9c16ff407c9fa114555b4b21c4"
+    },
+    {
+      "path": "test/planes/fisica_5_40min_20261014/fisica_003.json",
+      "bytes": 25094,
+      "sha256": "8ec336ab4df2a930ab3d07944c94b3db110d24a38e29a44bb205fb8182e02901"
+    },
+    {
+      "path": "test/planes/fisica_5_40min_20261014/fisica_004.json",
+      "bytes": 25121,
+      "sha256": "1dfa5cf9474348794995ef7f674cec222ed353a4301255392855565a94475ff2"
+    }
+  ]
+}

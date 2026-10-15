@@ -1,0 +1,82 @@
+{
+  "session": "fisica_4_actor_piloto_20261014_03",
+  "created_utc": "2026-10-14T11:42:51.889018+00:00",
+  "status": "captured_pending_extraction",
+  "devices_observed_before_run": [
+    {
+      "device_id": 1,
+      "profile_id": 1,
+      "model": "ESP32-S3",
+      "mac": "d0:cf:13:08:43:4c",
+      "observed_ipv4": "10.37.225.73"
+    },
+    {
+      "device_id": 2,
+      "profile_id": 2,
+      "model": "ESP32-S3",
+      "mac": "d0:cf:13:08:41:48",
+      "observed_ipv4": "10.37.225.67"
+    },
+    {
+      "device_id": 3,
+      "profile_id": 3,
+      "model": "ESP32-S3",
+      "mac": "d0:cf:13:08:36:4c",
+      "observed_ipv4": "10.37.225.60"
+    },
+    {
+      "device_id": 4,
+      "profile_id": 4,
+      "model": "ESP32-S3",
+      "mac": "d0:cf:13:08:42:08",
+      "observed_ipv4": "10.37.225.4"
+    }
+  ],
+  "capture_command": [
+    "tshark",
+    "-i",
+    "\\Device\\NPF_{34CF96FE-697A-479B-A63B-430A4CBA7025}",
+    "-f",
+    "udp port 5683",
+    "-s",
+    "0",
+    "-a",
+    "duration:215",
+    "-w",
+    "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\test\\capturas\\fisica_4_actor_piloto_20261014_03\\traffic.pcapng",
+    "-q"
+  ],
+  "remote_pid": 43018,
+  "actor_exit_code": 0,
+  "devices_observed_in_campaign": [
+    {
+      "device_id": 1,
+      "profile_id": 1,
+      "model": "ESP32-S3",
+      "mac": "d0:cf:13:08:43:4c",
+      "observed_ipv4": "10.37.225.73"
+    },
+    {
+      "device_id": 2,
+      "profile_id": 2,
+      "model": "ESP32-S3",
+      "mac": "d0:cf:13:08:41:48",
+      "observed_ipv4": "10.37.225.67"
+    },
+    {
+      "device_id": 3,
+      "profile_id": 3,
+      "model": "ESP32-S3",
+      "mac": "d0:cf:13:08:36:4c",
+      "observed_ipv4": "10.37.225.60"
+    },
+    {
+      "device_id": 4,
+      "profile_id": 4,
+      "model": "ESP32-S3",
+      "mac": "d0:cf:13:08:42:08",
+      "observed_ipv4": "10.37.225.4"
+    }
+  ],
+  "finished_utc": "2026-10-14T11:47:34.479012+00:00"
+}

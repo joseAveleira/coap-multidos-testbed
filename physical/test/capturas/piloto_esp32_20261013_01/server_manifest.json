@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "host": "0.0.0.0",
+  "port": 5683,
+  "seed": 2026,
+  "duration": 0,
+  "session": "piloto_esp32_20261013T084711044Z",
+  "output": "C:\\Users\\josea\\Documents\\Proyectos\\01_investigacion\\CoapArticulo\\scripts_esp32\\servidor\\registros",
+  "requests": true,
+  "node_version": "v22.19.0",
+  "started_utc": "2026-10-13T08:47:11.204Z",
+  "resource_bytes": 32768,
+  "sensor_source": "synthetic process value",
+  "firmware_profiles": 4
+}

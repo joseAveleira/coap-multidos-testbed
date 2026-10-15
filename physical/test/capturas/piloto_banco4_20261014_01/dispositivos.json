@@ -1,0 +1,57 @@
+{
+  "flashed_local_date": "2026-10-14",
+  "platformio_platform": "espressif32@7.0.1",
+  "platformio_board_definition": "esp32-s3-devkitc-1 with board_upload.flash_size=4MB, flash_mode=dio, USB CDC on boot",
+  "packages": {
+    "framework-arduinoespressif32": "3.20017.241212+sha.dcc1105b",
+    "tool-esptoolpy": "2.41100.260830 (esptool 4.11.0)",
+    "toolchain-xtensa-esp32s3": "8.4.0+2021r2-patch5"
+  },
+  "chip_reported_by_esptool": "ESP32-S3 (QFN56) revision v0.2, embedded flash 4 MB (XMC), embedded PSRAM 2 MB (AP_3v3), crystal 40 MHz",
+  "psram_used_by_firmware": false,
+  "server_ip_compiled": "10.37.225.138",
+  "wifi_ssid_compiled": "Aveleira",
+  "devices": [
+    {
+      "device_id": 1,
+      "profile_id": 1,
+      "pio_env": "esp32_01",
+      "serial_port": "COM4",
+      "mac": "d0:cf:13:08:43:4c",
+      "mac_in_flash_log": true,
+      "upload_success": true,
+      "firmware_bin_sha256": "0276d2aed94b31b98cb496f37c4b6387819132627c7bbcf7098add74d39776cd"
+    },
+    {
+      "device_id": 2,
+      "profile_id": 2,
+      "pio_env": "esp32_02",
+      "serial_port": "COM14",
+      "mac": "d0:cf:13:08:41:48",
+      "mac_in_flash_log": true,
+      "upload_success": true,
+      "firmware_bin_sha256": "bb948eff7e056fdc91d6c177dee2e3f72a291a7a33deb97fd431f7bd6bff8759"
+    },
+    {
+      "device_id": 3,
+      "profile_id": 3,
+      "pio_env": "esp32_03",
+      "serial_port": "COM15",
+      "mac": "d0:cf:13:08:36:4c",
+      "mac_in_flash_log": true,
+      "upload_success": true,
+      "firmware_bin_sha256": "6e2410a07bf20211b2c4364ff804d057cba6df8277de4b38d443b6f16dfec3c0"
+    },
+    {
+      "device_id": 4,
+      "profile_id": 4,
+      "pio_env": "esp32_04",
+      "serial_port": "COM16",
+      "mac": "d0:cf:13:08:42:08",
+      "mac_in_flash_log": true,
+      "upload_success": true,
+      "firmware_bin_sha256": "b35a919bbb147ca32cadaa78c0d76d737bc03809625a1673f32567adfb2cb3f6"
+    }
+  ],
+  "note": "Wi-Fi password intentionally not recorded. Firmware sha256 computed right after upload; flash logs show 'Hash of data verified'."
+}

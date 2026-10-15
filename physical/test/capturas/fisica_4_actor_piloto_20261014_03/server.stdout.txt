@@ -1,0 +1,3 @@
+CoAP UDP 0.0.0.0:5683; /sensor and /large (32768 bytes)
+Records: C:\Users\josea\Documents\Proyectos\01_investigacion\CoapArticulo\test\capturas\fisica_4_actor_piloto_20261014_03\server\fisica_4_actor_piloto_20261014_03. Capture the server's physical interface separately.
+Session saved: C:\Users\josea\Documents\Proyectos\01_investigacion\CoapArticulo\test\capturas\fisica_4_actor_piloto_20261014_03\server\fisica_4_actor_piloto_20261014_03
